@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 09:56 AM (Asia/Kolkata)
+  Samay       : 10:05 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -202,16 +202,18 @@ Poore workspace ka naksha: kahan kya hai
             |-- 21-PUBLISH-KAISE-KAREN.txt
                   -> Option A: sirf STREAM-OS folder, npm publish step-by-step
             |-- 22-COPY-PASTE-FILES.txt
-                  -> *** ABHI YE PADHO — har file ka POORA content, copy-paste karke khud banao ***
+                  -> har file ka POORA content, copy-paste karke khud banao
+            |-- 23-403-FIX.txt
+                  -> *** GitHub 403 error fix — dubessix vs DebjeetDev account mismatch ***
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 70
+    Total files    : 71
     Total folders  : 17
 
-    READING/       : 23 files (numbered 00 se aage)
+    READING/       : 24 files (numbered 00 se aage)
     PROJECTS/      : 5 items
     audio/         : 2 voice notes
 
