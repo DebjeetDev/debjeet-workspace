@@ -48,6 +48,7 @@ FILE_INFO = {
     "18-BACKUP-PLAN.txt": "GitHub limits research + backup strategy + setup steps",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull ka poora guide + PEHLA npm package publish (OIDC, token-free)",
+    "21-PUBLISH-KAISE-KAREN.txt": "*** ABHI YE PADHO — Option A: sirf STREAM-OS folder, npm publish step-by-step ***",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
     "01-COURSE-ROADMAP.txt": "Poora roadmap — 11 Books + career ladder + ULTRON",
