@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 12:13 PM (Asia/Kolkata)
+  Samay       : 07:45 PM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -61,6 +61,10 @@ Poore workspace ka naksha: kahan kya hai
             -> GitHub pe dikhega (badges ke saath)
       |-- sync.sh
             -> EK COMMAND — poora workspace GitHub par backup (./sync.sh)
+      |
+      |-- [DIR] audio/
+            -> Voice notes (Dubby Bhaiya ki audio)
+            |-- hint-biggest.mp3
       |
       |-- [DIR] PROJECTS/
             -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
@@ -196,17 +200,20 @@ Poore workspace ka naksha: kahan kya hai
             |-- 21-REDUCE-DEEP.txt
                   -> Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages)
             |-- 22-STAGE2-3-REVIEW.txt
-                  -> *** ABHI YE PADHO — Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2]) ***
+                  -> Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2])
+            |-- 23-STAGE4-REVIEW.txt
+                  -> *** ABHI YE PADHO — reduce mein DO TARAH KE COMPARE: acc vs fixed number ***
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 64
-    Total folders  : 17
+    Total files    : 66
+    Total folders  : 18
 
-    READING/       : 23 files (numbered 00 se aage)
+    READING/       : 24 files (numbered 00 se aage)
     PROJECTS/      : 5 items
+    audio/         : 1 voice notes
 
 ==============================================================================
 5. NOTE
