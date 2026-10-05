@@ -49,7 +49,9 @@ FILE_INFO = {
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE)",
-    "21-REDUCE-DEEP.txt": "*** ABHI YE PADHO — Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages) ***",
+    "21-REDUCE-DEEP.txt": "Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages)",
+    "22-STAGE2-3-REVIEW.txt": "*** ABHI YE PADHO — Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2]) ***",
+    "reduce-practice.js": "Debjeet ka reduce practice code (P2)",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
     "01-COURSE-ROADMAP.txt": "Poora roadmap — 11 Books + career ladder + ULTRON",

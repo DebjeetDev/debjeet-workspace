@@ -782,11 +782,19 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [ ] Paper pe table bana sakta hoon
 
   CODE:
-    [ ] Stage 1 — haath se table
-    [ ] Stage 2 — sumAll with guards
-    [ ] Stage 3 — getTotalSpend / getCount / getBiggestSpend
+    [✅] Stage 1 — haath se table
+    [✅] Stage 2 — sumAll with guards        (4/4 PASS — 5 Oct 2026)
+    [🟡] Stage 3 — getTotalSpend ✅ 3473  |  getCount ✅ 6  |  getBiggestSpend ❌ 0 (bug: cur[2] karna tha)
     [ ] Stage 4 — getSmallSpendTotal / getSmallSpendCount
     [ ] Stage 5 — mapWithReduce / filterWithReduce
+
+  SAMAJH (updated 5 Oct 2026):
+    [✅] Analogy samajh aaya
+    [✅] acc / cur / initial mein fark pata hai
+    [✅] Initial value kabhi nahi bhooloonga   (3/3 jagah diya ⭐)
+    [✅] Guard clause pehle lagata hoon         (3/3 function mein ⭐)
+
+  REVIEW FILE:  READING/22-STAGE2-3-REVIEW.txt
 
   BUG FIX:
     [ ] Bug 1 dhoondha (khud)
