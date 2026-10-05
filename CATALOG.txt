@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 10:05 AM (Asia/Kolkata)
+  Samay       : 10:31 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -94,8 +94,6 @@ Poore workspace ka naksha: kahan kya hai
                   |
                   |-- [DIR] CODE/
                         -> Asli code — src, tests, package.json
-                        |-- LAUNCH.md
-                              -> Deploy steps (markdown version)
                         |-- LICENSE
                               -> MIT license
                         |-- package.json
@@ -198,22 +196,16 @@ Poore workspace ka naksha: kahan kya hai
             |-- 19-AUTO-PUSH-SSH.txt
                   -> *** LIVE — main push karta hoon. Tu bole: 'push kar de' ***
             |-- 20-GIT-PULL-AND-NPM-PUBLISH.txt
-                  -> git pull ka poora guide + PEHLA npm package publish (OIDC, token-free)
-            |-- 21-PUBLISH-KAISE-KAREN.txt
-                  -> Option A: sirf STREAM-OS folder, npm publish step-by-step
-            |-- 22-COPY-PASTE-FILES.txt
-                  -> har file ka POORA content, copy-paste karke khud banao
-            |-- 23-403-FIX.txt
-                  -> *** GitHub 403 error fix — dubessix vs DebjeetDev account mismatch ***
+                  -> git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE on npm)
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 71
+    Total files    : 67
     Total folders  : 17
 
-    READING/       : 24 files (numbered 00 se aage)
+    READING/       : 21 files (numbered 00 se aage)
     PROJECTS/      : 5 items
     audio/         : 2 voice notes
 

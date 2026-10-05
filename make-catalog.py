@@ -47,10 +47,8 @@ FILE_INFO = {
     ".gitignore": "Kya backup NAHI hoga (secrets, cache, junk)",
     "18-BACKUP-PLAN.txt": "GitHub limits research + backup strategy + setup steps",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
-    "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull ka poora guide + PEHLA npm package publish (OIDC, token-free)",
-    "21-PUBLISH-KAISE-KAREN.txt": "Option A: sirf STREAM-OS folder, npm publish step-by-step",
-    "22-COPY-PASTE-FILES.txt": "har file ka POORA content, copy-paste karke khud banao",
-    "23-403-FIX.txt": "*** GitHub 403 error fix — dubessix vs DebjeetDev account mismatch ***",
+    "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
+    "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE on npm)",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
     "01-COURSE-ROADMAP.txt": "Poora roadmap — 11 Books + career ladder + ULTRON",
