@@ -17,6 +17,9 @@ if [ -z "$REMOTE" ]; then
   exit 1
 fi
 
+git config user.name "Debjeet Dhar" 2>/dev/null || true
+git config user.email "debjeet@users.noreply.github.com" 2>/dev/null || true
+
 git add -A
 
 if git diff --cached --quiet; then

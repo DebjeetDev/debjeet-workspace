@@ -1,0 +1,630 @@
+================================================================
+20 — GIT PULL + PEHLA NPM PACKAGE
+"Apna repo wapas laana"  aur  "duniya ko apna code dena"
+Banaya: 5 Oct 2026   |   TEXT ONLY (koi voice nahi)
+================================================================
+
+----------------------------------------------------------------
+PART 0 — AAJ KYA HOGA (2 MINUTE MEIN POORA NAZARA)
+----------------------------------------------------------------
+
+AAJ DO KAAM HAIN:
+
+  KAAM 1: GIT PULL
+           Apne GitHub repo ko wapas apne paas lana.
+           (Agar kabhi sandbox ud jaye, tu kuch nahi khoyega.)
+
+  KAAM 2: NPM PUBLISH
+           Tera pehla package duniya ke samne.
+           Koi bhi likhega:  npm install stream-os-engine
+           ...aur tera code uske project mein chalega.
+
+DONO KA NATIJA:
+  Teri mehnat kabhi waste nahi hogi.
+  Aur teri pehli PUBLIC library internet par live hogi.
+
+================================================================
+                    PART 1 — GIT PULL
+================================================================
+
+----------------------------------------------------------------
+1.1 — PULL KYA CHEEZ HAI? (EK KAHANI SE SAMAJH)
+----------------------------------------------------------------
+
+SOCH: Tu ek notebook likh raha hai.
+      Teri ek PHOTOCOPY machine hai (GitHub).
+
+      PUSH  =  notebook ki photocopy bhejna  (tu -> GitHub)
+      PULL  =  photocopy wapas mangwana      (GitHub -> tu)
+
+SIMPLE:
+      push  =  SAVE karna cloud mein
+      pull  =  LOAD karna cloud se
+
+AUR "CLONE"?
+      clone =  POORI notebook pehli baar copy karna
+      pull  =  sirf NAYE pages lena (jo badle hain)
+
+----------------------------------------------------------------
+1.2 — TEEN ALAG CHEEZEIN (LOG INMEIN GADBAD KARTE HAIN)
+----------------------------------------------------------------
+
+  COMMAND      KAB                        KYA KARTA HAI
+  ---------    ------------------------   ------------------------
+  git clone    PEHLI BAAR, naye computer  Poora repo download
+  git pull     ROZ, kaam SHURU se pehle   Naye changes laata hai
+  git push     ROZ, kaam KHATAM ke baad   Tere changes bhejta hai
+
+EK AUR (advanced, baad ke liye):
+  git fetch    sirf DEKHTA hai kya aaya   Download karta hai par
+               par tere code ko chhoo     MERGE nahi karta
+               ta nahi
+
+  pull  =  fetch  +  merge
+
+----------------------------------------------------------------
+1.3 — GOLDEN RULE (YE KABHI NAHI BHOOLNA)
+----------------------------------------------------------------
+
+        ============================================
+           SUBHA    ->  PULL     (naya lao)
+           DIN BHAR ->  KAAM     (code likho)
+           SHAM     ->  PUSH     (save bhejo)
+        ============================================
+
+  "PULL FIRST, PUSH LAST"
+
+KYUN?
+  Agar tu bina pull kiye push karega aur doosri jagah
+  kuch badal gaya ho -> CONFLICT.
+  Conflict = do logon ne ek hi line alag alag likhi.
+  Git confuse ho jata hai: "kaunsi rakhoon?"
+
+  Subha pull karne se conflict ka chance ~0 ho jata hai.
+
+----------------------------------------------------------------
+1.4 — EXACT COMMANDS (COPY-PASTE KE LIYE)
+----------------------------------------------------------------
+
+SITUATION A: NAYE COMPUTER PAR PEHLI BAAR
+----------------------------------------------------------------
+    git clone git@github.com:DebjeetDev/debjeet-workspace.git
+    cd debjeet-workspace
+    ls
+
+  YE 3 LINE KARTI HAIN:
+    1. GitHub se poora repo download
+    2. us folder mein ghus ja
+    3. dekh kya kya aaya
+
+  OUTPUT (kuch aisa aayega):
+    Cloning into 'debjeet-workspace'...
+    remote: Enumerating objects: 70, done.
+    remote: Counting objects: 100% (70/70), done.
+    Receiving objects: 100% (70/70), 1.05 MiB, done.
+    Resolving deltas: 100% (12/12), done.
+
+  "Receiving objects" = files aa rahi hain.
+  "done" = ho gaya. ✅
+
+SITUATION B: ROZ KA PULL (sandbox mein — tu bas bolega)
+----------------------------------------------------------------
+    git pull
+
+  OUTPUT JAB KUCH NAYA NA HO:
+    Already up to date.
+    <- matlab sab latest hai, kuch naya nahi aaya
+
+  OUTPUT JAB KUCH NAYA AA JAYE:
+    Updating b2fdaed..8c1e4f2
+    Fast-forward
+     README.md        |  2 +-
+     CATALOG.txt      | 14 ++++++++++++--
+     2 files changed, 12 insertions(+), 4 deletions(-)
+
+  "Fast-forward" = achhi khabar.
+    Iska matlab: koi conflict nahi, seedha aage badh gaya.
+
+----------------------------------------------------------------
+1.5 — ROZ KE 5 COMMAND (YAD KAR LE, POORI ZINDAGI KAAM AAYENGE)
+----------------------------------------------------------------
+
+    git status              <- abhi kya haal hai?
+                               (kaunsi file badli, kaunsi nayi)
+
+    git log --oneline       <- pichhle commits ki list
+                               (sabse upar wala = sabse naya)
+
+    git diff                <- maine kya badla hai? (line by line)
+
+    git pull                <- cloud se naya lao
+
+    git push                <- cloud ko bhejo
+
+BONUS (galti ho jaye to):
+    git diff --staged       <- jo commit hone wala hai, wo dekh
+    git restore <file>      <- file ki changes hata do (wapas purani)
+    git log -p              <- poora itihaas, har badlav ke saath
+
+----------------------------------------------------------------
+1.6 — CONFLICT: DARNA MAT, SAMJHO
+----------------------------------------------------------------
+
+CONFLICT KAB HOTA HAI?
+  Tu ne line 10 badli.
+  Kisi aur ne (ya tu ne doosre computer se) line 10 ALAG badli.
+  Git: "Bhai, dono sahi nahi ho sakte. Tu decide kar."
+
+CONFLICT DIKHEGA AISE:
+    <<<<<<< HEAD
+    const tax = 0.18;          <- TERA wala
+    =======
+    const tax = 0.12;          <- DOOSRA wala
+    >>>>>>> origin/main
+
+  <<<<<<<  = tera code shuru
+  =======  = dono ke beech ki deewar
+  >>>>>>>  = doosra code khatam
+
+SOLUTION (3 STEP):
+  1. Wo file khol
+  2. Jo sahi hai RAKH, baaki DELETE kar
+     (<<<<<<< ======= >>>>>>> ye 3 line BHI hatani padti hain)
+  3. git add <file>  ->  git commit  ->  git push
+
+SABSE ACHHA TAREEKA?
+  CONFLICT AAYE HI NA — isliye subha pull karo.
+
+----------------------------------------------------------------
+1.7 — SANDBOX (MERA JAGAH) MEIN YE KAISE CHALTA HAI
+----------------------------------------------------------------
+
+  Pehle se SET hai:
+    remote : git@github.com:DebjeetDev/debjeet-workspace.git
+    branch : main
+    auth   : SSH deploy key (sirf isi repo ke liye)
+    state  : local == remote  (sync perfect)
+
+  TU BAS BOLEGA:
+    "pull kar"      -> main git pull chalaoonga
+    "push kar de"   -> main add+commit+push karoonga
+
+  TU KHUD BHI CHALA SAKTA HAIN:
+    git pull
+    ./sync.sh "kya kiya aaj"
+
+----------------------------------------------------------------
+1.8 — EK ZAROORI SOCH: "AGAR SAB UD JAYE TO?"
+----------------------------------------------------------------
+
+  SOCH: Sandbox delete ho gaya. Sab gaya?
+
+  JAWAB: NAHI. ✅
+
+    git clone git@github.com:DebjeetDev/debjeet-workspace.git
+
+  EK COMMAND. 2 MINUTE. SAB WAPAS.
+
+  ISILIYE PUSH ROZ KARTE HAIN.
+  Push = "mujhe kal ka bharosa chahiye."
+
+================================================================
+                    PART 2 — NPM KYA HAI
+================================================================
+
+----------------------------------------------------------------
+2.1 — SIMPLE BHASHA MEIN
+----------------------------------------------------------------
+
+  npm = JavaScript ka PLAY STORE / APP STORE
+
+  Jaise phone mein app install karte hain,
+  waise code mein PACKAGE install karte hain:
+
+      npm install express
+      npm install react
+      npm install zod
+
+  AAJ TAK TU "LE" RAHA THA (install).
+  AAJ SE TU "DE" RHA HAI (publish). 🎉
+
+  KAL KO KOI LIKHEGA:
+      npm install stream-os-engine
+
+  ...aur TERA code uske project mein chalega.
+
+  YE FARK HAI:
+     Student : "main library use karta hoon"
+     Engineer: "main library BANATA hoon"
+
+----------------------------------------------------------------
+2.2 — TERA PACKAGE (TAIYAAR HAI)
+----------------------------------------------------------------
+
+  Naam      : stream-os-engine
+  Version   : 1.0.0
+  Size      : 5.7 kB (5 files)
+  License   : MIT (sabse open license)
+  Dependency: ZERO  (koi bhi library nahi — pure JS)
+
+  ANDAR KYA HAI:
+    src/createSubscriptionEngine.js   <- asli code
+    tests/test-suite.js               <- 35 tests (sab pass)
+    docs/EXPECTED-OUTPUT.txt
+    README.md
+    LICENSE
+
+  TEST RESULT:
+    npm test  ->  35/35 pass ✅
+
+----------------------------------------------------------------
+2.3 — NAAM CHECK (MAINE KAR LIYA)
+----------------------------------------------------------------
+
+  Maine npm registry se poocha: ye naam free hai?
+
+    ✅ stream-os-engine                  <- YE CHUNA
+    ✅ streamos-engine
+    ✅ stream-os-subscription-engine
+    ✅ @debjeetdev/stream-os-engine
+
+  SCOPED vs UNSCOPED:
+    @naam/package  = scoped   (org chahiye, extra setup)
+    package        = unscoped (simple)
+
+  MAINE UNSCOPED CHUNA — kyun?
+    Scoped naam mein npm username EXACT match hona chahiye.
+    Agar tera npm username "debjeetdev" nahi hua -> publish FAIL.
+    Unscoped mein ye jhanjhat hi nahi. ✅
+
+  NOTE: Pehle package.json mein galat URL tha
+        (debjeetdhar likha tha) -> maine theek kar diya
+        (ab DebjeetDev hai). Ye chhoti galti provenance
+        ko silently tod deti thi.
+
+================================================================
+              PART 3 — PEHLA PUBLISH (IMANDAARI)
+================================================================
+
+----------------------------------------------------------------
+3.1 — EK RUKAWAT HAI, JHUTH NAHI BOLUNGA
+----------------------------------------------------------------
+
+  npm ka SABSE SECURE tareeka = OIDC (bina token ke).
+  PAR:
+
+    ⚠️  OIDC TAB TAK SET NAHI HO SAKTA
+        JAB TAK PACKAGE npm PAR EXIST NA KARE.
+
+    npm ke paas "pending publisher" feature nahi hai.
+    Matlab: jo package hai hi nahi, uske liye trust set nahi.
+
+  ISLIYE:
+    PEHLA PUBLISH = MANUAL  (npm login chahiye)
+    DOOSRA SE AAGE = OIDC   (koi token nahi, kabhi nahi) ✅
+
+  Ye ek baar ka "dard" hai. Uske baad zindagi bhar aaram.
+
+----------------------------------------------------------------
+3.2 — DO RASTE (TU CHUN)
+----------------------------------------------------------------
+
+OPTION A — TU KHUD KAR (RISK = ZERO)
+----------------------------------------------------------------
+  Agar tere paas koi computer hai jisme Node.js installed hai:
+
+      npm login
+      cd stream-os-engine
+      npm publish --access public
+
+  2 COMMAND. 2 MINUTE.
+  Main tujhe files de doonga (zip ya repo se clone karke).
+
+  ✅ FAIDA: Mujhe kuch nahi dena padta. Risk = 0.
+  ❌ NUKSAN: Node install karna padega (agar nahi hai).
+
+OPTION B — MAIN KAROON (EK CHHOTA TOKEN CHAHIYE)
+----------------------------------------------------------------
+  npm par token bana, mujhe de, main publish kar doonga.
+
+  TOKEN KITNA TIGHT HOGA:
+    Type        : Granular Access Token
+    Name        : stream-os-first-publish
+    Expiry      : 7 DIN (khud expire ho jayega)
+    Packages    : SIRF stream-os-engine
+                  ("Only select packages" chunna)
+    Permission  : read + write (publish ke liye)
+    Orgs        : koi nahi
+
+  YE TOKEN KYA NAHI KAR SAKTA:
+    ❌ Tera account delete
+    ❌ Doosre packages chhoo
+    ❌ Payment / settings badal
+    ❌ 7 din baad kuch bhi (expire)
+
+  BURA SCENARIO (agar leak ho jaye):
+    Koi tera package ka naya version publish kar de.
+    npm 72 ghante mein unpublish kar deta hai.
+    -> Khatra hai, PAR recoverable hai.
+
+  MERA VAADA:
+    - Token main kahin permanently save nahi karoonga
+    - Kaam khatam -> delete
+    - Kabhi kisi aur ko nahi bataoonga
+    - Publish ke baad OIDC set karenge, phir token
+      KI ZAROORAT HI NAHI RAHEGI -> usi waqt delete kar dena
+
+  ✅ FAIDA: Tere ko kuch install nahi karna. 3 minute.
+  ❌ NUKSAN: Thoda sa risk (7 din, 1 package).
+
+----------------------------------------------------------------
+3.3 — COMPARISON TABLE
+----------------------------------------------------------------
+
+                    OPTION A (tu)     OPTION B (token)
+                    ---------------   ------------------
+  Risk              0                 thoda (recoverable)
+  Tera time         5 min + Node      3 min
+  Node install?     Haan              Nahi
+  Mujhe kuch dena?  Nahi             Ek 7-din ka token
+  Main kya karoon?  Files ready       SAB KUCH
+
+----------------------------------------------------------------
+3.4 — TERI SALAH MERE TARAF SE
+----------------------------------------------------------------
+
+  AGAR TERE PAAS COMPUTER HAI JISME NODE HAI   ->  OPTION A
+  AGAR SIRF PHONE HAI / NODE NAHI HAI          ->  OPTION B
+
+  DONO THEEK HAIN.
+  Tu bata, main waise karoonga.
+
+================================================================
+             PART 4 — PUBLIC REPO (stream-os-engine)
+================================================================
+
+  npm package ka code PUBLIC hona chahiye.
+  Isliye ek alag PUBLIC repo banani padegi.
+
+  YAAD HAI NA?
+    debjeet-workspace = PRIVATE  (tera kamra)
+    stream-os-engine  = PUBLIC   (teri dukaan)
+
+----------------------------------------------------------------
+4.1 — REPO BANA (2 MINUTE)
+----------------------------------------------------------------
+  Jao: https://github.com/new
+
+    Repository name : stream-os-engine
+    Public          : ✅ YES (chuno)
+    README          : ⬜ KHALI CHHOD
+    .gitignore      : ⬜ KHALI CHHOD
+    License         : ⬜ KHALI CHHOD
+
+  "Create repository" dabao.
+
+----------------------------------------------------------------
+4.2 — MUJHE IS REPO KA BHI ACCESS DO (DEPLOY KEY)
+----------------------------------------------------------------
+  Us repo mein:
+    Settings -> Deploy keys -> Add deploy key
+
+    Title : Arena Sandbox
+    Key   : (YE PASTE KAR)
+
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMG6D7SbLGxhx3Vd+UF26BlvTAvld1rf2c3W8yyB2k1E arena-sandbox-to-github
+
+    ✅ Allow write access
+
+  SAME PUBLIC KEY HAI (jo debjeet-workspace mein dali thi).
+  Ek public key ko kai repos mein lagaya ja sakta hai —
+  har baar alag deploy key banwani padti hai kyunki
+  GitHub ek key ko do repos mein reuse nahi karne deta
+  (agar allow kar de to "already in use" error).
+
+  "already in use" AAYE TO:
+    Nayi key banaenge. 30 second ka kaam. Batana bas.
+
+================================================================
+        PART 5 — OIDC SETUP (PEHLE PUBLISH KE BAAD)
+================================================================
+
+  YE TAB KARENGE JAB PACKAGE npm PAR LIVE HO JAYEGA.
+
+----------------------------------------------------------------
+5.1 — npmjs.com PAR TRUSTED PUBLISHER DALO
+----------------------------------------------------------------
+  1. https://www.npmjs.com/package/stream-os-engine kholo
+  2. Settings (right side) -> "Trusted publishers"
+  3. "Add trusted publisher" / "GitHub Actions" chuno:
+
+       Organization or user : DebjeetDev
+       Repository           : stream-os-engine
+       Workflow filename    : publish.yml
+       Environment          : (khali chhod)
+
+  4. ⭐ "Allow npm publish"  ->  TICK ZAROORI HAI ⭐
+     (2026-09-03 ke baad bani configs DEFAULT se
+      STAGE-ONLY hoti hain — bina tick ke publish FAIL hoga
+      aur error aisi dikhegi jaise sab theek ho)
+
+  5. Save.
+
+----------------------------------------------------------------
+5.2 — MAXIMUM SECURITY LOCK
+----------------------------------------------------------------
+  Package Settings -> Publishing access:
+    ✅ "Require two-factor authentication and disallow tokens"
+
+  Ab koi bhi token se publish NAHI kar sakta.
+  Sirf tera GitHub workflow kar sakta hai.
+  (OIDC is lock se affected nahi hota.)
+
+----------------------------------------------------------------
+5.3 — USKE BAAD NAYA VERSION KAISE NIKALE
+----------------------------------------------------------------
+    # version badhao
+    npm version patch      # 1.0.0 -> 1.0.1  (bug fix)
+    npm version minor      # 1.0.0 -> 1.1.0  (naya feature)
+    npm version major      # 1.0.0 -> 2.0.0  (breaking change)
+
+    # tag bhejo
+    git push --follow-tags
+
+  BAS! GitHub Actions khud:
+    - tests chalayega
+    - npm par publish karega
+    - provenance (digital signature) laga dega
+    - KOI TOKEN NAHI. KOI SECRET NAHI. 🎉
+
+----------------------------------------------------------------
+5.4 — TECHNICAL NOTES (mere reference ke liye)
+----------------------------------------------------------------
+  npm CLI  >= 11.5.1   (isliye workflow mein node 24.x)
+  Node     >= 22.14.0  (20 CHALEGA NAHI — ye sabse badi galti)
+  permissions: id-token: write  -> warna OIDC token hi nahi banega
+  registry-url set hona zaroori -> warna OIDC auth engage hi nahi
+  GitHub-hosted runner          -> self-hosted support nahi
+  --provenance flag             -> ab automatic hai, zaroorat nahi
+  repository field case-sensitive match -> warna provenance silently fail
+
+  Workflow file: PROJECTS/P1-STREAM-OS/CODE/.github/workflows/publish.yml
+  (maine OIDC ke liye rewrite kar diya hai ✅)
+
+================================================================
+              PART 6 — EXACT COMMANDS (COPY-PASTE)
+================================================================
+
+--- GIT PULL (roz) --------------------------------------------
+
+  # naye computer par pehli baar
+  git clone git@github.com:DebjeetDev/debjeet-workspace.git
+  cd debjeet-workspace
+
+  # roz subha
+  git pull
+
+  # haal dekhne ke liye
+  git status
+  git log --oneline
+
+--- GIT PUSH (roz, main karta hoon) ---------------------------
+
+  git add -A
+  git commit -m "kya kiya aaj"
+  git push
+
+  # ya bas:
+  ./sync.sh "kya kiya aaj"
+
+--- NPM (OPTION A — tu khud) ----------------------------------
+
+  npm login
+  cd stream-os-engine
+  npm publish --access public
+
+--- NPM (OPTION B — token, main karoonga) ---------------------
+
+  # tu: npmjs.com -> Access Tokens -> Granular -> 7 din,
+  #     sirf stream-os-engine, read+write
+  # phir mujhe token bhej, main:
+
+  echo "//registry.npmjs.org/:_authToken=TOKEN" > ~/.npmrc
+  cd PROJECTS/P1-STREAM-OS/CODE
+  npm publish --access public
+  rm ~/.npmrc          # <- TURANT DELETE
+
+--- NPM (aage ke versions — OIDC, koi token nahi) -------------
+
+  npm version patch
+  git push --follow-tags
+  # GitHub Actions baaki sab khud
+
+================================================================
+                    PART 7 — CHECKLIST
+================================================================
+
+GIT PULL
+  [ ] git clone karna aata hai
+  [ ] git pull karna aata hai
+  [ ] "PULL FIRST, PUSH LAST" samajh aaya
+  [ ] conflict kya hai, pata hai
+
+NPM PEHLA PACKAGE
+  [ ] npm account banaya (npmjs.com/signup)
+  [ ] Option A ya B chuna
+  [ ] public repo stream-os-engine banaya
+  [ ] deploy key dali (same key, naya repo)
+  [ ] pehla publish hua  -> npmjs.com/package/stream-os-engine
+
+OIDC (uske baad)
+  [ ] Trusted Publisher set kiya
+  [ ] "Allow npm publish" TICK kiya
+  [ ] "disallow tokens" lock lagaya
+  [ ] token delete kar diya (Option B mein)
+
+================================================================
+                 PART 8 — TROUBLESHOOTING
+================================================================
+
+"Permission denied (publickey)"
+  -> deploy key add nahi hui, ya "Allow write access" nahi tick kiya
+  -> check: ssh -T git@github.com
+
+"src refspec main does not match any"
+  -> koi commit hi nahi hai. Pehle commit karo.
+
+"Updates were rejected because the remote contains work"
+  -> remote par kuch hai jo tere paas nahi
+  -> fix: git pull --rebase  phir  git push
+
+"403 Forbidden" (npm publish)
+  -> token expire, ya permission "read only" hai
+  -> doosra token banao, "read and write" chuno
+
+"404 PUT" (npm publish via OIDC)
+  -> 99% chance: Node version purana hai
+  -> fix: workflow mein node-version: "24.x"
+  -> npm CLI 11.5.1+ zaroori hai; Node 22.12/22.13 bhi kaam nahi
+
+"EPUBLISHCONFLICT"
+  -> ye version pehle hi publish ho chuka hai
+  -> fix: npm version patch
+
+"You cannot publish over the previously published version"
+  -> upar wala hi hai. Version badhao.
+
+"Package name too similar to existing package"
+  -> naam badlo (maine 4 free naam dhoondh ke rakhe hain)
+
+================================================================
+                    PART 9 — GLOSSARY
+================================================================
+
+  repository (repo)  project ka folder + uska poora itihaas
+  remote             GitHub par jo copy hai (cloud wali)
+  origin             remote ka nickname (default naam)
+  local              tere computer/sandbox wali copy
+  commit             ek save-point (jaise game ka checkpoint)
+  branch             alag alag kaam ki parallel line
+  main               default branch ka naam (pehle "master" tha)
+  clone              poora repo pehli baar download
+  pull               cloud se naye changes lana (fetch+merge)
+  push               cloud ko tere changes bhejna
+  fetch              sirf download, merge nahi
+  merge              do branch ka code milana
+  conflict           do jagah ek hi line alag badli
+  fast-forward       bina conflict ke seedha aage badhna
+  HEAD               abhi tu kahan khada hai (current commit)
+  staging area       commit hone wali files ki waiting room
+  npm                JS packages ka store
+  package            ek library jo install ho sake
+  registry           npm ka server jahan packages rakhe hain
+  OIDC               bina password/token ke pehchan proof karna
+  provenance         digital proof ki ye code isi repo se aaya
+  deploy key         sirf EK repo ke liye SSH chaabi
+  dist-tag           version ka nickname (latest, next, beta)
+
+================================================================
+END — 20-GIT-PULL-AND-NPM-PUBLISH.txt
+================================================================

@@ -1,9 +1,43 @@
+# ============================================================
+# Publish to npm  —  OIDC / Trusted Publishing (TOKEN-FREE)
+# ============================================================
+# Ye workflow bina kisi npm token ke publish karta hai.
+# GitHub Actions apni identity OIDC se prove karta hai.
+#
+# ZAROORI SHARTEIN (inke bina kaam nahi chalega):
+#   1. npm CLI >= 11.5.1  -> isliye node-version 24.x (npm 11.x aata hai)
+#   2. Node   >= 22.14.0  -> isliye 20 NAHI chalega
+#   3. permissions: id-token: write  -> warna OIDC token hi nahi banega
+#   4. registry-url set hona chahiye -> warna OIDC auth engage hi nahi hota
+#   5. npmjs.com par Trusted Publisher configure hona chahiye
+#      (Settings -> Trusted publishers):
+#         Organization or user : DebjeetDev
+#         Repository           : stream-os-engine
+#         Workflow filename    : publish.yml
+#         *** "Allow npm publish" -> TICK KARNA ZAROORI ***
+#         (configs made after 2026-09-03 default to STAGE-ONLY)
+#   6. GitHub-hosted runner (ubuntu-latest) — self-hosted support nahi hai
+#
+# PEHLA PUBLISH IS SE NAHI HO SAKTA.
+# Package ko npm par pehle se exist karna padta hai (manual publish se).
+# ============================================================
+
 name: Publish to npm
 
 on:
+  # Tag push karne par chale  (git tag v1.0.1 && git push --tags)
+  push:
+    tags:
+      - 'v*'
+  # GitHub Release banane par bhi chale
   release:
     types: [created]
+  # Hath se bhi chalaya ja sake (Actions tab -> Run workflow)
   workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write        # <-- OIDC ke liye YE SABSE ZAROORI LINE HAI
 
 jobs:
   publish:
@@ -14,16 +48,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js 24 (npm 11.5.1+ — OIDC ke liye zaroori)
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24.x"
           registry-url: "https://registry.npmjs.org"
+          package-manager-cache: false   # release build mein cache kabhi nahi
 
-      - name: Run tests (publish aborts if these fail)
+      - name: Run tests (fail hone par publish yahin ruk jayega)
         run: npm test
 
-      - name: Publish package
+      - name: Publish package (OIDC — koi token, koi secret nahi)
         run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

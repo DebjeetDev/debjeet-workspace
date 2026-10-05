@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 07:40 AM (Asia/Kolkata)
+  Samay       : 09:38 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -72,6 +72,7 @@ Poore workspace ka naksha: kahan kya hai
       |-- [DIR] audio/
             -> Voice notes (Dubby Bhaiya ki audio)
             |-- backup-plan-ready.mp3
+            |-- push-success.mp3
       |
       |-- [DIR] PROJECTS/
             -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
@@ -82,13 +83,6 @@ Poore workspace ka naksha: kahan kya hai
             |
             |-- [DIR] _TEMPLATE/
                   -> Namuna — naya project shuru karne ka format
-                  |
-                  |-- [DIR] CODE/
-                        -> Asli code — src, tests, package.json
-                        |
-                        |-- [DIR] src/
-                              -> Source code (jo kaam karta hai)
-                              (khali)
                   |
                   |-- [DIR] PLAN/
                         -> Planning + Research docs (sirf txt, koi code nahi)
@@ -154,13 +148,6 @@ Poore workspace ka naksha: kahan kya hai
             |-- [DIR] P2-UPI-LEAK-DETECTOR/
                   -> AGLA PROJECT — 'Tera paisa kahan beh raha hai?'
                   |
-                  |-- [DIR] CODE/
-                        -> Asli code — src, tests, package.json
-                        |
-                        |-- [DIR] src/
-                              -> Source code (jo kaam karta hai)
-                              (khali)
-                  |
                   |-- [DIR] PLAN/
                         -> Planning + Research docs (sirf txt, koi code nahi)
                         |-- 00-README.txt
@@ -210,17 +197,19 @@ Poore workspace ka naksha: kahan kya hai
                   -> GitHub limits research + backup strategy + setup steps
             |-- 19-AUTO-PUSH-SSH.txt
                   -> *** LIVE — main push karta hoon. Tu bole: 'push kar de' ***
+            |-- 20-GIT-PULL-AND-NPM-PUBLISH.txt
+                  -> git pull ka poora guide + PEHLA npm package publish (OIDC, token-free)
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 62
-    Total folders  : 21
+    Total files    : 64
+    Total folders  : 17
 
-    READING/       : 20 files (numbered 00 se aage)
+    READING/       : 21 files (numbered 00 se aage)
     PROJECTS/      : 5 items
-    audio/         : 1 voice notes
+    audio/         : 2 voice notes
 
 ==============================================================================
 5. NOTE
