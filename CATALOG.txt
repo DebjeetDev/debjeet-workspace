@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 10:33 AM (Asia/Kolkata)
+  Samay       : 10:38 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -184,16 +184,18 @@ Poore workspace ka naksha: kahan kya hai
             |-- 19-AUTO-PUSH-SSH.txt
                   -> *** LIVE — main push karta hoon. Tu bole: 'push kar de' ***
             |-- 20-GIT-PULL-AND-NPM-PUBLISH.txt
-                  -> git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE on npm)
+                  -> git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE)
+            |-- 21-REDUCE-DEEP.txt
+                  -> *** ABHI YE PADHO — Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages) ***
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 61
+    Total files    : 62
     Total folders  : 15
 
-    READING/       : 21 files (numbered 00 se aage)
+    READING/       : 22 files (numbered 00 se aage)
     PROJECTS/      : 5 items
 
 ==============================================================================

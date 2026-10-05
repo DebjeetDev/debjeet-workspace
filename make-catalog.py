@@ -48,7 +48,8 @@ FILE_INFO = {
     "18-BACKUP-PLAN.txt": "GitHub limits research + backup strategy + setup steps",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
-    "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE on npm)",
+    "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE)",
+    "21-REDUCE-DEEP.txt": "*** ABHI YE PADHO — Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages) ***",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
     "01-COURSE-ROADMAP.txt": "Poora roadmap — 11 Books + career ladder + ULTRON",

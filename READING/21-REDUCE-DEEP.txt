@@ -1,0 +1,858 @@
+================================================================
+21 — ARRAY.PROTOTYPE.REDUCE()  (PHASE 5 — ARRAYS DEEP)
+"Aakhri array method. Iske baad tu array ka malik hai."
+Banaya: 5 Oct 2026  |  Dubby Bhaiya  |  TEXT ONLY
+================================================================
+
+----------------------------------------------------------------
+PART 0 — RECAP (AB TAK KYA KIYA)
+----------------------------------------------------------------
+
+  PHASE 5 (ARRAYS DEEP) — TERA SCORECARD:
+
+    ✅ .at()         ek item nikaalna           (getLatestPlan)
+    ✅ .filter()     condition se chhaanna      (getPremiumPlans)
+    ✅ .map()        har item ko badalna        (applyTaxToAll)
+    ✅ spread [...]  bina badle jodna           (addNewPlan)
+    ✅ Number.isFinite()   safe number check
+    ⬜ .reduce()     POORE array ko EK cheez banana   <- AAJ
+
+  AUR YE BHI HO GAYA:
+    ✅ stream-os-engine@1.0.0 LIVE on npm
+    ✅ 35/35 tests pass
+    ✅ GitHub backup system LIVE
+
+  AAJ SIRF EK KAAM:  .reduce() ko kaan se pakad ke dimaag mein
+  daal dena hai.
+
+----------------------------------------------------------------
+PART 1 — WHY (.REDUCE() SEEKHNA ZAROORI KYUN HAI)
+----------------------------------------------------------------
+
+  TERI 3 ASLI WAJAH:
+
+  1. TERA UPI LEAK DETECTOR ISI PE BANA HAI
+     "Total spend" nikalna hai? reduce.
+     "Chai-pani leak" ka total? reduce.
+     "Sabse bada kharcha kaunsa?" reduce.
+     Reduce nahi aaya to P2 project ruk jayega.
+
+  2. INTERVIEW MEIN PAKKA POOCHHTE HAIN
+     "reduce bina reduce ke likho"
+     "reduce se map banao"
+     Ye 2 sawal har company mein aate hain.
+
+  3. YE SABSE MUSHKIL ARRAY METHOD HAI
+     Jo log 2 saal baad bhi reduce se darte hain,
+     unki code mein hamesha for-loop dikhta hai.
+     Tu aaj hi isko apna le raha hai.
+
+  SACHCHAI:
+    .map()    =  array  ->  array   (same length)
+    .filter() =  array  ->  array   (kam length)
+    .reduce() =  array  ->  KUCH BHI  ⭐
+
+    reduce SABSE TAKATWAR HAI.
+    map bhi reduce se ban sakta hai.
+    filter bhi reduce se ban sakta hai.
+    reduce ko kuch nahi bana sakta — wo sabka BAAP hai.
+
+----------------------------------------------------------------
+PART 2 — ANALOGY (EK BAAR MEIN SAMAJH AAYEGA)
+----------------------------------------------------------------
+
+  SOCH: Tera pados mein ek CHAI KI DUKAAN hai.
+        Dukaan wale ke paas ek KHATA (ledger) hai.
+
+  POORE MAHINE KA KHATA:
+       1 Oct   Rs 20
+       2 Oct   Rs 30
+       3 Oct   Rs 20
+       4 Oct   Rs 50
+       ...
+       31 Oct  Rs 40
+
+  MAHINE KE AAKHIR MEIN EK HI SAWAL:
+       "Mera TOTAL kitna hua?"
+
+  Dukaan wala kya karta hai?
+       Ek register leta hai, upar likhta hai:  0
+       Phir ek ek karke JODTA jata hai:
+
+         0  + 20  = 20      (haath mein: 20)
+         20 + 30  = 50      (haath mein: 50)
+         50 + 20  = 70      (haath mein: 70)
+         70 + 50  = 120     (haath mein: 120)
+         ...
+         AAKHIR MEIN HAATH MEIN:  Rs 890
+
+  AB ISKO CODE KI BHASHA MEIN DEKH:
+
+       0            = INITIAL VALUE   (register ka pehla number)
+       20, 30, ...  = CURRENT ITEM    (aaj ka entry)
+       890          = FINAL RESULT
+
+  YAAD RAKHNE KA TAREEKA:
+       "HATH MEIN JO HAI"      =  accumulator  (acc)
+       "AAJ KA ENTRY"          =  current      (cur)
+       "REGISTER KA 0"         =  initialValue
+
+  ISILIYE ISKO "REDUCE" KEHTE HAIN:
+       BAHUT SAARI CHEEZEIN  ->  EK CHEEZ
+       (Reduce karna = kam karna = ghataana)
+
+  DUSRE NAAM SE SAMAJH:
+       Sabzi ka MIXER    : 10 sabziyaan andar -> 1 paste bahar
+       Election counting : 10 lakh vote       -> 1 jeetne wala
+       Bank passbook     : 50 transactions    -> 1 balance
+       Pressure cooker   : saara khana        -> 1 pressure  😄
+
+----------------------------------------------------------------
+PART 3 — CONCEPT (ANATOMY — HADDI PASLI)
+----------------------------------------------------------------
+
+  POORA SYNTAX:
+
+    const result = array.reduce(function (acc, cur, index, arr) {
+      return NAYA_ACC;
+    }, INITIAL_VALUE);
+
+  CHAAR HISSE:
+
+    ┌─────────────┬──────────────────────┬──────────────┐
+    │ HISSA       │ MATLAB               │ KITNI BAAR   │
+    ├─────────────┼──────────────────────┼──────────────┤
+    │ acc         │ haath mein jo hai    │ har baar     │
+    │ cur         │ aaj ka item          │ har baar     │
+    │ index       │ kitne number pe hai  │ KAM HI CHAHIYE│
+    │ arr         │ poora array          │ KAM HI CHAHIYE│
+    │ INITIAL     │ register ka 0        │ EK BAAR      │
+    └─────────────┴──────────────────────┴──────────────┘
+
+  SABSE CHHOTA ROOP (90% yahi chalta hai):
+
+    const result = array.reduce((acc, cur) => acc + cur, 0);
+                                  │     │            │   │
+                                  │     │            │   └─ INITIAL
+                                  │     │            └───── JODO
+                                  │     └────────────────── aaj ka item
+                                  └──────────────────────── haath mein
+
+  ⭐ SABSE ZAROORI RULE ⭐
+
+       INITIAL VALUE HAMESHA DO.
+
+    Kyun? Neeche PART 5 mein dikhata hoon —
+    bina initial value ke code KHATARNAAK bug paida karta hai.
+
+----------------------------------------------------------------
+PART 4 — CODE (5 EXAMPLE, EK SE BADHKAR EK)
+----------------------------------------------------------------
+
+EXAMPLE 1 — SIMPLE SUM (pehla kadam)
+----------------------------------------------------------------
+    const prices = [199, 499, 999];
+
+    const total = prices.reduce((acc, cur) => acc + cur, 0);
+
+    console.log(total);
+    // 1697
+
+  ANDAR ANDAR KYA HUA:
+    baar 1:  acc = 0,    cur = 199   ->  0 + 199  = 199
+    baar 2:  acc = 199,  cur = 499   ->  199 + 499 = 698
+    baar 3:  acc = 698,  cur = 999   ->  698 + 999 = 1697
+    RESULT:  1697
+
+  YE TABLE YAAD KAR LE. Reduce ki poori jaan yahi hai.
+
+EXAMPLE 2 — INITIAL VALUE KA FARK
+----------------------------------------------------------------
+    const a = [1, 2, 3].reduce((acc, cur) => acc + cur, 0);
+    // 0 se shuru -> 6
+
+    const b = [1, 2, 3].reduce((acc, cur) => acc + cur, 100);
+    // 100 se shuru -> 106
+
+    const c = [1, 2, 3].reduce((acc, cur) => acc * cur, 1);
+    // 1 se shuru -> 6  (gunna)
+
+    const d = ["a", "b", "c"].reduce((acc, cur) => acc + cur, "");
+    // "" se shuru -> "abc"
+
+  DHYAN DE:
+    JODNE ke liye  initial = 0
+    GUNNE ke liye  initial = 1
+    JODNE (string) initial = ""
+
+  YE GALTI LOG ROZ KARTE HAIN:
+    [1,2,3].reduce((a,b) => a * b, 0)   -> 0  ❌
+    (0 se gunna = hamesha 0)
+
+EXAMPLE 3 — ARRAY SE EK NUMBER SE ZYADA
+----------------------------------------------------------------
+  Reduce sirf number hi nahi banata. KUCH BHI bana sakta hai.
+
+  A. SABSE BADA NUMBER:
+    const max = [199, 499, 999, 1499].reduce(
+      (acc, cur) => (cur > acc ? cur : acc),
+      0
+    );
+    // 1499
+
+  B. STRING BANANA (report):
+    const report = ["Zomato", "Netflix", "Swiggy"].reduce(
+      (acc, cur) => acc + cur + " | ",
+      ""
+    );
+    // "Zomato | Netflix | Swiggy | "
+
+  C. COUNT KARNA (kitne hain):
+    const count = [10, 20, 30, 40, 50].reduce(
+      (acc, cur) => (cur > 25 ? acc + 1 : acc),
+      0
+    );
+    // 3   (30, 40, 50)
+
+  D. TRUE / FALSE (sab theek hai?):
+    const allPositive = [10, 20, -5].reduce(
+      (acc, cur) => (acc && cur > 0),
+      true
+    );
+    // false  (-5 ki wajah se)
+
+EXAMPLE 4 — ARRAY KO ARRAY BANANA (reduce = filter + map)
+----------------------------------------------------------------
+    const prices = [199, 499, 999, 1499];
+
+    // Premium plans with 18% GST — ek hi reduce mein
+    const premiumWithTax = prices.reduce((acc, cur) => {
+      if (cur >= 500) {
+        acc.push(Math.round(cur * 1.18));
+      }
+      return acc;       // ⭐ RETURN KARNA ZAROORI HAI
+    }, []);             // initial = KHALI ARRAY
+
+    console.log(premiumWithTax);
+    // [589, 1178, 1768]
+
+  DEKHA? reduce ne .filter() aur .map() DONO ka kaam
+  ek saath kar diya.
+
+  ⭐ SABSE BADI GALTI YAHAN HOTI HAI ⭐
+    acc.push(...)  ke baad  return acc  BHUL JATE HAIN.
+    Bhule -> agla round acc = undefined -> CRASH.
+
+EXAMPLE 5 — TERI ENGINE KE ANDAR (ASLI CODE)
+----------------------------------------------------------------
+    // UPI LEAK DETECTOR ke liye — total spend nikalna
+    const rows = [
+      ["05 Oct", "Zomato", 240],
+      ["05 Oct", "Netflix", 499],
+      ["06 Oct", "Swiggy", 180],
+    ];
+
+    const totalSpend = rows.reduce(
+      (acc, row) => acc + row[2],      // row[2] = amount
+      0                                 // ⭐ BHULNA NAHI
+    );
+
+    console.log(totalSpend);
+    // 919
+
+  YE TERA P2 PROJECT KA PEHLA FUNCTION HAI! 🎯
+
+----------------------------------------------------------------
+PART 5 — ⚠️ SABSE KHATARNAAK BUG (INITIAL VALUE)
+----------------------------------------------------------------
+
+  YE CODE DEKH:
+
+    const total = [].reduce((acc, cur) => acc + cur);
+    //              ^^ KHALI ARRAY
+    //                          ^^ KOI INITIAL VALUE NAHI
+
+    // 💥 TypeError: Reduce of empty array with no initial value
+
+  KAB HOGA YE?
+    - Bank se koi transaction nahi aaya
+    - User ne koi plan nahi liya
+    - API se empty list aayi
+
+  AUR YE SAB ROZ HOTA HAI REAL LIFE MEIN.
+
+  ISILIYE:
+
+    ❌ [].reduce((a,b) => a + b)        -> CRASH
+    ✅ [].reduce((a,b) => a + b, 0)     -> 0  (safe)
+
+  EK AUR CHHUPA HUA FARAK:
+
+    [5].reduce((a,b) => a + b)          -> 5
+    (initial nahi to pehla item hi initial ban jata hai
+     aur callback EK BAAR BHI NAHI chalta)
+
+    [5].reduce((a,b) => a + b, 0)       -> 5
+    (callback chalta hai: 0 + 5 = 5)
+
+  NUMBER TO SAME DIKHA, PAR:
+    ["5"].reduce((a,b) => Number(a) + Number(b))     -> "5"  (STRING!)
+    ["5"].reduce((a,b) => Number(a) + Number(b), 0)  -> 5    (NUMBER) ✅
+
+  YE BUG 3 GHANTE DEBUG KARWA SAKTA HAI.
+  INITIAL VALUE KABHI MAT BHULNA. 🔒
+
+----------------------------------------------------------------
+PART 6 — JUNIOR ❌ vs SENIOR ✅
+----------------------------------------------------------------
+
+SITUATION: Ek UPI transaction list se total spend nikalna hai.
+           List mein garbage bhi ho sakti hai (null, "abc").
+
+------------------------------------------------------------------
+❌ JUNIOR KA CODE
+------------------------------------------------------------------
+    function getTotalSpend(rows) {
+      let total = 0;
+      for (let i = 0; i < rows.length; i++) {
+        total += rows[i][2];
+      }
+      return total;
+    }
+
+  KYA GALTI HAI:
+    1. rows null ho -> CRASH
+    2. rows[i][2] "abc" ho -> total ban jata "0abc"
+    3. rows[i] undefined ho -> CRASH
+    4. Khali array -> 0 (ye theek hai, par luck se)
+    5. Koi error batane ka tareeka hi nahi
+    6. Company ka lint rule: "prefer array methods" -> FAIL
+
+------------------------------------------------------------------
+✅ SENIOR ENGINEERING MANAGER KA CODE
+------------------------------------------------------------------
+    /**
+     * Total paisa kharch hua — sirf valid amounts.
+     * @param {Array<Array>} rows  [date, merchant, amount]
+     * @returns {{status:number, ok:boolean, data?:number, error?:string}}
+     */
+    function getTotalSpend(rows) {
+      // Guard clause 1 — array hai bhi ya nahi
+      if (!Array.isArray(rows)) {
+        return { status: 400, ok: false, error: "rows must be an array!" };
+      }
+
+      // Guard clause 2 — khali ho to jhootha data mat de
+      if (rows.length === 0) {
+        return { status: 200, ok: true, data: 0 };
+      }
+
+      const total = rows.reduce((acc, row) => {
+        // Defensive: row array hai?
+        if (!Array.isArray(row)) return acc;
+
+        const amount = row[2];
+
+        // Defensive: amount asli number hai?
+        if (!Number.isFinite(amount)) return acc;
+
+        // Negative = refund, spend nahi
+        if (amount < 0) return acc;
+
+        return acc + amount;
+      }, 0);                              // ⭐ INITIAL VALUE
+
+      return { status: 200, ok: true, data: total };
+    }
+
+  KYA SEEKHNE JAISE HAI:
+    ✅ Guard clauses SABSE PEHLE
+    ✅ Initial value HAMESHA
+    ✅ Har item ko check karne se pehle use mat karo
+    ✅ Consistent return: { status, ok, data | error }
+    ✅ JSDoc upar
+    ✅ Ek kaam, poora kaam
+
+  FARK:
+    Junior  : "chal gaya, chhod"
+    Senior  : "chal gaya... par tootega kahan?"
+
+----------------------------------------------------------------
+PART 7 — TU KARTA (5 STAGES — TERE HAATH KHULENGE)
+----------------------------------------------------------------
+
+  RULES:
+    1. Pehle PEN + PAPER. Code nahi.
+    2. Phir PSEUDOCODE.
+    3. Phir CODE.
+    4. Har stage ke baad `node file.js` chalao.
+    5. Output check karo, TAB aage badho.
+
+  FILE BANAO:  PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/reduce-practice.js
+
+----------------------------------------------------------------
+STAGE 1 — HAATH SE TABLE (10 MIN, CODE NAHI)
+----------------------------------------------------------------
+  Q. [10, 20, 30].reduce((acc, cur) => acc + cur, 0)
+
+  Pen paper pe TABLE banao:
+
+    baar | acc | cur | naya acc
+    -----|-----|-----|---------
+      1  |     |     |
+      2  |     |     |
+      3  |     |     |
+
+  Bina computer ke bharo. Phir neeche answer se milao.
+
+  ANSWER (pehle mat dekhna):
+    baar 1: acc=0,  cur=10 -> 10
+    baar 2: acc=10, cur=20 -> 30
+    baar 3: acc=30, cur=30 -> 60
+    RESULT: 60
+
+----------------------------------------------------------------
+STAGE 2 — TEENO ALAG (15 MIN)
+----------------------------------------------------------------
+  Ek function likho:  sumAll(numbers)
+    - reduce use karo
+    - initial value 0
+    - guard clause: array nahi to error object
+
+  Test karo:
+    sumAll([1,2,3])        -> data: 6
+    sumAll([])             -> data: 0
+    sumAll([10, "abc", 5]) -> data: 15   (garbage skip)
+    sumAll("hello")        -> error, ok: false
+
+  HINT: "abc" skip karne ke liye Number.isFinite(cur) check karo.
+
+----------------------------------------------------------------
+STAGE 3 — ASLI DATA PE (20 MIN) ⭐
+----------------------------------------------------------------
+  Ye data lo:
+
+    const upi = [
+      ["05 Oct", "Zomato", 240],
+      ["05 Oct", "Netflix", 499],
+      ["06 Oct", "Swiggy", 180],
+      ["06 Oct", "Chai Shop", 30],
+      ["07 Oct", "Amazon", 2499],
+      ["07 Oct", "Chai Shop", 25],
+    ];
+
+  TEEN FUNCTION LIKHO:
+
+    A. getTotalSpend(rows)      -> saare amounts ka jod
+    B. getCount(rows)           -> kitne transactions hain
+    C. getBiggestSpend(rows)    -> sabse bada amount kaunsa
+
+  EXPECTED:
+    A -> 3473
+    B -> 6
+    C -> 2499
+
+  HINT C ke liye: initial value 0, aur (cur > acc ? cur : acc)
+
+----------------------------------------------------------------
+STAGE 4 — CHAI-PANI LEAK (20 MIN) ⭐⭐
+----------------------------------------------------------------
+  TERA ASLI PROJECT KA HISAA.
+
+  Chai-pani leak = chhote-chhote kharche (Rs 100 se kam)
+  jo milke bade ho jate hain.
+
+    D. getSmallSpendTotal(rows)
+       -> sirf un amounts ka jod jo 100 se kam hain
+
+  EXPECTED (upar wale data se):
+    30 + 25 = 55
+
+  E. getSmallSpendCount(rows)
+       -> kitne aise transactions hain
+
+  EXPECTED: 2
+
+  BONUS SOCH (likh ke rakh, code mat karo abhi):
+    "Agar chai-pani ka total Rs 500 se upar ho
+     to user ko warning deni chahiye."
+    Ye warning P2 project mein banayenge.
+
+----------------------------------------------------------------
+STAGE 5 — reduce SE map AUR filter BANAO (25 MIN) ⭐⭐⭐
+----------------------------------------------------------------
+  INTERVIEW KA FAVOURITE SAWAL.
+
+  Bina .map() use kiye, reduce se .map() jaisa karo:
+
+    F. mapWithReduce(numbers, fn)
+       mapWithReduce([1,2,3], n => n * 2)   -> [2,4,6]
+
+    HINT: initial value = []
+          andar: acc.push(fn(cur)); return acc;
+
+  Bina .filter() use kiye, reduce se .filter() jaisa karo:
+
+    G. filterWithReduce(numbers, fn)
+       filterWithReduce([1,2,3,4], n => n > 2)  -> [3,4]
+
+    HINT: initial value = []
+          andar: if (fn(cur)) acc.push(cur); return acc;
+
+  YE AATA HAI -> reduce tere khoon mein utar gaya. 🎯
+
+----------------------------------------------------------------
+PART 8 — BUG FIX (MAINE JAAN BHOOJH KAR BUG DALA HAI)
+----------------------------------------------------------------
+
+  Neeche 3 function hain. SABME BUG HAI.
+  Pehle KHUD dhoondho. HINT neeche hai, ANSWER sabse neeche.
+  ANSWER PEHLE MAT DEKHNA — warna seekh nahi milegi.
+
+  BUG 1:
+    function totalA(prices) {
+      return prices.reduce((acc, cur) => acc + cur);
+    }
+    console.log(totalA([]));
+
+  BUG 2:
+    function premiumB(prices) {
+      return prices.reduce((acc, cur) => {
+        if (cur >= 500) {
+          acc.push(cur);
+        }
+      }, []);
+    }
+    console.log(premiumB([199, 999]));
+
+  BUG 3:
+    function taxC(prices) {
+      return prices.reduce((acc, cur) => {
+        return acc + cur * 0.18;
+      }, 0);
+    }
+    // 100, 200 pe 18% tax = 54 hona chahiye
+    console.log(taxC([100, 200]));
+
+----------------------------------------------------------------
+  HINT 1: Khali array pe reduce kya karta hai
+           jab koi shuruaat hi na ho?
+  HINT 2: Har round mein callback kya WAPAS karta hai?
+           Ek round mein kuch nahi mila to agle round
+           ke haath mein kya jayega?
+  HINT 3: acc + cur * 0.18  ——  yahan acc hamesha
+           0 hi rahega? Ya purana jod bhi aayega?
+           Paper pe 2 round chalao.
+----------------------------------------------------------------
+
+  ANSWER (khud 10 min koshish karne ke baad dekhna):
+
+  BUG 1 — koi initial value nahi.
+    [] pe reduce CRASH karta hai.
+    FIX:  prices.reduce((acc, cur) => acc + cur, 0)
+
+  BUG 2 — return acc BHUL GAYA.
+    Round 2 mein acc = undefined -> undefined.push -> CRASH.
+    FIX:  if (cur >= 500) { acc.push(cur); }
+          return acc;          // ⭐ YE LINE MISSING THI
+
+  BUG 3 — LOGIC GALAT NAHI, SOCH GALAT HAI.
+    Ye code theek hai: 0 + 100*0.18 = 18,
+                       18 + 200*0.18 = 54  ✅
+    Par agar tu chahta hai "tax ke BAAD total"
+    to likhna hoga: acc + (cur * 1.18)
+    = 118 + 236 = 354
+    YE BUG NAHI, REQUIREMENT KI GALATFEHMI HAI.
+    SABSE KHATARNAAK YAHI HOTI HAI. ⭐
+    (Tere STREAM-OS mein bhi yahi hua tha:
+     "add 50 tax" ka matlab GST nahi, flat +50 tha.)
+
+----------------------------------------------------------------
+PART 9 — REAL OPEN SOURCE CODE REVIEW (REDUX)
+----------------------------------------------------------------
+
+  AAJ HUM EK ASLI LIBRARY KA CODE PADHENGE:
+  **REDUX** — duniya ki sabse famous state library
+  (React ke saath use hoti hai, 2 crore+ downloads har hafte)
+
+  FILE:  redux/src/compose.ts
+  MAIN NE AABHI GITHUB SE FETCH KAR KE VERIFY KIYA HAI ✅
+
+------------------------------------------------------------------
+ASLI CODE (Redux ka, bilkul waisa ka waisa):
+------------------------------------------------------------------
+    export default function compose(...funcs) {
+      if (funcs.length === 0) {
+        return (arg) => arg
+      }
+
+      if (funcs.length === 1) {
+        return funcs[0]
+      }
+
+      return funcs.reduce(
+        (a, b) =>
+          (...args) =>
+            a(b(...args))
+      )
+    }
+
+------------------------------------------------------------------
+AB LINE BY LINE, AAM AADMI KI BHASHA MEIN:
+------------------------------------------------------------------
+
+  compose KYA KARTA HAI?
+    3 function hain:  f, g, h
+    compose(f, g, h)  banata hai EK function
+    jo ulta chalta hai:  f( g( h(x) ) )
+
+  SOCH: Factory ki assembly line.
+    Kachcha maal -> h -> g -> f -> taiyaar samaan
+
+  LINE 1:  if (funcs.length === 0) return (arg) => arg
+    "Agar koi function hi nahi diya,
+     to aisa function de do jo jo aaya wo wapas kar de."
+    (Jaise: khali mixer -> jo dala wo nikal gaya)
+    Ye GUARD CLAUSE hai. Bina iske reduce khali array pe CRASH.
+    ⭐ DEKHA? Redux bhi wahi rule follow karta hai
+       jo maine PART 5 mein sikhaya.
+
+  LINE 2:  if (funcs.length === 1) return funcs[0]
+    "Ek hi function hai to usko waise hi de do."
+    Chhota optimization. Kam kaam = tez code.
+
+  LINE 3:  funcs.reduce((a, b) => (...args) => a(b(...args)))
+    ASLI JAADU. Chalo todte hain:
+
+    reduce ka accumulator = EK FUNCTION
+    (haan! reduce sirf number nahi, FUNCTION bhi bana sakta hai)
+
+    Maan le funcs = [f, g, h]
+
+    Round 1:  a = f,  b = g
+              bana: (...args) => f(g(...args))
+              haath mein ab:  "f ke andar g"
+
+    Round 2:  a = (f∘g),  b = h
+              bana: (...args) => (f∘g)(h(...args))
+              matlab: f(g(h(...args)))
+              haath mein ab:  "f ke andar g ke andar h"
+
+    RESULT:  f(g(h(x)))   ✅
+
+  DHYAN DE — KOI INITIAL VALUE NAHI!
+    Kya Redux galti kar raha hai?
+
+    NAHI. Kyunki:
+      - funcs.length === 0 pehle hi handle ho gaya (LINE 1)
+      - funcs.length === 1 pehle hi handle ho gaya (LINE 2)
+      - Yahan tak aaya matlab 2+ functions PAKKA hain
+
+    ⭐ YE HAI SENIOR SOCH:
+      "Main initial value nahi de raha...
+       kyunki maine pehle hi ensure kar liya hai
+       ki array khali nahi hai."
+
+    Tu abhi LINE 1-2 jaisa guard lagana seekh raha hai.
+    Guard ho to initial value chhoot sakti hai.
+    Guard NAHI to KABHI NAHI chhootni chahiye. 🔒
+
+  HINGLISH MEIN EK LINE MEIN:
+    "Reduce ne 3 alag function ko mila kar EK function
+     bana diya. Bahut se -> ek. Bas yahi reduce hai."
+
+  TUJHE KYA CHEEN KE RAKHNA CHAHIYE:
+    1. Guard clauses pehle — industry standard hai, sirf
+       mere rule nahi hain
+    2. Reduce ka accumulator FUNCTION bhi ho sakta hai
+    3. Khali input pehle handle karo, tabhi reduce bina
+       initial value ke safe hota hai
+
+----------------------------------------------------------------
+PART 10 — 2026 3-TIER PROJECT LADDER
+----------------------------------------------------------------
+
+  PRINCIPLE (yaad rakh):
+    ❌ KOI TODO APP NAHI
+    ❌ KOI NOTES APP NAHI
+    ❌ KOI CALCULATOR / WEATHER APP NAHI
+    ✅ HAR PROJECT ULTRON KA EK ANG HOGA
+
+  TEENO TIER REDUCE PE BASED HAIN.
+
+------------------------------------------------------------------
+TIER 1 — SUB-PROJECT (30-45 MIN, AAJ)
+------------------------------------------------------------------
+  PROJECT:  "UPI Spend Aggregator" (zero-dependency)
+
+  KYA KAREGA:
+    Ek array of UPI rows lega, aur EK reduce chain se
+    poora "monthly report" banayega:
+      - total spend
+      - kitne transactions
+      - sabse bada kharcha (kaunsi date, kaunsa merchant)
+      - chai-pani total (Rs 100 se kam wale)
+      - average spend per transaction
+
+  ULTRON SE LINK:
+    P2 UPI Leak Detector ka MODULE 1.
+    Ye ULTRON ke personal-finance organ ka pehla hissa.
+
+  FUNCTION NAAM (Jira style — koi code nahi):
+    buildSpendReport(rows)  ->  ek object jisme 5 cheezein
+    (object banana Phase 6 hai — tab tak array return kar)
+
+  FILE:  PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/spend-report.js
+
+------------------------------------------------------------------
+TIER 2 — MID-LEVEL PROJECT (2-3 DIN)
+------------------------------------------------------------------
+  PROJECT:  "UPI LEAK DETECTOR v1" (npm package bhi)
+
+  KYA KAREGA:
+    4 tarah ke leak dhoondhega:
+      1. Bhooli hui subscription (3+ baar, same price, 25-35 din gap)
+      2. Duplicate charge (same merchant + amount + same/next day)
+      3. Chai-pani leak (chhote kharche ka bada total)
+      4. Overspend (ek merchant pe Rs 2000 se upar)
+
+  REDUCE KAHAN AAYEGA:
+    - Har leak type ka total nikalne mein
+    - Merchant-wise grouping mein (Phase 6)
+    - Final "leak score" banane mein
+
+  ULTRON SE LINK:
+    P2. Poori tarah ULTRON ka finance module.
+
+  SPEC PEHLE SE HAI:  READING/15-PROJECT-UPI-LEAK-DETECTOR.txt
+
+------------------------------------------------------------------
+TIER 3 — BIG CAPSTONE (2-3 HAFTE)
+------------------------------------------------------------------
+  PROJECT:  "STREAM-OS Channel Health Engine" (npm package)
+
+  KYA KAREGA:
+    iptv-org ke 31,487 channels mein se
+    India ke 1,525 channels le kar
+    unke 766 working streams ko rank karega:
+      - reduce se: kaunsi quality sabse common hai
+      - reduce se: kitne channels dead hain (%)
+      - reduce se: best 100 channels ka playlist banayega
+
+  DATA PEHLE SE VERIFIED HAI:
+    READING/17-STREAM-OS-API-LINKS.txt
+
+  ULTRON SE LINK:
+    P1 STREAM-OS ka MODULE 2 + 3.
+    Aur ek NAYA npm package.
+
+  YE TERA DOOSRA npm PACKAGE HOGA. 🎯
+
+----------------------------------------------------------------
+PART 11 — INTERVIEW QUESTIONS (10)
+----------------------------------------------------------------
+
+  SAWAL 1:  reduce aur forEach mein kya fark hai?
+  SAWAL 2:  Initial value na do to kya hota hai?
+  SAWAL 3:  Khali array pe reduce bina initial value?
+  SAWAL 4:  reduce se map kaise banayenge?
+  SAWAL 5:  reduce se filter kaise banayenge?
+  SAWAL 6:  reduce accumulator mein kya kya ho sakta hai?
+            (number, string, array, boolean, function)
+  SAWAL 7:  [1,2,3].reduce((a,b) => a*b) aur
+            [1,2,3].reduce((a,b) => a*b, 1) mein fark?
+  SAWAL 8:  reduceRight kya karta hai?
+            (ultaa chalega — right se left)
+  SAWAL 9:  10 lakh items pe reduce slow kyun ho sakta hai?
+            (har round naya object ban raha hai)
+  SAWAL 10: reduce ke andar async/await kaam karta hai?
+            (NAHI — ye Phase 7 ka topic hai)
+
+  JAWAB KHUD LIKHNE KI KOSHISH KAR.
+  Jo nahi aaye, wo mujhse poochh.
+
+----------------------------------------------------------------
+PART 12 — TRACKER (HAR STAGE PE TICK KAR)
+----------------------------------------------------------------
+
+  SAMAJH:
+    [ ] Analogy samajh aaya (chai wale ka khata)
+    [ ] acc / cur / initial mein fark pata hai
+    [ ] Initial value kabhi nahi bhooloonga
+    [ ] Paper pe table bana sakta hoon
+
+  CODE:
+    [ ] Stage 1 — haath se table
+    [ ] Stage 2 — sumAll with guards
+    [ ] Stage 3 — getTotalSpend / getCount / getBiggestSpend
+    [ ] Stage 4 — getSmallSpendTotal / getSmallSpendCount
+    [ ] Stage 5 — mapWithReduce / filterWithReduce
+
+  BUG FIX:
+    [ ] Bug 1 dhoondha (khud)
+    [ ] Bug 2 dhoondha (khud)
+    [ ] Bug 3 samjha
+
+  SENIOR BANNA:
+    [ ] Junior vs Senior fark bol sakta hoon
+    [ ] Redux compose samajh aaya
+    [ ] Guard clause pehle lagata hoon
+
+  PROJECT:
+    [ ] Tier 1 shuru kiya (spend-report.js)
+    [ ] Khud se socha: "aur kahan reduce lagega?"
+
+----------------------------------------------------------------
+PART 13 — MINDSET (2 MINUTE, PAR SABSE ZAROORI)
+----------------------------------------------------------------
+
+  AAJ TU NE JO KIYA:
+    - Subah class
+    - Phir workspace organise kiya
+    - Phir GitHub backup LIVE kiya
+    - Phir apna pehla npm package PUBLISH kiya
+    - Aur AB raat ko baith kar .reduce() seekh raha hai
+
+  YE "MOTIVATED" HONA NAHI HAI.
+  YE DISCIPLINE HAI.
+
+  MOTIVATION 3 DIN REHTI HAI.
+  DISCIPLINE ZINDAGI BHAR.
+
+  AUR EK BAAT:
+    Log reduce se DARTE hain.
+    Tu aaj isse dosti kar raha hai.
+
+    Kal jab koi bolega "reduce mushkil hai",
+    tu keh sakega:
+    "Arey, wo toh chai wale ke khate jaisa hai." 😄
+
+    JO CHEEZ SAMJH AAYI, WO KABHI MUSHKIL NAHI LAGTI.
+
+  AAKHRI:
+    Aaj tera pehla package LIVE hua.
+    Wo tera "main bana sakta hoon" wala din tha.
+    Kal ko tera ULTRON hoga.
+    Par ULTRON bhi inhi chhote-chhote reduce se banega.
+
+    Ek din mein kuch nahi hota.
+    Roz thoda thoda — sab kuch ho jata hai. 💙
+
+----------------------------------------------------------------
+PART 14 — NEXT (KAL KYA HOGA)
+----------------------------------------------------------------
+
+  KAL:
+    1. Tier 1 project complete (spend-report.js)
+    2. Phase 6 shuru — OBJECTS DEEP
+       (reduce ka sabse powerful use: array -> object)
+    3. LeetCode #26 (Remove Duplicates) — 20 min
+
+  AUR TAB TAK:
+    - Ye file do baar padhna
+    - Stage 1-3 PAKKA karna
+    - Tier 1 shuru kar dena
+
+================================================================
+END — 21-REDUCE-DEEP.txt
+================================================================
