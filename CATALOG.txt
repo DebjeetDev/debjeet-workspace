@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 07:31 AM (Asia/Kolkata)
+  Samay       : 07:40 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -57,6 +57,8 @@ Poore workspace ka naksha: kahan kya hai
             -> Ye CATALOG.txt banata hai. Kabhi bhi chalao: python3 make-catalog.py
       |-- md2txt.py
             -> Markdown ko saaf plain text mein badalta hai
+      |-- README.md
+            -> GitHub pe dikhega (badges ke saath)
       |-- sync.sh
             -> EK COMMAND — poora workspace GitHub par backup (./sync.sh)
       |
@@ -207,13 +209,13 @@ Poore workspace ka naksha: kahan kya hai
             |-- 18-BACKUP-PLAN.txt
                   -> GitHub limits research + backup strategy + setup steps
             |-- 19-AUTO-PUSH-SSH.txt
-                  -> MAIN PUSH KAROONGA — SSH deploy key setup (ultra secure, 3 steps)
+                  -> *** LIVE — main push karta hoon. Tu bole: 'push kar de' ***
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 60
+    Total files    : 62
     Total folders  : 21
 
     READING/       : 20 files (numbered 00 se aage)

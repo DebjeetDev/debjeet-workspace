@@ -46,7 +46,7 @@ FILE_INFO = {
     "sync.sh": "EK COMMAND — poora workspace GitHub par backup (./sync.sh)",
     ".gitignore": "Kya backup NAHI hoga (secrets, cache, junk)",
     "18-BACKUP-PLAN.txt": "GitHub limits research + backup strategy + setup steps",
-    "19-AUTO-PUSH-SSH.txt": "MAIN PUSH KAROONGA — SSH deploy key setup (ultra secure, 3 steps)",
+    "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
     "01-COURSE-ROADMAP.txt": "Poora roadmap — 11 Books + career ladder + ULTRON",
