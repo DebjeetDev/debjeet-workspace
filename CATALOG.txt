@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 07:45 PM (Asia/Kolkata)
+  Samay       : 08:26 PM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -64,7 +64,11 @@ Poore workspace ka naksha: kahan kya hai
       |
       |-- [DIR] audio/
             -> Voice notes (Dubby Bhaiya ki audio)
+            |-- ab-kya-karna-hai.mp3
+            |-- count-wala-sawal.mp3
+            |-- do-tarah-compare.mp3
             |-- hint-biggest.mp3
+            |-- rough-code-rule.mp3
       |
       |-- [DIR] PROJECTS/
             -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
@@ -202,18 +206,20 @@ Poore workspace ka naksha: kahan kya hai
             |-- 22-STAGE2-3-REVIEW.txt
                   -> Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2])
             |-- 23-STAGE4-REVIEW.txt
-                  -> *** ABHI YE PADHO — reduce mein DO TARAH KE COMPARE: acc vs fixed number ***
+                  -> reduce mein DO TARAH KE COMPARE: acc vs fixed number
+            |-- 24-STAGE5-REDUCE-SE-MAP-FILTER.txt
+                  -> *** AB YE KARO — Phase 5 aakhri stage: reduce se map + filter banao ***
 
 ==============================================================================
 4. HISAB
 ==============================================================================
 
-    Total files    : 66
+    Total files    : 71
     Total folders  : 18
 
-    READING/       : 24 files (numbered 00 se aage)
+    READING/       : 25 files (numbered 00 se aage)
     PROJECTS/      : 5 items
-    audio/         : 1 voice notes
+    audio/         : 5 voice notes
 
 ==============================================================================
 5. NOTE

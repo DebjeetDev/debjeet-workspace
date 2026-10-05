@@ -1,0 +1,291 @@
+================================================================
+24 — STAGE 5: reduce SE map AUR filter BANAO
+"Phase 5 ka aakhri kadam. Iske baad tu array ka malik hai."
+Banaya: 6 Oct 2026  |  Dubby Bhaiya  |  TEXT ONLY
+================================================================
+
+----------------------------------------------------------------
+PART 0 — TU AB KAHAN KHADA HAI
+----------------------------------------------------------------
+
+  PHASE 5 (ARRAYS DEEP) — ANTIM SCORECARD:
+
+    ✅ .at()            getLatestPlan
+    ✅ .filter()        getPremiumPlans
+    ✅ .map()           applyTaxToAll
+    ✅ spread [...]     addNewPlan
+    ✅ Number.isFinite  garbage rokna
+    ✅ .reduce()        Stage 1-4 sab DONE
+    ⬜ reduce se map     <- AAJ (30 min)
+    ⬜ reduce se filter  <- AAJ (30 min)
+
+  TERI FILE:
+    PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/reduce-practice.js
+
+  SAB TEST PASS:
+    sumAll 6/0/15/error  ·  getTotalSpend 3473  ·  getCount 6
+    getBiggestSpend 2499 ⭐  ·  getSmallSpendTotal 55 ⭐
+    getSmallSpendCount 2 ⭐  ·  null/garbage/empty sab safe
+
+----------------------------------------------------------------
+PART 1 — YE SEEKHNA ZAROORI KYUN HAI
+----------------------------------------------------------------
+
+  INTERVIEW KA SABSE FAVOURITE SAWAL:
+
+    "reduce se map banao."
+    "reduce se filter banao."
+
+  KYUN POOCHHTE HAIN?
+    Kyunki iske jawab se pata chalta hai ki
+    tu ne reduce SAMJHA hai ya sirf YAAD kiya hai.
+
+  JO SIRF YAAD KARTA HAI:
+    "reduce = sum nikalne wala"     ❌
+
+  JO SAMJHTA HAI:
+    "reduce = kisi bhi array ko kuch bhi banane wala"  ✅
+
+  AUR EK FAIDA:
+    Ek baar ye ban gaya, to tu samjhega ki
+    map aur filter ASAL MEIN reduce ke hi chhote bhai hain.
+
+----------------------------------------------------------------
+PART 2 — EK HI RAAG, DO GEET
+----------------------------------------------------------------
+
+  DONO KA STRUCTURE EK Jaisa HAI:
+
+    array.reduce((acc, cur) => {
+      // kuch karo
+      return acc;
+    }, []);              // ⭐ INITIAL = KHALI ARRAY
+
+  FARK SIRF "KUCH KARO" MEIN:
+
+    map     ->  acc.push( BADLA HUA cur )
+    filter  ->  if (condition) acc.push( WAISA HI cur )
+
+  AUR EK ZAROORI BAAT:
+    DONO MEIN  return acc;  HONA HI CHAHIYE.
+    Bhule -> agle round mein acc = undefined -> CRASH.
+    (Ye bug tu pehle hi dekh chuka hai — PART 8 / Bug 2)
+
+----------------------------------------------------------------
+PART 3 — mapWithReduce
+----------------------------------------------------------------
+
+  KYA KARNA HAI:
+    Har item ko BADAL kar nayi array mein daalna.
+
+  EXAMPLE:
+    mapWithReduce([1,2,3], n => n * 2)   ->  [2,4,6]
+
+  KHOKHA:
+
+    function mapWithReduce(numbers, fn) {
+      // Guard 1
+      if (!Array.isArray(numbers)) {
+        return { status: 400, ok: false, error: "Input must be a valid array!" };
+      }
+      // Guard 2
+      if (typeof fn !== "function") {
+        return { status: 400, ok: false, error: "Second argument must be a function!" };
+      }
+
+      const result = numbers.reduce((acc, cur) => {
+        acc.push(______);        // ← BLANK 1
+        return acc;
+      }, ______);                // ← BLANK 2
+
+      return { status: 200, ok: true, data: result };
+    }
+
+  BLANK 2 AASAN HAI:  []
+    (kyunki hum ARRAY bana rahe hain)
+
+  BLANK 1 SOCH:
+    map ka kaam kya hai? Har item ko BADALNA.
+    Badalne wala kaun hai?  fn
+    Toh...  fn(cur)
+
+  JAWAB:
+    acc.push(fn(cur));
+    return acc;
+    }, []);
+
+----------------------------------------------------------------
+PART 4 — filterWithReduce
+----------------------------------------------------------------
+
+  KYA KARNA HAI:
+    Sirf wahi items rakhna jo condition pass karein.
+    Item ko BADALNA NAHI HAI.
+
+  EXAMPLE:
+    filterWithReduce([1,2,3,4], n => n > 2)   ->  [3,4]
+
+  KHOKHA:
+
+    function filterWithReduce(numbers, fn) {
+      if (!Array.isArray(numbers)) {
+        return { status: 400, ok: false, error: "Input must be a valid array!" };
+      }
+      if (typeof fn !== "function") {
+        return { status: 400, ok: false, error: "Second argument must be a function!" };
+      }
+
+      const result = numbers.reduce((acc, cur) => {
+        if (______) {          // ← BLANK 1
+          acc.push(______);    // ← BLANK 2
+        }
+        return acc;            // ⭐ HAMESHA
+      }, ______);              // ← BLANK 3
+
+      return { status: 200, ok: true, data: result };
+    }
+
+  BLANK 3:  []   (phir se array)
+  BLANK 1:  fn(cur)   (condition check)
+  BLANK 2:  cur       (WAISA HI, badla nahi)
+
+  JAWAB:
+    if (fn(cur)) {
+      acc.push(cur);
+    }
+    return acc;
+    }, []);
+
+----------------------------------------------------------------
+PART 5 — DONO MEIN EK LINE KA FARK
+----------------------------------------------------------------
+
+    map     :  acc.push( fn(cur) );        // BADLA HUA
+    filter  :  if (fn(cur)) acc.push(cur); // WAISA HI
+
+    map     :  HAR item jata hai
+    filter  :  SIRF pass wale jate hain
+
+    map     :  length SAME rahegi
+    filter  :  length KAM ho sakti hai
+
+  YAAD RAKH:
+    map     ->  "badal ke daal"
+    filter  ->  "chhaan ke daal"
+
+  AUR SABSE ZAROORI (DONO MEIN):
+    return acc;   ⭐
+
+----------------------------------------------------------------
+PART 6 — ASLI map AUR filter SE FARK
+----------------------------------------------------------------
+
+  SACHCHAI (ye interview mein bonus point hai):
+
+    ASLI .map() aur .filter() aur tez hote hain.
+    Aur wo sparse array ko sahi se handle karte hain.
+
+    ISLIYE:
+      Production mein  .map()  use karo
+      Interview mein   reduce se banao (samajh dikhane ke liye)
+
+  JAISA:
+    Cycle chalana seekhne ke liye training wheel lagate hain.
+    Par race mein training wheel nahi lagate.
+
+  SENIOR KA JAWAB:
+    "Main production mein .map() use karoonga —
+     wo faster aur clearer hai.
+     Par reduce se bana sakta hoon,
+     kyunki map internally yahi karta hai."
+
+----------------------------------------------------------------
+PART 7 — TU KARTA (2 FUNCTION, 30 MIN)
+----------------------------------------------------------------
+
+  FILE:  PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/reduce-practice.js
+         (neeche add kar)
+
+  PEHLE PEN-PAPER, PHIR CODE.
+
+  A. mapWithReduce(numbers, fn)
+
+     TEST:
+       mapWithReduce([1,2,3],       n => n * 2)   -> [2,4,6]
+       mapWithReduce([199,499,999], n => n + 50)  -> [249,549,1049]
+       mapWithReduce([],            n => n)       -> []
+       mapWithReduce("hello",       n => n)       -> error
+
+  B. filterWithReduce(numbers, fn)
+
+     TEST:
+       filterWithReduce([1,2,3,4],       n => n > 2)     -> [3,4]
+       filterWithReduce([199,499,999],   n => n >= 500)  -> [499,999]
+       filterWithReduce([1,2,3],         n => n > 100)   -> []   ⭐
+       filterWithReduce("hello",         n => n)         -> error
+
+  C. BONUS (agar himmat ho):
+
+     Ek hi reduce se map + filter DONO:
+       filterMapWithReduce([199,499,999], n => n >= 500, n => n + 50)
+       -> [549, 1049]
+       (pehle chhaano 500+, phir 50 jodo)
+
+----------------------------------------------------------------
+PART 8 — PHASE 5 ABHI POORA NAHI HUA (BAAKI 3 CHEEZEIN)
+----------------------------------------------------------------
+
+  Stage 5 ke baad ye 3 bache hain:
+
+  ⬜ 1. BUG FIX EXERCISE (3 bugs)
+        File: 21-REDUCE-DEEP.txt  PART 8
+        Tereko 3 function diye hain, sabme bug hai.
+        Pehle KHUD dhoondho, hints diye hain.
+
+  ⬜ 2. REDUX OSS CODE REVIEW
+        File: 21-REDUCE-DEEP.txt  PART 9
+        Asli Redux ka code — maine GitHub se verify kiya hai.
+        Ek baar padhna. 15 minute.
+
+  ⬜ 3. INTERVIEW QUESTIONS (10)
+        File: 21-REDUCE-DEEP.txt  PART 11
+        Jawab khud likhne ki koshish kar.
+
+  AUR PHIR:
+
+  ⬜ 4. TIER 1 PROJECT — UPI Spend Aggregator
+        File: PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/spend-report.js
+        Ek function: buildSpendReport(rows)
+        5 cheezein ek saath:
+          - total spend
+          - kitne transactions
+          - sabse bada kharcha
+          - chai-pani total
+          - average spend
+        (Ab ye sab tu pehle se kar chuka hai — bas jodo!)
+
+  USKE BAAD:  PHASE 6 — OBJECTS DEEP 🎯
+
+----------------------------------------------------------------
+PART 9 — TRACKER
+----------------------------------------------------------------
+
+  [✅] Stage 1 — haath se table
+  [✅] Stage 2 — sumAll (4/4)
+  [✅] Stage 3 — getTotalSpend · getCount · getBiggestSpend (2499 ⭐)
+  [✅] Stage 4A — getSmallSpendTotal (55 ⭐)
+  [✅] Stage 4B — getSmallSpendCount (2 ⭐)
+  [⬜] Stage 5A — mapWithReduce
+  [⬜] Stage 5B — filterWithReduce
+  [⬜] Bug fix exercise (3 bugs)
+  [⬜] Redux OSS review padha
+  [⬜] Interview questions
+  [⬜] Tier 1 project — spend-report.js
+
+  jab ye sab tick ho jaye:
+  -> PHASE 5 (ARRAYS DEEP) COMPLETE 🎉
+  -> PHASE 6 (OBJECTS DEEP) SHURU
+
+================================================================
+END — 24-STAGE5-REDUCE-SE-MAP-FILTER.txt
+================================================================

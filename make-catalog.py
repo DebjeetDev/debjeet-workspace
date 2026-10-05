@@ -51,7 +51,8 @@ FILE_INFO = {
     "20-GIT-PULL-AND-NPM-PUBLISH.txt": "git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE)",
     "21-REDUCE-DEEP.txt": "Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages)",
     "22-STAGE2-3-REVIEW.txt": "Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2])",
-    "23-STAGE4-REVIEW.txt": "*** ABHI YE PADHO — reduce mein DO TARAH KE COMPARE: acc vs fixed number ***",
+    "23-STAGE4-REVIEW.txt": "reduce mein DO TARAH KE COMPARE: acc vs fixed number",
+    "24-STAGE5-REDUCE-SE-MAP-FILTER.txt": "*** AB YE KARO — Phase 5 aakhri stage: reduce se map + filter banao ***",
     "reduce-practice.js": "Debjeet ka reduce practice code (P2)",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",
