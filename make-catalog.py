@@ -48,7 +48,8 @@ FILE_INFO = {
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "19-AUTO-PUSH-SSH.txt": "*** LIVE — main push karta hoon. Tu bole: 'push kar de' ***",
     "21-REDUCE-DEEP.txt": "Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages)",
-    "24-STAGE5-REDUCE-SE-MAP-FILTER.txt": "*** AB YE KARO — Phase 5 aakhri stage: reduce se map + filter banao ***",
+    "24-STAGE5-REDUCE-SE-MAP-FILTER.txt": "Stage 5: reduce se map + filter (DONE ✅)",
+    "25-TIER1-SPEND-REPORT.txt": "*** KAL KA KAAM — 5 functions mila kar buildSpendReport banao (Phase 5 aakhri) ***",
     "reduce-practice.js": "Debjeet ka reduce practice code (P2)",
     # READING
     "00-START-HERE.txt": "Sabse pehle ye padho — reading order + aaj tak ka summary",

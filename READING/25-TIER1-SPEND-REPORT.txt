@@ -1,0 +1,209 @@
+================================================================
+25 — TIER 1 PROJECT: UPI SPEND REPORT
+"Kal ka kaam — yahin se shuru karna"
+Banaya: 5 Oct 2026, raat 10:20 PM  |  TEXT ONLY
+================================================================
+
+----------------------------------------------------------------
+PART 0 — KYA KARNA HAI (EK LINE MEIN)
+----------------------------------------------------------------
+
+  5 CHHOTE FUNCTION JO TU BANA CHUKA HAI,
+  UNKO MILA KAR EK BADA REPORT BANAO.
+
+----------------------------------------------------------------
+PART 1 — TERE PAAS PEHLE SE KYA HAI
+----------------------------------------------------------------
+
+  FILE:  PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/reduce-practice.js
+
+    function sumAll(numberArray)        ✅ DONE
+    function getTotalSpend(rows)        ✅ DONE   →  3473
+    function getCount(rows)             ✅ DONE   →  6
+    function getBiggestSpend(rows)      ✅ DONE   →  2499
+    function getSmallSpendTotal(rows)   ✅ DONE   →  55
+    function getSmallSpendCount(rows)   ✅ DONE   →  2
+
+  SAB TEST PASS HO CHUKE HAIN.
+
+----------------------------------------------------------------
+PART 2 — AB KYA BANANA HAI
+----------------------------------------------------------------
+
+  NAYI FILE BANAO:
+    PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/src/spend-report.js
+
+  EK FUNCTION:
+    buildSpendReport(rows)
+
+  ⭐ ZAROORI RULE:
+     NAYE FUNCTION MAT BANAO.
+     UPAR WALE 5 KO BULAO (call karo).
+
+  JAISA:
+     5 eent se 1 deewar.
+     Eent dobara mat banao — jodo.
+
+----------------------------------------------------------------
+PART 3 — DATA
+----------------------------------------------------------------
+
+    const upi = [
+      ["05 Oct", "Zomato", 240],
+      ["05 Oct", "Netflix", 499],
+      ["06 Oct", "Swiggy", 180],
+      ["06 Oct", "Chai Shop", 30],
+      ["07 Oct", "Amazon", 2499],
+      ["07 Oct", "Chai Shop", 25],
+    ];
+
+----------------------------------------------------------------
+PART 4 — EXPECTED OUTPUT (YAHI AANA CHAHIYE)
+----------------------------------------------------------------
+
+  buildSpendReport(upi)
+
+  =>
+  {
+    status: 200,
+    ok: true,
+    data: {
+      total:      3473,      ← getTotalSpend
+      count:      6,         ← getCount
+      biggest:    2499,      ← getBiggestSpend
+      smallTotal: 55,        ← getSmallSpendTotal
+      smallCount: 2,         ← getSmallSpendCount
+      average:    578.83     ← 3473 ÷ 6
+    }
+  }
+
+  HISAAB:
+    240 + 499 + 180 + 30 + 2499 + 25  =  3473
+    3473 ÷ 6                          =  578.8333...
+    Math.round(578.8333 * 100) / 100  =  578.83
+
+----------------------------------------------------------------
+PART 5 — 6 RULE
+----------------------------------------------------------------
+
+  [ ] 1. Naye function MAT banao — jo 5 hain unko bulalo
+  [ ] 2. Guard clause SABSE PEHLE
+  [ ] 3. { status, ok, data } return karo
+  [ ] 4. average = total ÷ count
+  [ ] 5. count === 0 ho to average 0 (DIVIDE BY ZERO SE BACHO) ⚠️
+  [ ] 6. average ko 2 decimal tak round karo
+
+  ROUND KARNE KA TAREEKA:
+      Math.round(578.8333 * 100) / 100
+      =  Math.round(57883.33) / 100
+      =  57883 / 100
+      =  578.83   ✅
+
+----------------------------------------------------------------
+PART 6 — SABSE BADA JHATKA (RULE 5)
+----------------------------------------------------------------
+
+  buildSpendReport([])  pe kya hoga?
+
+      total      = 0
+      count      = 0
+      average    = 0 ÷ 0   =  NaN   ❌
+
+  NaN MATLAB "Not a Number" — galti ka nishan.
+
+  ISLIYE:
+      if (count === 0) {
+        average = 0;
+      } else {
+        average = total / count;
+      }
+
+  YE GUARD TUNE KHUD SOCHNA HAI. 🧠
+
+----------------------------------------------------------------
+PART 7 — TEST (SAB PASS HONE CHAHIYE)
+----------------------------------------------------------------
+
+  buildSpendReport(upi)
+    → data: { total:3473, count:6, biggest:2499,
+              smallTotal:55, smallCount:2, average:578.83 }
+
+  buildSpendReport([])
+    → data: { total:0, count:0, biggest:0,
+              smallTotal:0, smallCount:0, average:0 }
+
+  buildSpendReport("hello")
+    → { status:400, ok:false, error:"Input must be a valid array!" }
+
+----------------------------------------------------------------
+PART 8 — KHOKHA (structure — andar khud bharo)
+----------------------------------------------------------------
+
+  function buildSpendReport(rows) {
+
+    // STEP 1: tumhare 5 functions bulao
+    const totalResult  = getTotalSpend(rows);
+    const countResult  = getCount(rows);
+    const biggestResult = getBiggestSpend(rows);
+    const smallTotalResult = getSmallSpendTotal(rows);
+    const smallCountResult = getSmallSpendCount(rows);
+
+    // STEP 2: koi error to wapas bhej do
+    // (har function { status, ok, data|error } deta hai)
+
+    // STEP 3: numbers nikaalo
+    const total  = totalResult.data;
+    const count  = countResult.data;
+    // ... baaki bhi
+
+    // STEP 4: average — ZERO SE BACHO
+    // let average = ___;
+
+    // STEP 5: object return karo
+    return {
+      status: 200,
+      ok: true,
+      data: {
+        total:      total,
+        count:      count,
+        biggest:    biggest,
+        smallTotal: smallTotal,
+        smallCount: smallCount,
+        average:    average
+      }
+    };
+  }
+
+----------------------------------------------------------------
+PART 9 — ISKE BAAD KYA
+----------------------------------------------------------------
+
+  buildSpendReport PASS ho gaya  →
+      🎉 PHASE 5 (ARRAYS DEEP) 100% COMPLETE 🎉
+
+  PHIR:
+      PHASE 6 — OBJECTS DEEP
+      (reduce ka sabse powerful use: array → object)
+      (aur ye object wala kaam tu ABHI kar raha hai!)
+
+  AUR PHIR:
+      TIER 2 — UPI Leak Detector v1  → npm package
+      TIER 3 — STREAM-OS Channel Health → npm package
+
+----------------------------------------------------------------
+PART 10 — KAL SUBHA YAHAN SE SHURU KARNA
+----------------------------------------------------------------
+
+  1. Yeh file padho (2 minute)
+  2. spend-report.js banao
+  3. buildSpendReport likho
+  4. 3 test chalao
+  5. Mujhe output bhejo
+  6. Phir: PHASE 6
+
+  AUR GITHUB PAR UPLOAD KARNA NA BHOOLNA:
+      ./sync.sh "spend report complete"
+
+================================================================
+END — 25-TIER1-SPEND-REPORT.txt
+================================================================
