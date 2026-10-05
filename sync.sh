@@ -14,6 +14,13 @@ cd /home/user
 MSG="${1:-auto backup: $(TZ='Asia/Kolkata' date '+%d %b %Y, %I:%M %p') IST}"
 REMOTE_FILE="/home/user/.git-remote"
 
+# ---- 0. SSH PERMISSIONS (snapshot perms tod deta hai) ----
+if [ -f "$HOME/.ssh/github_backup" ]; then
+  chmod 700 "$HOME/.ssh" 2>/dev/null || true
+  chmod 600 "$HOME/.ssh/github_backup" 2>/dev/null || true
+  chmod 600 "$HOME/.ssh/config" 2>/dev/null || true
+fi
+
 # ---- 1. IDENTITY (har baar set karo) ----
 git config user.name  "Debjeet Dhar"
 git config user.email "debjeet@users.noreply.github.com"
