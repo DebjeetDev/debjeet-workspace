@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Monday, 05 October 2026
-  Samay       : 08:26 PM (Asia/Kolkata)
+  Samay       : 08:45 PM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -65,6 +65,7 @@ Poore workspace ka naksha: kahan kya hai
       |-- [DIR] audio/
             -> Voice notes (Dubby Bhaiya ki audio)
             |-- ab-kya-karna-hai.mp3
+            |-- ab-kya-karu.mp3
             |-- count-wala-sawal.mp3
             |-- do-tarah-compare.mp3
             |-- hint-biggest.mp3
@@ -159,54 +160,22 @@ Poore workspace ka naksha: kahan kya hai
       |
       |-- [DIR] READING/
             -> PADHNE ki library — course, roadmap, log, guides (sab plain .txt)
-            |-- 00-START-HERE.txt
-                  -> Sabse pehle ye padho — reading order + aaj tak ka summary
             |-- 01-COURSE-ROADMAP.txt
                   -> Poora roadmap — 11 Books + career ladder + ULTRON
-            |-- 02-LEARNING-STATE.txt
-                  -> Teri exact position + locked rules
-            |-- 03-DAILY-LOG.txt
-                  -> Daily log (2 Oct se aaj tak) — plain text
-            |-- 04-PROJECT-6-GUIDE.txt
-                  -> Project #6 ki poori teaching (syllabus order mein)
-            |-- 05-GITHUB-PUSH-GUIDE.txt
-                  -> GitHub par pehli baar code chadhana — 13 step
-            |-- 06-LAUNCH-CHECKLIST.txt
-                  -> 4 step, 15 minute — GitHub + npm publish
-            |-- 07-SYLLABUS-STATUS.txt
-                  -> Kaunsa code tera hai, kaunsa plumbing (Phase 8 / Book 7)
-            |-- 08-REPO-README.txt
-                  -> Tere package ki public profile (GitHub pe dikhega)
-            |-- 09-EXPECTED-OUTPUT.txt
-                  -> Test chalane ke baad screen par kya aana chahiye
             |-- 10-FULL-SYLLABUS.txt
                   -> Poora course.md — plain text (1,700+ lines)
-            |-- 11-DAILY-PLAN.txt
-                  -> Roz ka routine — subah JS, shaam 1 LeetCode
             |-- 12-LEETCODE-ENGLISH-DICTIONARY.txt
                   -> Har problem ke English shabdon ka matlab
-            |-- 13-PROBLEM-26-WALKTHROUGH.txt
-                  -> LeetCode #26 — super simple Hinglish walkthrough
             |-- 14-ULTRON-PROJECT-LADDER.txt
                   -> 17 projects — har ek ULTRON ka ek ang
             |-- 15-PROJECT-UPI-LEAK-DETECTOR.txt
                   -> UPI project ki research + spec
-            |-- 16-TODAY-05-OCT-2026.txt
-                  -> Aaj ka din — 4 kaam, time table ke saath
             |-- 17-STREAM-OS-API-LINKS.txt
                   -> iptv-org API links + live verified data
-            |-- 18-BACKUP-PLAN.txt
-                  -> GitHub limits research + backup strategy + setup steps
             |-- 19-AUTO-PUSH-SSH.txt
                   -> *** LIVE — main push karta hoon. Tu bole: 'push kar de' ***
-            |-- 20-GIT-PULL-AND-NPM-PUBLISH.txt
-                  -> git pull guide + npm publish (DONE: stream-os-engine@1.0.0 LIVE)
             |-- 21-REDUCE-DEEP.txt
                   -> Phase 5 aakhri method: .reduce() (analogy + Redux OSS review + 5 stages)
-            |-- 22-STAGE2-3-REVIEW.txt
-                  -> Stage 2/3 code review: getBiggestSpend bug (cur vs cur[2])
-            |-- 23-STAGE4-REVIEW.txt
-                  -> reduce mein DO TARAH KE COMPARE: acc vs fixed number
             |-- 24-STAGE5-REDUCE-SE-MAP-FILTER.txt
                   -> *** AB YE KARO — Phase 5 aakhri stage: reduce se map + filter banao ***
 
@@ -214,12 +183,12 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 71
+    Total files    : 56
     Total folders  : 18
 
-    READING/       : 25 files (numbered 00 se aage)
+    READING/       : 9 files (numbered 00 se aage)
     PROJECTS/      : 5 items
-    audio/         : 5 voice notes
+    audio/         : 6 voice notes
 
 ==============================================================================
 5. NOTE
