@@ -806,8 +806,8 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [ ] Bug 3 samjha
 
   SENIOR BANNA:
-    [ ] Junior vs Senior fark bol sakta hoon
-    [ ] Redux compose samajh aaya
+    [✅] Junior vs Senior fark (guard + initial value)
+    [✅] Redux compose PADHA (6 Oct 2026)
     [ ] Guard clause pehle lagata hoon
 
   PROJECT:

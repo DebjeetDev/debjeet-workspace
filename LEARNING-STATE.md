@@ -84,3 +84,11 @@
 3. **Pehla npm publish MANUAL hota hai** (OIDC tab tak set nahi ho sakta jab tak package exist na kare). Ye ek baar ka dard hai, phir zindagi bhar aaram.
 4. **Unscoped package name > scoped** jab npm username confirm na ho.
 5. **Debjeet prefers copying files himself over git clone.** Respect that — he learns by doing it with his hands.
+
+## 🎯 INTERVIEW BOOK RULE (Locked — 6 Oct 2026)
+- **Interview questions ek ALAG book mein jayengi** — naam: **"INTERVIEW CRACK"**
+- Har topic ka interview section usi topic ke lesson mein NAHI rahega.
+- Jab ek phase khatam ho, tab us phase ke saare interview sawal
+  "INTERVIEW CRACK" book mein jama kiye jayenge.
+- Debjeet chahta hai: pehle SEEKHNA, baad mein INTERVIEW ki taiyari.
+- Abhi: Phase 5 ke 10 sawal baad mein INTERVIEW CRACK mein jayenge.
