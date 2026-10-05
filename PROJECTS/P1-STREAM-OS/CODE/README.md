@@ -3,9 +3,9 @@
 > A secure, in-memory billing engine for a Smart TV subscription account.
 > Built with **100% pure vanilla JavaScript** — zero dependencies, zero frameworks, zero UI.
 
-[![CI](https://github.com/debjeetdhar/stream-os-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/debjeetdhar/stream-os-engine/actions/workflows/ci.yml)
+[![CI](https://github.com/DebjeetDev/stream-os-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/DebjeetDev/stream-os-engine/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-35%2F35%20passing-brightgreen)](./tests/test-suite.js)
-[![npm version](https://img.shields.io/npm/v/@debjeetdhar/stream-os-engine.svg)](https://www.npmjs.com/package/@debjeetdhar/stream-os-engine)
+[![npm version](https://img.shields.io/npm/v/stream-os-engine.svg)](https://www.npmjs.com/package/stream-os-engine)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Dependencies](https://img.shields.io/badge/dependencies-0-blue)](./package.json)
 
