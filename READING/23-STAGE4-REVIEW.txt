@@ -5,7 +5,29 @@ Banaya: 6 Oct 2026  |  Dubby Bhaiya  |  TEXT ONLY
 ================================================================
 
 ----------------------------------------------------------------
-PART 0 — RESULT
+PART 0 — ⚠️ IMPORTANT NOTE (6 Oct 2026)
+----------------------------------------------------------------
+
+  YE "FINAL SUBMISSION" NAHI HAI.
+
+  Debjeet ne ye code ROUGH bheja tha — check karne ke liye.
+  Maine galti se ise "complete" mark kar diya tha.
+
+  DEBJEET KA TAREEKA (aage se yahi follow hoga):
+    1. Pehle ROUGH code bhejta hai
+    2. Main review karta hoon (bug + hints)
+    3. Wo padhta hai, sochta hai
+    4. FINAL code banta hai -> tab share karta hai
+    5. TAB "done" mark hota hai
+
+  RULE LOCK:
+    Debjeet ka bheja code = ROUGH, jab tak wo khud
+    "final hai" na bole.
+    Main kabhi bhi "complete" mark NAHI karoonga
+    jab tak wo na bole.
+
+----------------------------------------------------------------
+PART 0B — RESULT (rough code ka)
 ----------------------------------------------------------------
 
     getSmallSpendTotal(upi)  ->  55     ✅ CORRECT

@@ -785,8 +785,8 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [✅] Stage 1 — haath se table
     [✅] Stage 2 — sumAll with guards        (4/4 PASS — 5 Oct 2026)
     [🟡] Stage 3 — getTotalSpend ✅ 3473  |  getCount ✅ 6  |  getBiggestSpend ❌ 0 (bug: cur[2] karna tha)
-    [🟡] Stage 4 — getSmallSpendTotal ✅ 55 CORRECT (khud dhoondha, 1 ghante baad!)
-    [ ]        getSmallSpendCount ⬜
+    [🟡] Stage 4 — getSmallSpendTotal  [ROUGH — Debjeet final code baad mein dega]
+    [ ]        getSmallSpendCount  [baaki]
     [ ] Stage 5 — mapWithReduce / filterWithReduce
 
   SAMAJH (updated 5 Oct 2026):
