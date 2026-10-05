@@ -1,0 +1,192 @@
+==============================================================================
+PROJECT #6 — createSubscriptionEngine
+Company Jira Ticket: FIN-204
+Poori teaching, syllabus order mein. Ye tera TEXTBOOK hai.
+==============================================================================
+
+
+------------------------------------------------------------------------------
+PART A — CONCEPTS JO IS PROJECT MEIN USE HUE (Syllabus Order)
+------------------------------------------------------------------------------
+
+PHASE 4 — FUNCTIONS DEEP (100% DONE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.  CLOSURE — Private state
+    Jab ek function apne andar ke variables ko yaad rakhta hai,
+    aur bahar se koi unhe chhoo nahi sakta.
+
+        function createSubscriptionEngine(secretPin, initialPlans) {
+            const MAX_ATTEMPT = 3;
+            let prices = initialPlans;      // PRIVATE
+            let attempts = 0;               // PRIVATE
+
+            return { /* methods yahan */ };
+        }
+
+    Analogy: Ek locker. Andar paisa hai. Bahar se sirf PIN se khulta hai.
+             Locker ke andar haath dalne ka koi raasta hi nahi.
+
+
+2.  GUARD CLAUSE — Pehle check, phir kaam
+    Function ke shuru mein hi galat input ko rok do.
+    Happy path sabse aakhir mein aata hai.
+
+        if (attempts >= MAX_ATTEMPT)  return { ...403 };
+        if (pin !== secretPin)        return { ...401 };
+        if (!Number.isFinite(price))  return { ...400 };
+        // abhi happy path
+
+    Junior aakhir mein sochta hai. Senior pehle rokta hai.
+
+
+3.  RESULT PATTERN — Hamesha ek hi shape
+    Har method chahe success ho ya fail, ek HI tarah ka object dega.
+
+        Success:  { status: 200, ok: true,  data: ... }
+        Fail:     { status: 400, ok: false, error: "..." }
+
+    Isse SonarLint ki warning bhi khatam ho jati hai:
+    "refactor this function to always return the same type"
+
+
+4.  DEFAULT PARAMETERS
+        function engine(secretPin = "7788", initialPlans = [199, 499, 999]) {}
+
+    IMPORTANT: Default tabhi chalta hai jab kuch NA bheja jaye (undefined).
+               Agar koi null ya 123 bhej dega, default KAAM NAHI KAREGA!
+               Isliye guard clause ALAG se lagana zaroori hai.
+
+
+PHASE 5 — ARRAYS DEEP (Step 1 se 4 DONE)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+5.  ARRAY LITERAL + Array.isArray() + .length + .at()     [STEP 1]
+
+        const prices = [199, 499, 999];
+        prices.length       // 3
+        prices.at(0)        // 199   (pehla)
+        prices.at(-1)       // 999   (AAKHRI - modern ES2022+)
+        Array.isArray(x)    // true ya false
+
+    Zero-based indexing: pehla item index 0 pe hota hai.
+
+
+6.  SPREAD OPERATOR — Bina mutate kiye add karna            [STEP 2]
+
+    MUTATING (khatarnak):
+        prices.push(newPrice);      // asli array badal gaya
+
+    NON-MUTATING (company standard):
+        prices = [...prices, newPrice];   // NAYA array bana
+
+    Analogy: Original marksheet pe pen se mat likho.
+             Photocopy nikalo, uspe likho.
+             (React aur Redux mein .push() karna = bug!)
+
+
+7.  .map() — Har element ko badalna                          [STEP 3]
+
+        prices.map((p) => p + 50)
+
+    Rules:
+        - Jitne items andar, utne hi bahar (length kabhi nahi badalti)
+        - Original array kabhi change nahi hota
+        - Hamesha NAYA array return karta hai
+
+    Real use: applyTaxToAll() mein har price pe tax joda.
+
+
+8.  .filter() — Chhaantna (Chai ki chhanni)                  [STEP 4]
+
+        prices.filter((p) => p >= 500)
+
+    Rules:
+        - Jo condition TRUE karega, wahi naye array mein jayega
+        - Length KAM ho sakti hai (ya zero - khali array [])
+        - Original array kabhi change nahi hota
+
+    Real use: getPremiumPlans() mein sirf mehnge plans rakhe.
+
+
+------------------------------------------------------------------------------
+PART B — THE 4 METHODS (Contract)
+------------------------------------------------------------------------------
+
+  getLatestPlan()              -> AAKHRI plan ka price          -> 200
+  addNewPlan(pin, planPrice)   -> PIN check karke naya plan add  -> 201
+  getPremiumPlans(minPrice)    -> minPrice ya usse mehnge plans  -> 200
+  applyTaxToAll(taxAmount)     -> har price pe tax jodo          -> 200
+
+
+  SECURITY RULE (Brute-Force Lock):
+      - 3 baar galat PIN = permanent lock (status 403)
+      - Lock ke baad SAHI PIN bhi kaam nahi karega
+      - Sahi PIN milte hi attempts = 0 reset ho jata hai
+      - Lock sirf addNewPlan ko rokta hai, baaki methods chalti hain
+
+
+------------------------------------------------------------------------------
+PART C — REVIEW MEIN MILE 4 BUGS (Tu Ne Khud Likha Tha 90%)
+------------------------------------------------------------------------------
+
+  BUG 1   getLatestPlan object return kar raha tha
+          GALAT:  data: { first: 199, last: 999 }
+          SAHI:   data: 999
+          SEEKHA: Purana spec mat dekho, NAHI ticket dhyan se padho.
+
+
+  BUG 2   addNewPlan mein attempts = 0 reset karna bhool gaye
+          GALAT:  prices = [...prices, planPrice];
+          SAHI:   attempts = 0;
+                  prices = [...prices, planPrice];
+          KYA HUA: 2 galat + 1 sahi + 1 galat + 1 sahi
+                   -> teesri baar galat pe permanent lock lag gaya
+          SEEKHA: Counter reset karna security ka hissa hai.
+
+
+  BUG 3   getPremiumPlans ke error path par ok: true tha
+          GALAT:  { status: 400, ok: true,  error: "..." }
+          SAHI:   { status: 400, ok: false, error: "..." }
+          SEEKHA: status 400 + ok true = contradiction.
+
+
+  BUG 4   applyTaxToAll tax 0 ko reject kar raha tha
+          GALAT:  if (taxAmount <= 0) return error;
+          SAHI:   if (taxAmount < 0)  return error;
+          SEEKHA: 0% tax valid hai. Sirf negative galat hai.
+
+
+------------------------------------------------------------------------------
+PART D — TU NE KYA-KYA SAHI KIYA (Yehi Asli Baat Hai)
+------------------------------------------------------------------------------
+
+  DONE   const MAX_ATTEMPT = 3;      (constants capital letters mein)
+  DONE   Closure se private state    (bahar se koi chhoo nahi sakta)
+  DONE   prices = [...prices, x]     (zero mutation)
+  DONE   .filter((p) => p >= min)    (sahi chhaanti)
+  DONE   prices.at(-1)               (modern, purana index math nahi)
+  DONE   Har method mein pehle guard, phir happy path
+  DONE   Khud se Number.isFinite() lagaya (maine nahi bataya tha!)
+
+
+------------------------------------------------------------------------------
+PART E — FILES KAHAN HAIN
+------------------------------------------------------------------------------
+
+  Engine:            stream-os-engine/src/createSubscriptionEngine.js
+  Tests:             stream-os-engine/tests/test-suite.js
+  Expected output:   09-EXPECTED-OUTPUT.txt (is folder mein)
+  Sandbox copy:      /home/user/Project6-SOLUTION.js
+
+  Chalane ka tarika:
+      cd stream-os-engine
+      npm test
+
+  Result: 35 tests, 7 parts, SAB PASS.
+
+
+==============================================================================
+"Aaj tune jo likha, wo tera hai. Bug milna haar nahi hai -
+ code review milna matlab tu engineer hai, student nahi."
+==============================================================================

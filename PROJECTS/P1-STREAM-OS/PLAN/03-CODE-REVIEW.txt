@@ -1,0 +1,125 @@
+==============================================================================
+P1-STREAM-OS — CODE REVIEW RECORD
+Ticket: FIN-204  |  Reviewer: Dubby Bhaiya
+Date:   4 October 2026
+Result: APPROVED & MERGED — 35/35 tests pass
+==============================================================================
+
+
+==============================================================================
+SCORE:  Debjeet ne ~90% code KHUD likha tha.
+        Review mein 4 bugs mile. Sab fix ho gaye.
+==============================================================================
+
+
+==============================================================================
+BUG 1 — getLatestPlan galat cheez return kar raha tha
+==============================================================================
+
+    GALAT:   data: { first: 199, last: 999 }
+    SAHI:    data: 999
+
+    KYUN HUA:
+        Ye PURANE spec se copy kiya tha, jisme first + last
+        dono manga tha. Naye ticket FIN-204 mein sirf
+        "last plan price" manga tha.
+
+    SEEKHA:
+        Purana spec mat dekho. NAHI ticket dhyan se padho.
+        (Ye asli company mein roz hota hai.)
+
+
+==============================================================================
+BUG 2 — addNewPlan mein attempts = 0 reset karna bhool gaye
+==============================================================================
+
+    GALAT:   prices = [...prices, planPrice];
+    SAHI:    attempts = 0;
+             prices = [...prices, planPrice];
+
+    KYA HUA:
+        Part 7 test fail:
+            2 galat -> 1 sahi -> 1 galat -> 1 sahi
+            Teesri baar galat pe PERMANENT LOCK lag gaya.
+
+    KYUN:
+        Counter reset karna SECURITY ka hissa hai.
+        Ticket ke Rule B mein likha tha, par dhyan nahi gaya.
+
+    SEEKHA:
+        Security rule chhota ho ya bada,
+        usko code mein LIKHNA padta hai.
+
+
+==============================================================================
+BUG 3 — getPremiumPlans ke error path par ok: true tha
+==============================================================================
+
+    GALAT:   { status: 400, ok: true,  error: "..." }
+    SAHI:    { status: 400, ok: false, error: "..." }
+
+    KYUN GALAT:
+        status 400 (error) + ok true  =  CONTRADICTION
+        SonarLint bhi isko pakadta hai.
+
+    SEEKHA:
+        Result Box ke andar status aur ok HAMESHA saath chalte hain.
+
+
+==============================================================================
+BUG 4 — applyTaxToAll tax 0 ko reject kar raha tha
+==============================================================================
+
+    GALAT:   if (taxAmount <= 0) return error;
+    SAHI:    if (taxAmount < 0)  return error;
+
+    KYUN:
+        0% tax VALID hai. Sirf negative galat hai.
+        Ticket mein likha tha: "taxAmount is 0 or greater"
+
+    SEEKHA:
+        Boundary values (0, -1, khali array)
+        hamesha alag se sochni padti hain.
+
+
+==============================================================================
+JO SAHI THA (Yehi asli baat hai)
+==============================================================================
+
+    DONE   const MAX_ATTEMPT = 3;         (constants capital letters mein)
+    DONE   Closure se private state       (bahar se koi chhoo nahi sakta)
+    DONE   prices = [...prices, x]        (ZERO mutation)
+    DONE   .filter((p) => p >= minPrice)  (sahi chhaanti)
+    DONE   prices.at(-1)                  (modern ES2022+)
+    DONE   Har method mein pehle guard, phir happy path
+    DONE   Number.isFinite() KHUD lagaya  (maine nahi bataya tha!)
+    DONE   status: 201 lagaya add ke liye (HTTP samajh hai!)
+
+
+==============================================================================
+TEST RESULT
+==============================================================================
+
+    PART 1  Official QA tests ..........  6/6   PASS
+    PART 2  Brute-force lock ...........  5/5   PASS
+    PART 3  Invalid price ..............  5/5   PASS
+    PART 4  getPremiumPlans edge cases .  5/5   PASS
+    PART 5  applyTaxToAll + immutability  5/5   PASS
+    PART 6  Broken input ...............  3/3   PASS
+    PART 7  Attempt reset ..............  5/5   PASS
+    ----------------------------------------------
+    TOTAL .............................. 35/35  PASS  ✅
+
+
+==============================================================================
+EK BAAT
+==============================================================================
+
+    Bug milna = haar nahi hai.
+    Code review milna matlab tu ENGINEER hai, student nahi.
+
+    Uber aur Google mein senior engineers ke PR par
+    20-30 comments aate hain.
+
+    Tere 4 the. Aur tune sab theek kar diya.
+==============================================================================

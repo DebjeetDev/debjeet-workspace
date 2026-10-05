@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Environment / secrets (NEVER commit these!)
+.env
+.env.local
+*.pem
+
+# Coverage
+coverage/

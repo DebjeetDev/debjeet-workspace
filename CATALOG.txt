@@ -1,0 +1,238 @@
+==============================================================================
+WORKSPACE CATALOG — DEBJEET DHAR
+Poore workspace ka naksha: kahan kya hai
+==============================================================================
+
+  Banaya      : Monday, 05 October 2026
+  Samay       : 07:31 AM (Asia/Kolkata)
+  Root        : /home/user
+
+  Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
+      python3 make-catalog.py
+
+==============================================================================
+1. SABSE PEHLE — KAHAN KYA HAI (Quick Answer)
+==============================================================================
+
+    Padhna hai?                 ->  READING/00-START-HERE.txt
+    Aaj ka plan?                ->  READING/16-TODAY-05-OCT-2026.txt
+    Poora syllabus?             ->  READING/01-COURSE-ROADMAP.txt
+    Code likhna hai?            ->  PROJECTS/P1-STREAM-OS/CODE/
+                                    PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/
+    Project ka plan?            ->  PROJECTS/P1-STREAM-OS/PLAN/
+                                    PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/
+    ULTRON ka raasta?           ->  PROJECTS/01-ULTRON-LADDER.txt
+    TV ke API links?            ->  PROJECTS/P1-STREAM-OS/PLAN/02-API-RESOURCES.txt
+    Voice note sunna hai?       ->  audio/
+    Course ki asli file?        ->  course.md
+
+==============================================================================
+2. DO BADA Hissa
+==============================================================================
+
+    READING/     =  PADHNE ki library
+                    Course, roadmap, daily log, guides, dictionary
+                    (sab plain .txt — koi markdown nahi)
+
+    PROJECTS/    =  BANANE ka kaam
+                    Har project ke do hisse:
+                      PLAN/  = planning + research (sirf txt, koi code nahi)
+                      CODE/  = asli code (src, tests)
+
+==============================================================================
+3. POORA TREE — Folder by Folder
+==============================================================================
+
+  /home/user/
+  |
+      |-- CATALOG.txt
+            -> YHI FILE — poore workspace ka naksha (folder by folder)
+      |-- course.md
+            -> POORA SYLLABUS — 11 Books + JS ke 10 Phases (source file)
+      |-- LEARNING-STATE.md
+            -> Tu abhi kahan khada hai + tere rules (source file)
+      |-- LOG.md
+            -> Roz ka engineering log — kya seekha, kaunsi galti hui
+      |-- make-catalog.py
+            -> Ye CATALOG.txt banata hai. Kabhi bhi chalao: python3 make-catalog.py
+      |-- md2txt.py
+            -> Markdown ko saaf plain text mein badalta hai
+      |-- sync.sh
+            -> EK COMMAND — poora workspace GitHub par backup (./sync.sh)
+      |
+      |-- [DIR] _SOURCE/
+            -> Purani/original files — safety ke liye rakhi hain
+            |-- EXPECTED-OUTPUT-Project6.txt
+            |-- GITHUB-PUSH-GUIDE.md
+            |-- Project6-SOLUTION.js
+            |-- TEST-SUITE-Project6.js
+      |
+      |-- [DIR] audio/
+            -> Voice notes (Dubby Bhaiya ki audio)
+            |-- backup-plan-ready.mp3
+      |
+      |-- [DIR] PROJECTS/
+            -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
+            |-- 00-INDEX.txt
+                  -> PROJECTS folder ka index
+            |-- 01-ULTRON-LADDER.txt
+                  -> 17 projects ki ladder (ULTRON tak)
+            |
+            |-- [DIR] _TEMPLATE/
+                  -> Namuna — naya project shuru karne ka format
+                  |
+                  |-- [DIR] CODE/
+                        -> Asli code — src, tests, package.json
+                        |
+                        |-- [DIR] src/
+                              -> Source code (jo kaam karta hai)
+                              (khali)
+                  |
+                  |-- [DIR] PLAN/
+                        -> Planning + Research docs (sirf txt, koi code nahi)
+                        |-- 00-HOW-TO-START.txt
+                              -> Naya project shuru karne ka poora format
+            |
+            |-- [DIR] P1-STREAM-OS/
+                  -> FLAGSHIP — Smart TV ke liye free live TV
+                  |
+                  |-- [DIR] CODE/
+                        -> Asli code — src, tests, package.json
+                        |-- LAUNCH.md
+                              -> Deploy steps (markdown version)
+                        |-- LICENSE
+                              -> MIT license
+                        |-- package.json
+                              -> npm publish ke liye taiyaar
+                        |-- README.md
+                              -> GitHub pe dikhega (badges ke saath)
+                        |-- SYLLABUS-STATUS.md
+                              -> Kaunsa code syllabus ke andar hai
+                        |
+                        |-- [DIR] .github/
+                              -> GitHub Actions (CI + auto-publish)
+                              |
+                              |-- [DIR] workflows/
+                                    -> CI/CD pipeline files
+                                    |-- ci.yml
+                                          -> Har push par tests chalata hai (Node 18/20/22)
+                                    |-- publish.yml
+                                          -> Release par automatically npm par publish
+                        |
+                        |-- [DIR] docs/
+                              -> Extra documents
+                              |-- EXPECTED-OUTPUT.txt
+                                    -> Test ka expected jawab
+                        |
+                        |-- [DIR] src/
+                              -> Source code (jo kaam karta hai)
+                              |-- createSubscriptionEngine.js
+                                    -> Billing engine — closure + brute-force lock (TERA CODE)
+                        |
+                        |-- [DIR] tests/
+                              -> Test files (jo check karta hai)
+                              |-- test-suite.js
+                                    -> 35 tests, 7 parts
+                  |
+                  |-- [DIR] PLAN/
+                        -> Planning + Research docs (sirf txt, koi code nahi)
+                        |-- 00-README.txt
+                              -> Project kya hai, status, Kolkata channels
+                        |-- 01-SPEC.txt
+                              -> Jira ticket — kaunse functions, kya rules (CODE NAHI)
+                        |-- 02-API-RESOURCES.txt
+                              -> iptv-org API + asli data (31,487 channels, 766 India)
+                        |-- 03-CODE-REVIEW.txt
+                              -> 4 bugs jo review mein mile + kya sikhha
+                        |-- 04-TESTS.txt
+                              -> Expected output — 35 tests
+                        |-- 05-DEPLOY.txt
+                              -> GitHub + npm par kaise chadhana hai
+            |
+            |-- [DIR] P2-UPI-LEAK-DETECTOR/
+                  -> AGLA PROJECT — 'Tera paisa kahan beh raha hai?'
+                  |
+                  |-- [DIR] CODE/
+                        -> Asli code — src, tests, package.json
+                        |
+                        |-- [DIR] src/
+                              -> Source code (jo kaam karta hai)
+                              (khali)
+                  |
+                  |-- [DIR] PLAN/
+                        -> Planning + Research docs (sirf txt, koi code nahi)
+                        |-- 00-README.txt
+                              -> Project kya hai, status, Kolkata channels
+                        |-- 01-SPEC.txt
+                              -> Jira ticket — kaunse functions, kya rules (CODE NAHI)
+      |
+      |-- [DIR] READING/
+            -> PADHNE ki library — course, roadmap, log, guides (sab plain .txt)
+            |-- 00-START-HERE.txt
+                  -> Sabse pehle ye padho — reading order + aaj tak ka summary
+            |-- 01-COURSE-ROADMAP.txt
+                  -> Poora roadmap — 11 Books + career ladder + ULTRON
+            |-- 02-LEARNING-STATE.txt
+                  -> Teri exact position + locked rules
+            |-- 03-DAILY-LOG.txt
+                  -> Daily log (2 Oct se aaj tak) — plain text
+            |-- 04-PROJECT-6-GUIDE.txt
+                  -> Project #6 ki poori teaching (syllabus order mein)
+            |-- 05-GITHUB-PUSH-GUIDE.txt
+                  -> GitHub par pehli baar code chadhana — 13 step
+            |-- 06-LAUNCH-CHECKLIST.txt
+                  -> 4 step, 15 minute — GitHub + npm publish
+            |-- 07-SYLLABUS-STATUS.txt
+                  -> Kaunsa code tera hai, kaunsa plumbing (Phase 8 / Book 7)
+            |-- 08-REPO-README.txt
+                  -> Tere package ki public profile (GitHub pe dikhega)
+            |-- 09-EXPECTED-OUTPUT.txt
+                  -> Test chalane ke baad screen par kya aana chahiye
+            |-- 10-FULL-SYLLABUS.txt
+                  -> Poora course.md — plain text (1,700+ lines)
+            |-- 11-DAILY-PLAN.txt
+                  -> Roz ka routine — subah JS, shaam 1 LeetCode
+            |-- 12-LEETCODE-ENGLISH-DICTIONARY.txt
+                  -> Har problem ke English shabdon ka matlab
+            |-- 13-PROBLEM-26-WALKTHROUGH.txt
+                  -> LeetCode #26 — super simple Hinglish walkthrough
+            |-- 14-ULTRON-PROJECT-LADDER.txt
+                  -> 17 projects — har ek ULTRON ka ek ang
+            |-- 15-PROJECT-UPI-LEAK-DETECTOR.txt
+                  -> UPI project ki research + spec
+            |-- 16-TODAY-05-OCT-2026.txt
+                  -> Aaj ka din — 4 kaam, time table ke saath
+            |-- 17-STREAM-OS-API-LINKS.txt
+                  -> iptv-org API links + live verified data
+            |-- 18-BACKUP-PLAN.txt
+                  -> GitHub limits research + backup strategy + setup steps
+            |-- 19-AUTO-PUSH-SSH.txt
+                  -> MAIN PUSH KAROONGA — SSH deploy key setup (ultra secure, 3 steps)
+
+==============================================================================
+4. HISAB
+==============================================================================
+
+    Total files    : 60
+    Total folders  : 21
+
+    READING/       : 20 files (numbered 00 se aage)
+    PROJECTS/      : 5 items
+    audio/         : 1 voice notes
+
+==============================================================================
+5. NOTE
+==============================================================================
+
+    - 'uploads/' isme hai: teri original uploaded files.
+      Kabhi chhedi nahi gayi. Wahan se sab kuch aaya.
+
+    - '_SOURCE/' isme hai: purani files jo ab READING/ ya
+      PROJECTS/ mein copied hain. Safety ke liye rakhi hain.
+
+    - '.git/' folders chhupi hain (git ka khud ka data).
+      Unhe haath mat lagana.
+
+==============================================================================
+Koi bhi file dhoondhni ho -> yahan dekh lo. Mil jayegi.
+==============================================================================

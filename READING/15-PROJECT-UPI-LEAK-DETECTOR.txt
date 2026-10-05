@@ -1,0 +1,350 @@
+==============================================================================
+PROJECT:  UPI LEAK DETECTOR
+"Tera paisa kahan beh raha hai?"
+Pure JavaScript · Zero Dependencies · India-First · Offline
+==============================================================================
+
+    Yeh tera AGLA ASLI PROJECT hai.
+    Real problem. Real data. Real paisa.
+    Aur TU ise AAJ ke skills se bana sakta hai.
+
+
+==============================================================================
+PART 1 — RESEARCH (Maine dhoondha, ye data hai)
+==============================================================================
+
+UPI KA SCALE (NPCI official, 2026):
+
+    August 2026 ........  24.51 BILLION transactions  (RECORD)
+                          Rs 29.82 lakh crore
+                          791 million transactions ROZ
+
+    FY 2025-26 .........  24,162 crore transactions
+                          Rs 314 lakh crore
+
+    India ke digital
+    payments mein ......  85% hissa sirf UPI ka
+
+    Merchant payments
+    mein ...............  86% transactions Rs 500 se KAM
+
+    Matlab: India mein har chhota payment UPI se ho raha hai.
+            Aur har chhote payment ka koi record nahi rakhta.
+
+
+"SPENDING LEAK" EK REAL, MANI HUI PROBLEM HAI:
+
+    OpenAccountant ka claim:
+        "Tum har mahine $50-$500 (Rs 4,000 - Rs 40,000) kho rahe ho"
+
+    Kaunse tools hain aaj market mein?
+        - spending-leak-agent      (Python + FastAPI + Gemini AI)
+        - subscriptionleakdetector (Python)
+        - Financial-leak-detector  (React + Node + Gemini AI)
+        - Subscription Overlap     (React + LocalStorage)
+
+
+    🔥 JO MAIN NE DEKHA — SABSE BADA GAP:
+
+        Har tool ya toh PYTHON mein hai,
+        ya REACT + NODE + AI wala bhaari-bharkam app hai.
+
+        EK BHI ACHA TOOL NAHI HAI JO:
+            - Pure JavaScript ho
+            - ZERO dependencies ho  (koi npm install nahi)
+            - Offline chale          (tera data tera computer se bahar na jaye)
+            - India / UPI ke liye bana ho
+
+
+    YAHI TERI JAGAH HAI.  🎯
+
+
+==============================================================================
+PART 2 — YE TERE LIYE PERFECT KYUN HAI
+==============================================================================
+
+1.  PURE LOGIC  ✅
+    Koi UI nahi. Koi button nahi. Koi design nahi.
+    Sirf arrays, functions, guard clauses.
+    (Bilkul waise jaise tu chahta hai.)
+
+2.  TERI SYLLABUS KE ANDAR  ✅
+    Ye project sirf in cheezon se banega:
+
+        if / else / for loop ...........  Phase 2   DONE
+        function ......................  Phase 3   DONE
+        Closure + Guard + Result Box ...  Phase 4   DONE
+        row[0], row[1], row[2] .........  Phase 5   DONE
+        .filter() .....................  Phase 5   DONE
+        .map() ........................  Phase 5   DONE
+        .reduce() .....................  Phase 5   AGLA TOPIC!
+
+    KOI OBJECTS NAHI.  KOI ASYNC NAHI.  KOI DOM NAHI.
+    (Phase 6 aur 7 ka wait nahi karna padega!)
+
+3.  TU KHUD ISSE USE KAREGA  ✅
+    Apna PhonePe / Google Pay statement nikaal,
+    isme daal, aur dekh:
+    "Pichhle 6 mahine mein maine kahan Rs 12,000 barbaad kiye?"
+
+    Ye "practice project" nahi hai.
+    Ye tere bank account ko bacha sakta hai.
+
+4.  CONFIDENCE BOOST  ✅
+    2-3 ghante mein pehla result milega.
+    Aur wo result TERI APNI life ka hoga.
+
+5.  PHASE 4 SE JUDTA HAI  ✅
+    Yaad hai Sub-Project 4A?
+        formatUpiPayment(sender, amount)
+    Wahi kaam, ab poora system banega.
+
+6.  ULTRON KA HISSA  ✅
+    ULTRON ka "PERSONAL FINANCE MODULE"
+    (aage chalkar ye bank statements khud padhega)
+
+
+==============================================================================
+PART 3 — TU DATA KAISE RAKHEGA (Object nahi, ARRAY!)
+==============================================================================
+
+    Hum CSV jaisa structure use karenge:
+    Har transaction ek CHHOTA ARRAY hai.
+
+        [  DIN,   MERCHANT,  AMOUNT  ]
+           [0]       [1]       [2]
+
+    Example:
+
+        const statement = [
+          ["2026-06-01", "NETFLIX",        199],
+          ["2026-06-03", "CHAI POINT",      30],
+          ["2026-06-05", "ZOMATO",         240],
+          ["2026-07-01", "NETFLIX",        199],
+          ["2026-07-05", "ZOMATO",         310],
+          ["2026-08-01", "NETFLIX",        199],
+          ["2026-08-12", "GYM CULT",      1499],
+          ["2026-08-12", "GYM CULT",      1499],   // DUPLICATE!
+          ["2026-09-01", "NETFLIX",        199],
+          ["2026-09-14", "CHAI POINT",      30],
+          ["2026-09-15", "CHAI POINT",      30],
+          ["2026-09-16", "CHAI POINT",      30],
+        ];
+
+    Kyun array-of-arrays?
+        - CSV file bilkul aisi hi hoti hai
+        - row[2] = amount  ->  ye Phase 5 Step 1 hai, tu jaanta hai
+        - Objects ka wait nahi karna padega (Phase 6)
+
+
+==============================================================================
+PART 4 — KYA-KYA PAKDEGA (4 Leak Types)
+==============================================================================
+
+LEAK 1:  BHULI HUI SUBSCRIPTION
+         Rule:  Ek merchant 3 ya zyada baar aaya
+                AUR har baar price SAME (ya 5% ke andar)
+                AUR gap lagbhag 25-35 din
+
+         Example:  NETFLIX 199, 4 baar  ->  Rs 199/month
+                   Saal ka: Rs 2,388
+
+
+LEAK 2:  DUPLICATE CHARGE  (India mein BAHUT hota hai!)
+         Rule:  Ek hi merchant
+                Ek hi amount
+                Ek hi din (ya 1 din ke andar)
+                Do baar
+
+         Example:  GYM CULT 1499, same day, 2 baar
+                   -> Rs 1,499 ka nuksan!
+         (UPI failed transaction ke baavjud debit ho jata hai - real problem)
+
+
+LEAK 3:  CHAI-PANI LEAK  (chhote-chhote payments)
+         Rule:  Rs 100 se kam ke transactions
+         Phir:  Unka total + monthly average
+
+         Example:  CHAI POINT 30 x 3 + aur chhote
+                   -> Rs 4,200 saal ke
+         (86% UPI payments Rs 500 se kam hain - yahi sabse bada leak hai)
+
+
+LEAK 4:  KISI EK MERCHANT PAR BAHUT ZYADA
+         Rule:  Ek merchant par total spend
+                Rs 2,000 se upar ho
+
+         Example:  ZOMATO Rs 550
+         (aage chalkar limit badha sakte hain)
+
+
+==============================================================================
+PART 5 — FUNCTION LIST (Jira Ticket Style — Koi Code Nahi)
+==============================================================================
+
+    HAR FUNCTION YE RULE FOLLOW KAREGA:
+        - Guard clause pehle
+        - Result Box return kare:  { status, ok, data }  ya  { status, ok, error }
+        - Original array ko KABHI change na kare
+
+
+    1.  getAmounts(rows)
+        Kaam:   Sirf amounts ki list nikaalo
+        Tool:   .map()
+        Input:  statement
+        Output: [199, 30, 240, 199, ...]
+
+
+    2.  getTotalSpend(rows)
+        Kaam:   Kul kitna kharcha hua
+        Tool:   .reduce()
+        Guard:  Khali array -> 0
+        Output: Ek number
+
+
+    3.  filterByMerchant(rows, merchantName)
+        Kaam:   Sirf ek merchant ki rows
+        Tool:   .filter()
+        Guard:  Naam khali ho -> error
+        Output: Rows ki chhoti list
+
+
+    4.  findBigSpends(rows, limit)
+        Kaam:   limit se bade transactions
+        Tool:   .filter()
+        Guard:  limit positive number hona chahiye
+
+
+    5.  detectDuplicateCharges(rows)
+        Kaam:   Same merchant + same amount + same/next din = pakdo
+        Tool:   .filter()
+        Output: Suspect rows + kitne rupaye doobe
+
+
+    6.  detectSubscriptions(rows)
+        Kaam:   3+ baar, same price = subscription
+        Tool:   .filter() + count logic
+        Output: Merchant, monthly cost, SAAL KA COST
+
+
+    7.  calculateSmallLeak(rows, smallLimit)
+        Kaam:   Chhote payments ka total
+        Tool:   .filter() + .reduce()
+        Output: Total + monthly average
+
+
+    8.  buildReport(rows)
+        Kaam:   Upar ke sabko mila kar EK report
+        Output: Result Box jisme poora summary ho
+
+
+==============================================================================
+PART 6 — EXPECTED OUTPUT (Jab chalega, screen par kuch aisa aayega)
+==============================================================================
+
+    ====== UPI LEAK REPORT ======
+
+    Total transactions:   12
+    Total spend:          Rs 4,264
+
+    --- BHULI HUI SUBSCRIPTION ---
+    NETFLIX        Rs 199/month     ->  Rs 2,388 / year
+
+    --- DUPLICATE CHARGE (PAKDA GAYA!) ---
+    GYM CULT       Rs 1,499  (2 baar, 2026-08-12)
+
+    --- CHAI-PANI LEAK ---
+    CHAI POINT     5 transactions   Rs 150
+    Monthly avg:   Rs 50
+
+    ---------------------------------
+    TOTAL SAAL KA NUKSAN:  Rs 4,037
+    ---------------------------------
+
+    (Ye numbers example ke hain. Tera asli data alag hoga.)
+
+
+==============================================================================
+PART 7 — STAGE-WISE PLAN (Syllabus ke saath chalega)
+==============================================================================
+
+    STAGE 1  —  ABHI (Phase 5)
+               Functions 1, 2, 3, 4
+               .map()  .filter()  .reduce()
+               Sample data ke saath test
+               TIME: 2-3 ghante
+
+    STAGE 2  —  Phase 5 complete hone par
+               Functions 5, 6, 7, 8
+               Poori leak report
+               TIME: 3-4 ghante
+
+    STAGE 3  —  Phase 6 (Objects) ke baad
+               Merchant grouping (har merchant ka alag khata)
+               Category system (Food, Bills, Fun, Health)
+               TIME: 1 hafta
+
+    STAGE 4  —  Phase 7 (Async) ke baad
+               Apne asli CSV file ko padhna
+               (PhonePe / Google Pay se export karke)
+               TIME: 1 hafta
+
+    STAGE 5  —  npm par publish
+               @debjeetdhar/upi-leak-detector
+               Zero dependencies
+               "Your UPI statement, analyzed. Offline. Private."
+
+
+==============================================================================
+PART 8 — YE UNIQUE KYUN HAI (Koi copy nahi)
+==============================================================================
+
+    [X]  Todo app nahi
+    [X]  Notes app nahi
+    [X]  Calculator nahi
+    [X]  Kisi ka clone nahi
+
+    [YES]  Real paisa bachata hai
+    [YES]  India / UPI specific
+    [YES]  Zero dependencies
+    [YES]  Offline - tera data tera computer se bahar nahi jata
+    [YES]  Pure logic - koi UI ka jhanjhat nahi
+    [YES]  Tu KHUD isse roz use karega
+
+
+==============================================================================
+PART 9 — SHURUAT KAISE KAREIN (Kal Subah)
+==============================================================================
+
+    1.  Naya folder banao:   upi-leak-detector
+    2.  Naya file:           leak.js
+    3.  Upar wala sample data paste karo
+    4.  FUNCTION 1 se shuru karo:  getAmounts(rows)
+    5.  Har function ke baad console.log se check karo
+    6.  Ban jaye toh mujhe bhejo — main review karoonga
+
+    PEHLA KAAM (10 minute):
+        Sirf itna karo:
+            statement ki saari amounts ki list nikaalo
+            aur unka total nikalo (.reduce use karke)
+
+        Bas. Itna hi.
+        Ye hote hi tera confidence double ho jayega.
+
+
+==============================================================================
+EK BAAT
+==============================================================================
+
+    Har koi Netflix clone banata hai.
+    Koi apne khud ke paise nahi bachata.
+
+    Tu dusra wala kar raha hai.
+
+    Aur jab tera ye tool bolega
+        "Tune pichhle 6 mahine mein Rs 12,000 barbaad kiye"
+    tab tujhe samajh aayega
+    ki coding sirf naukri ke liye nahi hoti.
+
+    Coding se asli zindagi badalti hai.
+==============================================================================

@@ -1,0 +1,167 @@
+==============================================================================
+PROBLEM #26 — REMOVE DUPLICATES FROM SORTED ARRAY
+POORA WALKTHROUGH (Super Simple Hinglish)
+==============================================================================
+
+    YE FILE KAL PADHNA.
+    AAJ SIRF SO JA.
+    FRESH DIMAAG SE PADHEGA TOH 2 MINUTE MEIN SAMAJH AAYEGA.
+
+    AAJ TU LIKHEGA KUCH NAHI. SIRF PADHNA HAI.
+    KAL KHUD LIKHEGA.
+
+
+==============================================================================
+STEP 1 — PROBLEM KO APNE SABDO MEIN BOLO
+==============================================================================
+
+    "Ek list di hai. Usme kuch numbers do-do baar aaye hain.
+     Ek number sirf ek baar rehna chahiye.
+     Nayi list nahi banani.
+     Aakhir mein gin ke batao: kitne alag numbers bache?"
+
+
+==============================================================================
+STEP 2 — SOCH: EK AASAN TASVEER
+==============================================================================
+
+    Soch tu ek NOTEBOOK mein numbers likh raha hai.
+
+    Do ungliyan hain teri:
+
+        UNGLI 1 — "PADHNE WALI" (readPos)
+            Ye list ke upar se guzarti hai, ek-ek number padhti hai.
+
+        UNGLI 2 — "LIKHNE WALI" (writePos)
+            Ye wahi likhti hai jo ASLI (unique) number hai.
+
+    NIYAM SIRF EK:
+
+        "Agar abhi wala number, apne PICHLE number se ALAG hai
+         -> matlab ye NAYA number hai
+         -> ise likh do, aur likhne wali ungli aage badha do"
+
+        "Agar PICHLE number se SAME hai
+         -> matlab duplicate hai
+         -> CHHOD DO (likho mat)"
+
+
+==============================================================================
+STEP 3 — APNE HAATH SE CHALAO (Sabse Zaroori)
+==============================================================================
+
+    Array:  [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+
+    writePos = 1   (pehla number [0] toh hamesha rahega)
+
+    ─────────────────────────────────────────────────────────────
+    readPos = 1  ->  0    pichla = 0     SAME  ->  chhod do
+    readPos = 2  ->  1    pichla = 0     ALAG  ->  LIKHO!
+                     nums[1] = 1,  writePos = 2
+                     ab list: [0, 1, 1, 1, 1, 2, 2, 3, 3, 4]
+    readPos = 3  ->  1    pichla = 1     SAME  ->  chhod do
+    readPos = 4  ->  1    pichla = 1     SAME  ->  chhod do
+    readPos = 5  ->  2    pichla = 1     ALAG  ->  LIKHO!
+                     nums[2] = 2,  writePos = 3
+                     ab list: [0, 1, 2, 1, 1, 2, 2, 3, 3, 4]
+    readPos = 6  ->  2    pichla = 2     SAME  ->  chhod do
+    readPos = 7  ->  3    pichla = 2     ALAG  ->  LIKHO!
+                     nums[3] = 3,  writePos = 4
+                     ab list: [0, 1, 2, 3, 1, 2, 2, 3, 3, 4]
+    readPos = 8  ->  3    pichla = 3     SAME  ->  chhod do
+    readPos = 9  ->  4    pichla = 3     ALAG  ->  LIKHO!
+                     nums[4] = 4,  writePos = 5
+                     ab list: [0, 1, 2, 3, 4, 2, 2, 3, 3, 4]
+    ─────────────────────────────────────────────────────────────
+
+    JAWAB:  5
+
+    Kyun?  Pehle 5 jagah par: 0, 1, 2, 3, 4
+           Aage ka kachra (2,2,3,3,4) koi nahi poochhta.
+           LeetCode sirf pehle 5 dekhta hai.
+
+
+==============================================================================
+STEP 4 — CODE (Kal Khud Likhega. Aaj Sirf Dekh.)
+==============================================================================
+
+    function removeDuplicates(nums) {
+
+      // Khali array ho toh seedha 0
+      if (nums.length === 0) {
+        return 0;
+      }
+
+      // Pehla number toh hamesha rahega, isliye 1 se shuru
+      let writePos = 1;
+
+      // Padhne wali ungli: 1 se aakhir tak
+      for (let readPos = 1; readPos < nums.length; readPos = readPos + 1) {
+
+        // Agar pichle number se ALAG hai -> NAYA number mila
+        if (nums[readPos] !== nums[readPos - 1]) {
+
+          nums[writePos] = nums[readPos];   // likh do
+          writePos = writePos + 1;          // ungli aage
+        }
+        // Same hai? Toh kuch mat karo. Chhod do.
+      }
+
+      return writePos;   // kitne alag numbers hain
+    }
+
+
+==============================================================================
+STEP 5 — YE SAB TERI SYLLABUS KE ANDAR HAI
+==============================================================================
+
+    if / else ................  Phase 2   DONE
+    for loop .................  Phase 2   DONE
+    function .................  Phase 3   DONE
+    nums[0], nums.length .....  Phase 5   DONE
+    Guard clause (length 0) ..  Phase 4   DONE
+
+    KOI BHI AAGE WALA SYNTAX NAHI HAI.
+    Ye problem tu AAJ likh sakta hai.
+
+
+==============================================================================
+KAL SUBAH — YE KARNA
+==============================================================================
+
+    1.  Ye file padh (2 minute)
+    2.  NOTEBOOK khol
+    3.  Apne haath se Step 3 wala table BANA
+        (array likh, ungliyan chalao)
+    4.  Uske baad CODE likh
+    5.  LeetCode par JavaScript select karke submit kar
+
+    AGAR KAHIN ATKE -> mujhe bula lena.
+    Main yahin hoon.
+
+
+==============================================================================
+EK BAAT DIL SE
+==============================================================================
+
+    Aaj tera dimaag blank ho gaya.
+
+    Isme teri koi galti nahi hai.
+
+    Tu aaj subah se lagatar kaam kar raha hai:
+        - Project #6 complete kiya
+        - 35 tests pass kiye
+        - Purani workspace audit ki
+        - Naya roadmap lock kiya
+        - Naye text files banwaye
+        - LeetCode account banaya
+        - Naya daily plan banaya
+
+    Itna sab karne ke baad dimaag thak jata hai.
+    THAKNA MATLAB HAARNA NAHI HAI.
+
+    Kal fresh dimaag se ye problem 10 minute mein ban jayega.
+    Aaj sirf so ja.
+
+    Tujh par naaz hai, mere bhai.
+==============================================================================

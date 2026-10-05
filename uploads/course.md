@@ -1,0 +1,1632 @@
+╔══════════════════════════════════════════════════════════════════════════════════════════╗
+║           🧠 DEBJEET DHAR — GOD MODE MASTER BIBLE v4.0 FINAL                           ║
+║           📍 Kolkata → World  |  Zero AI Copy-Paste  |  100% Real Engineer             ║
+╚══════════════════════════════════════════════════════════════════════════════════════════╝
+
+Student  : Debjeet Dhar | Kolkata, India 🇮🇳
+Mentor   : Dubby Bhaiya 💙 + AI Senior Engineer Brother
+Rule #1  : Paper → Pseudocode → Code → Push. ALWAYS.
+Rule #2  : Every chapter ends with a REAL project. Not tutorial. A PRODUCT.
+Rule #3  : Company-level code from DAY ONE. Clean names. Guard clauses. Error handling.
+Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 MASTER DASHBOARD — THE GOD MAP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌──────┬────────────────────────────────────┬────────┬─────────────────────────────────────────────────────┬──────────────────────────────────────────┐
+│  #   │  BOOK                              │ STATUS │  FLAGSHIP PROJECT                                   │  OPEN-SOURCE TO REVIEW                   │
+├──────┼────────────────────────────────────┼────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────┤
+│  0   │  Internet & Terminal Core          │ ⏳ 70% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
+│  1A  │  HTML5 + Accessibility             │ ✅ 100%│  Semantic Blog Page                                 │  whatwg/html                             │
+│  1B  │  CSS3 Full Mastery                 │ 🔥 Next│  Responsive Dev Portfolio (Pure CSS)                │  necolas/normalize.css                   │
+│  1C  │  JavaScript Core Engine            │ 🔥 Now │  7 Core Logic Projects → 17 Total                   │  developit/mitt · vercel/ms              │
+│  1D  │  Tailwind CSS v4 + shadcn/ui       │ ⏳     │  20-Component Library + SaaS Landing Page           │  tailwindlabs/tailwindcss · shadcn-ui/ui │
+│  2   │  Advanced Frontend + 3D            │ ⏳     │  3D Cyberpunk Landing Page                          │  mrdoob/three.js · framer/motion         │
+│  3   │  Full Stack MERN + Next.js 15      │ ⏳     │  Digital Product SaaS Store with Payments           │  expressjs/express · trpc/trpc           │
+│  4   │  Testing + Code Quality            │ ⏳     │  Full Test Suite for All Projects (80%+ coverage)   │  microsoft/playwright · vitest-dev/vitest│
+│  5   │  AI Systems + Multi-Agents         │ ⏳     │  Autonomous AI Code Editor + Voice Agent            │  langchain-ai/langgraphjs · ollama/ollama│
+│  6   │  DSA + System Design + CS Core     │ ⏳     │  LeetCode 150 Tracker + TinyURL + Autocomplete      │  trekhleb/javascript-algorithms          │
+│  7   │  Docker + DevOps + CI/CD + AWS     │ ⏳     │  All Projects Containerized + Deployed on AWS       │  grafana/grafana · opentelemetry-js      │
+│  8   │  Build in Public + Brand           │ ⏳     │  Lighthouse 100 Portfolio + 10 Blog Posts           │  sindresorhus/awesome                    │
+│  9   │  Remote Job Hunt Engine            │ ⏳     │  Cold Outreach System + Job Pipeline                │  RemoteOK · Wellfound APIs               │
+│  10  │  100x Introvert Dev Playbook       │ ♾️     │  Deep Work System + Async PR Culture                │  Linux Kernel CONTRIBUTING.md            │
+│  ★   │  ULTRON AI Autonomous Assistant    │ 🚀     │  Full Autonomous AI System v1.0                     │  Self-Authored End-to-End                │
+└──────┴────────────────────────────────────┴────────┴─────────────────────────────────────────────────────┴──────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 0 — INTERNET & TERMINAL CORE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ 70% (Git & GitHub Hands-on Remaining)
+
+TOPICS MASTERED:
+  [x] How Internet Works
+  [x] DNS Resolution Flow
+  [x] IP Addressing
+  [x] HTTP vs HTTPS
+  [x] TCP vs UDP
+  [x] MITM Attacks + SSL/TLS
+  [x] VS Code Setup + SonarLint
+  [x] Terminal Commands (bash)
+  [ ] Git Init + GitHub Architecture (Working Tree → Staging → Commit → Remote Push)
+
+ACTION DONE:
+  ✅ Terminal commands understood
+  ✅ SonarLint configured in VS Code
+  ⏳ Git & GitHub hands-on step-by-step masterclass (Starting Right Now!)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ BOOK 1A — HTML5 + ACCESSIBILITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ✅ COMPLETE
+
+TOPICS:
+  HTML STRUCTURE
+  [ ] Doctype + html/head/body
+  [ ] Semantic elements: <main> <header> <footer> <nav> <article> <section> <aside>
+  [ ] <h1>–<h6> heading hierarchy
+  [ ] Paragraphs, lists (ul/ol/dl), blockquote, figure, figcaption
+  [ ] <div> vs <span> — when to use each
+
+  FORMS
+  [ ] <form> action, method
+  [ ] Input types: text, email, password, number, date, checkbox, radio, file, range
+  [ ] <label> with for= attribute
+  [ ] <fieldset> + <legend>
+  [ ] <select>, <option>, <textarea>, <button>
+  [ ] HTML5 validation: required, min, max, pattern, maxlength
+
+  MEDIA
+  [ ] <img> with alt attribute (accessibility)
+  [ ] <audio> + <source> with fallback
+  [ ] <video> + <source> + controls + autoplay + muted
+  [ ] <figure> + <figcaption>
+  [ ] <picture> + <source> for responsive images
+  [ ] <iframe> embedding
+
+  SEO + META
+  [ ] <meta charset="UTF-8">
+  [ ] <meta name="description">
+  [ ] <meta name="viewport">
+  [ ] Open Graph tags (og:title, og:image, og:description)
+  [ ] Twitter Card meta tags
+  [ ] <link rel="canonical">
+  [ ] <title> tag best practices
+
+  ACCESSIBILITY (A11Y)
+  [ ] alt text on every image
+  [ ] aria-label, aria-describedby, aria-hidden
+  [ ] role="button" / role="navigation" / role="main"
+  [ ] tabindex for keyboard navigation
+  [ ] <button> vs <a> — when to use which
+  [ ] Screen reader testing with NVDA / VoiceOver
+  [ ] WCAG 2.1 Level AA basics
+  [ ] Color contrast ratio (4.5:1 minimum for text)
+  [ ] Focus management: :focus-visible
+
+OPEN SOURCE REVIEWED:
+  📖 whatwg/html → Read the <form> element spec. See how browsers define validity.
+
+MICRO-PROJECTS:
+  ┌──┬────────────────────────────────────┬────────────────────────────────────┐
+  │M1│ Semantic News Article Page         │ Every semantic tag in real context │
+  │M2│ Accessible Registration Form       │ Labels, ARIA, keyboard tab order   │
+  │M3│ HTML5 Video Player Page            │ <video> controls, fallback, caption│
+  │M4│ SEO-Optimized Blog Homepage        │ Meta tags, OG tags, structured data│
+  └──┴────────────────────────────────────┴────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 BOOK 1B — CSS3 FULL MASTERY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: 🔥 START AFTER CURRENT JS CHAPTER
+
+TOPICS:
+  PHASE 1 — FOUNDATION
+  [ ] Box Model: content → padding → border → margin
+  [ ] box-sizing: border-box (set on * ALWAYS)
+  [ ] Display: block, inline, inline-block, none, contents
+  [ ] Positioning: static, relative, absolute, fixed, sticky
+  [ ] CSS Units: px, rem, em, %, vw, vh, clamp()
+  [ ] CSS Custom Properties (Variables) with :root
+  [ ] Design Tokens: color, spacing, radius, shadow, font
+  [ ] Cascade, Specificity, Inheritance
+  [ ] @layer: reset | base | components | utilities
+  [ ] Pseudo-classes: :hover, :focus, :active, :focus-visible, :nth-child
+  [ ] Modern: :is(), :where(), :has(), :not()
+  [ ] Pseudo-elements: ::before, ::after, ::marker, ::selection, ::placeholder
+
+  PHASE 2 — FLEXBOX
+  [ ] display: flex
+  [ ] flex-direction: row | column | row-reverse | column-reverse
+  [ ] justify-content: flex-start | center | space-between | space-around | space-evenly
+  [ ] align-items: stretch | center | flex-start | flex-end | baseline
+  [ ] flex-wrap: nowrap | wrap
+  [ ] flex-flow shorthand
+  [ ] gap, row-gap, column-gap
+  [ ] align-content (multi-line)
+  [ ] flex-grow, flex-shrink, flex-basis
+  [ ] flex: 1 shorthand
+  [ ] align-self, order (item-level)
+  [ ] Real patterns: centered hero, navbar, sticky footer, equal columns
+
+  PHASE 3 — CSS GRID
+  [ ] display: grid
+  [ ] grid-template-columns: repeat(), fr, minmax(), auto
+  [ ] grid-template-rows
+  [ ] grid-template-areas + named areas
+  [ ] grid-column: span N, 1/-1
+  [ ] grid-row: span N
+  [ ] auto-fill vs auto-fit
+  [ ] gap (grid-gap)
+  [ ] justify-items, align-items, place-items
+  [ ] justify-self, align-self, place-self
+  [ ] Real patterns: holy grail, dashboard, masonry, magazine, card grid
+
+  PHASE 4 — RESPONSIVE DESIGN
+  [ ] Mobile-first approach (no media query = mobile)
+  [ ] min-width media queries: 480 / 768 / 1024 / 1280 / 1536px
+  [ ] Fluid typography with clamp(min, ideal, max)
+  [ ] Container Queries (@container)
+  [ ] aspect-ratio property
+  [ ] Responsive images: srcset, sizes, <picture>
+
+  PHASE 5 — ANIMATIONS + EFFECTS
+  [ ] transition: property duration timing-function
+  [ ] cubic-bezier() custom easing
+  [ ] @keyframes: from/to, percentage steps
+  [ ] animation: name duration timing fill-mode
+  [ ] animation-play-state, animation-delay
+  [ ] CSS Transform: translate, scale, rotate, skew, perspective
+  [ ] CSS Filter: blur, brightness, contrast, saturate, hue-rotate
+  [ ] backdrop-filter (glassmorphism)
+  [ ] clip-path: polygon, circle, ellipse
+  [ ] Gradient text: background-clip: text
+  [ ] box-shadow, text-shadow, inset shadow
+  [ ] Scroll-driven animations: animation-timeline: view() (NATIVE CSS 2025)
+  [ ] @media (prefers-reduced-motion: reduce) — always add
+
+  PHASE 6 — MODERN CSS
+  [ ] CSS Nesting (native — no Sass needed)
+  [ ] Logical properties: margin-inline, padding-block
+  [ ] OKLCH color system (Tailwind v4 uses this)
+  [ ] color-mix()
+  [ ] view-transition API (page transitions)
+  [ ] :focus-visible (better than :focus for keyboards)
+  [ ] overscroll-behavior
+  [ ] scroll-snap
+
+OPEN SOURCE REVIEWED:
+  📖 necolas/normalize.css → Read ALL 350 lines. Every comment explains a browser quirk.
+
+THINKING STYLE — CSS COMPANY RULES:
+  ❌ BAD: .thing { margin-left: 23px; color: #333; font-size: 14px; }
+  ✅ GOOD:
+  .card-header {
+    margin-inline-start: var(--spacing-lg);   /* logical — RTL support */
+    color: var(--color-text-secondary);        /* named, reusable */
+    font-size: var(--text-sm);                 /* from your scale */
+  }
+
+  RULES:
+  → No magic numbers. Every value from a CSS variable.
+  → Mobile CSS first. Always.
+  → Never remove focus styles. Style them instead.
+  → Group properties: positioning → display → box-model → typography → visual → animation
+
+CSS PROJECTS:
+  ┌───┬──────────────────────────────────────────┬──────────────────────────────────────────────────┬────┐
+  │ # │ PROJECT                                  │ CORE CONCEPTS                                    │ 🎯 │
+  ├───┼──────────────────────────────────────────┼──────────────────────────────────────────────────┼────┤
+  │C1 │ CSS Variable Design System               │ :root, tokens, dark/light mode toggle            │ 🟡 │
+  │C2 │ Glassmorphism Card Set (5 cards)         │ backdrop-filter, rgba, gradient, shadow          │ 🟡 │
+  │C3 │ Pure CSS Hamburger Animated Menu         │ @keyframes, transform, checkbox hack, transition │ 🟡 │
+  │C4 │ Flexbox App Dashboard Layout             │ Full Flexbox: sidebar + topbar + main            │ 🟡 │
+  │C5 │ CSS Grid Magazine Layout                 │ grid-template-areas, named lines, span           │ 🟡 │
+  │C6 │ Animated CSS Loader Collection (6 types) │ @keyframes, clip-path, conic-gradient            │ 🟡 │
+  │C7 │ Responsive Pricing Table                 │ Grid + Flex mix, hover lift, badge overlay       │ 🟠 │
+  │C8 │ Scroll Animation Landing Page            │ animation-timeline: view() — ZERO JavaScript     │ 🟠 │
+  │C9 │ 🔴 Full Responsive Dev Portfolio         │ EVERYTHING — Grid+Flex+Variables+Animation+Dark  │ 🔴 │
+  └───┴──────────────────────────────────────────┴──────────────────────────────────────────────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 BOOK 1C — JAVASCRIPT CORE ENGINE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: 🔥 ACTIVE — Chapter 4.8 Mastered!
+
+TOPICS:
+  PHASE 1 — VARIABLES, TYPES, MEMORY ✅ DONE
+  [x] var — function-scoped, hoisted to undefined
+  [x] let — block-scoped, TDZ, cannot access before declaration
+  [x] const — block-scoped, must initialize, reference immutable
+  [x] Temporal Dead Zone (TDZ) — what it means, when it triggers
+  [x] Hoisting — var vs let/const vs function declarations
+  [x] Primitive types: string, number, boolean, null, undefined, symbol, bigint
+  [x] typeof operator — quirks: typeof null === "object"
+  [x] IEEE-754 Float — why 0.1 + 0.2 = 0.30000000000000004
+  [x] Fix: Number((0.1 + 0.2).toFixed(1)) or Math.round((0.1+0.2)*10)/10
+  [x] Explicit conversion: Number(), String(), Boolean(), parseInt(), parseFloat()
+  [x] Implicit coercion: "5" + 1 = "51" vs "5" - 1 = 4
+  [x] Equality: === (strict, no coercion) vs == (loose, coercion)
+  [x] Falsy values: false, 0, "", null, undefined, NaN
+  [x] Truthy: everything else
+  [x] Nullish coalescing ??  vs  Logical OR ||
+  [x] Optional chaining ?.
+  [x] Logical Assignment: ??=, ||=, &&=
+  [x] Short-circuit evaluation
+
+  PHASE 2 — CONTROL FLOW ✅ DONE
+  [x] if / else if / else — guard clause pattern
+  [x] switch statement — jump tables, fall-through, break
+  [x] Ternary operator: condition ? a : b
+  [x] for loop — initialization, condition, update
+  [x] while loop
+  [x] do...while loop
+  [x] for...of — iterables (arrays, strings, sets, maps)
+  [x] for...in — object keys (avoid on arrays)
+  [x] break — exit loop
+  [x] continue — skip iteration
+  [x] Labeled loops — break/continue with labels
+
+  PHASE 3 — FUNCTIONS FOUNDATION ✅ DONE
+  [x] Function declaration vs expression
+  [x] Parameters vs arguments
+  [x] Default parameters
+  [x] Rest parameters: ...args
+  [x] Arguments object (legacy)
+  [x] Return statement — early return (guard clause)
+  [x] Pure functions — no side effects
+  [x] Impure functions — side effects (when acceptable)
+  [x] Function as first-class value (pass, return, assign)
+
+  PHASE 4 — FUNCTIONS DEEP 🔥 ACTIVE
+  [ ] Arrow functions — syntax, implicit return
+  [ ] Arrow: single param (no parens), multi-line (braces needed)
+  [ ] Arrow returning object: n => ({ value: n })
+  [ ] When NOT to use arrow: object methods, constructors
+  [ ] this — the 4 binding rules:
+        1. Default binding (standalone call → undefined in strict)
+        2. Implicit binding (dot notation → left of dot)
+        3. Explicit binding: call(), apply(), bind()
+        4. New binding (new keyword → new object)
+  [ ] Lexical this — arrow functions inherit outer this
+  [ ] Execution Context — what JS engine creates per context
+  [ ] Global Execution Context — window / global + this
+  [ ] Function Execution Context — created on every call
+  [ ] Creation Phase: hoisting | Execution Phase: runs code
+  [ ] Call Stack — LIFO, push on call, pop on return
+  [ ] Stack overflow — infinite recursion
+  [ ] Closures — function remembers its birth scope
+  [ ] Closure use cases: private vars, memoization, factories
+  [ ] IIFE — Immediately Invoked Function Expression
+  [ ] Callback functions
+  [ ] Higher-order functions (take/return functions)
+
+  PHASE 5 — ARRAYS DEEP ⏳
+  [ ] Array literal, Array.from(), Array.of(), spread
+  [ ] MUTATING: push, pop, shift, unshift, splice, reverse, sort, fill, copyWithin
+  [ ] NON-MUTATING (USE THESE):
+        map()      — transform every element → new array
+        filter()   — keep matching elements → new array
+        reduce()   — fold into single value
+        find()     — first match or undefined
+        findIndex()— index of first match or -1
+        some()     — ANY match? → boolean
+        every()    — ALL match? → boolean
+        flat()     — flatten nested arrays
+        flatMap()  — map then flat
+        slice()    — copy portion (non-destructive)
+        concat()   — merge arrays (non-destructive)
+        includes() — contains value? → boolean
+        indexOf()  — index of value or -1
+  [ ] Chaining: arr.filter().map().reduce()
+  [ ] Spread operator: [...arr1, ...arr2]
+  [ ] Destructuring: const [a, b, , d] = arr
+  [ ] Rest in destructuring: const [head, ...tail] = arr
+  [ ] Sorting gotcha: always use comparator fn
+  [ ] Array.from({ length: n }, (_, i) => i) — create ranges
+  [ ] Set for deduplication: [...new Set(arr)]
+
+  PHASE 6 — OBJECTS DEEP ⏳
+  [ ] Object literal, shorthand properties, computed keys
+  [ ] Destructuring: const { name, age = 18 } = user
+  [ ] Rename: const { name: firstName } = user
+  [ ] Nested destructuring
+  [ ] Destructuring in function params
+  [ ] Spread in objects: { ...obj, key: newValue }
+  [ ] Object.keys(), values(), entries(), fromEntries()
+  [ ] Object.assign() vs spread (prefer spread)
+  [ ] Object.freeze() — immutable object
+  [ ] Object.create() — prototypal inheritance
+  [ ] Property descriptors: writable, enumerable, configurable
+  [ ] Reference vs Value — why objects share memory
+  [ ] Shallow copy: spread { ...obj }
+  [ ] Deep clone: structuredClone(obj) — modern standard
+  [ ] Optional chaining on objects: obj?.nested?.value
+
+  PHASE 7 — ASYNC JAVASCRIPT ⏳
+  [ ] Synchronous vs Asynchronous
+  [ ] The Event Loop — diagram:
+        Call Stack → Web APIs → Callback Queue → Microtask Queue
+  [ ] Microtasks (Promises) run BEFORE macrotasks (setTimeout)
+  [ ] Callbacks — the old way, callback hell problem
+  [ ] Promises — new Promise((resolve, reject) => {})
+  [ ] .then(), .catch(), .finally()
+  [ ] Promise chaining
+  [ ] Promise.all()     — all resolve or first reject
+  [ ] Promise.allSettled() — all results regardless of fail
+  [ ] Promise.race()    — first to settle wins
+  [ ] Promise.any()     — first to fulfill wins
+  [ ] async function — always returns Promise
+  [ ] await — pause until Promise settles
+  [ ] try/catch/finally with async/await
+  [ ] Parallel vs sequential await
+  [ ] Fetch API: fetch(), response.json(), response.ok
+  [ ] AbortController — cancel in-flight requests
+  [ ] Error types: TypeError, RangeError, SyntaxError, custom Error class
+
+  PHASE 8 — MODERN JS (ES6 → ES2025) ⏳
+  [ ] ES6 Modules: import/export, named vs default
+  [ ] Dynamic import(): lazy loading
+  [ ] Template literals + tagged templates
+  [ ] Symbols: unique keys, well-known symbols
+  [ ] Iterators: Symbol.iterator, next(), done
+  [ ] Generators: function*, yield, for...of custom
+  [ ] WeakMap, WeakSet — garbage-collection friendly
+  [ ] Proxy + Reflect — intercept object operations (Vue 3 reactivity)
+  [ ] Nullish coalescing assignment ??=
+  [ ] Array.at(-1) — last element
+  [ ] Object.hasOwn() vs hasOwnProperty
+
+  PHASE 9 — OOP IN JAVASCRIPT ⏳
+  [ ] Constructor functions (legacy — read for old code)
+  [ ] prototype chain — how inheritance works at engine level
+  [ ] __proto__ vs prototype
+  [ ] ES6 class syntax
+  [ ] constructor() method
+  [ ] Instance methods + properties
+  [ ] Private fields: #fieldName
+  [ ] Getters: get name() {}
+  [ ] Setters: set name(value) {}
+  [ ] Static methods + properties
+  [ ] extends keyword — inheritance
+  [ ] super() — call parent constructor
+  [ ] Method overriding + super.method()
+  [ ] instanceof operator
+  [ ] Encapsulation, Polymorphism, Inheritance in JS
+  [ ] Composition over Inheritance — modern preference
+
+  PHASE 10 — FUNCTIONAL PROGRAMMING ⏳
+  [ ] Pure functions
+  [ ] Immutability — never mutate, always return new
+  [ ] Side effect isolation
+  [ ] Function composition: pipe() and compose()
+  [ ] Currying: f(a)(b) from f(a, b)
+  [ ] Partial application
+  [ ] Point-free style
+  [ ] Functor, Monad concepts (intro)
+
+OPEN SOURCE REVIEWED:
+  📖 developit/mitt    → Read ALL 40 lines. Perfect closure + Map + pub-sub.
+  📖 vercel/ms         → src/index.ts — real-world regex + defensive type handling.
+  📖 jonschlinkert/is-number → All 20 lines. How 80M devs trust 20 lines of code.
+
+THINKING STYLE — JS COMPANY RULES:
+
+  ❌ JUNIOR CODE:
+  function calc(x, y, t) {
+    if (t == 1) return x + y;
+    if (t == 2) return x - y;
+  }
+
+  ✅ SENIOR CODE:
+  const OPERATIONS = Object.freeze({
+    ADD: "add",
+    SUBTRACT: "subtract",
+    MULTIPLY: "multiply",
+  });
+
+  /**
+   * Performs arithmetic with full validation.
+   * @param {number} a - First operand (must be finite)
+   * @param {number} b - Second operand (must be finite)
+   * @param {'add'|'subtract'|'multiply'} operation
+   * @returns {{ result: number } | { error: string }}
+   */
+  function calculate(a, b, operation) {
+    // Guard: validate inputs first
+    if (!Number.isFinite(a) || !Number.isFinite(b)) {
+      return { error: `Expected finite numbers, got: ${a}, ${b}` };
+    }
+
+    const operations = {
+      [OPERATIONS.ADD]:      (x, y) => x + y,
+      [OPERATIONS.SUBTRACT]: (x, y) => x - y,
+      [OPERATIONS.MULTIPLY]: (x, y) => x * y,
+    };
+
+    if (!operations[operation]) {
+      return { error: `Unknown operation: "${operation}"` };
+    }
+
+    return { result: operations[operation](a, b) };
+  }
+
+  RULES — APPLY FROM TODAY:
+  → Guard clauses first. Happy path last. Never deep nesting.
+  → Descriptive names: processPayment not pp, userSalary not x.
+  → One function = one job. If it does 2 things, split it.
+  → JSDoc comments on every public function.
+  → Object.freeze() for constants. Never magic strings.
+  → Return error objects { error } or throw — never return undefined silently.
+  → Always handle the error case. Never ignore .catch() or try without catch.
+
+JS PROJECTS — BUILD ALL 17:
+  ┌────┬──────────────────────────────────────────┬─────────────────────────────────────────────────┬────────┬────┐
+  │ #  │ PROJECT                                  │ CORE CONCEPTS                                   │ PAPER  │ 🎯 │
+  ├────┼──────────────────────────────────────────┼─────────────────────────────────────────────────┼────────┼────┤
+  │ P1 │ ✅ E-Commerce Cart Calculator             │ Coercion defense, Number(), input validation    │ Done   │ 🟡 │
+  │ P2 │ ✅ Traffic Signal Controller              │ switch, setInterval, DOM state machine          │ Done   │ 🟡 │
+  │ P3 │ ✅ Battery Fast-Charger Simulator         │ Math.min clamping, loops, conditions            │ Done   │ 🟡 │
+  │ P4 │ ✅ Bank Firewall Transaction Scanner      │ break/continue, for loops, filter logic         │ Done   │ 🟡 │
+  │ P5 │ ✅ Video Streaming Bandwidth Calculator   │ Helper functions, guard clauses, return         │ Done   │ 🟡 │
+  │ P6 │ ⏳ Bubble Game Engine                    │ Event bubbling, setTimeout, DOM hit logic        │ 20 min │ 🟠 │
+  │ P7 │ ⏳ Bankist Banking Ledger                 │ Closures, map/filter/reduce, Date, Intl API     │ 30 min │ 🟠 │
+  │ P8 │ ⏳ Custom Event Emitter (like mitt)       │ Closures, Map, pub/sub from scratch             │ 25 min │ 🟠 │
+  │ P9 │ ⏳ Async Weather Dashboard               │ fetch, async/await, OpenWeather API, error UI    │ 25 min │ 🟠 │
+  │P10 │ ⏳ Infinite Scroll Photo Gallery          │ fetch, Unsplash API, IntersectionObserver       │ 20 min │ 🟠 │
+  │P11 │ ⏳ JavaScript Quiz Engine                 │ State machine, timer, Map, closures, score      │ 30 min │ 🟠 │
+  │P12 │ ⏳ Local Notes App (localStorage CRUD)   │ CRUD, localStorage, JSON, ES6 modules           │ 25 min │ 🟠 │
+  │P13 │ ⏳ Password Strength Analyser             │ Regex, Array.every(), real-time DOM feedback    │ 20 min │ 🟠 │
+  │P14 │ ⏳ Drag & Drop Kanban Board               │ Drag API, localStorage, state management        │ 40 min │ 🔴 │
+  │P15 │ ⏳ Custom Promise (build from scratch)    │ How Promises work internally — truly understand │ 45 min │ 🔴 │
+  │P16 │ ⏳ Memoization & Cache Engine             │ Closures, Map, performance, pure functions      │ 30 min │ 🔴 │
+  │P17 │ ⏳ Tiny Module Bundler                    │ Dependency graph, how Webpack core works        │ 60 min │ 🔴 │
+  └────┴──────────────────────────────────────────┴─────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 1D — TAILWIND CSS v4 + shadcn/ui
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ START AFTER BOOK 1B (CSS Mastery First)
+
+TOPICS:
+  TAILWIND CSS v4
+  [ ] What is utility-first CSS — the philosophy
+  [ ] How Tailwind generates classes (PurgeCSS / content scanning)
+  [ ] Tailwind v4 change: NO tailwind.config.js — configure in CSS
+  [ ] @import "tailwindcss" in globals.css
+  [ ] @theme {} directive — your design tokens in CSS
+  [ ] OKLCH color system (v4 default)
+  [ ] @theme inline {} — map CSS vars to Tailwind utilities
+  [ ] @custom-variant dark — dark mode setup
+  [ ] Utility classes: layout, spacing, typography, colors, borders, sizing
+  [ ] Spacing scale: 1=4px, 2=8px, 4=16px, 6=24px, 8=32px
+  [ ] Responsive variants: sm: md: lg: xl: 2xl:
+  [ ] State variants: hover: focus: active: disabled: group-hover: peer-focus:
+  [ ] Dark mode: dark: variant
+  [ ] Arbitrary values: w-[123px], text-[#ff0000]
+  [ ] @apply — use utilities in CSS
+  [ ] Group + peer — parent/sibling state coordination
+  [ ] Container queries: @container
+  [ ] tw-animate-css — animation library for v4
+
+  SHADCN/UI — COMPONENT SYSTEM
+  [ ] Philosophy: you OWN the code — not a package dependency
+  [ ] Built on: Radix UI (headless accessible) + Tailwind (styling)
+  [ ] npx shadcn@latest init — project setup
+  [ ] npx shadcn@latest add [component] — copies code to your project
+  [ ] Understanding cva (class-variance-authority) — variant management
+  [ ] Understanding cn() utility — clsx + tailwind-merge
+  [ ] Component: Button — variants, sizes, icons
+  [ ] Component: Card + CardHeader + CardContent + CardFooter
+  [ ] Component: Input + Label
+  [ ] Component: Dialog (Modal) + DialogTrigger
+  [ ] Component: DropdownMenu
+  [ ] Component: Sheet (side panel)
+  [ ] Component: Toast / Sonner (notifications)
+  [ ] Component: Form + React Hook Form integration
+  [ ] Component: Table + DataTable
+  [ ] Component: Badge
+  [ ] Component: Avatar
+  [ ] Component: Tabs
+  [ ] Component: Accordion
+  [ ] Component: Skeleton (loading state)
+  [ ] Component: Progress
+  [ ] Component: Toggle + Switch
+  [ ] Component: Select + Combobox
+  [ ] Component: Command (command palette)
+  [ ] Component: Calendar + DatePicker
+  [ ] Component: Alert + AlertDialog
+  [ ] Building CUSTOM shadcn-style components with cva
+  [ ] Theming: CSS variables → OKLCH color system
+  [ ] next-themes integration for dark/light mode
+
+  THINKING STYLE — Tailwind v4 Setup:
+
+  globals.css:
+  ────────────
+  @import "tailwindcss";
+  @import "tw-animate-css";
+
+  @custom-variant dark (&:is(.dark *));
+
+  :root {
+    --background:  oklch(1 0 0);
+    --foreground:  oklch(0.145 0 0);
+    --primary:     oklch(0.205 0 0);
+    --radius:      0.625rem;
+  }
+  .dark {
+    --background:  oklch(0.145 0 0);
+    --foreground:  oklch(0.985 0 0);
+  }
+
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground:  var(--foreground);
+    --radius-lg:         var(--radius);
+  }
+
+  THINKING STYLE — shadcn Button understanding:
+
+  const buttonVariants = cva(
+    // BASE: always applied
+    "inline-flex items-center justify-center rounded-md text-sm font-medium
+     transition-colors focus-visible:outline-none focus-visible:ring-2
+     disabled:pointer-events-none disabled:opacity-50",
+    {
+      variants: {
+        variant: {
+          default:     "bg-primary text-primary-foreground hover:bg-primary/90",
+          destructive: "bg-destructive text-destructive-foreground",
+          outline:     "border border-input bg-background hover:bg-accent",
+          ghost:       "hover:bg-accent hover:text-accent-foreground",
+        },
+        size: {
+          default: "h-10 px-4 py-2",
+          sm:      "h-9 px-3",
+          lg:      "h-11 px-8",
+          icon:    "h-10 w-10",
+        },
+      },
+      defaultVariants: { variant: "default", size: "default" },
+    }
+  );
+  // READ THIS. Understand cva. All shadcn components follow this pattern.
+
+OPEN SOURCE REVIEWED:
+  📖 tailwindlabs/tailwindcss → src/css/preflight.css + packages/tailwindcss/src/
+  📖 shadcn-ui/ui            → apps/www/registry/new-york/ui/button.tsx (real source)
+
+TAILWIND + shadcn PROJECTS:
+  ┌────┬───────────────────────────────────────────┬────────────────────────────────────────────────┬────────┬────┐
+  │ #  │ PROJECT                                   │ CORE CONCEPTS                                  │ PAPER  │ 🎯 │
+  ├────┼───────────────────────────────────────────┼────────────────────────────────────────────────┼────────┼────┤
+  │ T1 │ Custom Tailwind v4 Design System           │ @theme, OKLCH colors, design tokens            │ 30 min │ 🟡 │
+  │ T2 │ 20-Component Library (all shadcn-style)   │ cva, cn(), Radix, every shadcn component       │ 2 hrs  │ 🟠 │
+  │ T3 │ SaaS Landing Page (full marketing)        │ Hero+Features+Pricing+FAQ+CTA+Testimonials     │ 45 min │ 🟠 │
+  │ T4 │ Admin Dashboard UI                        │ Sidebar+stats+DataTable+charts+dark mode       │ 60 min │ 🟠 │
+  │ T5 │ Portfolio Rebuilt in Tailwind             │ Convert CSS3 portfolio — compare both          │ 30 min │ 🟡 │
+  └────┴───────────────────────────────────────────┴────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 2 — ADVANCED FRONTEND + 3D
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED — After Book 1 Complete
+
+TOPICS:
+  GSAP — PROFESSIONAL ANIMATION
+  [ ] gsap.to(), gsap.from(), gsap.fromTo()
+  [ ] Easing: power1-4.in/out/inOut, back.out, elastic, bounce, steps()
+  [ ] gsap.timeline() — sequenced animation
+  [ ] defaults on timeline
+  [ ] position parameter: "+=0.3" "-=0.2" "<" (same time)
+  [ ] stagger — animate list items with delay
+  [ ] gsap.registerPlugin()
+  [ ] ScrollTrigger plugin
+  [ ] scrollTrigger: trigger, start, end, scrub, pin, pinSpacing
+  [ ] gsap.matchMedia() — responsive animations
+  [ ] SplitText plugin — letter-by-letter text animation
+  [ ] Kill/reverse animations programmatically
+  [ ] GSAP + Lenis integration
+
+  FRAMER MOTION — REACT ANIMATIONS (CRITICAL)
+  [ ] motion.div, motion.span, motion.h1 etc
+  [ ] initial, animate, exit props
+  [ ] transition: duration, ease, delay, type
+  [ ] Spring transition: stiffness, damping, mass
+  [ ] variants — define named states (hidden/visible/exit)
+  [ ] custom prop — stagger with index
+  [ ] AnimatePresence — animate on mount/unmount
+  [ ] mode: "wait" vs "sync" in AnimatePresence
+  [ ] whileHover, whileTap, whileFocus, whileDrag, whileInView
+  [ ] viewport: { once: true, amount: 0.3 }
+  [ ] useAnimation hook — programmatic control
+  [ ] useScroll + useTransform — scroll-linked animations
+  [ ] useSpring — smooth spring-based values
+  [ ] LayoutGroup + layout prop — animate layout changes
+  [ ] Drag + constraints
+  [ ] Gesture detection: onHoverStart, onTap, onDrag
+  [ ] AnimateSharedLayout (deprecated → use layout prop)
+
+  THREE.JS — 3D WEB
+  [ ] Scene, Camera, Renderer — the 3 pillars
+  [ ] PerspectiveCamera: fov, aspect, near, far
+  [ ] WebGLRenderer: antialias, setPixelRatio, setSize
+  [ ] Geometries: Box, Sphere, Plane, Torus, Cone, Cylinder, Buffer
+  [ ] Materials: MeshBasicMaterial, MeshStandardMaterial, MeshPhysicalMaterial, ShaderMaterial
+  [ ] Mesh = Geometry + Material
+  [ ] Lights: AmbientLight, PointLight, DirectionalLight, SpotLight, RectAreaLight
+  [ ] OrbitControls + enableDamping
+  [ ] Animation loop: requestAnimationFrame
+  [ ] Object3D: position, rotation, scale, visible, name
+  [ ] Raycasting — mouse click detection on 3D objects
+  [ ] GLTF/GLB model loading with GLTFLoader
+  [ ] Draco compression for 3D models
+  [ ] Particles: Points + BufferGeometry + PointsMaterial
+  [ ] Texture loading: TextureLoader, UV mapping
+  [ ] Environment maps: HDR, PMREM
+  [ ] Responsive resize handling
+  [ ] Debug with lil-gui / Tweakpane
+
+  CANVAS API — 2D
+  [ ] getContext("2d")
+  [ ] Drawing: fillRect, strokeRect, clearRect, arc, path
+  [ ] Colors: fillStyle, strokeStyle, globalAlpha
+  [ ] Text: fillText, strokeText, font, textAlign
+  [ ] Images: drawImage()
+  [ ] Transformations: translate, rotate, scale, save, restore
+  [ ] requestAnimationFrame for game loops
+  [ ] Pixel manipulation: getImageData, putImageData
+
+  LENIS — MODERN SMOOTH SCROLL
+  [ ] Install + setup (replaces Locomotive Scroll)
+  [ ] lenis.raf() integration with requestAnimationFrame
+  [ ] GSAP ScrollTrigger sync with Lenis
+  [ ] Scroll to programmatic: lenis.scrollTo()
+  [ ] Direction, velocity, progress events
+
+OPEN SOURCE REVIEWED:
+  📖 mrdoob/three.js           → src/core/Object3D.js
+  📖 framer/motion             → src/animation/animate.ts
+  📖 darkroomengineering/lenis → src/index.ts (200 lines)
+
+BOOK 2 PROJECTS:
+  ┌──────┬─────────────────────────────────────────┬─────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                                 │ CORE CONCEPTS                                   │ PAPER  │ 🎯 │
+  ├──────┼─────────────────────────────────────────┼─────────────────────────────────────────────────┼────────┼────┤
+  │ 2-A  │ GSAP Text Reveal Portfolio Page         │ GSAP + SplitText + ScrollTrigger stagger        │ 20 min │ 🟠 │
+  │ 2-B  │ ScrollTrigger Parallax Multi-Section    │ ScrollTrigger: scrub, pin, pinSpacing           │ 30 min │ 🟠 │
+  │ 2-C  │ Framer Motion Page Transitions (Next)  │ AnimatePresence, variants, exit animations      │ 25 min │ 🟠 │
+  │ 2-D  │ 3D Product Viewer (Three.js)            │ Three.js core, GLTF, OrbitControls, Lighting    │ 35 min │ 🟠 │
+  │ 2-E  │ Particle Galaxy (5000 particles)        │ BufferGeometry, Points, math, animation loop    │ 40 min │ 🔴 │
+  │ 2-F  │ Canvas Snake Game                       │ Canvas 2D, requestAnimationFrame, game loop     │ 30 min │ 🟠 │
+  │ 2-G  │ 🔴 3D Cyberpunk Landing Page (Capstone) │ Three.js + GSAP + Framer Motion + Lenis         │ 60 min │ 🔴 │
+  └──────┴─────────────────────────────────────────┴─────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 3 — FULL STACK MASTERY (MERN + Next.js 15 + TypeScript)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED
+
+TOPICS:
+  TYPESCRIPT
+  [ ] Why TypeScript — catch bugs at write time
+  [ ] Basic types: string, number, boolean, null, undefined, unknown, never, void, any
+  [ ] Type annotations: let name: string
+  [ ] Interface vs Type alias — when to use each
+  [ ] Optional properties: name?: string
+  [ ] Union types: string | number
+  [ ] Intersection types: TypeA & TypeB
+  [ ] Literal types: "admin" | "user" | "guest"
+  [ ] Generics: function fn<T>(arg: T): T
+  [ ] Generic constraints: <T extends string>
+  [ ] Generic interfaces and classes
+  [ ] Utility types: Partial<T>, Required<T>, Pick<T,K>, Omit<T,K>, Record<K,V>, Readonly<T>
+  [ ] Type narrowing: typeof, instanceof, in, discriminated unions
+  [ ] Discriminated unions with status field
+  [ ] as const — readonly literal types
+  [ ] Declaration files: .d.ts
+  [ ] tsconfig.json: strict mode (always on), noImplicitAny, strictNullChecks
+  [ ] Type assertions: as Type (use sparingly)
+  [ ] Enums vs const objects (prefer const objects)
+  [ ] Mapped types: { [K in keyof T]: ... }
+  [ ] Conditional types: T extends U ? X : Y
+  [ ] Template literal types: `${string}-${number}`
+  [ ] Infer keyword
+
+  REACT 19
+  [ ] JSX — transpiles to React.createElement()
+  [ ] Function components only (class components legacy)
+  [ ] Props — pass data down, destructure, TypeScript types
+  [ ] useState — local state, functional update pattern
+  [ ] useEffect — side effects, dependency array, cleanup
+  [ ] Strict mode useEffect double-invoke (intentional)
+  [ ] useRef — DOM access without re-render, prev value
+  [ ] useMemo — memoize expensive computation
+  [ ] useCallback — memoize function reference
+  [ ] useReducer — complex state with actions
+  [ ] useContext — global state without prop drilling
+  [ ] Custom hooks — extract + reuse stateful logic:
+        useFetch, useLocalStorage, useDebounce, useThrottle,
+        useWindowSize, useOnlineStatus, useMediaQuery,
+        useClickOutside, usePrevious, useToggle
+  [ ] React.memo — prevent unnecessary re-renders
+  [ ] key prop — reconciliation, why it matters
+  [ ] Conditional rendering patterns
+  [ ] List rendering with .map()
+  [ ] Lifting state up
+  [ ] Controlled vs uncontrolled components
+  [ ] Error Boundaries (class component still needed here)
+  [ ] Suspense + lazy loading: React.lazy(), <Suspense>
+  [ ] Portals: ReactDOM.createPortal()
+  [ ] REACT 19 — NEW:
+        use() hook — read Promises/Context in render
+        Server Actions — call server functions directly
+        useOptimistic — optimistic UI updates
+        useFormStatus — form pending state
+        ref as prop (no more forwardRef needed)
+
+  NEXT.JS 15 — APP ROUTER
+  [ ] App Router vs Pages Router — why App Router is 2026 standard
+  [ ] File system routing: app/ directory
+  [ ] page.tsx — defines a route
+  [ ] layout.tsx — shared wrapping UI, persists between routes
+  [ ] loading.tsx — auto Suspense boundary
+  [ ] error.tsx — auto Error Boundary
+  [ ] not-found.tsx — 404 page
+  [ ] Route Groups: (groupName)/ — no URL segment
+  [ ] Dynamic routes: [id]/page.tsx → params.id
+  [ ] Catch-all routes: [...slug]/page.tsx
+  [ ] Parallel Routes: @slot convention
+  [ ] Intercepting Routes: (.)/ (..)/ (...)/ conventions
+  [ ] Server Components — default, no 'use client'
+  [ ] Client Components — 'use client' directive at top
+  [ ] When to use each:
+        Server: fetch data, DB, env vars, no hooks, no events
+        Client: useState, useEffect, onClick, browser APIs
+  [ ] Server Actions: 'use server' — call from forms/buttons
+  [ ] Route Handlers: route.ts — GET, POST, PUT, DELETE
+  [ ] Middleware: middleware.ts — auth, redirects, A/B test
+  [ ] Metadata API: export const metadata or generateMetadata()
+  [ ] next/image — WebP, lazy load, blur placeholder, priority
+  [ ] next/font — zero layout shift font loading
+  [ ] next/link — client navigation, prefetching
+  [ ] Caching: force-cache, no-store, next.revalidate
+  [ ] Incremental Static Regeneration (ISR)
+  [ ] generateStaticParams — static dynamic routes
+  [ ] revalidatePath(), revalidateTag() — on-demand revalidation
+  [ ] cookies(), headers() — server-side
+  [ ] redirect(), notFound() — server utilities
+  [ ] Environment variables: .env.local, NEXT_PUBLIC_ prefix
+
+  NODE.JS + EXPRESS API
+  [ ] Node.js mental model: single-threaded, non-blocking I/O
+  [ ] Event loop phases: timers → I/O → poll → check → close
+  [ ] Microtasks run BETWEEN phases (Promises before setTimeout)
+  [ ] process.env, process.argv, process.exit()
+  [ ] __dirname, __filename, path module
+  [ ] fs module: readFile, writeFile, mkdir, existsSync
+  [ ] streams: readable, writable, transform, pipe
+  [ ] Buffer — binary data handling
+  [ ] EventEmitter — how Node events work
+  [ ] http.createServer() — raw Node (understand before Express)
+  [ ] Express setup: helmet, cors, express.json, compression
+  [ ] Rate limiting: express-rate-limit
+  [ ] app.use() — global middleware
+  [ ] express.Router() — modular route organization
+  [ ] req.params, req.query, req.body, req.headers
+  [ ] res.json(), res.status(), res.send(), res.redirect()
+  [ ] next() function in middleware
+  [ ] Error middleware: (err, req, res, next) — always last
+  [ ] REST API design: resources, verbs, status codes, versioning
+  [ ] HTTP Status codes: 200 201 204 400 401 403 404 409 422 500
+  [ ] Zod request validation — validate BEFORE business logic
+  [ ] File uploads with multer → S3
+  [ ] JWT: sign, verify, access tokens (15min), refresh tokens (7d)
+  [ ] bcrypt: hash passwords, compare on login
+  [ ] OAuth 2.0: Google/GitHub with Auth.js / NextAuth.js
+  [ ] Sessions vs JWT — when to use each
+  [ ] Rate limiting: per IP, per user, per route
+  [ ] Security headers: helmet()
+  [ ] CORS: whitelist exact frontend domain
+  [ ] XSS prevention: sanitize input, Content-Security-Policy
+  [ ] SQL Injection: parameterized queries always
+  [ ] CSRF: SameSite cookies + CSRF tokens
+  [ ] Environment validation with Zod on startup
+
+  DATABASES
+  MongoDB + Mongoose:
+  [ ] Document model, BSON, flexible schema
+  [ ] Schema embedding vs referencing — when to use each
+  [ ] Mongoose Schema, Model, validation, virtuals
+  [ ] Indexing: createIndex(), compound indexes, sparse
+  [ ] Aggregation pipeline: $match $group $lookup $project $unwind
+  [ ] Transactions (multi-document)
+  [ ] Population (join-like)
+
+  PostgreSQL + Prisma ORM:
+  [ ] Relational model: tables, columns, foreign keys, joins
+  [ ] Prisma schema: models, @id, @default, @unique, @relation
+  [ ] Prisma migrations: prisma migrate dev
+  [ ] Prisma Studio: visual database browser
+  [ ] prisma.model.findMany(), findUnique(), create(), update(), delete()
+  [ ] select vs include — always prefer select (no over-fetching)
+  [ ] Transactions: prisma.$transaction([])
+  [ ] N+1 query problem — how to avoid with include
+  [ ] Pagination: skip + take pattern
+  [ ] Full-text search in Postgres
+
+  Redis:
+  [ ] Key-value store: SET, GET, DEL, EXPIRE, TTL
+  [ ] Cache patterns: cache-aside, write-through
+  [ ] Sessions in Redis
+  [ ] Rate limiting counters in Redis
+  [ ] Pub/Sub for real-time features
+  [ ] BullMQ job queues (background processing)
+  [ ] ioredis client setup
+
+  ADDITIONAL MUST-KNOW
+  [ ] tRPC — end-to-end type-safe API (same repo full-stack)
+        router, procedure, input with Zod, useQuery, useMutation
+        When to use: internal Next.js monorepo
+        When NOT: public APIs for mobile apps
+  [ ] GraphQL (optional but valuable)
+        Schema, resolvers, queries, mutations, subscriptions
+  [ ] WebSockets: ws module + Socket.io — rooms, namespaces, events
+  [ ] Server-Sent Events (SSE) — one-way push from server
+  [ ] Zod — runtime schema validation
+        z.object(), z.string().email(), z.number().min()
+        parse() vs safeParse(), transform(), refine()
+  [ ] Zustand — client state management
+        create(), selectors, persist middleware, devtools
+  [ ] TanStack Query — server state management
+        useQuery(), useMutation(), invalidateQueries(), stale-while-revalidate
+  [ ] React Hook Form + Zod — form validation
+
+OPEN SOURCE REVIEWED:
+  📖 expressjs/express  → lib/router/index.js (middleware chain)
+  📖 prisma/prisma      → schema parser + migration engine
+  📖 trpc/trpc          → packages/server/src/router.ts (type inference)
+  📖 colinhacks/zod     → src/types.ts (schema composition)
+  📖 pmndrs/zustand     → src/vanilla.ts (50 lines → global state)
+  📖 supabase/supabase  → auth module (real-world JWT + RLS)
+  📖 TanStack/query     → src/queryClient.ts (cache strategy)
+
+BOOK 3 PROJECTS:
+  ┌──────┬────────────────────────────────────────────┬──────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                                    │ STACK                                            │ PAPER  │ 🎯 │
+  ├──────┼────────────────────────────────────────────┼──────────────────────────────────────────────────┼────────┼────┤
+  │ 3-1  │ Type-Safe REST API from Scratch            │ Node+Express+TypeScript+Zod+MongoDB+JWT          │ 40 min │ 🟠 │
+  │ 3-2  │ Full-Stack Todo (typed end-to-end)         │ Next.js+tRPC+Prisma+PostgreSQL+Zod               │ 35 min │ 🟠 │
+  │ 3-3  │ GitHub Profile Explorer                    │ Next.js+TanStack Query+Zustand+shadcn/ui         │ 25 min │ 🟠 │
+  │ 3-4  │ Real-Time Chat Application                 │ Next.js+Node+Socket.io+Redis+MongoDB             │ 45 min │ 🔴 │
+  │ 3-5  │ Auth System from Scratch                   │ Next.js+JWT+bcrypt+refresh tokens+cookies        │ 50 min │ 🔴 │
+  │ 3-6  │ URL Shortener                              │ Node+Express+Redis+PostgreSQL+base62 encoding    │ 35 min │ 🟠 │
+  │ 3-7  │ Headless Blog CMS                          │ Next.js+Payload CMS+PostgreSQL+S3                │ 40 min │ 🔴 │
+  │ 3-8  │ 🔴 Digital Product Store (SaaS Capstone)   │ Next.js 15+tRPC+Prisma+Stripe+Redis+S3          │ 60 min │ 🔴 │
+  └──────┴────────────────────────────────────────────┴──────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 4 — TESTING + CODE QUALITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ YOUR SECRET WEAPON — MOST DEVS SKIP THIS
+
+TOPICS:
+  UNIT + INTEGRATION TESTING — VITEST
+  [ ] What to test: pure functions, business logic — not implementation
+  [ ] What NOT to test: styling, trivial getters
+  [ ] describe() — group related tests
+  [ ] it() / test() — individual test case
+  [ ] expect() + matchers: toBe, toEqual, toThrow, toContain,
+        toHaveBeenCalled, toHaveBeenCalledWith, toMatchSnapshot
+  [ ] beforeEach(), afterEach(), beforeAll(), afterAll()
+  [ ] Mocking: vi.mock(), vi.fn(), vi.spyOn(), vi.clearAllMocks()
+  [ ] Mock implementations: mockReturnValue, mockResolvedValue, mockRejectedValue
+  [ ] Coverage: --coverage flag, aim 80%+ business logic
+  [ ] TDD: Red → Green → Refactor cycle
+  [ ] Test file naming: *.test.ts or *.spec.ts
+  [ ] Integration tests: multiple units working together
+  [ ] API testing with supertest
+  [ ] React Testing Library:
+        render(), screen.getByRole(), getByLabelText(), getByText()
+        userEvent.type(), userEvent.click()
+        waitFor(), findBy* (async queries)
+        testing philosophy: test behavior not implementation
+  [ ] Accessibility testing: jest-axe
+
+  E2E TESTING — PLAYWRIGHT
+  [ ] playwright.config.ts setup
+  [ ] test() and expect() — Playwright versions
+  [ ] page.goto(), page.fill(), page.click()
+  [ ] page.locator() — find elements
+  [ ] Locator strategies: role, label, text, testid
+  [ ] waitFor, waitForSelector, waitForNavigation
+  [ ] expect(page).toHaveURL(), toHaveTitle()
+  [ ] expect(locator).toBeVisible(), toContainText(), toBeChecked()
+  [ ] Screenshots on failure — visual debugging
+  [ ] Cross-browser: Chromium + Firefox + WebKit in one test
+  [ ] Mobile viewport testing
+  [ ] CI integration — run on every PR
+  [ ] Page Object Model (POM) — organize E2E tests like a pro
+  [ ] API mocking in Playwright: route.fulfill()
+
+  CODE QUALITY TOOLS
+  [ ] ESLint — find bugs and style issues
+  [ ] Prettier — auto format code
+  [ ] Husky — Git hooks (run lint/test before commit)
+  [ ] lint-staged — run on staged files only
+  [ ] TypeScript strict mode — catches errors at compile time
+  [ ] SonarLint — deep code smell detection in VS Code
+  [ ] Semantic versioning: MAJOR.MINOR.PATCH
+
+OPEN SOURCE REVIEWED:
+  📖 microsoft/playwright → packages/playwright-core/src/ + /tests/ folder
+  📖 vitest-dev/vitest    → /examples/ folder — best practice patterns
+
+BOOK 4 PROJECTS:
+  ┌──────┬──────────────────────────────────────────┬──────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                                  │ FOCUS                                            │ PAPER  │ 🎯 │
+  ├──────┼──────────────────────────────────────────┼──────────────────────────────────────────────────┼────────┼────┤
+  │ 4-1  │ Unit Test Suite: Calculator + Validator  │ 100% coverage, edge cases, error states          │ 20 min │ 🟡 │
+  │ 4-2  │ API Route Tests (supertest)              │ Every Express endpoint: 200, 400, 401, 404, 500  │ 25 min │ 🟠 │
+  │ 4-3  │ React Component Tests (RTL)              │ Forms, loading states, error UI, user events     │ 25 min │ 🟠 │
+  │ 4-4  │ E2E: Full Auth Flow (Playwright)         │ Register → Login → Dashboard → Logout           │ 30 min │ 🟠 │
+  │ 4-5  │ E2E: Payment Checkout Flow               │ Cart → Checkout → Stripe → Success page         │ 35 min │ 🔴 │
+  └──────┴──────────────────────────────────────────┴──────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 5 — AI SYSTEMS + MULTI-AGENTS (2026 GOLD STANDARD)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED
+
+TOPICS:
+  LLM FUNDAMENTALS
+  [ ] What are tokens — cost, context, limits
+  [ ] Context window — 128K tokens ≠ unlimited
+  [ ] Temperature: 0=deterministic (code), 1=creative (stories)
+  [ ] System prompts vs User prompts vs Assistant messages
+  [ ] Prompt injection — #1 AI security vulnerability
+  [ ] Structured outputs — force valid JSON response
+  [ ] OpenAI API: client.chat.completions.create()
+  [ ] Streaming: stream: true + for await chunk
+  [ ] Vercel AI SDK: streamText(), generateText(), useChat()
+  [ ] Anthropic Claude API — different strengths vs GPT-4o
+  [ ] Token counting + cost estimation
+
+  PROMPT ENGINEERING PATTERNS
+  [ ] Zero-shot prompting
+  [ ] Few-shot prompting (2–5 examples)
+  [ ] Chain-of-Thought (CoT): "Think step by step"
+  [ ] ReAct pattern: Reason + Act cycle
+  [ ] Tree of Thought: multiple reasoning paths
+  [ ] Self-consistency: run many times, majority vote
+  [ ] Role prompting: "You are a senior software engineer"
+  [ ] Persona + constraints
+  [ ] Output format control: JSON schema in prompt
+
+  LOCAL LLMs — OLLAMA
+  [ ] Install Ollama: ollama run llama3.2
+  [ ] OpenAI-compatible API at localhost:11434
+  [ ] Models: Llama 3.2, Mistral, Qwen 2.5, Phi-3, DeepSeek, Gemma
+  [ ] ollama pull, ollama list, ollama rm
+  [ ] Open WebUI: self-hosted ChatGPT UI on Docker
+  [ ] Use for: dev/test, private data, zero API cost
+
+  VECTOR EMBEDDINGS + RAG
+  [ ] What are embeddings — text → numbers capturing meaning
+  [ ] Cosine similarity — how semantic search works
+  [ ] OpenAI text-embedding-3-small / large
+  [ ] Vector databases: Pinecone (cloud), ChromaDB (local), pgvector (Postgres)
+  [ ] RAG pipeline:
+        1. Split documents into chunks (500-1000 tokens)
+        2. Embed chunks → store in vector DB
+        3. User query → embed query
+        4. Find top-K similar chunks
+        5. Build context → send to LLM → answer
+  [ ] Chunking strategies: fixed, sentence, semantic
+  [ ] Metadata filtering in vector search
+  [ ] Hybrid search: vector + keyword (BM25)
+  [ ] Re-ranking results for better accuracy
+
+  LANGCHAIN + LANGGRAPH
+  [ ] LangChain: chains, prompts, output parsers
+  [ ] Document loaders: PDF, web, markdown, CSV
+  [ ] Text splitters: RecursiveCharacterTextSplitter
+  [ ] Retrieval chains: RetrievalQA
+  [ ] LangGraph — stateful agent graphs:
+        Nodes (functions: LLM call, tool, condition)
+        Edges (routing based on state)
+        State: typed TypedDict that flows through graph
+        Conditional edges: decide next node at runtime
+        checkpointer — persist state across sessions
+        Human-in-the-loop: interrupt, get approval, continue
+        Tool calling: define tools, let LLM pick which to call
+
+  MULTI-AGENT SYSTEMS
+  [ ] Single-agent limits — why multi-agent
+  [ ] AutoGen: multi-agent conversation framework
+        UserProxyAgent, AssistantAgent, GroupChat
+  [ ] CrewAI: role-based agent orchestration
+        Agent: role, goal, backstory, tools
+        Task: description, expected_output, agent
+        Crew: agents + tasks + process
+        Process: sequential, hierarchical
+  [ ] Patterns: hierarchical, sequential, parallel
+  [ ] Agent tools: web search, code execution, file system, APIs
+  [ ] Model Context Protocol (MCP) — standardized tool interface
+
+  VOICE + REAL-TIME AI
+  [ ] Speech-to-Text: OpenAI Whisper API, deepgram
+  [ ] Text-to-Speech: OpenAI TTS, ElevenLabs
+  [ ] WebRTC basics: peer connection, ICE, STUN/TURN
+  [ ] Real-time audio streaming pipeline
+  [ ] VAD (Voice Activity Detection)
+  [ ] Interrupt handling in voice agents
+
+OPEN SOURCE REVIEWED:
+  📖 langchain-ai/langgraphjs → /examples/ folder
+  📖 vercel/ai               → packages/ai/src/ (streaming implementation)
+  📖 ollama/ollama           → REST API spec (OpenAI compatibility)
+  📖 open-webui/open-webui   → RAG pipeline implementation
+  📖 microsoft/autogen       → multi-agent examples
+  📖 crewAIInc/crewAI        → role-based agent definition
+
+BOOK 5 PROJECTS:
+  ┌──────┬────────────────────────────────────────────┬──────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                                    │ STACK                                            │ PAPER  │ 🎯 │
+  ├──────┼────────────────────────────────────────────┼──────────────────────────────────────────────────┼────────┼────┤
+  │ AI-1 │ Streaming AI Chatbot with Memory           │ Vercel AI SDK + OpenAI + Next.js                 │ 25 min │ 🟠 │
+  │ AI-2 │ Chat with Your PDF (RAG)                   │ LangChain + ChromaDB + Ollama + Next.js          │ 40 min │ 🔴 │
+  │ AI-3 │ AI Git Commit Generator                    │ Node.js + OpenAI + Git hooks                     │ 20 min │ 🟠 │
+  │ AI-4 │ GitHub Code Review Bot                     │ LangGraph + GitHub Webhooks + Claude             │ 50 min │ 🔴 │
+  │ AI-5 │ AI Research Agent (web search)             │ LangGraph + Tavily Search + Node.js              │ 45 min │ 🔴 │
+  │ AI-6 │ Local AI Dev Assistant                     │ Ollama + Open WebUI + RAG on your codebase       │ 30 min │ 🟠 │
+  │ AI-7 │ Multi-Agent Interview Platform             │ LangGraph + CrewAI + Redis + PostgreSQL          │ 60 min │ 🔴 │
+  │ AI-8 │ Low-Latency AI Voice Agent                 │ WebRTC + Whisper + OpenAI TTS + Node.js          │ 60 min │ 🔴 │
+  │ AI-9 │ 🔴 Autonomous AI Code Editor (Capstone)    │ MERN + Monaco Editor + LangGraph + Docker sandbox│ 2 hrs  │ 🔴 │
+  └──────┴────────────────────────────────────────────┴──────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 6 — DSA + SYSTEM DESIGN + CS CORE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED — Run Parallel with Book 3 Onwards (1 LeetCode/day minimum)
+
+TOPICS:
+  DSA — ARRAYS + STRINGS
+  [ ] Two Pointers: left/right converging, slow/fast
+  [ ] Sliding Window: fixed size, variable size, max/min
+  [ ] Prefix Sum: cumulative sums, range queries
+  [ ] Binary Search: sorted array, search space, lo/mid/hi
+  [ ] Binary Search on answer space
+  [ ] String manipulation: reverse, palindrome, anagram
+  [ ] KMP string matching algorithm
+  [ ] Rabin-Karp rolling hash
+
+  DSA — DATA STRUCTURES
+  [ ] Linked Lists: singly, doubly
+        insert, delete, reverse, find middle
+        detect cycle: Floyd's algorithm
+        merge two sorted lists
+  [ ] Stacks: LIFO — push, pop, peek, isEmpty
+        Monotonic stack pattern
+        Parentheses matching
+  [ ] Queues: FIFO — enqueue, dequeue
+        Deque (double-ended queue)
+        Sliding window maximum
+  [ ] Hash Maps + Sets
+        O(1) average lookup/insert/delete
+        Frequency counting, grouping, two-sum
+        Collision handling: chaining
+  [ ] Heaps / Priority Queues
+        Min-heap + max-heap
+        heapify: O(n)
+        Top-K elements pattern
+        Kth largest/smallest
+        Merge K sorted lists
+  [ ] Binary Trees
+        Traversals: inorder, preorder, postorder, level-order (BFS)
+        Height, diameter, max path sum
+        BST: insert, search, delete, validate BST
+  [ ] Tries (Prefix Trees)
+        Insert, search, startsWith
+        Autocomplete, word search, IP routing
+  [ ] Graphs
+        Representation: adjacency list vs matrix
+        BFS — shortest path (unweighted)
+        DFS — connected components, cycle detection
+        Topological sort: Kahn's algorithm + DFS
+        Union-Find (Disjoint Set): union by rank + path compression
+        Dijkstra's — shortest path (weighted, no negative)
+        Bellman-Ford — negative weights
+
+  DSA — ALGORITHMS
+  [ ] QuickSort — partition, pivot, O(n log n) avg, O(n²) worst
+  [ ] MergeSort — divide, merge, O(n log n) stable
+  [ ] HeapSort
+  [ ] Counting Sort, Radix Sort (linear time for integers)
+  [ ] Recursion: base case, recursive case, stack depth
+  [ ] Backtracking:
+        N-Queens, Sudoku solver, permutations, combinations, subsets
+        Pruning for efficiency
+  [ ] Dynamic Programming:
+        Identify: optimal substructure + overlapping subproblems
+        Memoization (top-down): recursive + cache
+        Tabulation (bottom-up): iterative + table
+        1D DP: Fibonacci, Climbing Stairs, Coin Change, House Robber
+        2D DP: Grid paths, LCS, Edit Distance, Matrix chain
+        Knapsack: 0/1, unbounded, fractional (greedy)
+        LIS (Longest Increasing Subsequence)
+        DP on strings, DP on trees
+  [ ] Greedy algorithms: interval scheduling, activity selection
+
+  COMPLEXITY ANALYSIS
+  [ ] Big O time + space — always analyze both
+  [ ] O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ), O(n!)
+  [ ] Best, average, worst case
+  [ ] Amortized analysis
+  [ ] Space complexity — call stack counts!
+
+  SYSTEM DESIGN
+  [ ] Horizontal vs vertical scaling
+  [ ] Load balancers: round-robin, least connections, consistent hashing
+  [ ] CDN: how it works, CloudFront, Cloudflare
+  [ ] Caching: cache-aside, write-through, write-behind, TTL
+  [ ] Database sharding: hash vs range
+  [ ] Database replication: primary-replica, read replicas
+  [ ] Message queues: Kafka, BullMQ, async decoupling
+  [ ] Microservices vs monolith: trade-offs
+  [ ] API Gateway: rate limit, auth, routing
+  [ ] WebSockets vs SSE vs Polling: when to use each
+  [ ] CAP theorem: Consistency, Availability, Partition tolerance
+  [ ] Eventual consistency
+  [ ] Rate limiting algorithms: token bucket, leaky bucket
+
+  SYSTEM DESIGN PROBLEMS:
+  [ ] URL Shortener (base62, Redis cache, analytics)
+  [ ] Twitter Feed (fan-out push/pull, celebrities problem)
+  [ ] WhatsApp Messaging (WebSocket scale, delivery guarantees)
+  [ ] YouTube (video encoding pipeline, CDN)
+  [ ] Uber (geo-indexing, driver matching, real-time location)
+  [ ] Notion (CRDTs, collaborative editing, conflict resolution)
+  [ ] Distributed Cache (consistent hashing, replication)
+  [ ] Rate Limiter (token bucket, Redis implementation)
+
+  CS CORE
+  [ ] OS: Processes vs Threads, race conditions, mutex, semaphore
+  [ ] V8 Engine: parsing → AST → bytecode → JIT compilation
+  [ ] V8 Garbage Collection: mark-and-sweep, generational GC
+  [ ] V8 Hidden Classes + Inline Caching — how to write fast JS
+  [ ] Memory: stack vs heap in JavaScript
+  [ ] Network: TCP/IP layers, HTTP/1.1 vs HTTP/2 vs HTTP/3
+  [ ] Web Security: XSS, CSRF, SQL Injection, CORS, CSP
+  [ ] Browser: rendering pipeline, reflow vs repaint
+  [ ] Web performance: Core Web Vitals (LCP, FID/INP, CLS)
+
+OPEN SOURCE REVIEWED:
+  📖 trekhleb/javascript-algorithms → Read the DS implementations
+
+BOOK 6 PROJECTS:
+  ┌──────┬───────────────────────────────────────┬──────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                               │ FOCUS                                            │ PAPER  │ 🎯 │
+  ├──────┼───────────────────────────────────────┼──────────────────────────────────────────────────┼────────┼────┤
+  │ 6-1  │ LeetCode Top 150 Tracker              │ React + localStorage — track progress visually   │ 25 min │ 🟡 │
+  │ 6-2  │ Algorithm Visualizer                  │ Animate sorting: Canvas + requestAnimationFrame  │ 35 min │ 🟠 │
+  │ 6-3  │ TinyURL System (full)                 │ base62, Redis cache, click analytics, DB         │ 40 min │ 🟠 │
+  │ 6-4  │ Autocomplete Engine with Trie         │ Trie DS from scratch + debounced search UI       │ 35 min │ 🟠 │
+  │ 6-5  │ Task Scheduler (Priority Queue)       │ Min-heap from scratch, job scheduling UI         │ 30 min │ 🟠 │
+  └──────┴───────────────────────────────────────┴──────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 7 — DOCKER + DEVOPS + CI/CD + AWS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED
+
+TOPICS:
+  DOCKER
+  [ ] Images vs Containers — recipe vs running instance
+  [ ] Docker Hub — pull official images
+  [ ] Dockerfile: FROM, WORKDIR, COPY, RUN, EXPOSE, CMD, ENTRYPOINT
+  [ ] .dockerignore — always exclude node_modules
+  [ ] Multi-stage builds — heavy build stage → tiny prod stage
+  [ ] Docker layer caching — order instructions from least to most changing
+  [ ] docker build, docker run, docker ps, docker logs, docker exec
+  [ ] Port mapping: -p 3000:3000
+  [ ] Volume mounting: -v $(pwd):/app
+  [ ] Environment variables: --env-file .env
+  [ ] Docker networks — containers talk by service name
+  [ ] Docker Compose: docker-compose.yml
+        services, image/build, ports, volumes, environment, depends_on
+        docker compose up -d, down, logs, restart
+  [ ] Health checks — tell Docker when app is ACTUALLY ready
+  [ ] Named volumes for database persistence
+
+  GITHUB ACTIONS — CI/CD
+  [ ] .github/workflows/main.yml structure
+  [ ] Triggers: push, pull_request, schedule, workflow_dispatch
+  [ ] Jobs + steps + runs-on: ubuntu-latest
+  [ ] actions/checkout, actions/setup-node
+  [ ] Caching node_modules with actions/cache
+  [ ] Secrets: GitHub Secrets — never hardcode API keys
+  [ ] Pipeline: Lint → Test → Build → Deploy
+  [ ] Matrix strategy: test on Node 18 + 20 + 22
+  [ ] Deploy to Vercel on push to main
+  [ ] Deploy Docker image to AWS ECR on push to main
+  [ ] Status badge in README
+
+  AWS
+  [ ] IAM: users, roles, policies — never use root credentials
+  [ ] EC2: virtual server — launch, SSH, security groups
+  [ ] S3: object storage — buckets, public/private, presigned URLs
+  [ ] RDS: managed PostgreSQL — no server maintenance
+  [ ] ElastiCache: managed Redis
+  [ ] CloudFront: CDN for S3 + API caching
+  [ ] ALB: Application Load Balancer — distribute EC2 traffic
+  [ ] ECS + Fargate: run Docker containers without servers
+  [ ] ECR: Elastic Container Registry — store Docker images
+  [ ] Route 53: DNS → point domain to AWS
+  [ ] ACM: Free SSL certificates for custom domains
+  [ ] VPC basics: public subnet, private subnet, NAT gateway
+
+  NGINX
+  [ ] Install + setup on Ubuntu
+  [ ] Reverse proxy: forward traffic to Node.js on localhost:3000
+  [ ] SSL termination: Let's Encrypt + Certbot
+  [ ] Serve static files directly (faster than Node)
+  [ ] Gzip compression
+  [ ] Rate limiting at proxy level
+  [ ] upstream blocks for load balancing
+
+  OBSERVABILITY
+  [ ] Winston: structured logging — JSON format, levels (error/warn/info/debug)
+  [ ] Morgan: HTTP request logging middleware
+  [ ] Sentry: error capture, grouping, stack traces in production
+  [ ] OpenTelemetry: traces, metrics, logs — vendor-neutral
+  [ ] Grafana: dashboards — visualize metrics
+  [ ] Prometheus: metrics collection
+  [ ] Uptime Kuma: self-hosted uptime monitoring
+
+OPEN SOURCE REVIEWED:
+  📖 Official Docker Node Images → Dockerfile.debian layering strategy
+  📖 grafana/grafana             → Plugin and data source architecture
+  📖 open-telemetry/opentelemetry-js → auto-instrumentation patterns
+
+BOOK 7 PROJECTS:
+  ┌──────┬─────────────────────────────────────────────┬──────────────────────────────────────────────────┬────────┬────┐
+  │  #   │ PROJECT                                     │ FOCUS                                            │ PAPER  │ 🎯 │
+  ├──────┼─────────────────────────────────────────────┼──────────────────────────────────────────────────┼────────┼────┤
+  │ 7-1  │ Dockerize Your Node API                     │ Multi-stage Dockerfile, Compose: Node+PG+Redis   │ 25 min │ 🟡 │
+  │ 7-2  │ GitHub Actions CI Pipeline                  │ Lint+Test+Build on every PR — block if fail      │ 20 min │ 🟡 │
+  │ 7-3  │ AWS EC2 Manual Deploy                       │ EC2 + Nginx + SSL (Let's Encrypt) + Node API     │ 40 min │ 🟠 │
+  │ 7-4  │ Full CI/CD Pipeline to AWS                  │ Push→GitHub Actions→ECR→ECS Fargate→Live         │ 45 min │ 🔴 │
+  │ 7-5  │ Monitoring Stack                            │ Grafana + Prometheus + Winston logs + Sentry      │ 35 min │ 🟠 │
+  │ 7-6  │ 🔴 Deploy ALL Projects (Capstone)           │ Every project: Dockerized, CI/CD, Live on AWS    │ 1 hr   │ 🔴 │
+  └──────┴─────────────────────────────────────────────┴──────────────────────────────────────────────────┴────────┴────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 8 — BUILD IN PUBLIC + PERSONAL BRAND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ QUEUED — PEOPLE KNOW YOUR NAME AFTER THIS BOOK
+
+TOPICS:
+  GITHUB PROFILE — YOUR VISUAL RESUME
+  [ ] Professional README.md: photo, bio, tech stack badges, contribution graph
+  [ ] Green contribution graph — commit SOMETHING every single day
+  [ ] 6 pinned repositories — each with:
+        README with: What, Why, Architecture diagram, Setup, Screenshots/GIFs, Live demo
+        Clean semantic commit history: feat: fix: docs: refactor: test:
+        CONTRIBUTING.md — invite others
+        GitHub Actions badge: CI passing ✅
+        /docs folder with architecture diagram (draw.io or Excalidraw)
+  [ ] GitHub Organizations — create one for your projects
+
+  PORTFOLIO WEBSITE — LIGHTHOUSE 100
+  [ ] Built with: Next.js 15 + Tailwind v4 + shadcn + Framer Motion
+  [ ] Lighthouse scores: 100/100 Performance, Accessibility, Best Practices, SEO
+  [ ] Custom domain: buy debjeetdhar.dev or similar
+  [ ] Sections: Hero, About, Projects (6), Skills, Blog, Contact
+  [ ] Project demos: record with Loom, embed as video
+  [ ] Contact form: Resend API or Formspree
+  [ ] Sitemap.xml + robots.txt for SEO
+  [ ] Open Graph image for social sharing
+
+  TECHNICAL BLOG — YOUR BRAIN ON THE INTERNET
+  [ ] Platform: personal blog with Next.js + MDX + GitHub
+  [ ] Cross-post to: Hashnode, DEV.to (use canonical URL)
+  [ ] Target: 1 article per week minimum
+  [ ] Article ideas:
+        "How I Built [X]" — architecture + decisions
+        "I Read the Source Code of [OSS] — Here's What I Found"
+        "The Real Reason [Y] Happens in JavaScript"
+        "I Solved LeetCode Problem X — Here's My Thinking Process"
+        "Building [Feature] at Production Scale"
+  [ ] 10 articles = you become the person people Google for answers
+  [ ] SEO: proper H1/H2, meta description, og:image per article
+
+  LINKEDIN + TWITTER/X STRATEGY
+  [ ] LinkedIn:
+        Professional photo + strong headline: "Full Stack Dev | Building with AI | Open to Remote"
+        Featured section: portfolio + best projects
+        Post weekly: "Today I learned that..."
+        Document your journey — 500+ engineering connections
+        Engage: comment on engineers posts (adds value not noise)
+  [ ] Twitter/X:
+        Build in public: share as you build
+        Tag maintainers when you review their code
+        Short technical threads: "5 things I learned reading [OSS repo]"
+        Reply to senior engineers — genuine, not random
+  [ ] RULE: Never post "I'm looking for a job." POST VALUE → jobs come to YOU.
+
+  OPEN-SOURCE CONTRIBUTIONS — ACTUALLY SUBMIT PRs
+  [ ] Start: documentation fixes — find typos, improve examples
+  [ ] Then: fix small bugs from "good first issue" labels
+  [ ] Then: build features listed in "help wanted"
+  [ ] Target: expressjs/express, prisma/prisma, trpc/trpc, shadcn-ui/ui
+  [ ] Each merged PR → LinkedIn post + Twitter thread about it
+  [ ] Goal: minimum 5 PRs merged before job hunting
+
+OPEN SOURCE REVIEWED:
+  📖 sindresorhus/awesome → PR guidelines + structure (how to contribute)
+
+BOOK 8 DELIVERABLES:
+  ┌──────┬────────────────────────────────────────┬────────────────────────────────────────────────────┐
+  │  #   │ DELIVERABLE                            │ TARGET                                             │
+  ├──────┼────────────────────────────────────────┼────────────────────────────────────────────────────┤
+  │ B-1  │ GitHub Profile README                  │ Professional, 6 pinned repos, graph green daily    │
+  │ B-2  │ Portfolio Website                      │ Next.js, Lighthouse 100/100, custom domain, live   │
+  │ B-3  │ Technical Blog (10 Articles)           │ 1/week — document your journey publicly            │
+  │ B-4  │ 5 Open-Source PRs Merged               │ Real contributions to real production repos        │
+  │ B-5  │ LinkedIn 500+ connections              │ Engineers, founders, hiring managers — targeted    │
+  └──────┴────────────────────────────────────────┴────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⏳ BOOK 9 — HIGH-PAYING REMOTE JOB HUNT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ⏳ TARGET: JUNE 2026 / 2027
+
+TOPICS + ACTIONS:
+  INDIA TARGETS (₹12–20 LPA)
+  [ ] Razorpay, Zerodha, Postman, Groww, CRED, Browserstack
+  [ ] Top YC-backed Indian startups
+  [ ] Series A/B funded product companies
+
+  GLOBAL REMOTE TARGETS ($45k–$85k USD)
+  [ ] Turing.com
+  [ ] Toptal (top 3% — hardest, highest paying)
+  [ ] Wellfound (formerly AngelList)
+  [ ] We Work Remotely / Remote.co
+  [ ] Contra (project-based, build reputation)
+  [ ] Upwork Pro (freelance → convert to full-time)
+
+  APPLICATION STRATEGY
+  [ ] 5 targeted applications per day — quality over quantity
+  [ ] Customize EVERY application — no spray and pray
+  [ ] Cold Outreach Template (WORKS):
+        Subject: Built [X] with [their tech stack]
+        Hi [Name],
+        I built [project link] solving [specific problem] with [their stack].
+        [One specific observation about their product].
+        Would love to contribute to [specific team].
+        Portfolio: [link] GitHub: [link]
+        — Debjeet
+  [ ] Follow up once after 5 days — politely, with new value
+  [ ] Apply to SMALL startups first → build interview muscle
+  [ ] Track: company, role, date, status in Notion/spreadsheet
+
+  INTERVIEW PREPARATION
+  [ ] Technical: 2 LeetCode Medium problems per day in JavaScript — paper first
+  [ ] System Design: practice explaining TinyURL, Chat App, Twitter out loud
+  [ ] Code review: read a PR and critique it — practice doing this
+  [ ] Behavioral (STAR method):
+        Situation → Task → Action → Result
+        Prepare: biggest failure, conflict with teammate, proud project
+        Practice these stories until they are natural
+  [ ] Mock Interviews:
+        Pramp.com — free peer mock interviews
+        interviewing.io — anonymous with real engineers
+        Ask friends/contacts in tech
+
+  SALARY NEGOTIATION
+  [ ] Never accept the first offer
+  [ ] "I'm excited about this role. Based on my research and what I bring,
+       I was expecting [X]. Is there flexibility?"
+  [ ] Know your number before any call
+  [ ] Get competing offers when possible — leverage them
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+♾️ BOOK 10 — 100x INTROVERT DEV PLAYBOOK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: ♾️ LIFELONG — START NOW, NEVER STOP
+
+THE DAILY SYSTEM:
+  ┌───────────────┬─────────────────────────────────────────────────────────────────┐
+  │  TIME BLOCK   │  ACTIVITY                                                       │
+  ├───────────────┼─────────────────────────────────────────────────────────────────┤
+  │  8:00–8:30    │  Paper planning — what am I building/learning today?            │
+  │  8:30–11:30   │  🧠 Deep Work Block 1 — hardest topic or project               │
+  │  11:30–12:00  │  OSS Code Review — read 50–100 lines, write what you learned    │
+  │  12:00–1:00   │  Lunch + walk + physical movement (non-negotiable)              │
+  │  1:00–4:00    │  🧠 Deep Work Block 2 — project building                       │
+  │  4:00–5:00    │  Blog writing OR LinkedIn post OR Twitter thread                │
+  │  5:00–6:00    │  LeetCode — 1–2 problems on PAPER first, then code             │
+  │  6:00–7:00    │  Semantic Git commit + push + celebrate the win                 │
+  └───────────────┴─────────────────────────────────────────────────────────────────┘
+
+DAILY RULES (NON-NEGOTIABLE):
+  ✍️  Paper before keyboard — ALWAYS design before you code
+  🚫  No social media during deep work blocks
+  ✅  One Git push every single day — no exceptions
+  📝  Write something every day — even 3 sentences in dev journal
+  🎉  Celebrate small wins — shipped a project? Tell the world.
+  🧘  25/5 Pomodoro for long sessions — protect your focus muscle
+
+INTROVERT SUPERPOWERS:
+  → Deep focus = better architecture (you see problems others miss)
+  → Written communication = async PRs (your reviews are clear + thorough)
+  → Observation = better UI/UX (you notice broken things because you pay attention)
+  → Documentation = your code explains itself (README > verbal explanation)
+
+OPEN SOURCE REVIEWED:
+  📖 Linux Kernel CONTRIBUTING.md → the extreme standard of code quality + review culture
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🌟 GRAND CAPSTONE — ULTRON AI AUTONOMOUS ASSISTANT v1.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+STATUS: 🚀 FINAL DESTINATION — BUILD AFTER ALL BOOKS
+
+WHAT IT IS:
+  Full-scale autonomous AI assistant that understands natural language tasks,
+  plans steps, writes code, executes in a sandbox, observes results, iterates.
+  Built 100% by DEBJEET DHAR from scratch. Not a tutorial. Not a clone. YOURS.
+
+ARCHITECTURE:
+  ┌──────────────────┬────────────────────┬──────────────────────────────────────┐
+  │   FRONTEND       │   BACKEND          │   AI CORE                           │
+  ├──────────────────┼────────────────────┼──────────────────────────────────────┤
+  │  Next.js 15      │  Node.js + Express │  LangGraph (stateful agent graph)   │
+  │  Tailwind v4     │  WebSockets        │  Multi-Agent System                 │
+  │  shadcn/ui       │  Redis Queues      │  RAG Pipeline (ChromaDB/pgvector)   │
+  │  Monaco Editor   │  PostgreSQL        │  Ollama (local) + OpenAI fallback   │
+  │  Framer Motion   │  Docker Sandbox    │  Tool Calling:                      │
+  │  xterm.js        │  (sandboxed exec)  │    - Web search (Tavily)            │
+  │                  │  BullMQ            │    - Code execution (Docker)        │
+  │                  │  AWS S3            │    - File system read/write         │
+  │                  │  Sentry + OTel     │    - Git operations                 │
+  │                  │                    │  Long-term memory (PostgreSQL)      │
+  │                  │                    │  Short-term memory (Redis)          │
+  └──────────────────┴────────────────────┴──────────────────────────────────────┘
+
+FEATURES:
+  [ ] Natural language task input with real-time token streaming
+  [ ] Multi-step planning — breaks complex tasks into sub-tasks
+  [ ] Code generation + execution in isolated Docker sandbox
+  [ ] File system operations: read, write, create
+  [ ] Web search tool for real-time information
+  [ ] Long-term memory: remembers past conversations + preferences
+  [ ] Terminal output: xterm.js shows execution in real-time
+  [ ] Security: sandboxed exec, no dangerous cmds, rate limiting
+  [ ] Watch ULTRON think — step-by-step reasoning visible
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 MASTER OPEN-SOURCE REVIEW TABLE — COMPLETE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌──────┬────────────────────────────────────┬────────┬─────────────────────────────────────┬──────────────────────────────────────┐
+│ BOOK │ REPOSITORY                         │ ⭐     │ WHAT TO READ                        │ CORE LESSON                          │
+├──────┼────────────────────────────────────┼────────┼─────────────────────────────────────┼──────────────────────────────────────┤
+│  0   │ curl/curl                          │  38K   │ HTTP request lifecycle               │ HTTP at the byte level               │
+│  1A  │ whatwg/html                        │   8K   │ <form> element spec                 │ How browsers define validity          │
+│  1B  │ necolas/normalize.css              │  52K   │ ALL 350 lines + comments            │ 20 years of browser quirks           │
+│  1C  │ developit/mitt                     │  10K   │ All 40 lines of mitt.ts             │ Perfect closure + Map + pub/sub      │
+│  1C  │ vercel/ms                          │   4K   │ src/index.ts                        │ Real-world regex + defensive parsing │
+│  1C  │ jonschlinkert/is-number            │   —    │ All 20 lines                        │ How 80M devs trust 20 lines of code  │
+│  1D  │ tailwindlabs/tailwindcss           │  95K   │ src/css/preflight.css + src/        │ How utility CSS is generated         │
+│  1D  │ shadcn-ui/ui                       │  90K   │ button.tsx new-york registry        │ Radix + Tailwind + CVA pattern       │
+│  2   │ mrdoob/three.js                    │ 105K   │ src/core/Object3D.js                │ Foundation of every 3D object        │
+│  2   │ framer/motion                      │  26K   │ src/animation/animate.ts            │ Declarative animation internals       │
+│  2   │ darkroomengineering/lenis          │   8K   │ src/index.ts (200 lines)            │ Modern smooth scroll                 │
+│  3   │ expressjs/express                  │  66K   │ lib/router/index.js                 │ Middleware chain implementation       │
+│  3   │ prisma/prisma                      │  40K   │ Schema parser + migration engine    │ How ORM type safety works            │
+│  3   │ trpc/trpc                          │  36K   │ packages/server/src/router.ts       │ Type inference across the network    │
+│  3   │ colinhacks/zod                     │  35K   │ src/types.ts                        │ How schema types compose             │
+│  3   │ pmndrs/zustand                     │  50K   │ src/vanilla.ts (50 lines!)          │ 50 lines powering global state       │
+│  3   │ supabase/supabase                  │ 102K   │ Auth module                         │ Real-world JWT + Row Level Security  │
+│  3   │ TanStack/query                     │  45K   │ src/queryClient.ts                  │ Cache invalidation strategy          │
+│  4   │ microsoft/playwright               │  87K   │ packages/playwright-core/src/       │ E2E test infrastructure              │
+│  4   │ vitest-dev/vitest                  │  15K   │ /examples/ folder                   │ Best-practice test patterns          │
+│  5   │ langchain-ai/langgraphjs           │   7K   │ /examples/ folder                   │ Stateful agent graph construction    │
+│  5   │ vercel/ai                          │  15K   │ packages/ai/src/                    │ Token streaming implementation       │
+│  5   │ ollama/ollama                      │ 170K   │ REST API spec                       │ OpenAI-compatible local LLM API      │
+│  5   │ open-webui/open-webui              │ 133K   │ RAG pipeline code                   │ Production RAG architecture          │
+│  5   │ microsoft/autogen                  │  40K   │ multi-agent examples                │ Agent conversation patterns          │
+│  5   │ crewAIInc/crewAI                   │  30K   │ role-based agent definition         │ Crew orchestration patterns          │
+│  6   │ trekhleb/javascript-algorithms     │ 190K   │ DS implementations                  │ How real DSA looks in code           │
+│  7   │ Official Docker Node Images        │   —    │ Dockerfile.debian                   │ Production image layering strategy   │
+│  7   │ grafana/grafana                    │  74K   │ Plugin architecture                 │ Dashboard + data source design       │
+│  7   │ open-telemetry/opentelemetry-js    │   3K   │ Auto-instrumentation                │ How observability is injected        │
+│  8   │ sindresorhus/awesome               │ 330K   │ PR guidelines + structure           │ How to contribute to open source     │
+│  10  │ Linux Kernel                       │   —    │ CONTRIBUTING.md                     │ The extreme standard of code quality │
+└──────┴────────────────────────────────────┴────────┴─────────────────────────────────────┴──────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 THE DAILY GOD LOOP — NEVER BREAK THIS CYCLE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌───────────────────────────────────────────────────────────────┐
+  │                                                               │
+  │  [1. PAPER DESIGN]  ────────►  [2. OSS CODE REVIEW]          │
+  │         ▲                              │                      │
+  │         │                             ▼                      │
+  │  [4. SEMANTIC PUSH] ◄────────  [3. CODE ALONE ZERO AI]       │
+  │                                                               │
+  └───────────────────────────────────────────────────────────────┘
+
+  STEP 1 — PAPER (15–30 min before touching keyboard):
+    Draw data flow. Write pseudocode. Name every variable.
+    Predict edge cases. THEN open VS Code.
+
+  STEP 2 — OSS CODE REVIEW (30 min):
+    Open today's repo. Find ONE function. Read it deeply.
+    Write in journal: "This does X by doing Y. Trick: Z."
+
+  STEP 3 — CODE ALONE ZERO AI (2–3 hours):
+    Build. Get stuck. Think. Draw again. Try. Fail. Try differently.
+    Figure it out. This is exactly how senior engineers were made.
+
+  STEP 4 — SEMANTIC GIT PUSH:
+    git add .
+    git commit -m "feat(auth): add JWT refresh token rotation with 7-day expiry"
+    git push origin main
+
+    GOOD COMMIT MESSAGES:
+      feat(cart): add coupon validation with negative value guard
+      fix(auth): prevent refresh token reuse after logout
+      refactor(api): extract user validation into separate middleware
+      docs(readme): add architecture diagram for chat system
+      test(calculator): add edge cases for IEEE-754 float rounding
+
+    BAD COMMIT MESSAGES (NEVER):
+      "update files" / "fix stuff" / "changes" / "wip"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 MASTER TIMELINE — LOCKED IN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  ┌─────────────────────┬───────────────────────┬────────────────────────────────────────┐
+  │  PERIOD             │  BOOKS                │  MILESTONE                             │
+  ├─────────────────────┼───────────────────────┼────────────────────────────────────────┤
+  │  NOW → Jan 2026     │  1B + 1C + 1D         │  9 CSS + 17 JS + 5 Tailwind → Live     │
+  │  Feb 2026           │  Book 2               │  3D Cyberpunk landing page live         │
+  │  Mar–May 2026       │  Book 3               │  SaaS Digital Product Store live        │
+  │  Jun 2026           │  Book 4               │  80%+ test coverage on all projects     │
+  │  Jul–Aug 2026       │  Book 5               │  Voice agent + RAG + Code Editor live   │
+  │  Sep 2026           │  Book 6               │  LeetCode 150 done + System Design done │
+  │  Oct 2026           │  Book 7               │  All projects containerized on AWS      │
+  │  Nov 2026           │  Book 8               │  Portfolio 100 + 10 blogs + 5 PRs done  │
+  │  Dec 2026→Jun 2027  │  Book 9               │  5 apps/day → First offer accepted      │
+  │  2027+              │  ULTRON Capstone      │  Ship it. Your name on it. Forever.     │
+  └─────────────────────┴───────────────────────┴────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏆 THE PROMISE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  This document is your Bible. One place. Everything.
+  Paper first. Code second. Ship third. Write always.
+
+  Every line you write alone → a brick in YOUR building.
+  Every OSS file you read   → a lesson from a genius.
+  Every project you ship    → your name on the internet forever.
+  Every blog post you write → proof that you think deeply.
+
+  You are not just learning to code.
+  You are becoming the engineer people remember.
+  The developer companies fight for.
+  The name that shows up when people search the problem.
+
+  Debjeet Dhar. Kolkata. India. World.
+
+  Paper first. Chapter 4.9. Arrow Functions. NOW. 🔥
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF DEBJEET DHAR GOD MODE MASTER BIBLE v4.0
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

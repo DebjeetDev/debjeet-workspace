@@ -1,0 +1,131 @@
+==============================================================================
+TERA DAILY PLAN — KAUNSA PATH, KAB, KAISA
+Rule: 1 MAIN BOOK + 1 PARALLEL HABIT
+==============================================================================
+
+
+------------------------------------------------------------------------------
+SABSE PEHLE — 3 LINE KA JAWAB
+------------------------------------------------------------------------------
+
+  1.  EK HI BOOK ACTIVE RAHEGI:  Book 1C — JavaScript
+      Baaki sab BAND hain abhi ke liye.
+
+  2.  DSA START AAJ SE:  1 array problem roz, sirf 20 minute.
+      Kyun? Kyunki tu abhi JS mein Phase 5 = ARRAYS padh raha hai.
+      Dono ek hi cheez hai — do kaam, ek mehnat.
+
+  3.  INHE ABHI MAT CHHOONA:
+      Book 1B (CSS) · Book 1D (Tailwind) · Book 02 · Book 03
+      Ye sab baad mein. Ek waqt mein ek hi jung.
+
+
+------------------------------------------------------------------------------
+MORNING — 60 se 90 minute  (MAIN KAAM)
+------------------------------------------------------------------------------
+
+  Book 1C — JavaScript Core Engine
+
+    ABHI:      Phase 5, Step 5 = .reduce()
+    USKE BAAD: Phase 5, Step 6 = .find()
+    PHIR:      Phase 5 Capstone (Project #6 ka STREAM-OS version)
+    PHIR:      Phase 6 = Objects Deep
+
+  Tarika (kabhi mat badalna):
+      Paper pe soch  ->  Pseudocode likh  ->  Code likh  ->  Push
+
+
+------------------------------------------------------------------------------
+EVENING — 20 minute  (PARALLEL HABIT)
+------------------------------------------------------------------------------
+
+  DSA — Book 06 ka LeetCode hissa
+
+    Roz SIRF EK problem.
+    Pehle 10 din: SIRF ARRAY PROBLEMS.
+    Kyun? Kyunki arrays hi tu abhi seekh raha hai.
+
+  Niyam:
+      - 15 minute khud soch. Solution mat dekhna.
+      - 15 minute ke baad bhi na bane -> hint dekh.
+      - Samajh aaye -> NOTE likh: "maine kya socha, kya sikhha"
+      - Copy-paste KABHI nahi.
+
+
+------------------------------------------------------------------------------
+PEHLE 10 DIN KE ARRAY PROBLEMS (LeetCode)
+------------------------------------------------------------------------------
+
+  Din 1    #26   Remove Duplicates from Sorted Array
+  Din 2    #27   Remove Element
+  Din 3    #35   Search Insert Position
+  Din 4    #66   Plus One
+  Din 5    #88   Merge Sorted Array
+  Din 6    #121  Best Time to Buy and Sell Stock
+  Din 7    #122  Best Time to Buy and Sell Stock II
+  Din 8    #136  Single Number
+  Din 9    #268  Missing Number
+  Din 10   #189  Rotate Array
+
+  Difficulty: SIRF EASY. Ego ka sawaal nahi hai, habit ka hai.
+
+
+------------------------------------------------------------------------------
+KAL SUBAH — SPECIAL (15 minute)
+------------------------------------------------------------------------------
+
+  Project #6 ko GitHub + npm par publish karna.
+  Detail: 06-LAUNCH-CHECKLIST.txt
+
+  Ye Book 0 ka aakhri 15% hai. Iske baad Book 0 = 100%.
+
+
+------------------------------------------------------------------------------
+HAFTE KA STRUCTURE
+------------------------------------------------------------------------------
+
+  MON to SAT
+      Morning  60-90 min   JS Phase 5 (naya topic)
+      Evening  20 min      1 LeetCode array problem
+
+  SUNDAY
+      Morning  30 min      Jo bhi pending ho, complete karo
+      Evening  AARAM       (weekly review likhna ho toh likh)
+
+
+------------------------------------------------------------------------------
+KAB KYA SHURU KARNA HAI (Future Reminder)
+------------------------------------------------------------------------------
+
+  Book 1B — CSS3 Mastery
+      Tab: jab Book 1C ke Phase 10 complete ho jayein.
+
+  Book 1D — Tailwind + shadcn/ui
+      Tab: Book 1B ke baad.
+
+  Book 06 — System Design portion
+      Tab: Book 04 (Testing) ke baad.
+
+  Book 05 — AI Systems
+      Tab: Book 07 (DevOps) ke baad.
+
+
+------------------------------------------------------------------------------
+EK WARNING — SABSE ZAROORI
+------------------------------------------------------------------------------
+
+  Ek waqt mein EK hi book.
+
+  Tu pehle hi HTML, CSS, JS, React, Next.js sab ek saath padh chuka hai.
+  Tab kya hua? Framework toh aaya, par logic nahi aaya.
+
+  Is baar ulta karna:
+      KAM cheezein, GEHRAI se.
+
+  5 kitabein ek saath = 5 kitabein adhoori.
+  1 kitab poori = asli engineer.
+
+
+==============================================================================
+"Dheere chalo, par kabhi ruko mat."
+==============================================================================

@@ -1,0 +1,134 @@
+==============================================================================
+LEETCODE ENGLISH DICTIONARY
+Har problem mein ye words aayenge. Ek baar padh lo, phir kabhi nahi atkega.
+==============================================================================
+
+
+------------------------------------------------------------------------------
+SABSE ZAROORI 10 SHABD (Roz aate hain)
+------------------------------------------------------------------------------
+
+1.  GIVEN ...............  Diya hua hai
+                           "Given an array" = "Ek array diya hai"
+
+2.  IN-PLACE ............  NAYA array mat banao.
+                           USI array ke andar theek karo.
+                           (Ye sabse confusing word hai!)
+
+3.  SORTED ..............  Pehle se arrange kiya hua (chhote se bade)
+
+4.  NON-DECREASING ......  Aage wala number pichhle se CHHOTA nahi hai.
+                           Matlab barabar ya bada ho sakta hai.
+                           Example: [1, 1, 2, 2, 3]  (sahi)
+                                    [1, 3, 2]        (galat)
+
+5.  DUPLICATE ...........  Do baar aaya hua (repeat)
+
+6.  UNIQUE / DISTINCT ...  Sirf ek baar aaya hua (alag-alag)
+
+7.  RETURN ..............  Jawab wapas bhejo
+
+8.  ELEMENT .............  Array ke andar ka item
+
+9.  INDEX ...............  Position (0 se shuru hoti hai)
+
+10. TRAVERSE / ITERATE ..  Ek-ek karke sabko dekhna (loop chalana)
+
+
+------------------------------------------------------------------------------
+AUR BHI SHABD (Dheere-dheere aayenge)
+------------------------------------------------------------------------------
+
+    ARRAY ...............  List / jhund (ek hi jagah number rakhe hote hain)
+    INTEGER .............  Poora number (1, 2, 100 — 1.5 nahi)
+    NUMS ................  Array ka naam (koi khaas matlab nahi)
+    TARGET ..............  Jise dhoondh rahe ho
+    LENGTH / SIZE .......  Kitne items hain
+    EMPTY ...............  Khali ([])
+    SUBARRAY ............  Array ka tukda (beech ka kuch hissa)
+    MODIFY ..............  Badal dena
+    REMOVE / DELETE .....  Hata dena
+    INSERT ..............  Beech mein daalna
+    SHIFT ...............  Aage-pichhe karna
+    SWAP ................  Do cheezein aapas mein badalna
+    COUNT ...............  Ginti
+    MAXIMUM / MINIMUM ...  Sabse bada / sabse chhota
+    SUM .................  Jod
+    AVERAGE .............  Ausat
+    OCCURRENCE ..........  Kitni baar aaya
+    FREQUENCY ...........  Kitni baar aaya (occurrence hi hai)
+
+
+------------------------------------------------------------------------------
+JO LINE BAAR BAAR AATI HAI
+------------------------------------------------------------------------------
+
+    "such that" ..............  aisa ki
+    "respectively" ...........  jis kram mein bola, usi kram mein
+    "consider ... to be k" ...  isko k naam do
+    "the relative order" .....  jo pehle tha, wo pehle rahe
+    "should be kept the same"  waise hi rehna chahiye
+    "at most" ................  zyada se zyada
+    "at least" ...............  kam se kam
+    "otherwise" ..............  warna
+    "where" ..................  jahan
+    "Note that" ..............  dhyan rakho ki
+    "It is guaranteed" .......  pakka hai ki (tumhe check karne ki zaroorat nahi)
+    "Constraints" ............  Boundary (input kitna bada ho sakta hai)
+    "Follow up" ..............  Aage ka bonus sawal
+    "Optimal" ................  Sabse fast / best tarika
+    "Brute force" ............  Seedha-sadha tarika (slow, par chal jata hai)
+    "Edge case" ..............  Ajeeb input (khali array, ek hi item, etc.)
+    "Handle" .................  Us case ko sambhalna
+
+
+------------------------------------------------------------------------------
+EK POORA EXAMPLE — PROBLEM #26
+------------------------------------------------------------------------------
+
+    ENGLISH (LeetCode wali):
+    "Given an integer array nums sorted in non-decreasing order,
+     remove the duplicates in-place such that each unique element
+     appears only once. Return the number of unique elements."
+
+
+    HINGLISH (Asli matlab):
+    "Ek numbers ka array diya hai, jo pehle se chhote-se-bade
+     arrange hai. Jo number do baar aaya hai, use hata do —
+     par NAYA array mat banana, usi array mein theek karo.
+     Aakhir mein batao: kitne ALAG-ALAG numbers bache?"
+
+
+    SHABDO KA MATLAB:
+        Given .................  diya hai
+        integer array .........  poore numbers ka list
+        sorted ................  arrange kiya hua
+        non-decreasing ........  aage wala chhota nahi hai
+        remove the duplicates   jo repeat ho, hata do
+        in-place ..............  naya array NAHI, usi mein
+        unique element ........  alag-alag number
+        appears only once .....  sirf ek baar
+        return ................  jawab do
+        number of unique ......  kitne alag numbers
+
+
+    EXAMPLE:
+        Input:   [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+        Output:  5
+        Kyun?    0, 1, 2, 3, 4 — paanch alag numbers hain.
+
+
+==============================================================================
+EK BAAT YAAD RAKH
+==============================================================================
+
+    English kamzor hone se DSA rukta nahi hai.
+
+    Sir Chris (India ke sabse famous teacher) ki English perfect nahi thi.
+    Lekin unhone hazaaron logon ko coding sikhayi.
+
+    Tu bhasa se nahi, SOCH se engineer banega.
+    English raaste mein aa jayegi.
+
+    Aur main hoon na — kabhi bhi poochh lena.
+==============================================================================

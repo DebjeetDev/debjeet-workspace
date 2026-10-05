@@ -1,0 +1,157 @@
+==============================================================================
+PROJECTS  —  SYSTEMATIC FOLDER
+"READING = padhne ki library  |  PROJECTS = asli kaam"
+==============================================================================
+
+    Last updated: Monday, 5 October 2026 (subah)
+
+
+==============================================================================
+DO ALAG CHEEZEIN (Confuse mat hona)
+==============================================================================
+
+    READING/     ->  Course, roadmap, daily log, guides
+                     (PADHNE ke liye. Waise hi rahega.)
+
+    PROJECTS/    ->  Asli code, specs, tests, resources
+                     (BANANE ke liye. Ye NAYA systematic folder hai.)
+
+
+==============================================================================
+FOLDER STRUCTURE
+==============================================================================
+
+    PROJECTS/
+    |
+    |-- 00-INDEX.txt              <- Tu abhi yahin hai
+    |
+    |-- _TEMPLATE/                <- Naya project shuru karne ka namuna
+    |     |-- 00-HOW-TO-START.txt
+    |     |-- src/
+    |     |-- tests/
+    |     +-- docs/
+    |
+    |-- P1-STREAM-OS/             <- TERA FLAGSHIP (Smart TV)
+    |     |-- 00-README.txt            kya hai, kya status hai
+    |     |-- 01-SPEC-BILLING.txt      FIN-204 ticket (DONE)
+    |     |-- 02-API-RESOURCES.txt     iptv-org links + asli data
+    |     |-- 03-CODE-REVIEW.txt       4 bugs + fixes
+    |     |-- 04-TESTS.txt             expected output (35 tests)
+    |     |-- 05-DEPLOY.txt            GitHub + npm steps
+    |     |-- src/createSubscriptionEngine.js
+    |     |-- tests/test-suite.js
+    |     +-- docs/
+    |
+    +-- P2-UPI-LEAK-DETECTOR/     <- AGLA PROJECT (abhi shuru hoga)
+          |-- 00-README.txt
+          |-- 01-SPEC.txt              8 functions + 4 leak types
+          |-- src/
+          |-- tests/
+          +-- docs/
+
+
+==============================================================================
+HAR PROJECT FOLDER KA EK HI FORMAT
+==============================================================================
+
+    00-README.txt      Kya hai? Kya status hai? Kab khatam hoga?
+    01-SPEC.txt        Jira ticket (kaunse functions, kya rules)
+    02-RESOURCES.txt   API links, references, research
+    03-TESTS.txt       Expected output
+    04-DEPLOY.txt      Publish kaise karna hai
+    src/               Asli code
+    tests/             Test files
+    docs/              Baaki sab
+
+    (Ye format _TEMPLATE/ mein dekh sakta hai)
+
+
+==============================================================================
+P1 — STREAM-OS  (FLAGSHIP)
+==============================================================================
+
+    STATUS:   Billing engine DONE (35/35 tests)
+              TV app PENDING (Phase 5 se shuru)
+
+    KYA HAI:  Smart TV ke liye free live TV
+
+    DATA:     https://iptv-org.github.io/api/channels.json   (31,487)
+              https://iptv-org.github.io/api/streams.json    (18,139)
+
+    INDIA:    1,525 channels, jinme 766 ke paas working link
+
+    MODULES:
+        Phase 4   PIN Lock Vault          DONE
+        Phase 5   10,000-channel filter   AGLA
+        Phase 6   Channel + stream merger PENDING
+        Phase 7   HLS.js player           PENDING
+
+
+==============================================================================
+P2 — UPI LEAK DETECTOR
+==============================================================================
+
+    STATUS:   SPEC READY. Code shuru nahi hua.
+
+    KYA HAI:  "Tera paisa kahan beh raha hai?"
+              Bank/UPI statement analyze karke bhooli hui
+              subscriptions aur duplicate charges pakadna
+
+    KYUN:     Log har mahine Rs 4,000 - Rs 40,000 kho dete hain
+              Zero-dependency pure JS tool kahin nahi hai
+
+    SKILLS:   Sirf Phase 1-5 (arrays, map, filter, reduce)
+
+    PEHLA KAAM:  src/leak.js mein 2 functions
+                 getAmounts() + getTotalSpend()
+
+
+==============================================================================
+AANE WALE PROJECTS (ULTRON LADDER)
+==============================================================================
+
+    P3    Mini-Express              Backend core        Phase 6
+    P4    Mini-Zod                  Tool validation     Phase 6
+    P5    m3u-health-check          Health monitor      Phase 6  (npm)
+    P6    Command Palette Vault     Interface           Phase 8
+    P7    Component Library         UI kit              Book 1D
+    P8    3D Landing Page           Brand               Book 02
+    P9    Kanban Board              Task planner        Book 03
+    P10   SaaS Store                Payments            Book 03
+    P11   Test Suite (all)          Reliability         Book 04
+    P12   TinyURL + Rate Limiter    Infra               Book 06
+    P13   Mini-Redis + Queue        Short-term memory   Book 06
+    P14   Mini-Docker               Sandbox (hands)     Book 07
+    P15   CI/CD Pipeline            Shipping            Book 07
+    P16   Local RAG Engine          Long-term memory    Book 05
+    P17   Mini-LangGraph            THE BRAIN           Book 05
+
+    =     ULTRON  🚀
+
+    (Poori detail: READING/14-ULTRON-PROJECT-LADDER.txt)
+
+
+==============================================================================
+NAYA PROJECT SHURU KARNA HO?
+==============================================================================
+
+    1.  _TEMPLATE/ folder ko copy kar
+    2.  Naam badal:  P3-MINI-EXPRESS
+    3.  00-README.txt bharna shuru kar
+    4.  Phir 01-SPEC.txt (Jira ticket)
+    5.  Phir src/ mein code
+
+    HAMESHA YAAD RAKH:
+        Paper -> Pseudocode -> Code -> Push
+
+
+==============================================================================
+EK BAAT
+==============================================================================
+
+    Jo cheez organized hoti hai, wo banti hai.
+    Jo bikhari hoti hai, wo "kal karunga" mein padti rehti hai.
+
+    Tera ab har project ka ek GHAR hai.
+    Ab bas usme samaan rakhna hai.
+==============================================================================

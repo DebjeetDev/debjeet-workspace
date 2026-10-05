@@ -1,0 +1,197 @@
+==============================================================================
+THE ULTRON PROJECT LADDER
+Har project = ULTRON ka ek ANG (organ)
+==============================================================================
+
+    NIYAM:
+        Koi bhi project "practice ke liye" nahi banega.
+        Har project ULTRON ka ek hissa banega.
+
+        Todo app?        NAHI
+        Notes app?       NAHI
+        Calculator?      NAHI
+        Weather app?     NAHI
+        Netflix clone?   NAHI
+
+    HAR PROJECT PE 3 SAWAL:
+        1. Kya main KHUD isse use karoonga?
+        2. Kya ye kisi aur cheez ki COPY hai?  (haan -> reject)
+        3. Kya iska koi hissa ULTRON mein kaam aayega?  (haan -> priority)
+
+
+==============================================================================
+POORI LADDER — 16 PROJECTS + ULTRON
+==============================================================================
+
+------------------------------------------------------------------------------
+BOOK 1C — JAVASCRIPT (Abhi yahin ho)
+------------------------------------------------------------------------------
+
+P1.  STREAM-OS                                     [IN PROGRESS]
+     Free live TV app for Smart TV
+     Data: iptv-org channels.json + streams.json (10,000+ channels, free)
+     Unique:  Tu apne TV pe cable bill ke bina channels dekhega
+     ULTRON:  Media + streaming capability
+     Modules: Phase 4 PIN vault (DONE) -> Phase 5 filter -> Phase 6 merger
+              -> Phase 7 HLS.js player
+
+P2.  MINI-EXPRESS                                  [Phase 6 ke baad]
+     Apna khud ka web framework (Express ko tod ke samajh)
+     Unique:  Router, middleware chain, req/res object — sab khud ka
+     ULTRON:  BACKEND CORE (server jo agent chalayega)
+
+P3.  MINI-ZOD                                      [Phase 6 ke baad]
+     Apna khud ka validation library
+     Unique:  Schema se data validate karna, chainable API
+     ULTRON:  TOOL INPUT VALIDATION
+              (agent jab tool chalaye, input sahi hai ya nahi)
+
+P4.  m3u-health-check   (npm package)              [Phase 6 ke baad]
+     10,000 channels mein se kaunsa ABHI zinda hai
+     Unique:  80-90% IPTV links dead hote hain — koi solve nahi karta
+     ULTRON:  HEALTH MONITORING / self-check
+
+P5.  LOCAL-FIRST COMMAND PALETTE VAULT             [Phase 8]
+     Ctrl+K command palette + encrypted local vault
+     Unique:  Password manager + command launcher ek saath
+     ULTRON:  COMMAND INTERFACE (ULTRON ka mukh)
+
+------------------------------------------------------------------------------
+BOOK 1D + BOOK 02 — UI
+------------------------------------------------------------------------------
+
+P6.  20-COMPONENT DESIGN SYSTEM
+     Apna khud ka shadcn/ui jaisa component library
+     Unique:  Tere design tokens, teri API
+     ULTRON:  UI KIT (ULTRON ka chehra)
+
+P7.  3D CYBERPUNK LANDING PAGE
+     Three.js + Framer Motion
+     Unique:  Portfolio jo log YAAD rakhein
+     ULTRON:  Brand + attention
+
+------------------------------------------------------------------------------
+BOOK 03 — FULL STACK
+------------------------------------------------------------------------------
+
+P8.  LINEAR-STYLE KANBAN BOARD
+     Drag-drop + keyboard shortcuts + offline persistence
+     Unique:  Keyboard-first, local-first, fast
+     ULTRON:  TASK PLANNER
+              (ULTRON jab multi-step plan banayega, yahi structure)
+
+P9.  DIGITAL PRODUCT SAAS STORE
+     Stripe payments + downloads + license keys
+     Unique:  Tu apna software bechega
+     ULTRON:  MONETIZATION (ULTRON ko paid bana sakta hai)
+
+------------------------------------------------------------------------------
+BOOK 04 — TESTING
+------------------------------------------------------------------------------
+
+P10. TEST SUITE FOR EVERYTHING
+     80%+ coverage on P1-P9
+     Unique:  Zyada tar devs testing skip karte hain
+     ULTRON:  RELIABILITY (bina test ke agent khatarnak hai)
+
+------------------------------------------------------------------------------
+BOOK 06 — DSA + SYSTEM DESIGN
+------------------------------------------------------------------------------
+
+P11. TINYURL + AUTOCOMPLETE + RATE LIMITER
+     Teen system-design classics, ek saath
+     ULTRON:  INFRA PRIMITIVES
+
+P12. MINI-REDIS + MINI-MESSAGE-QUEUE
+     Redis aur BullMQ ko khud banana
+     Unique:  Andar kya chalta hai, tabhi samajh aayega
+     ULTRON:  SHORT-TERM MEMORY + JOB QUEUE
+
+------------------------------------------------------------------------------
+BOOK 07 — DEVOPS
+------------------------------------------------------------------------------
+
+P13. MINI-DOCKER (container from scratch)
+     Linux namespaces + cgroups se container banana
+     Unique:  Bohot kam log ye karte hain
+     ULTRON:  SANDBOX — ULTRON ke "HAATH"
+              (agent ka code isi mein chalega, safe)
+
+P14. CI/CD PIPELINE FOR ALL YOUR REPOS
+     GitHub Actions se auto test + auto deploy
+     ULTRON:  SHIPPING (khud ko deploy karna)
+
+------------------------------------------------------------------------------
+BOOK 05 — AI SYSTEMS
+------------------------------------------------------------------------------
+
+P15. LOCAL RAG ENGINE
+     Ollama + embeddings + vector DB, sab local
+     Unique:  Bina API key ke, sab tera data
+     ULTRON:  LONG-TERM MEMORY
+
+P16. MINI-LANGGRAPH (multi-agent orchestrator)
+     Apna khud ka agent framework — graph, nodes, conditional edges
+     Unique:  Library use nahi karna, library BANANA
+     ULTRON:  THE BRAIN ⚡
+
+P17. CODE-EXECUTION SANDBOX API
+     Docker + isolated exec + timeouts + security
+     ULTRON:  HANDS (haath)
+
+==============================================================================
+★  ULTRON  —  SAB KA MILAAP
+==============================================================================
+
+    P2  Mini-Express      ->  Backend
+    P3  Mini-Zod          ->  Tool validation
+    P4  m3u-health-check  ->  Health monitor
+    P5  Command Palette   ->  Interface (mukh)
+    P6  Component Library ->  UI (chehra)
+    P8  Kanban            ->  Task planner
+    P10 Test suite        ->  Reliability
+    P12 Mini-Redis        ->  Short-term memory (dimaag)
+    P13 Mini-Docker       ->  Sandbox (haath)
+    P15 Local RAG         ->  Long-term memory (yaad)
+    P16 Mini-LangGraph    ->  Brain (soch)
+    P17 Exec Sandbox      ->  Hands (kaam)
+
+    =
+    ULTRON   🚀
+
+
+==============================================================================
+ABHI KYA BANANA HAI — AGLE 8 HAFTE
+==============================================================================
+
+    HAFTA 1-2    P1  STREAM-OS
+                     Phase 5: 10,000-channel filter pipeline
+                     (country = IN, !is_nsfw, HD quality sort)
+
+    HAFTA 3-4    Phase 6 Objects Deep
+                 P1 STREAM-OS: channel + stream merger
+
+    HAFTA 5      P2  Mini-Express
+                 P3  Mini-Zod
+
+    HAFTA 6      P4  m3u-health-check  -> npm par publish
+
+    HAFTA 7-8    P1 STREAM-OS Phase 7: HLS.js player
+                 (apne TV pe chalana!)
+
+
+==============================================================================
+EK BAAT — SOLID PLAN KYA HOTA HAI
+==============================================================================
+
+    Bura plan:   "20 projects banaunga, resume achha lagega"
+                 -> 20 adhoore projects, koi gehra nahi
+
+    SOLID plan:  "Har project agle project ke liye eent hai"
+                 -> 17 projects, sab milkar EK cheez banti hai
+
+    Tu dusra wala kar raha hai.
+
+    Aur isliye tera ULTRON sirf ek sapna nahi rahega.
+    Wo BANEGA. Kyunki har tukda pehle se ban chuka hoga.
+==============================================================================

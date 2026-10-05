@@ -1,0 +1,61 @@
+# 📚 SYLLABUS STATUS — Kaunsa Code Abhi Ke Liye Hai, Kaunsa Baad Ka
+
+> **Rule (Debjeet ka):** `course.md` ke strict order mein chalna hai.
+> Koi bhi future-phase syntax us phase se pehle use NAHI hoga.
+> Isliye neeche clear likha hai ki kaunsi file kis phase ki hai.
+
+---
+
+## ✅ 100% IN SYLLABUS (Abhi Seekha Hua — Ye Tera Khud Ka Logic Hai)
+
+| Cheez | Kahan Hai | Phase |
+|-------|-----------|-------|
+| **Closure** (`let prices`, `let attempts`, `const MAX_ATTEMPT`) | `src/createSubscriptionEngine.js` | Phase 4 ✅ |
+| **Guard clauses** (pehle check, phir kaam) | Saare 4 methods | Phase 4 ✅ |
+| **Result Pattern** `{ status, ok, data or error }` | Saare 4 methods | Phase 4 ✅ |
+| **Array `.at(0)` / `.at(-1)` / `.length`** | `getLatestPlan()` | Phase 5 Step 1 ✅ |
+| **Spread `[...prices, newPlan]`** (non-mutating add) | `addNewPlan()` | Phase 5 Step 2 ✅ |
+| **`.map()`** | `applyTaxToAll()` | Phase 5 Step 3 ✅ |
+| **`.filter()`** | `getPremiumPlans()` | Phase 5 Step 4 ✅ |
+| **Arrow functions** | Saare methods | Phase 4 ✅ |
+| **`Number.isFinite()`** | Guards | Phase 2 ✅ |
+| **Git & GitHub** (`git add/commit/push`) | `LAUNCH.md` | **Book 0 — seekh raha hai** ✅ |
+
+### 👉 **Poora engine ka LOGIC sirf inhi cheezon se bana hai.**
+Koi future syntax nahi. **Ye 100% tera hai.** 💪
+
+---
+
+## ⏳ OUT OF SYLLABUS (Sirf "Plumbing" — Publish Ke Liye Zaroori)
+
+| File / Cheez | Kya Hai | Kab Seekhega |
+|--------------|---------|--------------|
+| `module.exports = ...` (in `src/`) | Doosre file ko function dena | **Phase 8** — ES6 Modules (`import`/`export`) |
+| `require("../src/...")` (in `tests/`) | Doosre file se function lena | **Phase 8** — ES6 Modules |
+| `.github/workflows/ci.yml` | Har push par auto test | **Book 7** — CI/CD |
+| `.github/workflows/publish.yml` | Release par auto npm publish | **Book 7** — CI/CD |
+| `package.json` | Project ki details (naam, version) | Tooling — koi concept nahi |
+| `npm test` / `npm publish` | Commands | Tooling |
+| `README.md` / `LICENSE` | Documentation | Tooling |
+
+---
+
+## 🧠 Ye Yaad Rakh:
+
+> **`module.exports` aur CI/CD = ghar ka bijli ka meter.**
+> Abhi isse samajhne ki zaroorat NAHI hai.
+> Sirf itna jaan le: **isse package publish hota hai.**
+> Baaki **Phase 8** aur **Book 7** mein main step-by-step sikha doonga.
+
+---
+
+## 🎯 Promise Tracker
+
+- [x] Kaunsa code syllabus ke andar hai, kaunsa bahar — **likh diya** (ye file!)
+- [ ] Phase 8 → `import` / `export` / `module.exports` proper sikhaana
+- [ ] Book 7 → GitHub Actions / CI/CD proper sikhaana
+- [ ] Aage se har naye concept pe pehle batana: "ye andar hai ya bahar"
+
+---
+
+**Engine tera hai. Plumbing main sambhal loonga.** 💙

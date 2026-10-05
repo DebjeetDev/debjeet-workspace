@@ -1,0 +1,38 @@
+# ===== Debjeet Workspace Backup — .gitignore =====
+# Ye cheezein GitHub par NAHI jayengi (kyunki ye kachra hain)
+
+# npm / node cache
+.npm/
+node_modules/
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Secrets — KABHI bhi commit nahi
+.env
+.env.local
+*.pem
+*.token
+id_rsa
+id_ed25519
+
+# Temporary
+*.tmp
+*.log
+*.swp
+
+# ===== AUDIO RAHNE DENA =====
+# audio/*.mp3  -> IGNORE NAHI KIYA
+# Kyunki wo Dubby Bhaiya ki voice notes hain, wo backup chahiye.
+# (3 files = 524 KB. 100 files bhi ho jayein = ~20 MB. Safe hai.)
+
+# SSH keys — KABHI bhi GitHub par nahi
+.ssh/
+.bashrc

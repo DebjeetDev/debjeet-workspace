@@ -1,0 +1,134 @@
+==============================================================================
+_TEMPLATE — NAYA PROJECT KAISE SHURU KAREIN
+Ye folder copy karke apna naya project bana lena.
+==============================================================================
+
+
+==============================================================================
+STEP 1 — FOLDER COPY KAR
+==============================================================================
+
+    cp -r _TEMPLATE  P3-MINI-EXPRESS
+
+    Naam hamesha:  P<number>-<NAAM-BADA-AKSHAR-MEIN>
+
+
+==============================================================================
+STEP 2 — 00-README.txt BHARO (5 minute)
+==============================================================================
+
+    Isme 5 cheezein:
+
+    1.  EK LINE MEIN KYA HAI
+        "Ye X karta hai."
+
+    2.  KIS PROBLEM KO SOLVE KARTA HAI
+        "Aaj log Y se pareshan hain. Ye usko theek karta hai."
+
+    3.  STATUS
+        PLANNED / IN PROGRESS / DONE
+
+    4.  KAUNSE PHASE / BOOK SE JUDA HAI
+        "Book 1C, Phase 6 (Objects)"
+
+    5.  PEHLA KADAM (10 minute wala)
+        "src/ mein X file banao, aur Y function likho."
+
+
+==============================================================================
+STEP 3 — 01-SPEC.txt LIKHO (Jira Ticket Style)
+==============================================================================
+
+    ⚠️ ZAROORI:  SPEC MEIN CODE MAT LIKHNA!
+                Sirf RULES likho. Rakhne do code sochne ka maza.
+
+    Format:
+
+        FUNCTION:  <naam>(<parameters>)
+
+        GUARDS:
+            - Agar X galat ho -> { status, ok: false, error }
+            - Agar Y khali ho -> { status, ok: false, error }
+
+        HAPPY PATH:
+            - Kya karna hai
+            - Return: { status, ok: true, data }
+
+        EXAMPLE:
+            Input:   ...
+            Output:  ...
+
+
+==============================================================================
+STEP 4 — 02-RESOURCES.txt
+==============================================================================
+
+    - API links (agar koi use karna hai)
+    - References (articles, repos)
+    - Research data (numbers, stats)
+    - Kahin se idea mila, wo bhi likh
+
+    NOTE:  Jo bhi external link use karein, pehle CHECK karo
+           ki wo zinda hai (curl ya browser se).
+
+
+==============================================================================
+STEP 5 — 03-TESTS.txt
+==============================================================================
+
+    Expected output LIKH DO pehle se.
+
+    "Jab main ye chalaoonga, screen par ye aana chahiye."
+
+    Phir code likho. Phir compare karo.
+    (Ye "test pehle, code baad" wala tarika hai — company standard)
+
+
+==============================================================================
+STEP 6 — src/ MEIN CODE
+==============================================================================
+
+    PAPER PE SOCHO  ->  PSEUDOCODE  ->  CODE
+
+    Har function mein:
+        - Guard clause pehle
+        - Descriptive naam
+        - Result Box return  { status, ok, data|error }
+        - Zero mutation
+
+
+==============================================================================
+STEP 7 — PUSH
+==============================================================================
+
+    git add .
+    git commit -m "feat: kya banaya"
+    git push
+
+    Commit message rules:
+        feat:     naya feature
+        fix:      bug theek kiya
+        docs:     sirf documentation
+        test:     sirf tests
+        refactor: code clean, behaviour same
+
+
+==============================================================================
+HAR PROJECT KE 3 SAWAL (Pehle ye poochho)
+==============================================================================
+
+    1.  Kya main KHUD isse use karoonga?
+    2.  Kya ye kisi aur cheez ki COPY hai?   (haan -> mat banao)
+    3.  Kya iska koi hissa ULTRON mein aayega?  (haan -> priority)
+
+
+==============================================================================
+FOLDER KA MATLAB
+==============================================================================
+
+    src/      Asli code (jo kaam karta hai)
+    tests/    Test files (jo check karta hai)
+    docs/     Baaki sab (notes, research, screenshots)
+
+    Kabhi bhi code aur tests ek hi file mein mat rakho.
+==============================================================================

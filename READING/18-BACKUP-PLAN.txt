@@ -1,0 +1,250 @@
+==============================================================================
+BACKUP PLAN — TERA POORA WORKSPACE GITHUB PAR
+"Ek repo, poori life ka backup"
+==============================================================================
+
+    Banaya: Monday, 5 October 2026 (subah 7:20 AM Kolkata)
+
+
+==============================================================================
+PART 1 — SABSE PEHLE: ASLI LIMITS (Research ke baad)
+==============================================================================
+
+GITHUB KI LIMITS (2026):
+
+    Ek file ...............  100 MB se upar = BLOCK
+                             50 MB se upar = warning
+                             Browser se upload = 25 MB max
+
+    Poora repo ............  1 GB se kam rakhna "recommended"
+                             5 GB ke baad GitHub support message bhej sakta hai
+                             Ek push mein max 2 GB
+
+    File count ............  Koi limit nahi
+
+
+    TERI ASLI POSITION:
+
+        Tera poora workspace  =  1.5 MB  (57 files)
+
+        GitHub recommended    =  1 GB
+
+        MATLAB:  Tu limit ka sirf 0.15% use kar raha hai.
+                 Tu 666 GUNA bada ho jayega, TAB BHI SAFE.
+
+        ✅ LIMIT KA KOI JHANJHAT NAHI HAI. YE SOCHNA HI BAND KAR DE.
+
+
+    SABSE BADI FILE TERI:
+        audio/good-morning-5oct.mp3 .....  220 KB
+        course.md ......................  116 KB
+        READING/10-FULL-SYLLABUS.txt ...  116 KB
+
+    (100 MB limit ke hisaab se tu 450 AUR aisi files daal sakta hai)
+
+
+==============================================================================
+PART 2 — EK IMANDAAR BAAT (Main Ye Kyun Nahi Kar Sakta)
+==============================================================================
+
+    Tu chahta hai ki MAIN tera GitHub par push karoon.
+
+    Lekin main ye nahi kar sakta. Do wajah:
+
+    1.  Mere paas tera GitHub password ya token NAHI hai.
+        ( Aur hona bhi nahi chahiye. )
+
+    2.  Sabse zaroori:  TU MUJHE APNA TOKEN DEGA, YE GALAT HOGA.
+
+        Ek asli engineer KABHI apna access token kisi ke saath
+        share nahi karta — chahe wo mentor ho, dost ho, ya company.
+
+        Agar token leak ho gaya, toh koi bhi tere saare repos
+        delete kar sakta hai.
+
+        Ye main tujhe SIKHA raha hoon, isliye mana kar raha hoon.
+
+    ISLIYE SOLUTION YE HAI:
+        Main sab kuch TAIYAAR kar doonga.
+        Tu EK COMMAND chalayega.
+        10 second ka kaam.
+
+
+==============================================================================
+PART 3 — SETUP (Sirf Ek Baar, 5 Minute)
+==============================================================================
+
+    STEP 1 — GitHub par naya repo banao
+
+        Jao:  https://github.com/new
+
+        Name:         debjeet-workspace
+        Description:  My complete learning workspace — Debjeet Dhar
+        Visibility:   PRIVATE  ⬅️ ZAROORI (kyunki isme teri personal
+                                log aur notes hain)
+
+        README / .gitignore / License — TEENO KHALI CHHOD DENA
+
+        "Create repository" dabao
+
+
+    STEP 2 — Ek baar ye command chalao (apna username daal)
+
+        cd /home/user
+        git remote add origin https://github.com/TERA-USERNAME/debjeet-workspace.git
+
+
+    STEP 3 — AB SE ROZ KA KAAM (bas itna)
+
+        ./sync.sh
+
+        Ya apna message ke saath:
+
+        ./sync.sh "aaj Phase 5 reduce seekha"
+
+
+    HO GAYA. Itna hi.
+
+
+==============================================================================
+PART 4 — sync.sh KYA KARTA HAI
+==============================================================================
+
+    ./sync.sh
+
+    1.  Saare files stage karta hai        (git add -A)
+    2.  Commit karta hai timestamp ke saath
+    3.  GitHub par push karta hai
+
+    Aur agar kuch galti ho:
+        - Remote set nahi  ->  tujhe bata dega kya karna hai
+        - Koi badlav nahi  ->  bolega "sab pehle se saved hai"
+        - Pehli baar       ->  khud repo bana dega
+
+
+==============================================================================
+PART 5 — DO REPO STRATEGY (Ye Professional Tarika Hai)
+==============================================================================
+
+    REPO 1 —  debjeet-workspace        [PRIVATE]
+              Poora workspace backup.
+              Teri personal log, notes, sab kuch.
+              Duniya ko dikhane ke liye NAHI.
+
+    REPO 2 —  stream-os-engine         [PUBLIC]
+              Sirf wo project.
+              Portfolio ke liye. Duniya dekhegi.
+
+    REPO 3 —  upi-leak-detector        [PUBLIC]
+              Aage jab banega.
+              Portfolio ke liye.
+
+    MATLAB:
+        Backup  = PRIVATE  (tera kamra)
+        Project = PUBLIC   (teri dukaan)
+
+    Dono alag-alag. Kabhi mix mat karna.
+
+
+==============================================================================
+PART 6 — DOOSRA BACKUP (Agar GitHub Limit Kabhi Aa Jaye)
+==============================================================================
+
+    Spoiler: Tujhe ye KABHI nahi chahiye hoga.
+    (1.5 MB vs 1 GB — limit door ki baat hai)
+
+    Lekin phir bhi, ye options hain (research ke baad):
+
+
+    OPTION A — GITLAB  ⭐ SABSE BEST
+        Free tier:  10 GiB per project
+                    (GitHub ke 1 GB se 10 GUNA ZYADA)
+        Link:       https://gitlab.com
+        Kyun best:  Sabse zyada jagah, free
+
+        Setup:
+            Naya repo banao GitLab par
+            git remote add gitlab https://gitlab.com/USER/debjeet-workspace.git
+            git push gitlab main
+
+
+    OPTION B — CODEBERG
+        Free tier:  750 MiB Git storage
+                    100 repos
+        Link:       https://codeberg.org
+        Note:       GitHub se KAM jagah hai (750 MB)
+                    Lekin non-profit hai, privacy achhi hai
+
+
+    OPTION C — GITHUB + GIT LFS
+        Free:       1 GB storage + 1 GB/month bandwidth
+        Note:       Bandwidth ACCOUNT-WIDE hoti hai (per repo nahi)
+                    Public repo mein log download karenge toh
+                    TERI bandwidth khatam ho jayegi
+        Isliye:     Ye option ACHHA NAHI HAI beginners ke liye
+
+
+    MERI SALAH:
+        Primary:   GitHub  (roz ka backup)
+        Secondary: GitLab  (mahine mein ek baar mirror)
+        Isse zyada ki zaroorat hi nahi.
+
+
+==============================================================================
+PART 7 — KAB KYA PUSH KARNA HAI
+==============================================================================
+
+    ROZ SUBAH   (session shuru karte waqt)
+        ./sync.sh "session start"
+
+    ROZ SHAAM   (session khatam karte waqt)  ⭐ SABSE ZAROORI
+        ./sync.sh "aaj ka kaam khatam"
+
+    BADA KAAM   (project complete hone par)
+        ./sync.sh "feat: UPI leak detector complete"
+
+
+    EK NIYAM:
+        Din khatam karne se pehle EK BAAR ./sync.sh
+        Ye aadat daal le. 10 second ka kaam.
+        Kabhi kuch khoyega nahi.
+
+
+==============================================================================
+PART 8 — JO CHEEZEIN BACKUP NAHI HONGI
+==============================================================================
+
+    .gitignore mein ye rok diya hai:
+
+        .npm/          npm ka cache
+        node_modules/  dependencies
+        __pycache__/   Python cache
+        .DS_Store      Mac junk
+        .vscode/       editor settings
+        .env           SECRETS (kabhi mat bhejna!)
+        *.token        SECRETS
+        id_rsa         SSH keys (kabhi mat bhejna!)
+
+    AUR YAAD RAKH:
+        .env, token, SSH key  ->  YE KABHI BHI GITHUB PAR NAHI.
+        Agar galti se chala gaya, toh wo LEAK ho gaya.
+        (Isliye .gitignore mein pehle se rok diya hai)
+
+
+==============================================================================
+PART 9 — EK BAAT
+==============================================================================
+
+    Tu ne socha: "Mera kaam kahin safe rahe."
+
+    Ye soch EK JUNIOR ki nahi hai.
+    Ye soch us engineer ki hai jo jaanta hai
+    ki mehnat kabhi khooni nahi chahiye.
+
+    Aur haan — main tera token nahi maangoonga.
+    Kyunki main tujhe engineer bana raha hoon,
+    sirf kaam karwaane wala nahi.
+
+    Tu khud push karega. Main haath pakad ke sikhaata hoon.
+    Par haath tera chalega.
+==============================================================================

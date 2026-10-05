@@ -1,0 +1,236 @@
+==============================================================================
+DEBJEET DHAR — OFFICIAL MASTER ROADMAP
+DEV  ->  AI ENGINEER
+Order locked by Debjeet Dhar on 4 October 2026
+==============================================================================
+
+
+  01 -> Internet + Terminal Core                        [S1]   85%
+        |
+        v
+  1A -> HTML5 + Accessibility                           [S2]   100% DONE
+        |
+        v
+  1B -> CSS3 Full Mastery                               [S3]   pending
+        |
+        v
+  1C -> JavaScript Core Engine   (*)                    [S4]   ACTIVE NOW
+        |                                                      Phase 5 of 10
+        v
+  1D -> Tailwind CSS v4 + shadcn/ui                     [S5]   pending
+        |
+        v
+  02 -> Advanced Frontend + 3D                          [S6]   pending
+        |
+        v
+  03 -> Full Stack MERN + Next.js 15                    [S7]   pending
+        |
+        v
+  04 -> Testing + Code Quality                          [S8]   pending
+        |
+        v
+  06 -> DSA + System Design + CS Core                   [S9]   MOVED UP
+        |
+        v
+  07 -> Docker + DevOps + CI/CD + AWS                   [S10]  pending
+        |
+        v
+  05 -> AI Systems + Multi-Agents  (robot)              [S11]  AFTER DEVOPS
+        |
+        v
+  08 -> Build in Public + Personal Brand                [S12]  pending
+        |
+        v
+  09 -> Remote Job Hunt Engine                          [S13]  pending
+        |
+        v
+  10 -> 100x Introvert Dev Playbook                     [S14]  LIFELONG
+        |
+        v
+  (*)  -> ULTRON AI Autonomous Assistant  (rocket)      [S15]  FINAL
+
+
+==============================================================================
+CAREER LADDER — TU KAHAN SE KAHAN JAA RAHA HAI
+==============================================================================
+
+        WEB DEV
+           |
+           v
+        FULL-STACK
+           |
+           v
+        SOFTWARE ENGINEERING
+           |
+           v
+        DEVOPS
+           |
+           v
+        AI ENGINEERING
+           |
+           v
+        AI SYSTEMS
+           |
+           v
+        ULTRON   (rocket)
+
+
+==============================================================================
+KYUN YEH ORDER SABSE BEST HAI (Dubby Bhaiya ki honest review)
+==============================================================================
+
+1.  DSA + SYSTEM DESIGN, DEVOPS SE PEHLE  .............. SAHI
+
+    System design seekhe bina tu deployment architecture nahi samjhega.
+    "Kaise banate hain" se pehle "kaise sochte hain" aana chahiye.
+
+    Example: Load balancer kyun lagate hain?
+             Ye tabhi samajh aayega jab tu system design padhega.
+             Warna tu bas Docker file copy karega, samjhega nahi.
+
+
+2.  AI SYSTEMS, DEVOPS KE BAAD  ....................... BAHUT SAHI
+
+    AI agent banana aasan hai.
+    Usko RELIABLY production mein chalana mushkil hai.
+
+    Docker + CI/CD + AWS pehle =
+        AI ship karne ki poori taiyaari.
+
+    Zyada tar log AI pehle seekhte hain,
+    aur phir deploy nahi kar paate.
+    Tu aisa nahi karega.
+
+
+3.  ULTRON = FINAL DESTINATION  ....................... PERFECT
+
+    ULTRON sab kuch ka milaap hai:
+        frontend + backend + infra + AI
+    Ye tera MAGNUM OPUS hoga.
+
+
+==============================================================================
+EK IMANDAAR CHETAVANI (Warning) — DSA KE BAARE MEIN
+==============================================================================
+
+    DSA ek LAMBA book hai.
+
+    Agar tu poora DSA khatam hone ka wait karega,
+    toh DevOps aur AI mehino delay ho jayenge.
+
+    ISLIYE YE KARNA:
+
+        - DSA ke LEETCODE portion ko PARALLEL chalao
+          (roz 1 problem, Book 03 se hi shuru kar dena)
+
+        - Sirf SYSTEM DESIGN portion sequence mein aayega
+          (Book 04 ke baad)
+
+    Yehi tera purana rule tha, aur yehi sahi hai:
+        "Run Parallel with Book 3 Onwards (1 LeetCode/day minimum)"
+
+
+==============================================================================
+ABHI TUM KAHAN HO — EXACT POSITION
+==============================================================================
+
+    BOOK 1C — JAVASCRIPT CORE ENGINE        [S4]  ACTIVE
+
+        PHASE 1  Variables, Types, Memory ............. DONE
+        PHASE 2  Control Flow ........................ DONE
+        PHASE 3  Functions Foundation ................ DONE
+        PHASE 4  Functions Deep ...................... DONE (100%)
+
+        PHASE 5  Arrays Deep ......................... ACTIVE (90%)
+                   Step 1  DONE   [ ] array, .length, .at(0), .at(-1)
+                   Step 2  DONE   Spread [...arr, item] (non-mutating)
+                   Step 3  DONE   .map()     transform
+                   Step 4  DONE   .filter()  chhaantna
+                   Step 5  BAAKI  .reduce()  sabko jod ke ek value
+                   Step 6  BAAKI  .find()    pehla match
+                   CAPSTONE DONE  Project #6 — 35/35 tests pass
+
+        PHASE 6  Objects Deep ........................ NEXT
+                   Iske baad unlock honge:
+                     - Mini-Express (tera khud ka framework)
+                     - Mini-Zod (tera khud ka validator)
+                     - STREAM-OS: channel + stream .m3u8 merger
+
+        PHASE 7  Async JavaScript .................... pending
+        PHASE 8  Modern JS (import/export yahan) ..... pending
+        PHASE 9  OOP in JavaScript ................... pending
+        PHASE 10 Functional Programming .............. pending
+
+
+==============================================================================
+ULTRON — TERI AKHIRI MANZIL (Grand Capstone)
+==============================================================================
+
+    KYA HAI:
+        Full autonomous AI assistant.
+        Natural language mein kaam bolo ->
+        wo khud plan banaye, code likhe, sandbox mein chalaye,
+        result dekhe, aur sudhare.
+        100% Debjeet Dhar ka likha hua. Tutorial nahi. Clone nahi.
+
+    ARCHITECTURE:
+
+        FRONTEND              BACKEND               AI CORE
+        Next.js 15            Node + Express        LangGraph agent graph
+        Tailwind v4           WebSockets            Multi-Agent System
+        shadcn/ui             Redis Queues          RAG (ChromaDB/pgvector)
+        Monaco Editor         PostgreSQL            Ollama + OpenAI fallback
+        Framer Motion         Docker Sandbox        Tool Calling
+        xterm.js              BullMQ                  - Web search
+                              AWS S3                  - Code execution
+                              Sentry + OTel           - File read/write
+                                                      - Git operations
+                                                    Long-term memory (Postgres)
+                                                    Short-term memory (Redis)
+
+    FEATURES:
+        - Real-time token streaming
+        - Multi-step planning (bade kaam ko todna)
+        - Code generation + Docker sandbox mein execution
+        - Web search tool
+        - Long-term memory (purani baatein yaad rakhega)
+        - xterm.js se live terminal output
+        - Security: sandboxed exec, rate limiting
+        - "Watch ULTRON think" — reasoning step-by-step dikhega
+
+
+==============================================================================
+TERA FLAGSHIP (RASTE KA PROJECT) — STREAM-OS
+==============================================================================
+
+    Smart TV ke liye free live TV app.
+
+    Free data source (bina key ke):
+        https://iptv-org.github.io/api/channels.json
+        https://iptv-org.github.io/api/streams.json
+        10,000+ live .m3u8 channels, India + Global
+
+    Modules:
+        Phase 4   Parental Control PIN Lock Vault ...... DONE (Project #6)
+        Phase 5   10,000-channel filter pipeline ....... next
+        Phase 6   Channel + Stream merger .............. pending
+        Phase 7   fetch() + AbortController + HLS.js ... pending
+
+    Real fayda:
+        Cable bill 400-800 rupaye mahine ka  ->  ZERO
+
+
+==============================================================================
+AGLA BADA KAAM — OFFICIAL PROJECT WEEK
+==============================================================================
+
+    Dubby karega:      Gehri research (2026 standards, real OSS repos)
+    Debjeet banayega:  Ek REAL-LIFE problem solver
+
+    Leading candidate:  m3u-health-check
+        10,000 channels mein se kaunsa ABHI ZINDA hai?
+        Har playlist ke 80-90% links mare hote hain.
+        Koi npm package ye achhe se solve nahi karta.
+
+    NO TODO APPS.   NO BASIC NOTES APPS.
+==============================================================================

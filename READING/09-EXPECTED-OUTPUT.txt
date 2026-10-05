@@ -1,0 +1,78 @@
+------------------------------------------------------------------------------
+EXPECTED OUTPUT — Project #6: createSubscriptionEngine
+Ticket: FIN-204   |   Engineer: Debjeet Dhar
+------------------------------------------------------------------------------
+IMPORTANT:
+  - The text inside error: '...' can be ANYTHING you wrote yourself.
+  - ONLY status, ok, and data MUST match exactly!
+  - Node prints strings inside objects with SINGLE quotes.
+  - Node prints arrays with spaces: [ 1, 2, 3 ]
+  - Empty array prints as: []
+------------------------------------------------------------------------------
+
+===== PART 1: OFFICIAL QA TESTS =====
+Test 1 (last plan):         { status: 200, ok: true, data: 999 }
+Test 2 (wrong PIN):         { status: 401, ok: false, error: 'Wrong PIN!' }
+Test 3 (correct PIN + add): { status: 201, ok: true, data: [ 199, 499, 999, 1499 ] }
+Test 4 (premium >= 500):    { status: 200, ok: true, data: [ 999, 1499 ] }
+Test 5 (add 50 tax):        { status: 200, ok: true, data: [ 249, 549, 1049, 1549 ] }
+Test 6 (still 1499?):       { status: 200, ok: true, data: 1499 }
+
+===== PART 2: BRUTE-FORCE LOCK TEST =====
+Lock A (wrong 1):   { status: 401, ok: false, error: 'Wrong PIN!' }
+Lock B (wrong 2):   { status: 401, ok: false, error: 'Wrong PIN!' }
+Lock C (wrong 3):   { status: 401, ok: false, error: 'Wrong PIN!' }
+Lock D (CORRECT PIN but locked!): { status: 403, ok: false, error: 'Engine Locked!' }
+Lock E (read still works): { status: 200, ok: true, data: 300 }
+
+===== PART 3: INVALID PRICE TEST =====
+Price 0:        { status: 400, ok: false, error: 'Invalid price!' }
+Price -100:     { status: 400, ok: false, error: 'Invalid price!' }
+Price 'abc':    { status: 400, ok: false, error: 'Invalid price!' }
+Price NaN:      { status: 400, ok: false, error: 'Invalid price!' }
+Nothing added? (should be 1000): { status: 200, ok: true, data: 1000 }
+
+===== PART 4: getPremiumPlans EDGE CASES =====
+minPrice 0:       { status: 400, ok: false, error: 'Invalid minPrice!' }
+minPrice -50:     { status: 400, ok: false, error: 'Invalid minPrice!' }
+minPrice 'abc':   { status: 400, ok: false, error: 'Invalid minPrice!' }
+minPrice 600:     { status: 200, ok: true, data: [ 1000 ] }
+minPrice 99999:   { status: 200, ok: true, data: [] }
+
+===== PART 5: applyTaxToAll EDGE CASES =====
+tax -10:   { status: 400, ok: false, error: 'Invalid tax amount!' }
+tax 'abc': { status: 400, ok: false, error: 'Invalid tax amount!' }
+tax 0:     { status: 200, ok: true, data: [ 500, 1000 ] }
+tax 100:   { status: 200, ok: true, data: [ 600, 1100 ] }
+NOT mutated? (should be 1000): { status: 200, ok: true, data: 1000 }
+
+===== PART 6: BROKEN INPUT TEST =====
+Empty array engine:  { status: 400, ok: false, error: 'No plans available!' }
+Non-array 'hello':   { status: 400, ok: false, error: 'No plans available!' }
+undefined PIN:       { status: 401, ok: false, error: 'Wrong PIN!' }
+
+===== PART 7: ATTEMPT RESET TEST =====
+wrong 1:        { status: 401, ok: false, error: 'Wrong PIN!' }
+wrong 2:        { status: 401, ok: false, error: 'Wrong PIN!' }
+CORRECT (reset): { status: 201, ok: true, data: [ 10, 20 ] }
+wrong again:    { status: 401, ok: false, error: 'Wrong PIN!' }
+CORRECT again:  { status: 201, ok: true, data: [ 10, 20, 30 ] }
+
+------------------------------------------------------------------------------
+PASS CRITERIA — Ye 10 Cheezein 100% Sahi Honin Chahiye:
+------------------------------------------------------------------------------
+[ ] 1.  Test 1  -> data: 999
+[ ] 2.  Test 3  -> data: [ 199, 499, 999, 1499 ]   (201 Created)
+[ ] 3.  Test 4  -> data: [ 999, 1499 ]             (199 & 499 removed)
+[ ] 4.  Test 5  -> data: [ 249, 549, 1049, 1549 ]  (+50 each)
+[ ] 5.  Test 6  -> data: 1499                      (IMMUTABILITY!)
+[ ] 6.  Lock D  -> status: 403                     (even with correct PIN!)
+[ ] 7.  Lock E  -> data: 300                       (lock only affects addNewPlan)
+[ ] 8.  Part 3 last -> data: 1000                  (garbage NOT added)
+[ ] 9.  minPrice 99999 -> data: []                 (empty array, NOT error!)
+[ ] 10. Part 7 last -> data: [ 10, 20, 30 ]        (attempt counter RESET works!)
+
+------------------------------------------------------------------------------
+If ALL 10 pass -> PR MERGED! 🎉
+If any fail -> paste that line to Dubby Bhaiya for a HINT (not the fix!)
+------------------------------------------------------------------------------
