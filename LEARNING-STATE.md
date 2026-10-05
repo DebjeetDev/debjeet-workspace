@@ -69,3 +69,18 @@
 - **DO NOT re-adjust the times written inside the plan files** (e.g. `READING/16-TODAY-05-OCT-2026.txt`).
   Reason: he knows his own local time and follows the same sequence whenever he starts.
   Changing the timestamps in files creates confusion. Leave them exactly as written.
+
+## 🏆 MILESTONE — PEHLA NPM PACKAGE LIVE (5 Oct 2026, 10:15 AM IST)
+- **`stream-os-engine@1.0.0` is LIVE on npm**: https://www.npmjs.com/package/stream-os-engine
+- **Debjeet published it HIMSELF** from his own Linux machine. I only prepared the files and the guide.
+- Anyone in the world can now run: `npm install stream-os-engine`
+- Verified by actually installing it from the real registry and running all methods — output matched spec exactly.
+- **Phase status:** Phase 5 (Arrays Deep) CAPSTONE SHIPPED. 35/35 tests, zero dependencies, MIT licensed.
+- **Next for this package:** set up OIDC Trusted Publishing on npmjs.com (repo `DebjeetDev/stream-os-engine`, workflow `publish.yml`, MUST tick "Allow npm publish"), then enable "Require 2FA and disallow tokens". After that, no token is ever needed again.
+
+## 🔑 DUBBY BHAIYA'S LESSON LOG (5 Oct 2026)
+1. **Git push and npm publish are DIFFERENT things.** GitHub = dikhaane ke liye. npm = duniya ko dene ke liye. Dono alag.
+2. **Sandbox `.git/config` snapshot se exclude hota hai** — remote/identity har baar udte hain. Always keep a self-healing script.
+3. **Pehla npm publish MANUAL hota hai** (OIDC tab tak set nahi ho sakta jab tak package exist na kare). Ye ek baar ka dard hai, phir zindagi bhar aaram.
+4. **Unscoped package name > scoped** jab npm username confirm na ho.
+5. **Debjeet prefers copying files himself over git clone.** Respect that — he learns by doing it with his hands.
