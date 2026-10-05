@@ -1,34 +1,50 @@
 #!/usr/bin/env bash
 # ============================================================
-# SYNC — mere (sandbox) se GitHub par push
+# SYNC — sandbox se GitHub par backup
 # Use: ./sync.sh "message"
+#
+# IMPORTANT: .git/config snapshot mein SAVE NAHI hota
+# (security rule). Isliye har baar remote + identity
+# khud se wapas set karta hoon. Isse "origin does not
+# appear to be a git repository" error kabhi nahi aayega.
 # ============================================================
 set -euo pipefail
 cd /home/user
 
 MSG="${1:-auto backup: $(TZ='Asia/Kolkata' date '+%d %b %Y, %I:%M %p') IST}"
+REMOTE_FILE="/home/user/.git-remote"
 
-REMOTE=$(git remote get-url origin 2>/dev/null || echo "")
-if [ -z "$REMOTE" ]; then
-  echo ""
-  echo "REMOTE SET NAHI HAI."
-  echo "  git remote add origin git@github.com:USERNAME/debjeet-workspace.git"
-  echo ""
-  exit 1
+# ---- 1. IDENTITY (har baar set karo) ----
+git config user.name  "Debjeet Dhar"
+git config user.email "debjeet@users.noreply.github.com"
+
+# ---- 2. REMOTE (gaya ho to wapas lao) ----
+if ! git remote get-url origin >/dev/null 2>&1; then
+  if [ -f "$REMOTE_FILE" ]; then
+    URL=$(tr -d ' \n\r' < "$REMOTE_FILE")
+    git remote add origin "$URL"
+    echo "  [auto] remote wapas set kiya: $URL"
+  else
+    echo ""
+    echo "REMOTE NAHI MILA."
+    echo "  echo 'git@github.com:DebjeetDev/debjeet-workspace.git' > /home/user/.git-remote"
+    echo ""
+    exit 1
+  fi
 fi
 
-git config user.name "Debjeet Dhar" 2>/dev/null || true
-git config user.email "debjeet@users.noreply.github.com" 2>/dev/null || true
-
+# ---- 3. ADD ----
 git add -A
 
+# ---- 4. COMMIT ----
 if git diff --cached --quiet; then
-  echo "Kuch badla nahi — backup already latest hai."
+  echo "  Kuch badla nahi — backup already latest hai."
 else
   git commit -q -m "$MSG"
-  echo "Commit: $MSG"
+  echo "  Commit: $MSG"
 fi
 
+# ---- 5. PUSH ----
 git push -u origin main
 echo ""
-echo "DONE — GitHub par safe hai."
+echo "  DONE — GitHub par safe hai."
