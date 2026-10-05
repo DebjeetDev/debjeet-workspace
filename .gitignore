@@ -36,3 +36,7 @@ id_ed25519
 # SSH keys — KABHI bhi GitHub par nahi
 .ssh/
 .bashrc
+
+# Voice notes — GitHub par KABHI nahi (Debjeet ki marzi)
+audio/
+*.mp3
