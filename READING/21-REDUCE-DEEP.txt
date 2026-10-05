@@ -776,10 +776,12 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
 ----------------------------------------------------------------
 
   SAMAJH:
-    [ ] Analogy samajh aaya (chai wale ka khata)
-    [ ] acc / cur / initial mein fark pata hai
-    [ ] Initial value kabhi nahi bhooloonga
-    [ ] Paper pe table bana sakta hoon
+    [✅] Analogy samajh aaya
+    [✅] acc / cur / initial mein fark
+    [✅] Initial value
+    [✅] Paper pe table
+    [✅] DO TARAH KE COMPARE (acc vs fixed number)
+    [✅] X-RAY debugging (console.log andar)
 
   CODE:
     [✅] Stage 1 — haath se table
@@ -787,7 +789,8 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [✅] Stage 3 — getTotalSpend ✅ 3473 · getCount ✅ 6 · getBiggestSpend ✅ 2499 (cur[2] fix ho gaya)
     [✅] Stage 4A — getSmallSpendTotal   DONE (55 ⭐)
     [✅] Stage 4B — getSmallSpendCount   DONE (2 ⭐)
-    [ ] Stage 5 — mapWithReduce / filterWithReduce
+    [✅] Stage 5A — mapWithReduce      DONE
+    [✅] Stage 5B — filterWithReduce    DONE (fun->fn typo fix + fn guard)
 
   SAMAJH (updated 5 Oct 2026):
     [✅] Analogy samajh aaya
