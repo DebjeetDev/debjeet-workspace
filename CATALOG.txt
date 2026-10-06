@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Tuesday, 06 October 2026
-  Samay       : 11:10 AM (Asia/Kolkata)
+  Samay       : 11:13 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -61,6 +61,8 @@ Poore workspace ka naksha: kahan kya hai
             -> GitHub pe dikhega (badges ke saath)
       |-- sync.sh
             -> EK COMMAND — poora workspace GitHub par backup (./sync.sh)
+      |-- TEACHER-COMPLETE.txt
+      |-- TEACHER-QUICK.txt
       |
       |-- [DIR] audio/
             -> Voice notes (Dubby Bhaiya ki audio)
@@ -204,7 +206,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 72
+    Total files    : 74
     Total folders  : 19
 
     READING/       : 10 files (numbered 00 se aage)
