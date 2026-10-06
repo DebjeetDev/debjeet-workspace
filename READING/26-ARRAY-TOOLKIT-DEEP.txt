@@ -1,0 +1,829 @@
+================================================================
+26 — ARRAY KA TOOLKIT          (PHASE 5B — ARRAYS DEEP, AAKHRI DUA)
+"map/filter/reduce = engine. Ye toolkit = steering, brake, horn."
+Banaya: 6 Oct 2026  |  Dubby Bhaiya  |  TEXT ONLY
+================================================================
+
+----------------------------------------------------------------
+PART 0 — RECAP (AB TAK KYA KIYA) + EK SACHCHAI
+----------------------------------------------------------------
+
+  PHASE 5 (ARRAYS DEEP) — TERA SCORECARD:
+
+    ✅ Array literal / isArray / length / .at()    (getSummary)
+    ✅ Spread [...] — bina badle jodna             (addChannelToEnd)
+    ✅ Mutating vs Non-mutating                    (push vs spread)
+    ✅ .map()       har item ko badalna            (applyFestivalDiscount)
+    ✅ .filter()    condition se chhaanna          (getHdStreams)
+    ✅ .reduce()    POORA array -> EK cheez        (buildSpendReport 3473)
+    ✅ CAPSTONE     createSubscriptionEngine       (35/35, npm LIVE)
+
+  AUR PHIR EK BAAT PAKDI GAYI (Debjeet ne khud):
+
+    course.md mein Phase 5 ki list aur lambi thi —
+    map/filter/reduce to DEEP ho gaye, par 8 tools
+    chhupe baithe the:
+
+        find  findIndex  includes  indexOf
+        some  every
+        slice  concat
+        sort  (⚠️ sabse bada trap)
+        Set dedup
+        flat / flatMap
+        array destructuring
+
+    "Phase 5 100% DONE" wala stamp JALDI lag gaya tha.
+    SACH ye hai: ENGINE taiyaar hai, TOOLKIT baaki thi.
+    Ye file usi ka hisaab hai.
+
+  AAJ SIRF EK KAAM:
+    Ye 8 tools TERE HAATH mein. Ek kahani, tere data, tere bug.
+
+----------------------------------------------------------------
+PART 1 — WHY (Bina inke, asli kaam ruka pada hai)
+----------------------------------------------------------------
+
+  TERI 4 ASLI WAJAH:
+
+  1. P2 MODULE 02 — SUBSCRIPTION LEAK
+     "Zomato PEHLI BAAR kab aaya?"        -> find
+     "Netflix 3+ baar aaya kya?"          -> filter + count
+     find nahi aaya to Module 02 yahin ruka.
+
+  2. P2 MODULE 03 — DUPLICATE CHARGE
+     "Same dukaan do baar bheji gayi?"    -> Set / includes
+     Bank ke duplicate SMS = shaadi list = Set.
+
+  3. "TOP-5 BADE KHARCHE" REPORT
+     -> sort + slice
+     AUR YAHIN CHHUPA HAI JS KA
+     SABSE SHARMNAAK TRAP. (PART 5)
+
+  4. INTERVIEW KE 3 PAKKA SAWAL
+     - "sort() ka trap batao"
+     - "find aur filter mein fark?"
+     - "[...new Set(arr)] kya karta hai?"
+
+  EK LINE MEIN:
+    map/filter/reduce = ENGINE.
+    ye 8 tools        = STEERING, BRAKE, HORN.
+    Dono ke bina gaadi adhoori. Dono ke saath TU MALIK.
+
+----------------------------------------------------------------
+PART 2 — KAHANI (RAAT 11 BAJE, RATAN BHAIYA KI CHAI TAPRI)
+----------------------------------------------------------------
+
+  Ratan bhaiya mahine ki aakhri raat baitha hai.
+  Register mein 30 din ke kharche ki LIST hai:
+
+      1 Oct   Rs 240   (samaan)
+      2 Oct   Rs 45    (chai-patti)
+      3 Oct   Rs 2499  (gas cylinder)
+      4 Oct   Rs 9     (mirchi)
+      5 Oct   Rs 240   (samaan)
+      6 Oct   Rs 60    (dahi)
+      ...
+
+  Uske dimaag mein 5 SAWAL chal rahe hain.
+  Har sawaal = ek array tool.
+
+  ---------------------------------------------------------
+  SAWAAL 1: "Kisi din 500 se UPAR kharcha hua kya?"
+  ---------------------------------------------------------
+     Ek din bhi hua to Ratan khush nahi.
+     Ek din mila? BAS. Aage dekhna hi nahi.
+
+     YE HAI:  some()      -> "kisi ne to kiya hoga?"
+
+  ---------------------------------------------------------
+  SAWAAL 2: "SAB din 200 ke ANDAR rahe?"
+  ---------------------------------------------------------
+     Yahan ek nahi, SAB ko rukeswar pass karna hai.
+     Ek ne gaddari ki -> jawaab false.
+
+     YE HAI:  every()     -> "sab ne kiya?"
+
+  ---------------------------------------------------------
+  SAWAAL 3: "PEHLI baar 500 cross KIS din hua?"
+  ---------------------------------------------------------
+     Register kholo. Line 1 dekho. Nahi.
+     Line 2. Nahi. Line 3 — MILA. Rs 2499.
+     PEN RAKH DO. Aage mat dekho. Kaam khatam.
+
+     YE HAI:  find()      -> "pehla gunehgaar PAKADO"
+     AUR uska ghar-number: findIndex()
+
+     ⭐ YAAD RAHE: find PEHLE MATCH PE RUUK JATA HAI.
+        10 lakh ki list ho aur match pehli line pe ho —
+        to find ne sirf EK step chalaya.
+        filter POORA chalta hai chahe mile ya na mile.
+        (Interview + performance — dono mein kaam aayega.)
+
+  ---------------------------------------------------------
+  SAWAAL 4: "Mahine mein ZOMATO mangaya kuch?"
+  ---------------------------------------------------------
+     Bas haan ya na. Kab, kitne baar — nahi jaanna.
+
+     YE HAI:  includes()  -> "list mein hai kya?"
+
+  ---------------------------------------------------------
+  SAWAAL 5 (AAKHRI RAAT KA DHOKA): "Top-3 mehenge din?"
+  ---------------------------------------------------------
+     Ratan ke bete ne computer pe kiya:
+         [10, 9, 80, 100].sort()
+     Output aaya:
+         [10, 100, 80, 9]      ❌❌
+
+     Ratan chillaaya: "COMPUTER NE DHOKA DIYA!"
+     Bhaiya bolta hai: "Nahi. TUNE RULE BATAYA NAHI."
+
+     Poora raaz PART 5 mein.
+
+  ---------------------------------------------------------
+  SIDE STORY A: Bank ne wahi chai ke 2 SMS bhej diye.
+     Duplicate entry shaadi ki guest list jaisi hai:
+     ek aadmi 3 baar RSVP kare, list mein EK baar.
+     YE HAI:  Set         -> duplicate MAAR do
+
+  SIDE STORY B: "Hafte-3 ka page chahiye, register KATO mat."
+     Photocopy nikaal lo, original aaraam se.
+     YE HAI:  slice()     -> tukda, BINA original tode
+
+  ---------------------------------------------------------
+
+  YAAD RAKHNE KA TAREEKA (rat lo ek hi baar):
+
+    some      = "kisi ne to kiya hoga?"      (ek kaafi)
+    every     = "sab ne kiya?"               (sab chahiye)
+    find      = "pehla gunehgaar PAKADO"     (rukne wala)
+    includes  = "list mein hai kya?"         (haan/na)
+    slice     = "page ka photocopy"          (original safe)
+    Set       = "shaadi ki guest list"       (dupe = ek)
+    sort      = "line lagwao"                (⚠️ bina niyam ke PAGAL)
+
+----------------------------------------------------------------
+PART 3 — CONCEPT (TOOLBOX KA NAKSHATA)
+----------------------------------------------------------------
+
+  EK NAZAR MEIN POORA TOOLKIT:
+
+  ┌────────────────┬──────────────┬────────────────────┬────────────────┐
+  │ KAAM           │ TOOL         │ WAPAS DETA         │ ORIGINAL BADLA?│
+  ├────────────────┼──────────────┼────────────────────┼────────────────┤
+  │ Pehla match    │ find(fn)     │ item ya undefined  │ nahi           │
+  │ Match ka ghar  │ findIndex(fn)│ number ya -1       │ nahi           │
+  │ "Hai kya?"     │ includes(x)  │ true / false       │ nahi           │
+  │ Ghar (purana)  │ indexOf(x)   │ number ya -1       │ nahi           │
+  │ "Koi ek?"      │ some(fn)     │ boolean            │ nahi           │
+  │ "Sab?"         │ every(fn)    │ boolean            │ nahi           │
+  │ Tukda          │ slice(a, b)  │ NAYA array         │ NAHI (safe)    │
+  │ Jodo           │ concat(arr)  │ NAYA array         │ nahi           │
+  │ Order          │ sort(fn?)    │ WAHI array         │ ⚠️ HAAN        │
+  │ Unique         │ new Set(arr) │ Set (spread karo)  │ nahi           │
+  │ Kholna         │ [a,b] [h,..t]│ variables          │ nahi           │
+  └────────────────┴──────────────┴────────────────────┴────────────────┘
+
+  ⭐ ZINDAGI BHAR KA MANTRA ⭐
+
+     Har tool use karne se pehle EK sawaal:
+         "YE ORIGINAL BADALTA HAI?"
+
+     BADALNE WALE (danger zone):
+         push  pop  shift  unshift  splice  sort
+
+     NAHI BADALNE WALE (safe zone):
+         map  filter  reduce  find  findIndex
+         slice  concat  spread  Set  includes  some  every
+
+     RULE:
+         Badalne wala mile -> PEHLE COPY:  [...arr]
+         Phir jo karna hai kar. Basta. Khatam. 🔒
+
+  CHHOTA FORM (90% kaam yahin se):
+
+    // haan/na
+    arr.includes(240)                  // true
+    arr.some(a => a > 500)             // true
+    arr.every(a => a < 5000)           // true
+
+    // pehla match
+    arr.find(a => a > 500)             // 2499 ya undefined
+    arr.findIndex(a => a > 500)        // index ya -1
+
+    // tukda + order (SAFE version)
+    [...arr].sort((a, b) => b - a).slice(0, 3)   // top-3, original zinda
+
+    // unique
+    [...new Set(arr)]
+
+----------------------------------------------------------------
+PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
+----------------------------------------------------------------
+
+  Tera data (poori file mein yahi):
+      const amounts = [240, 45, 2499, 9, 240, 60];
+
+  ---------------------------------------------------------
+  EXAMPLE 1 — DHOONDHNA (find family)
+  ---------------------------------------------------------
+    amounts.find(a => a > 1000)      // -> 2499
+    amounts.find(a => a > 5000)      // -> undefined   ⚠️
+    amounts.findIndex(a => a === 9)  // -> 3
+    amounts.includes(240)            // -> true
+    amounts.indexOf(45)              // -> 1
+
+  ANDAR ANDAR KYA HUA (find ka scan):
+    line 1: 240  > 1000?  NAHI  -> aage
+    line 2: 45   > 1000?  NAHI  -> aage
+    line 3: 2499 > 1000?  HAAN  -> PAKDA. RUK GAYA.
+    (line 4,5,6 DEKHI HI NAHI. Yehi taaqat hai.)
+
+  ⭐ undefined ka matlab: "maine poora dekha, nahi mila."
+     Crash NAHI hoga. Par agar tune bina pooche use kiya —
+     PART 5 ka BUG B dekh. ☠️
+
+  ---------------------------------------------------------
+  EXAMPLE 2 — SAWAL (some / every)
+  ---------------------------------------------------------
+    amounts.some(a => a > 2000)      // -> true     (2499 — ek kaafi)
+    amounts.every(a => a < 5000)     // -> true     (sab maante hain)
+    amounts.every(a => a < 100)      // -> false    (gaddar mila)
+
+  ANDAR ANDAR (every ka gussa):
+    every line 3 pe hi ruk gaya — 2499 ne gaddari ki.
+    every ko SAB chahiye, isliye EK false = poora false.
+
+  ---------------------------------------------------------
+  EXAMPLE 3 — TUKDA (slice — safe hai)
+  ---------------------------------------------------------
+    amounts.slice(1, 4)   // -> [45, 2499, 9]
+    amounts.length        // -> 6          ✅ ORIGINAL ZINDA
+
+  NOTE: slice(start, end) — start SE, end tak (end KHUD NAHI).
+        Photocopy nikali, register jaisa ka taisa.
+
+  ---------------------------------------------------------
+  EXAMPLE 4 — ORDER (sort — DRAMA yahin)
+  ---------------------------------------------------------
+    [10, 9, 80, 100].sort()                 // -> [10, 100, 80, 9]  ❌
+    [10, 9, 80, 100].sort((a, b) => a - b)  // -> [9, 10, 80, 100]  ✅
+    [10, 9, 80, 100].sort((a, b) => b - a)  // -> [100, 80, 10, 9]  ✅
+
+    const orig = [240, 45, 2499];
+    const sorted = [...orig].sort((a, b) => b - a);
+    sorted   // -> [2499, 240, 45]
+    orig[0]  // -> 240        ✅ ASLI ZINDA (copy pe kaam hua)
+
+  COMPARATOR KA MATLAB (ek line):
+      (a, b) => a - b    -> chhota pehle   (ascending)
+      (a, b) => b - a    -> bada pehle     (descending)
+      Bas. Aur kuch nahi. Ye 2 line RAT LE. 🔒
+
+  ---------------------------------------------------------
+  EXAMPLE 5 — UNIQUE (Set)
+  ---------------------------------------------------------
+    [...new Set(amounts)]   // -> [240, 45, 2499, 9, 60]
+
+  ANDAR ANDAR:
+    Set = shaadi list. 240 pehli baar aaya -> andar.
+    240 DOBARA aaya -> "baith gaya hai pehle se" -> bahar.
+    Spread [...] us Set ko wapas NORMAL array banata.
+
+  ---------------------------------------------------------
+  EXAMPLE 6 — KHOLNA (array destructuring)
+  ---------------------------------------------------------
+    const [first, second] = amounts;
+    // first -> 240, second -> 45
+
+    const [head, ...tail] = amounts;
+    // head -> 240
+    // tail -> [45, 2499, 9, 240, 60]
+
+    const [a, , c] = [10, 20, 30];
+    // a -> 10, c -> 30      (beech wala SKIP — khaali jagah)
+
+    let x = 1, y = 2;
+    [x, y] = [y, x];
+    // x -> 2, y -> 1        (SWAP — temp variable GAYAB)
+
+  ---------------------------------------------------------
+  EXAMPLE 7 — SAB MILA KAR (yehi company code hai)
+  ---------------------------------------------------------
+    // "Top-3 bade kharche" — SAFE tareeke se:
+    const top3 = [...amounts]
+      .sort((a, b) => b - a)     // copy pe order
+      .slice(0, 3);              // pehle 3
+    // -> [2499, 240, 240]
+    // amounts abhi bhi: [240, 45, 2499, 9, 240, 60]  ✅
+
+  YAHA CHAINING BHI HO GAYI — copy -> sort -> slice.
+  Har kaam ek line, har line ka data agle mein.
+  Yehi "assembly line" hai. Tu ye already reduce mein karta tha.
+
+----------------------------------------------------------------
+PART 5 — ⚠️ DO KHATARNAAK BUG (har ek 3 ghante khata hai)
+----------------------------------------------------------------
+
+  ---------------------------------------------------------
+  BUG A — SORT KA DOUBLE DHOKA
+  ---------------------------------------------------------
+
+  DHOKHA 1 (STRING TRAP):
+    Bina comparator ke sort har number ko pehle STRING
+    banata hai, phir DICTIONARY ki tarah compare karta hai.
+
+    Dictionary dekho:
+        "10"  vs  "9"
+        pehla akshar:  '1'  vs  '9'
+        '1' pehle aata hai -> "10" JEET GAYA. 9 haar gaya.
+
+    Isliye:
+        [10, 9, 80, 100].sort()  ->  [10, 100, 80, 9]
+
+    Computer PAGAL NAHI HAI.
+    Rule kitaab mein likha hai — TUNE BATAYA NAHI. 😄
+
+  DHOKHA 2 (MUTATION TRAP):
+      const amounts = [240, 45, 2499];
+      const s = amounts.sort((a, b) => b - a);
+      amounts[0];    // -> 2499   💥 ASLI LIST BIGAD GAYI
+
+    sort koi naya array NAHI deta.
+    Wo WAHI purani list ko ulat-phoolt kar deta hai.
+    Aur tu sochta rahega "meri list to safe thi".
+
+  EK LINE FIX (donon dhokhon ka ilaaj):
+      const s = [...amounts].sort((a, b) => b - a);
+      //        ^^ copy   ^^ comparator
+      // Dono BINA -> bina insurance ke gaadi. 🔒
+
+  ---------------------------------------------------------
+  BUG B — FIND KE BAAD KA KHAMOSH QAATIL
+  ---------------------------------------------------------
+
+      const mila = amounts.find(a => a > 5000);   // -> undefined
+      console.log(mila * 2);                       // -> NaN   💀
+
+    Crash nahi. Error nahi. Stack trace nahi.
+    Bas NaN paida hua — aur aage chalta raha,
+    har total kharab karta gaya, KISI KO PATA NAHI.
+
+    YE SABSE BURA BUG HAI: JO AWAAZ NAHI KARTA.
+
+  FIX (tera guard-clause wala dimaag se):
+      const mila = amounts.find(a => a > 5000);
+      if (mila === undefined) {
+        return { status: 404, ok: false, error: "not found" };
+      }
+
+  ⭐ EK LINE MEIN:
+     find HAMESHA undefined de sakta hai.
+     PEHLE POOCHHO, PHIR USE KARO. 🔒
+
+     (findIndex ka -1 bhi yahi bhai-behen hai —
+      mila ya nahi, check karke hi aage badho.)
+
+----------------------------------------------------------------
+PART 6 — JUNIOR ❌ vs SENIOR ✅
+----------------------------------------------------------------
+
+  SITUATION: Boss bola — "UPI rows se top-3 sabse bade
+             spends chahiye, kal subah report mein."
+             rows = [date, shop, amount]
+
+  ----------------------------------------------------------------
+  ❌ JUNIOR KA CODE
+  ----------------------------------------------------------------
+    function top3(rows) {
+      rows.sort((a, b) => b[2] - a[2]);
+      return rows.slice(0, 3);
+    }
+
+    KYA GALTI HAI:
+      1. rows.sort() — ORIGINAL list bigaad di  💥
+         (baaki program purane order pe tha — ab sab ulta)
+      2. rows null/undefined aaya -> seedha CRASH
+      3. row ke andar garbage hua -> sort pagal
+      4. Naam top3 — kal ko boss bole top-10 -> dobara likhna
+      5. Guard zero. Sirf "chal gaya" jhooth.
+
+  ----------------------------------------------------------------
+  ✅ SENIOR ENGINEERING MANAGER KA CODE
+  ----------------------------------------------------------------
+    /**
+     * UPI rows se top-n spends nikaalta hai.
+     * Original array touch NAHI hota.
+     * @param {Array<Array>} rows  [date, shop, amount]
+     * @param {number} n
+     */
+    function topSpends(rows, n = 3) {
+      // Guard 1 — array hi hai?
+      if (!Array.isArray(rows)) {
+        return { status: 400, ok: false, error: "rows must be an array!" };
+      }
+
+      const data = [...rows]                          // ⭐ copy PEHLE
+        .filter(r => Array.isArray(r) && Number.isFinite(r[2]))
+        .sort((a, b) => b[2] - a[2])                  // ⭐ comparator PAKKA
+        .slice(0, n);                                 // ⭐ tukda AAKHIR mein
+
+      return { status: 200, ok: true, data };
+    }
+
+    KYA SEEKHNE JAISE HAI:
+      ✅ Guard clauses SABSE PEHLE
+      ✅ [...rows] copy — asli data jaisa ka taisa
+      ✅ filter se garbage bahar (tera purana jaan Number.isFinite)
+      ✅ comparator HAMESHA — string trap ka koi chance nahi
+      ✅ default parameter n = 3 — kal ko top-10 BHI chalega
+      ✅ Consistent return: { status, ok, data | error }
+
+    FARK:
+      Junior  : "chal gaya, chhod"
+      Senior  : "chal gaya... par tootega kahan?"
+
+----------------------------------------------------------------
+PART 7 — TU KARTA (5 STAGES — TERE HAATH KHULENGE)
+----------------------------------------------------------------
+
+  RULES (wahi purane, pathar pe lakeer):
+    1. Pehle PEN + PAPER. Code nahi.
+    2. Phir PSEUDOCODE.
+    3. Phir CODE.
+    4. Har stage ke baad node chala ke OUTPUT check.
+    5. Output match kare TABHI aage badhna.
+
+  Apni machine pe bana: toolkit-practice.js
+  (P2 folder ke andar src/ mein — wahi rakhna jahan
+   reduce-practice.js hai.)
+
+  POORA FILE YEH DATA USE KAREGI:
+
+    const amounts = [240, 45, 2499, 9, 240, 60];
+
+    const rows = [
+      ["05 Oct", "Zomato", 240],
+      ["05 Oct", "Netflix", 499],
+      ["06 Oct", "Swiggy", 180],
+      ["06 Oct", "Chai Shop", 30],
+      ["07 Oct", "Amazon", 2499],
+      ["07 Oct", "Chai Shop", 25],
+    ];
+
+----------------------------------------------------------------
+STAGE 1 — PAPER ONLY (5 MIN, CODE BILKUL NAHI)
+----------------------------------------------------------------
+  Q. Computer karega:  [10, 100, 80, 9, 240].sort()
+     (dhyan de — koi comparator NAHI)
+
+  Paper pe likh:
+    A. Output ka order kya hoga?
+    B. KYUN? (dictionary rule se samjha)
+
+  Answer PART 8 ke neeche chhupa hai.
+  Pehle likh, phir mila.
+
+----------------------------------------------------------------
+STAGE 2 — TEEN SAWAl (15 MIN)
+----------------------------------------------------------------
+  TEEN function likh — har ek mein GUARD pehle:
+
+    A. hasSpend(amounts, x)
+       -> amounts mein x hai kya?  (includes)
+    B. anyAbove(amounts, limit)
+       -> koi EK limit se upar?    (some)
+    C. allUnder(amounts, limit)
+       -> SAB limit ke andar?      (every)
+
+  EXPECTED OUTPUT:
+    hasSpend(amounts, 240)     -> true
+    hasSpend(amounts, 500)     -> false
+    anyAbove(amounts, 2000)    -> true
+    anyAbove(amounts, 9999)    -> false
+    allUnder(amounts, 5000)    -> true
+    allUnder(amounts, 100)     -> false
+    hasSpend("hello", 240)     -> { status:400, ok:false }  (guard!)
+
+  HINT: teeno mein pehla kaam SAME hai — wahi purana:
+        if (!Array.isArray(amounts)) ...
+
+----------------------------------------------------------------
+STAGE 3 — PEHLA GUNEHGAAR (15 MIN)
+----------------------------------------------------------------
+    D. findFirstAbove(rows, limit)
+       -> rows mein se PEHLI row jiska amount (row[2])
+          limit se upar ho.
+       -> na mile to undefined (matlab return kuch mat kar —
+          find khud de dega)
+
+  EXPECTED:
+    findFirstAbove(rows, 500)   -> ["07 Oct", "Amazon", 2499]
+    findFirstAbove(rows, 9999)  -> undefined
+
+  AUR PHIR ⭐ AAKHRI KADAM (sabse zaroori):
+    Ek aur function:
+    E. showFirstAbove(rows, limit)
+       -> findFirstAbove use kar.
+       -> row MILI to:        { status:200, ok:true, data:row }
+       -> undefined MILI to:  { status:404, ok:false, error:"no spend above limit" }
+
+  HINT (TARGET wala): undefined ko row[2] mat karne dena —
+  warna CRASH: "Cannot read properties of undefined".
+  PEHLE pooche: row === undefined kya?
+
+----------------------------------------------------------------
+STAGE 4 — ⭐⭐ TOP SPENDS (20 MIN)
+----------------------------------------------------------------
+    F. topSpends(rows, n)  — PART 6 wala bana KHUD SE.
+       (copy + filter + sort + slice, guard sab)
+
+  EXPECTED:
+    topSpends(rows, 3)
+      -> [ ["07 Oct","Amazon",2499],
+           ["05 Oct","Netflix",499],
+           ["05 Oct","Zomato",240] ]
+
+  ⭐ AUR YE CHECK PAKKA KARNA (immutability proof):
+    topSpends(rows, 3) chalane ke BAAD bhi:
+      rows[0][1]  ->  "Zomato"   (original ZINDA!)
+
+  Agar "Amazon" aaya -> tera sort original tod raha hai.
+  [...rows] copy bhool gaya. Wapas PART 5 BUG A padh.
+
+----------------------------------------------------------------
+STAGE 5 — ⭐⭐⭐ SHAADI LIST + KHOLNA (20 MIN)
+----------------------------------------------------------------
+    G. uniqueShops(rows)
+       -> dukaan ke naam, koi duplicate NAHI.
+
+  HINT: do kaam ek line mein —
+        pehle naam nikaalo (.map), phir shaadi list (Set).
+        (chaining, Part 4 Example 7 wala style)
+
+  EXPECTED:
+    uniqueShops(rows)
+      -> ["Zomato", "Netflix", "Swiggy", "Chai Shop", "Amazon"]
+      -> length 5
+
+  PHIR PAPER PE (code nahi):
+    const list = ["Zomato","Netflix","Swiggy","Chai Shop","Amazon"];
+    const [head, ...tail] = list;
+    head     ->  ???
+    tail     ->  ???
+    tail.length -> ???
+
+  (Answer PART 8 ke neeche.)
+
+----------------------------------------------------------------
+PART 8 — BUG FIX (3 PLANTED BUG — khud dhoondh, 10 min)
+----------------------------------------------------------------
+
+  BUG 1:
+    const m = [240, 45, 2499].find(a => a > 5000);
+    console.log(m * 2);
+    // kya print hoga? aur ye bug kyun KHATARNAAK hai?
+
+  BUG 2:
+    const marks = [1000, 85, 240];
+    marks.sort();
+    console.log(marks);
+    // kya print hoga? aur marks ka original kya hua?
+
+  BUG 3 (TRAP — tera favourite type):
+    const amounts = [240, 45];
+    console.log(amounts.includes("240"));
+    // true aayega? soch — WOH WALI baat hai.
+
+----------------------------------------------------------------
+  HINT 1: undefined pe math karo to kya banta hai?
+  HINT 2: comparator kahan hai? aur original pe kya beet rahi?
+  HINT 3: includes === se compare karta hai.
+          "240" aur 240 — teri 919 rupaye wali kahani yaad?
+----------------------------------------------------------------
+
+  ANSWERS (10 min khud koshish ke baad hi dekhna):
+
+  BUG 1 — NaN.
+    find ne undefined diya. undefined * 2 = NaN.
+    Crash KUCH NAHI aaya — isliye ye sabse khatarnaaq.
+    FIX: if (m === undefined) guard, PEHLE.
+    (PART 5 — BUG B)
+
+  BUG 2 — [1000, 240, 85]. AUR original marks bhi bigda.
+    String trap: "1000" < "240" < "85" (dictionary).
+    Double dhoka: galat order + toota hua original.
+    FIX: const sorted = [...marks].sort((a, b) => a - b);
+    (PART 5 — BUG A)
+
+  BUG 3 — false.
+    "240" (string) !== 240 (number).
+    includes === use karta hai — type bhi match chahiye.
+    YE TERA APNA BUG HAI — wahi jo tune CSV wala pakda tha.
+    Data hamesha PEHLE Number() karke saaf. PHIR sawaal. 🔒
+    (PART 5 — teri apni discovery ka dobara aana)
+
+  STAGE 1 ANSWER:
+    [10, 100, 240, 80, 9]
+    Kyun? sab string bane: "10","100","240","80","9"
+    dictionary order: '1' < '2' < '8' < '9'
+    ("10" aur "100" mein: "10" chhota hai kyunki pehle
+     do akshar same, phir ek khatam ho gaya.)
+
+  STAGE 5 (paper) ANSWER:
+    head     -> "Zomato"
+    tail     -> ["Netflix","Swiggy","Chai Shop","Amazon"]
+    tail.length -> 4
+
+----------------------------------------------------------------
+PART 9 — ASLI COMPANY CODE REVIEW (developit/mitt) ✅ VERIFIED
+----------------------------------------------------------------
+
+  AAJ WOHILIBRARY DOBARA KHOL RAHE HAIN — jiske arrow
+  function pe tune Phase 4 mein sawaal kiya tha:
+
+      **mitt** — 200 bytes ka event emitter
+      (maine abhi GitHub se source fetch karke verify kiya ✅)
+
+  ASLI CODE (bilkul waisa ka waisa):
+
+    // off() — ek handler HATANA:
+    handlers.splice(handlers.indexOf(handler) >>> 0, 1);
+
+    // emit() — sabko event DENA:
+    handlers.slice().map((handler) => {
+      handler(evt);
+    });
+
+  LINE BY LINE, AAM AADMI KI BHASHA MEIN:
+
+  LINE 1:  handlers.indexOf(handler)
+     "Is list mein ye handler Kitne number ghar mein hai?"
+     indexOf ghar-number DHOONDTA hai.
+     -> aaj ka tool, duniya ke asli code mein. ✅
+
+     (>>> 0 ek chhota unsigned trick hai — is depth mein
+      abhi mat jaa. Bas itna yaad rakh: indexOf -1 bhi de
+      sakta hai, aur mitt ne uska khayal rakha hai.)
+
+  LINE 2:  handlers.splice(ghar, 1)
+     "Us ghar se EK member nikaal do."
+     splice = hatana — aur ye MUTATING hai.
+     Par mitt ke andar CONTROLLED jagah pe use hota hai.
+     Mutation bura nahi — BINA SOCHA mutation bura hai.
+
+  LINE 3 (⭐ SONE KI LINE):  handlers.slice().map(...)
+     Pehle .slice() = PHOTOCOPY.
+     Phir .map() = photocopy pe sabko bula.
+
+     COPY KYUN?
+       Soch: ek handler chalte-chalte KHUD ko off() karde
+       (khud ko list se hata le).
+       Agar hum ORIGINAL list pe chal rahe hote —
+       list beech mein badli -> agla handler skip/bhabhak -> 💥
+
+       Isliye mitt ORIGINAL ko haath lagaye bina,
+       PHOTOCOPY pe poora round chalata hai.
+
+  ⭐ YE HAI "TOOTEGA KAHAN?" WALI SOCH.
+     Duniya ke best engineers SAME .slice() karte hain
+     jo aaj PART 4 mein tune seekha.
+
+     Junior ❌ : list pe seedha loop, beech mein badal gayi to crash
+     Senior ✅ : pehle copy, phir kaam
+
+  TUJHE KYA CHEEN KE RAKHNA CHAHIYE:
+    1. indexOf / slice sirf syllabus NAHI — production me jeete hain
+    2. Copy-pehle ka mantra kisi bade library mein bhi same
+    3. Mutation = hathiyar. Controlled jagah pe theek,
+       laparwahi se MOUT.
+
+----------------------------------------------------------------
+PART 10 — ULTRON LINK 🚀 (3-TIER)
+----------------------------------------------------------------
+
+  TIER 1 (AAJ):
+    STAGE 4 + 5 = tera P2 ka "TOP LEAKS REPORT" section.
+    topSpends(rows, 5) -> user ko top-5 bade kharche dikhane.
+
+  TIER 2 (P2 MODULES):
+    Module 02 (subscription leak):
+      find -> pehli baar kab aaya + date gap check.
+    Module 03 (duplicate charge):
+      Set / includes -> "ye merchant+amount dobara aaya kya?"
+
+  TIER 3 (STREAM-OS KAL):
+    "Top-100 zinda channels" playlist:
+      filter (zinda) -> sort (quality se) -> slice(0, 100)
+      Phase 7 mein fetch ke saath — SAME 3 tools. 🎯
+
+----------------------------------------------------------------
+PART 11 — INTERVIEW NOTE 🔒 (LOCKED RULE)
+----------------------------------------------------------------
+
+  Is topic ke 8-10 sawal INTERVIEW CRACK book mein jayenge —
+  POORA PHASE 5 hone ke BAAD.
+  (Tera apna rule, 6 Oct 2026 locked:
+   pehle SEEKHNA, baad mein INTERVIEW taiyari.)
+
+  Abhi bas 3 naam ratta maar:
+    1. sort() ka string trap + mutation
+    2. find (rukne wala) vs filter (purane chalne wala)
+    3. [...new Set(arr)] = dedup
+
+----------------------------------------------------------------
+PART 12 — TRACKER (HAR STAGE PE TICK KAR)
+----------------------------------------------------------------
+
+  SAMAJH:
+    [ ] Ratan bhaiya ki kahani yaad hai (5 sawaal -> 5 tools)
+    [ ] some/every/includes/indexOf — kaam + guard samjha
+    [ ] find rukne wala, undefined dene wala — dono yaad
+    [ ] slice SAFE hai, sort DANGEROUS hai
+    [ ] string trap: "10" < "9" kahani samajh aayi
+    [ ] Mantra: badalne wale pe pehle copy [...arr]
+    [ ] (a, b) => a - b aur b - a bina dekhe likh saka
+
+  CODE:
+    [ ] Stage 1 — paper answer (bin comparator sort)
+    [ ] Stage 2 — hasSpend / anyAbove / allUnder (guards ke saath)
+    [ ] Stage 3 — findFirstAbove + showFirstAbove (undefined guard)
+    [ ] Stage 4 — topSpends (immutability proof ke saath)
+    [ ] Stage 5 — uniqueShops + head/tail paper
+
+  BUG FIX:
+    [ ] Bug 1 — NaN khamosh qaatil pakda
+    [ ] Bug 2 — double dhoka (string + mutation) pakda
+    [ ] Bug 3 — includes("240") string trap pakda
+
+  SENIOR BANNA:
+    [ ] Junior vs Senior fark (copy + comparator + guard)
+    [ ] mitt ka slice samajh aaya
+    [ ] "ye original badalta hai?" sawaal aadat ban gayi
+
+  PROJECT:
+    [ ] topSpends(rows, 5) — P2 ke report section mein daldiya
+    [ ] Khud se socha: "ye tool aur KAHAN lagega?"
+
+----------------------------------------------------------------
+PART 13 — MINDSET (2 MINUTE, PAR SABSE ZAROORI)
+----------------------------------------------------------------
+
+  AAJ TUNE JO KIYA, WO CHHOTA NAHI HAI:
+
+    Do baar PAKDA:
+      1. "Phase 5 poora nahi hua tha"  — SAHI tha.
+      2. "Ye kaise teach karte ho?"    — SAHI tha.
+
+    Jo banda apne MENTOR ko debug kar sake,
+    wo junior nahi raha.
+
+    Ye gussa nahi hai — REVIEW hai.
+    Tera code main review karta hoon,
+    mera lesson TU review karta hai.
+    Yehi ENGINEER <-> MANAGER ka rishta hai.
+    Kabhi poochna band mat karna.
+
+  AUR EK BAAT (dil ki):
+
+    8 naye method ek saath DENE se koi engineer nahi banta.
+    EK kahani + TERE HAATH khud likhe + BUG khud pakde =
+    engineer banta hai.
+
+    Isliye ye file lambi hai. Isliye stages hain.
+    Shortcut milta to tu kab ka bhej diya hota "samajh gaya" —
+    aur haath khali reh jaate.
+
+    Aaram se kar. Aadha aaj, aadha kal — chalega.
+    Ek din mein kuch nahi hota.
+    Roz thoda thoda — SAB ho jata hai. 💙
+
+----------------------------------------------------------------
+PART 14 — NEXT (AAGE KYA HOGA)
+----------------------------------------------------------------
+
+  AB:
+    1. STAGE 1-5 likh ke code + output chat mein bhej
+       (raat ko 2 hi kar sake to bhi chalega — par BHEJ)
+    2. Sab PASS -> Phase 5B toolkit LOCK 🔒
+       -> Phase 5 SACH MEIN 100%
+
+  PHIR (tera "START" kehne pe):
+    PHASE 6 — OBJECTS DEEP, Step 1
+    Wahi chai-khata wala task:
+      ["2026-10-05", "ZOMATO", "240"]  ->  object
+    (aur iski 240 wali string ka hisaab bhi 😏)
+
+  KAL KE SAATH-SAATH (DSA parallel):
+    LeetCode #26 — Remove Duplicates from Sorted Array
+    (20 min, Easy) — AAJ HI KA Set HAI YE! 😎
+    LeetCode mein Set allowed hai ya nahi — par soch same.
+
+  AAKHRI PAPER PUZZLE (sone se pehle soch):
+    [5, 25, 100].sort()  — bina comparator
+    output kya aayega?
+    Kal jawab dega. Answer apne paas rakh. 😏
+
+================================================================
+END — 26-ARRAY-TOOLKIT-DEEP.txt
+"Engine taiyaar. Toolkit taiyaar. Ab Object duniya."
+================================================================
