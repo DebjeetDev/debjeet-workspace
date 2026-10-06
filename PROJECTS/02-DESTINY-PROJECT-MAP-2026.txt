@@ -1,0 +1,498 @@
+================================================================
+02 — DESTINY PROJECT MAP 2026
+"Todo app se koi hired nahi hota. Apni PROBLEM solve karne wale se hota hai."
+Banaya: 6 October 2026 (deep research session)  |  Dubby Bhaiya  |  TEXT ONLY
+Research: Reddit (r/cscareerquestions, r/Frontend, r/AskProgramming, r/learnprogramming),
+          hiring-manager posts, YC/CodeCrafters, FDE portfolio guides, dev-community 2026
+================================================================
+
+----------------------------------------------------------------
+PART 0 — YE MAP KAISE BANI (METHOD — jhooth nahi, hisaab)
+----------------------------------------------------------------
+
+  TU NE BOLA THA: "Research karo — online, Reddit, community,
+  experienced log — aur BEST projects nikaal ke EK file mein de."
+
+  MAINE KIYA:
+    - 6 deep research dives (~25 sources padhe/tool se nikale)
+    - Hiring managers khud kya kehte hain (Reddit threads)
+    - 2026 ke 5-6 alag portfolio guides (full-stack + AI)
+    - System-design project ladders (real repos)
+    - Build-your-own-X movement (CodeCrafters/YC)
+    - npm success + disaster stories (left-pad, faker.js)
+
+  EK HONEST BAAT PEHLE:
+    YouTube/listicles pe jo "TOP 10 PROJECTS 2026" ghoom rahe
+    hain — 90% wahi recycled hai: todo, ecommerce clone, chat app,
+    weather, Netflix clone. Unko FILTER kar diya.
+    Neeche sirf WO cheezein hain jo (a) hiring managers khud
+    maante hain, (b) logic-heavy hain, (c) TERI ULTRON line se
+    judti hain, aur (d) 2026 mein fresh hain.
+
+----------------------------------------------------------------
+PART 1 — RESEARCH SE 7 HARD TRUTHS (sab jagah SAME baat repeat hui)
+----------------------------------------------------------------
+
+  SACH 1: EK FINISHED PROJECT >> 10 ADHOORE.
+    Hiring manager (r/cscareerquestions): "We just pull up A project
+    and TALK. Candidates who could talk deeply about ONE finished
+    project were our best hires."
+    MATLAB: aadha-ULTRON nahi — POORA chhota project. Hamesha.
+
+  SACH 2: TESTS + CI + DOCS + LICENSE = GREEN FLAG.
+    Senior (ex-recruiter): "I hire on quality of code, documentation,
+    and presence of CI and tests."
+    MATLAB: tera stream-os-engine pattern (35 tests, CI, MIT)
+    BILKUL SAHI direction hai. Usi ko har project mein repeat kar.
+
+  SACH 3: CLONE = GUSSA. APNI PROBLEM = CURIOSITY.
+    "10,000 students ne same weather app banayi hai."
+    Jo hire hua: "cat feeder automate kiya", "LinkedIn influencer
+    posts block karne wala extension" — APNI CHHOTI AJIB PROBLEM.
+    MATLAB: UPI Leak Detector isiliye sona hai — ye TERI problem
+    hai, India-specific hai, duniya mein carbon copy NAHI hai.
+
+  SACH 4: NUMBERS > ADJECTIVES.
+    Weak: "Built an AI research agent"
+    Strong: "Agent reduced research time from 45 min to 4 min"
+    Strong: "Reviewed 500+ PRs with 92% accuracy"
+    MATLAB: har README mein TABLE of NUMBERS. (PART 8)
+
+  SACH 5: RECRUITER KE SAWAL PAKKE HOTE HAIN — PEHLE SE PATA HAIN.
+    Har project TYPE ke fixed sawal hain (PART 6 mein poore).
+    Agar tu wo project bana le jiske sawal tujhe pata hain,
+    interview tere ghar ka khel hai.
+
+  SACH 6: "BUILD-YOUR-OWN-X" DUNIYA KA SABSE IZZATWALA CATEGORY HAI.
+    - build-your-own-x repo = 552,000+ stars (GitHub ka ~15th
+      biggest repo EVER)
+    - CodeCrafters (Y Combinator S22): Redis, Git, Docker, HTTP
+      server from scratch — devs at Google, OpenAI, Vercel use.
+    SENIOR RESPECT = jab tune chiz KHUD BANAYI, use ki nahi.
+    ⭐ MATLAB: tera Mini-Express / Mini-Zod / Mini-Redis /
+      Mini-Docker wala ULTRON ladder PEHLE SE HI ELITE CATEGORY
+      MEIN HAI. Humne andaj se banaya tha, research ne seal kar di.
+
+  SACH 7: AI 2026 = CHATBOT NAHI. "AGENT + MEASUREMENT".
+    AI hiring guides sab ek sur mein:
+      "Chatbot with no evaluation = kuch nahi."
+      "Agent that ACTS + eval numbers = alag category."
+    Golden sentence jo interview jeet-ta hai:
+      "Maine RAG choose kiya, fine-tuning nahi —
+       AUR YE NUMBER HAI JO PROVE KARTA HAI."
+    MATLAB: AI projects mein EVALUATION (accuracy %, before/after)
+    optional nahi — WO MAIN PROJECT HAI.
+
+----------------------------------------------------------------
+PART 2 — THE FILTER (5 SAWAL — jo fail ho, BUILD MAT KARO)
+----------------------------------------------------------------
+
+  Tere purane 3 sawal (ULTRON ladder locked) + research ke 2 naye:
+
+  F1. MAIN KHUD USE KARUNGA?            (tere purana rule)
+  F2. KISI KA CARBON COPY TO NAHI?      (tera purana rule + SACH 3)
+  F3. ULTRON KA KOI ANG BANTA HAI?      (tera purana rule)
+  F4. LOGIC-CORE HAI YA SIRF API/GLUE?  (naya — teri "strong
+      logic-call" maang: core mein algorithm/parsing/state ho,
+      sirf fetch-and-show na ho)
+  F5. NUMBERS NIKAL SAKTA HOON?         (naya — SACH 4: kuch
+      measure ho sake — speed, accuracy, tests, %)
+
+  5/5 PASS = BUILD.  4 PASS = SOCH.  <=3 = FADAK DE.
+
+----------------------------------------------------------------
+PART 3 — TERA ASLI ADVANTAGE (jo khud tere paas hai, dhyan de)
+----------------------------------------------------------------
+
+  1. TERE PAAS "APNI PROBLEM" ALREADY HAI:
+       UPI Leak Detector. India ka 85% digital payment = UPI
+       (NPCI 2026: 24.5 BILLION txns/maheena). Duniya bhar mein
+       aisa specific tool NAHI. Ye "strategic weirdness" hai
+       jo portfolios ko yaadgar banati hai. 🎯
+
+  2. TERA BYOX (build-your-own-X) LADDER ALREADY ELITE LIST MEIN:
+       Mini-Express, Mini-Zod, Mini-Redis, Mini-Docker —
+       CodeCrafters jaisi hi cheezein, aur JavaScript mein
+       kam hi log banate hain → AUR BHI UNIQUE.
+
+  3. TU NPM PE ALREADY PUBLISHED AUTHOR HAI.
+       left-pad 11 line ka tha aur internet tod diya tha —
+       SIZE kabhi VALUE nahi hoti. Tera m3u-health-check
+       (766/1525 zinda India streams wala gap) same category ka
+       REAL unmet problem hai.
+
+  4. TU NUMBERS MEIN SOCHTA HAI.
+       10 lakh rows / 79ms — ye aadat 1% engineers mein hoti hai.
+       SACH 4 ke liye tu pehle se taiyaar hai.
+
+----------------------------------------------------------------
+PART 4 — THE MAP (BOOK BY BOOK)
+  Format: NAME | ek line | LOGIC CORE | RECRUITER KO KYA DIKHTA |
+          ULTRON ANG | README NUMBERS | TIME
+  ⭐⭐ = FLAGSHIP (destiny ke 3 naam — PART 5)
+================================================================
+
+[BLOCK A] — 1C PHASE 6–10 (ABHI -> AGLE 2 MAHEENE)
+----------------------------------------------------------------
+
+  A1. Mini-Zod  (Phase 6 capstone ke baad)
+      Ek line: apna runtime schema validator —
+               v.string().min(3).email() jaisa, khud se.
+      Logic core: validation rule engine, error aggregation,
+                  composable schemas (functions + objects deep use)
+      Recruiter: " zod ka internal jaanta hai " — BYOX signal
+      ULTRON: har tool ka INPUT VALIDATOR (agents ke liye critical)
+      README numbers: 40+ tests, zod ke 10 cases mein 10/10 match
+      Time: 1 hafta  [ALREADY LOCKED in ladder — VALIDATED BY SACH 6]
+
+  A2. Mini-Express (Phase 7 ke saath)
+      Ek line: node http ke upar KHUD routing/middleware engine.
+      Logic core: URL matching, middleware chain (onion model),
+                  request/response abstraction
+      Recruiter: Express ka magic nahi, MECHANISM samajhta hai
+      ULTRON: BACKEND CORE
+      Numbers: 30+ tests, same-route benchmark comparison
+      Time: 1-2 hafte
+
+  A3. m3u-health-check (npm Tier-2 package)
+      Ek line: 10,000 IPTV links mein se ZINDA kaun — checker.
+      Logic core: concurrency control, timeouts, retries,
+                  result aggregation  (Phase 7 async pura use)
+      Recruiter: npm pe REAL gap solve; data verified (766/1525 IN)
+      ULTRON: stream health organ
+      Numbers: 1000 links/minute, accuracy vs manual check %
+      Time: 2 hafte  [ALREADY LOCKED — VALIDATED BY SACH 3+left-pad]
+
+  A4. Time-Travel Undo/Redo Engine (P9, Phase 6 big project)
+      Ek line: immutable snapshots se undo/redo state machine.
+      Logic core: structural cloning, memory optimization
+      Recruiter: asli depth — "immer/redux ka internals"
+      ULTRON: task planner ka time-travel
+      Time: 1 hafta
+
+[BLOCK B] — 1B CSS + 1D TAILWIND (CHHOTA, TEZ — weight kam)
+----------------------------------------------------------------
+
+  B1. 20-Component Design System + docs page
+      Ek line: apni component library, pure CSS se Tailwind tak.
+      Recruiter: UI craft + consistency; BAAD mein ULTRON ki
+                 interface isi se banegi
+      ⚠️ RULE: yahan 1 mahina se zyada mat rukna — logic wali
+         cheezein baaqi blocks mein hain.
+      Time: 3-4 hafte (parallel-chhota)
+
+[BLOCK C] — BOOK 2 (ADV FRONTEND + 3D) (CHHOTA RAKHO)
+----------------------------------------------------------------
+
+  C1. 3D Cyberpunk Landing (Three.js)  [existing P7]
+      Ek line: portfolio ke liye "wow" — par 5 sec load NAHI
+               (research warning: slow 3D = 90% mobile bounce)
+  C2. Canvas Hit-Engine mini-game (P9M)
+      Logic core: event delegation, hit-detection, 60fps loop
+      Research note: polished games ACTUALLY impress (Reddit) —
+      par ye "dessert" hai, main course nahi.
+      Time: dono mila ke 3 hafte MAX
+
+[BLOCK D] — BOOK 3 FULL-STACK (MERN + Next.js 15) ⭐ FOCUS
+----------------------------------------------------------------
+
+  D1. ⭐⭐ UPI LEAK DETECTOR — FULL SaaS  (FLAGSHIP #1)
+      Ek line: bank/UPI statement (CSV/PDF) upload karo ->
+               leaks, report, dashboards, alerts. MULTI-USER.
+      Stack: Next.js 15 + Node + DB (Mongo/Postgres) + tera
+             existing P2 engine as the LOGIC CORE (npm lib!)
+      Logic core: statement PARSER (CSV/PDF -> clean rows),
+                  4 leak detectors (P2 se), budget alert engine,
+                  category auto-tagging rules
+      Recruiter jo dikhega:
+        - "India-fintech ka real product" — instantly recognizable
+          business problem (Reddit: #1 demand)
+        - Auth + RBAC (family accounts? CA access?) = SACH 5 sawal
+        - File parsing + data viz (60fps 10k points wala sawal)
+        - Numbers: "10k rows parse in X ms", "919 string-bug story"
+      Unique angle jo AUR koi nahi kar raha:
+        UPI-specific (India), offline-first parsing (paisa private
+        rahe — statement server pe upload na ho, browser mein parse!)
+        ⭐ YE PRIVACY ANGLE HERO FEATURE HAI — research mein kahin
+           usine nahi kiya; taange kheench ke le jaa
+      ULTRON: PERSONAL FINANCE MODULE (poora)
+      Time: 6-8 hafte
+      ⚠️ SCOPE LOCK (SACH 1): pehle SINGLE user + local parsing,
+         phir accounts. Adhoora nahi — POORA chhota.
+
+  D2. Real-Time Collaborative Kanban (P8 ko UPGRADE)
+      Ek line: Linear-style kanban, par LIVE — 2 log saath drag
+               karein, dono ko dikhe (WebSocket).
+      Logic core: server-authoritative state, conflict handling,
+                  presence (kaun online), event sourcing lite
+      Recruiter fixed sawal jo tu ANSWER de payega:
+        "WebSocket ko multiple servers pe kaise scale karoge?"
+        "Do users same card move karein to kya hoga?"
+      Research: real-time collab = 2026 ka top full-stack signal
+      ULTRON: TASK PLANNER (upgraded)
+      Time: 4-5 hafte
+
+  D3. Digital Product SaaS Store (existing) — CHHOTA KARO
+      ⚠️ HONEST NOTE: generic e-commerce saturated hai (research).
+         Isko FULL nahi — sirf PAYMENT + ORDER STATE MACHINE
+         seekhne ke liye banao (Razorpay test mode).
+         Asli weight D1/D2 pe. Time: 2 hafte MAX.
+
+[BLOCK E] — BOOK 4 TESTING
+----------------------------------------------------------------
+
+  E1. P10 — Test suite for everything (existing)
+      Numbers: 80%+ coverage, CI har repo pe (SACH 2)
+
+  E2. ⭐ EK MERGED OPEN-SOURCE PR  (NAYA — research se)
+      Ek line: kisi REAL library mein ek bug fix/docs/feature —
+               MERGED hona chahiye.
+      Kyun: opensource.com story — ek aadmi ek merged patch se
+            Camunda mein DEV ADVOCATE bana. Recruiter: "merged PR
+            in known repo" = instant credibility, code-review
+            culture ka proof.
+      Candidates: iptv-org (tujhe data pata hai!), mitt jaisi
+            chhoti libraries, zod docs.
+      Time: 2-3 hafte (parallel)
+
+[BLOCK F] — BOOK 6 DSA + SYSTEM DESIGN
+----------------------------------------------------------------
+
+  F1. P11 — TinyURL + Rate Limiter + Autocomplete (existing)
+      Research ne SAME ladder diya: URL shortener (read-heavy,
+      cache) -> distributed rate limiter (token bucket, race
+      conditions) -> notification platform. PEHLE SE SAHI.
+
+  F2. Order/Payment STATE MACHINE engine (naya, chhota)
+      Ek line: order ki states (created->paid->packed->shipped)
+               + idempotency keys + retry ledger.
+      Kyun: "Payment platform state machine" recruiters ka
+            favourite advanced sawal (research). Aur ULTRON ka
+            task-planner bhi yahi state machine hai.
+      Numbers: 1000 simulated orders, 0 invalid transitions
+      Time: 1-2 hafte
+
+[BLOCK G] — BOOK 7 DEVOPS
+----------------------------------------------------------------
+
+  G1. Containerize EVERYTHING + CI/CD for ALL REPOS (existing P14)
+      Research: CI presence hi hiring signal hai (SACH 2) —
+      tere paas already stream-os mein hai, sab mein daal.
+
+  G2. Mini-Docker from scratch (existing P13)
+      BYOX category — CodeCrafters ka crown jewel. 
+      Node/cgroups/sandboxing ka gut-level understanding.
+      ULTRON: SANDBOX (haath).  Time: 3-4 hafte
+
+[BLOCK H] — BOOK 5 AI SYSTEMS ⭐⭐ FOCUS (2026 KA ASLI MAIDAAN)
+----------------------------------------------------------------
+
+  H1. ⭐⭐ LOCAL RAG ENGINE + EVAL HARNESS  (FLAGSHIP #2)
+      Ek line: tere APNE docs/workspace ke upar retrieval —
+               local embeddings, local model (ollama), citations
+               ke saath jawab.
+      KYAHAI ALAG (SACH 7): saath mein EVAL HARNESS —
+        20 sawal-answer ka labelled set KHUD banayega,
+        metrics: faithfulness, answer relevancy, context precision
+        (RAGAS framework); hybrid search/re-ranking ke BAAD
+        before/after numbers dikhega README mein.
+      Interview killer line (research se asli):
+        "Re-ranking add kiya to context precision 0.61 -> 0.83."
+      ULTRON: LONG-TERM MEMORY 🧠
+      Time: 4-6 hafte
+
+  H2. Mini-LangGraph ⭐ (agent orchestrator from scratch)
+      Ek line: nodes/edges wala multi-agent engine KHUD likhna —
+               researcher -> planner -> coder -> reviewer.
+      Logic core: graph execution, state passing, tool-calling,
+                  cost tracking, loop-guards (agent atak na jaye)
+      Research: multi-agent = "boss-level project" (nucamp 2026),
+                par chatbot na ho — ACTION lene wala ho (SACH 7)
+      ULTRON: BRAIN 🧠
+      Time: 4-6 hafte
+
+  H3. Code-Execution Sandbox API (existing P17)
+      Ek line: agent ka code SAFE run karne wala service
+               (G2 Mini-Docker ke knowledge se)
+      ULTRON: HANDS ✋
+
+  H4. STRETCH — Self-Evaluating Agent (Reflexion loop)
+      Ek line: agent apna output khud score kare, threshold se
+               neeche ho to revise kare; N cycles ka improvement
+               curve + latency/cost tradeoff dikhao.
+      Research: "senior AI engineer" level differentiator.
+      ⚠️ Sirf tab, jab H1/H2 POORE ho jayein.
+
+  H5. CAPSTONE: ULTRON v1.0 🚀
+      Brain (H2) + Memory (H1) + Hands (H3+G2) + Finance (D1)
+      + Health (A3) + Interface (B1 command palette).
+      Ye project nahi — YE TERA NAAM HAI.
+
+[BLOCK I] — BOOKS 8-10 (BRAND + JOB + 100x)
+----------------------------------------------------------------
+
+  I1. Build in Public: har flagship ke 2 posts —
+      Numbers ke saath ("10k UPI rows, 79ms", not adjectives)
+  I2. Job Hunt Engine (existing): cold outreach system —
+      projects ke numbers CV ke headline mein.
+
+----------------------------------------------------------------
+PART 5 — DESTINY KE 3 NAAM (baaki sab inko support karte hain)
+----------------------------------------------------------------
+
+  🥇 FLAGSHIP #1 — UPI LEAK DETECTOR (lib -> SaaS)
+     "India ka pehla privacy-first UPI leak detective."
+     Kahan se: P1/P2 se seedha line. Aaj se kal tak.
+
+  🥇 FLAGSHIP #2 — LOCAL RAG + EVAL HARNESS
+     "Knowledge wala AI jo JHAKKAS nahi, MEASURED hai."
+     2026 AI-market ka exact gap (SACH 7).
+
+  🥇 FLAGSHIP #3 — BYOX TRILOGY IN JS (mini-zod/express/redis)
+     "Main framework USE nahi karta — framework BANATA hoon."
+     Interview room mein ye ek line kafi hai.
+
+  IN 3 KE BAHAR KUCH BHI = support cast. Kabhi confuse ho:
+    "Kya ye 3 flagships ki taraf le ja raha hai?"  Han? Karo. Nahi? Chhodo.
+
+----------------------------------------------------------------
+PART 6 — RECRUITER SAWAL BANK (RESEARCH SE ASLI — project ke saath)
+----------------------------------------------------------------
+
+  Wala project banana = ye sawal FREE mein tayyar:
+
+  UPI SaaS (D1):
+    - "10,000 rows chart mein 60fps kaise rakha?"
+    - "CSV mein amount string '240' aaye to?"  😏 (TERA bug!)
+    - "Auth/RBAC kaise model kiya?"
+  Collab Kanban (D2):
+    - "WebSocket ko multiple servers pe scale kaise karoge?"
+    - "Do users same time same card move karein — conflict?"
+  Payment/SaaS store (D3):
+    - "Checkout pe race condition kaise roki?" (idempotency!)
+  Rate Limiter (F1):
+    - "Token bucket vs leaky bucket? Distributed mein counter?"
+  AI RAG (H1):
+    - "How do you KNOW your RAG is good?"  <- 90% candidate FAIL
+      TU: "faithfulness 0.83, context precision 0.61->0.83 after
+      re-ranking."  INTERVIEW OVER. JEET GAYA.
+  Agents (H2):
+    - "Agent loop mein atak jaye to?" (loop-guard, budget)
+    - "RAG ya fine-tuning — kyun?" (numbers se jawaab)
+
+----------------------------------------------------------------
+PART 7 — DO-NOT-BUILD LIST (RESEARCH-BACKED) 🚫
+----------------------------------------------------------------
+
+  ❌ Todo / Notes / Weather / Calculator      (10,000 clones)
+  ❌ Netflix/Spotify/Twitter "clone" AS-IS    (twist ke bina)
+  ❌ Chatbot bina EVALUATION ke               (2026 mein = zero)
+  ❌ Generic e-commerce FULL                  (D3 jaise chhota hi)
+  ❌ BookMyShow/swiggy clone resume mein
+  ❌ Crypto coin / NFT / Web3                 (India IT mein
+     interview red-flag; time waste)
+  ❌ "AI wrapper" jisme hard part kuch na ho  (SACH 7)
+  ❌ 3D portfolio jo 5s+ load ho              (90% bounce)
+  ❌ 10 adhoora repo                          (SACH 1)
+
+----------------------------------------------------------------
+PART 8 — NUMBERS RULE (har FLAGSHIP README mein ye table HOGI)
+----------------------------------------------------------------
+
+  1. Tests:        __/___ passing
+  2. Coverage:     __%
+  3. Performance:  X rows/items in Y ms (machine specs likh)
+  4. Accuracy:     (AI ho to) faithfulness/precision __
+  5. Before/After: optimization ke pehle vs baad
+  6. Cost:         (AI ho to) per-run cost
+  7. Demo:         2-3 min video/GIF — research: ye reviewer's
+                   impression MEASURABLY badhata hai
+  + LICENSE + CI badge + clean commit history (recruiters
+    commit frequency dekhte hain — research)
+
+----------------------------------------------------------------
+PART 9 — TIME REALITY (JHOOOTH NAHI)
+----------------------------------------------------------------
+
+  Tera pace: Phase 4 ~4 din, Phase 5 ~4 din (with class).
+  Par projects mein zindagi aati hai (class, thakan) — to:
+
+    A-block (Ph6-10 + A1-A4)      : ~2-2.5 mahine
+    B+C (CSS + 3D, chhote)        : ~1.5 mahine
+    D (Full-stack flagships)      : ~3 mahine
+    E+F (Testing + DSA/SysDesign) : ~2 mahine (DSA parallel se)
+    G (DevOps)                    : ~1 mahine
+    H (AI + ULTRON v1)            : ~3-4 mahine
+    ---------------------------------------------
+    TOTAL                          : ~13-15 mahine -> ULTRON v1
+
+  Ye "motivation wala" nahi — DISCIPLINE wala number hai.
+  Roz 2 ghante bhi diye to chalega. 0 wale din < 2 wale hafte.
+
+----------------------------------------------------------------
+PART 10 — SOURCES (kahan se kya mila — sab check kar sakta hai)
+----------------------------------------------------------------
+
+  HIRING MANAGERS KHUD:
+  - r/cscareerquestions "Hiring managers, what side projects..."
+    -> finished+talkable >> flashy; business-problem recognition
+  - r/Frontend + r/AskProgramming + r/learnprogramming portfolio
+    threads -> unusual personal tools beat clones; CI/tests/docs
+    green flag; polished games impress; merged OSS PR strong
+
+  PORTFOLIO GUIDES 2026:
+  - joblessnews "Your Portfolio Sucks"  -> anti-todo strategy,
+    strategic weirdness, metrics storytelling
+  - nucamp "Top-10 Full-Stack 2026"     -> multi-tenant SaaS,
+    real-time collab, background jobs, multi-agent platform
+  - huroorkee full-stack list           -> per-project recruiter
+    questions (race condition, WS scaling, RBAC, 60fps)
+  - techotlist "Side projects that impress" -> AI dev tools signal
+
+  AI-SPECIFIC:
+  - deepsunai FDE "4 portfolio projects 2026" -> agents that ACT,
+    RAG+RAGAS eval, "judgment backed by measurement"
+  - techademy "5 agent projects" -> eval targets, demo video
+    format (15s problem/30s arch/75s demo/30s trace/15s next)
+  - agenticcareers "10 projects" -> eval suite 20 questions,
+    self-evaluating agent, domain benchmark
+  - nextagile 2026 -> LangGraph/multi-agent skills demand
+
+  BUILD-YOUR-OWN-X:
+  - build-your-own-x (GitHub) = 552k stars, ~15th biggest repo
+  - CodeCrafters (YC S22) -> devs at Google/OpenAI/Vercel;
+    Redis/Docker/HTTP-server from scratch = senior respect
+
+  SYSTEM DESIGN:
+  - katlegomashego/system-design repo -> URL shortener -> rate
+    limiter -> notification/payment platform progression
+  - designgurus -> caching/LB theory-through-projects
+  - dev.to "System Design Roadmap Freshers 2026"
+
+  NPM/SIZE STORIES:
+  - left-pad (qz/snyk): 11-line package broke the internet ->
+    size != value (tera m3u-health-check same category)
+  - faker.js: 12M downloads/maheena ek chhote tool ke
+  - opensource.com: ek merged PR -> Camunda dev advocate job
+
+----------------------------------------------------------------
+PART 11 — NEXT (AB KUCH CHANGE NAHI HOTA)
+----------------------------------------------------------------
+
+  YE MAP = NORTH STAR. Daily kaam WOHI chal raha hai:
+
+    ABHI:   Phase 5B — 26-ARRAY-TOOLKIT-DEEP.txt ke Stage 1-5
+    PHIR:   Phase 6 Objects Deep -> A1 Mini-Zod (pehla BYOX)
+    AAGE:   isi map ke hisaab se, ek-ek block.
+
+  Jab bhi bhanak lage kya banana hai — is file ka PART 2
+  (5 sawal wala filter) kholo. 5/5 = banao. Nahi to mat banao.
+
+  Aur jab dil hose — PART 5 padho.
+  3 naam. Bus 3 naam. Wo 3 bana diye —
+  DESTINY BADAL GAYI SAMAJH.  💙
+
+================================================================
+END — 02-DESTINY-PROJECT-MAP-2026.txt
+"Research khatam. Ab kaam ki baari."
+================================================================

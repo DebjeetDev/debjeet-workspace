@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Tuesday, 06 October 2026
-  Samay       : 02:03 PM (Asia/Kolkata)
+  Samay       : 04:04 PM (Asia/Kolkata)
   Root        : /home/user/ws-check
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -70,6 +70,7 @@ Poore workspace ka naksha: kahan kya hai
                   -> PROJECTS folder ka index
             |-- 01-ULTRON-LADDER.txt
                   -> 17 projects ki ladder (ULTRON tak)
+            |-- 02-DESTINY-PROJECT-MAP-2026.txt
             |
             |-- [DIR] _TEMPLATE/
                   -> Namuna — naya project shuru karne ka format
@@ -197,11 +198,11 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 60
+    Total files    : 61
     Total folders  : 17
 
     READING/       : 11 files (numbered 00 se aage)
-    PROJECTS/      : 5 items
+    PROJECTS/      : 6 items
 
 ==============================================================================
 5. NOTE
