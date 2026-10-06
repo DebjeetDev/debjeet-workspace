@@ -242,6 +242,10 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
      Crash NAHI hoga. Par agar tune bina pooche use kiya —
      PART 5 ka BUG B dekh. ☠️
 
+    📖 KHUD PADHO (2 min): MDN Array/find · findIndex · includes · indexOf
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+       (bare wale repo ke liye -> PART 9C kholo)
+
   ---------------------------------------------------------
   EXAMPLE 2 — SAWAL (some / every)
   ---------------------------------------------------------
@@ -253,6 +257,9 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
     every line 3 pe hi ruk gaya — 2499 ne gaddari ki.
     every ko SAB chahiye, isliye EK false = poora false.
 
+    📖 KHUD PADHO (2 min): MDN Array/some · Array/every
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
   ---------------------------------------------------------
   EXAMPLE 3 — TUKDA (slice — safe hai)
   ---------------------------------------------------------
@@ -261,6 +268,9 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
 
   NOTE: slice(start, end) — start SE, end tak (end KHUD NAHI).
         Photocopy nikali, register jaisa ka taisa.
+
+    📖 KHUD PADHO (2 min): MDN Array/slice
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
 
   ---------------------------------------------------------
   EXAMPLE 4 — ORDER (sort — DRAMA yahin)
@@ -279,6 +289,10 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
       (a, b) => b - a    -> bada pehle     (descending)
       Bas. Aur kuch nahi. Ye 2 line RAT LE. 🔒
 
+    📖 KHUD PADHO (3 min, ZAROORI): MDN Array/sort  ⚠️
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+       (wahan mutation + string trap OFFICIALLY likha hai — jaa ke padho!)
+
   ---------------------------------------------------------
   EXAMPLE 5 — UNIQUE (Set)
   ---------------------------------------------------------
@@ -288,6 +302,9 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
     Set = shaadi list. 240 pehli baar aaya -> andar.
     240 DOBARA aaya -> "baith gaya hai pehle se" -> bahar.
     Spread [...] us Set ko wapas NORMAL array banata.
+
+    📖 KHUD PADHO (2 min): MDN Global_Objects/Set
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 
   ---------------------------------------------------------
   EXAMPLE 6 — KHOLNA (array destructuring)
@@ -306,6 +323,10 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
     [x, y] = [y, x];
     // x -> 2, y -> 1        (SWAP — temp variable GAYAB)
 
+    📖 KHUD PADHO (3 min): MDN Operators/Destructuring
+       developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+       aur: javascript.info/destructuring-assignment
+
   ---------------------------------------------------------
   EXAMPLE 7 — SAB MILA KAR (yehi company code hai)
   ---------------------------------------------------------
@@ -319,6 +340,9 @@ PART 4 — CODE (MAINE NODE PE CHALAYA — ASLI OUTPUT)
   YAHA CHAINING BHI HO GAYI — copy -> sort -> slice.
   Har kaam ek line, har line ka data agle mein.
   Yehi "assembly line" hai. Tu ye already reduce mein karta tha.
+
+    📖 KHUD PADHO (5 min, BEST page sabka):
+       javascript.info/array-methods   (saare tools ek jagah, examples ke saath)
 
 ----------------------------------------------------------------
 PART 5 — ⚠️ DO KHATARNAAK BUG (har ek 3 ghante khata hai)
