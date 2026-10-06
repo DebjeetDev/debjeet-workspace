@@ -15,7 +15,7 @@ PART 0 — RECAP (AB TAK KYA KIYA)
     ✅ .map()        har item ko badalna        (applyTaxToAll)
     ✅ spread [...]  bina badle jodna           (addNewPlan)
     ✅ Number.isFinite()   safe number check
-    ⬜ .reduce()     POORE array ko EK cheez banana   <- AAJ
+    ✅ .reduce()     POORE array ko EK cheez banana   (DONE 6 Oct 2026)
 
   AUR YE BHI HO GAYA:
     ✅ stream-os-engine@1.0.0 LIVE on npm
