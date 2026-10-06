@@ -698,6 +698,141 @@ PART 9 — ASLI COMPANY CODE REVIEW (developit/mitt) ✅ VERIFIED
        laparwahi se MOUT.
 
 ----------------------------------------------------------------
+PART 9B — REPO TRAIL (Duniya ye tools KAHAN use karti hai)
+----------------------------------------------------------------
+
+  DEBJEET KA SAWAAL (6 Oct 2026):
+    "Online repo ka code dikhao jo ye tools istemaal karta hai,
+     taaki IDEA mile — ye kahan lagte hain, kahan nahi."
+
+  Maine aaj GitHub se LIVE fetch karke har code VERIFY kiya hai.
+  Neeche har snippet REAL hai — ek bhi banawati line nahi. 🔒
+
+  ---------------------------------------------------------
+  REPO 1 — pmndrs/zustand  (tera Phase 4 ka jaana-pehchana)
+  ---------------------------------------------------------
+  KYA HAI: React ki sabse chhoti state library.
+           (Phase 4 mein tune isi ka arrow-function wala sawal
+           kiya tha — aaj usi file mein Set mila!)
+
+  ASLI CODE (src/vanilla.ts, line 64):
+      const listeners: Set<Listener> = new Set()
+
+  ASLI CODE (line 79 — jab state badalti hai):
+      listeners.forEach((listener) => listener(state, previousState))
+
+  SAMAJH:
+    Screen ke 100 components ek store pe nazar rakhte hain.
+    Koi component GALTI se dobara subscribe kare —
+    Set usse EK hi baar rakhta hai.  SHAADI LIST, production mein.
+    ⭐ IDEA: Set sirf "dedup" nahi — SUBSCRIPTION REGISTRY hai.
+       Tera P2 Module 03 (duplicate charge) mein yaad aayega:
+       "ye merchant+amount pehle dekh chuka?"  ->  Set.has()
+
+  ---------------------------------------------------------
+  REPO 2 — TanStack/query  (duniya ki #1 data-cache library)
+  ---------------------------------------------------------
+  ASLI CODE (packages/query-core/src/query.ts):
+
+    line 470, 508, 537 — TEEN ALAG JAGAH:
+      return this.observers.some( ... )
+
+    line 584:
+      const observer = this.observers.find(
+        (x) => x.shouldFetchOnWindowFocus()
+      )
+
+  SAMAJH:
+    Ek query ke piche bahut saare "dekhne wale" (observers) hain.
+
+    SAWAL A: "KOI BHI ek refetch chahta hai?"   -> .some()
+             (ek mila? BAS. Aage dekhna hi nahi — ruk gaya)
+    SAWAL B: "PEHLA kaunsa hai jo window-focus
+              pe fetch maangega?"                -> .find()
+
+    ⭐ find vs some ka ASLI farak YAHI hai:
+       some = sirf haan/na.
+       find = uska NAAM/PATA bhi chahiye.
+       Tera P2: "koi 500 se upar kharcha?"  = some
+                "KAUNSA tha wo kharcha?"    = find
+
+  ---------------------------------------------------------
+  REPO 3 — calcom/cal.com  (course.md ka LOCKED Phase-5 repo)
+  ---------------------------------------------------------
+  KYA HAI: Duniya ke sabse bade open-source scheduling
+           projects mein se ek — asli bookings, asli log.
+  FILE: packages/trpc/.../viewer/slots/util.ts  (maine aaj
+        fetch karke ye lines nikali hain — VERIFIED)
+
+  ASLI CODE (line 164 — doosron ne li hue slots hatao):
+      unexpiredSelectedSlots.filter(
+        (slot) => slot.uid !== bookerClientUid )
+
+  ASLI CODE (line 201 — kya KOI user mana kar raha hai?):
+      !usersWithOldSelectedCalendars.some(
+        (user) => !user.allowDynamicBooking )
+
+  ASLI CODE (line 1149-1153 — asli availability pipeline):
+      availableTimeSlots = timeSlots.filter((slot) => {
+          ...
+          return restrictionRanges.some( ... )
+      })
+
+  SAMAJH:
+    "Kaunsa slot free hai?" ka pura calculation = PIPELINE:
+      saare slots  ->  filter (doosron ne li hue hatao)
+                   ->  filter (busy time hatao)
+                   ->  some   (restriction mein to nahi?)
+                   ->  bache hue = AVAILABLE ✅
+
+    ⭐ YEHI SOCH tera buildSpendReport hai.
+       rows -> clean -> filter -> total. SAME PIPELINE.
+       Wo company bhi yahi karti hai jo tune khud likha.
+       Farak sirf SCALE ka hai — SOCH ka nahi. 💪
+
+  ---------------------------------------------------------
+  REPO 4 — preactjs/preact  (React ka chhota bhai)
+  ---------------------------------------------------------
+  FILE: hooks/src/index.js (line 418)
+
+  ASLI CODE:
+      return [
+          errState[0],
+          () => { errState[1](undefined); }
+      ];
+
+  SAMAJH:
+    Library ARRAY return karti hai — [cheez, uska controller].
+    TAAKI user DESTRUCTURE kar sake:
+        const [err, resetError] = useErrorBoundary();
+        //    index 0 ^^^    index 1 ^^^^^^^^^^
+
+    ⭐ AUR TU YE PATTERN JAANTA HAI — React ka useState:
+        const [count, setCount] = useState(0);
+       Tune pehle USE kiya hai (teri purani padhai).
+       AAJ samjha ye KAAM KAISE karta hai:
+         array banao -> index pe rakho -> user khole.
+       Kal jab TU Mini-Zod banayega, tera design bhi
+       aisa hoga ki doosron ka destructure aasaan ho. 🎯
+
+  ---------------------------------------------------------
+  EK NAZAR MEIN — IDEA MAP (kab kya lagta hai):
+  ---------------------------------------------------------
+
+    agar "pehle dekha hai?"      -> Set           (zustand)
+    agar "koi ek?"               -> some          (TanStack)
+    agar "PEHLA kaunsa?"         -> find          (TanStack)
+    agar "chhaan ke rakhna"     -> filter        (cal.com)
+    agar "library se kholna"    -> destructure   (preact)
+    agar "copy pe kaam"          -> slice         (mitt)
+    agar "line lagwana"          -> sort + [..]   (PART 5 trap!)
+
+  AB PART 7 KI STAGES KARTE WAQT ye 5 chehre yaad rakhna.
+  Ye tools textbook ke nahi — PRODUCTION ke hain.
+  Aur kal ko interviewer pooche "real mein kahan use hota
+  hai?" — tere paas 5 JAWAB taiyaar hain. 🔥
+
+----------------------------------------------------------------
 PART 10 — ULTRON LINK 🚀 (3-TIER)
 ----------------------------------------------------------------
 
