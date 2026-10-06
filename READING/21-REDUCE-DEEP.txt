@@ -801,9 +801,9 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
   REVIEW FILE:  READING/22-STAGE2-3-REVIEW.txt
 
   BUG FIX:
-    [ ] Bug 1 dhoondha (khud)
-    [ ] Bug 2 dhoondha (khud)
-    [ ] Bug 3 samjha
+    [✅] Bug 1 — initial value missing  (SOCH ke solve kiya, bina console)
+    [✅] Bug 2 — return acc missing      (SOCH ke solve kiya, bina console)
+    [✅] Bug 3 — bug hai hi nahi (trap)  (pakad liya)
 
   SENIOR BANNA:
     [✅] Junior vs Senior fark (guard + initial value)
@@ -811,7 +811,7 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [ ] Guard clause pehle lagata hoon
 
   PROJECT:
-    [ ] Tier 1 shuru kiya (spend-report.js)
+    [⬜] Tier 1 — buildSpendReport   ← AB YE KARNA HAI (AAKHRI)
     [ ] Khud se socha: "aur kahan reduce lagega?"
 
 ----------------------------------------------------------------
