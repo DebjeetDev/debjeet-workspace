@@ -833,7 +833,93 @@ PART 9B — REPO TRAIL (Duniya ye tools KAHAN use karti hai)
   hai?" — tere paas 5 JAWAB taiyaar hain. 🔥
 
 ----------------------------------------------------------------
-PART 10 — ULTRON LINK 🚀 (3-TIER)
+PART 9C — ROZ KA NAYAM: DOCS PADO, REPO KHOLO, AI SMARTLY 🔒
+             (DEBJEET KA RULE — 6 Oct 2026 LOCKED)
+----------------------------------------------------------------
+
+  DEBJEET KA FARMAAN:
+    "Har lesson ke saath doc link do — main KHUD padhunga.
+     Repo link do — main JAA KE check karunga.
+     Ye DAILY practice hai. Kyunki asli engineer docs se
+     seekhta hai, sirf mentor se nahi."
+
+  KYUN YE RULE GOLD HAI:
+    - Aaj Dubby hai. Kal company hogi — wahan koi baith ke
+      sikhata nahi. DOCS teri zindagi-bhar ki teacher hai.
+    - Interview sawal: "nayi cheez kaise seekhte ho?"
+      Sone-wala jawab: "Docs + source code + chhota experiment."
+    - Search karna = SKILL hai. Roz chhote dose mein banti hai.
+
+  ---------------------------------------------------------
+  (a) DOCS — AAJ PADHO (10 min, itna hi):
+  ---------------------------------------------------------
+    PADHNE KA TAREEKA (overload se bachne ka):
+      1. Link kholo -> seedha EXAMPLES wala hissa
+      2. Sirf 3 cheez note karo:
+           kya LETA hai? kya DETA hai? ORIGINAL badalta?
+      3. Ek example apne amounts pe chalao
+      4. Band karo. PURA padhna zaroori nahi.
+
+    MDN (industry ki dictionary):
+      find      : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+      some      : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+      every     : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+      includes  : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+      slice     : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+      sort      : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort   ⚠️ (mutation + string trap LIKHA HAI wahan — jaa ke padho!)
+      Set       : developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+      destructure: developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+
+    EK AUR (sabse saaf tutorial):
+      javascript.info/array-methods
+
+  ---------------------------------------------------------
+  (b) REPO — JAA KE AANKHON SE CHECK KAR:
+  ---------------------------------------------------------
+    (Maine 6 Oct ko fetch karke verify kiya — links ke aage
+     line number likhi hai, GitHub kholo aur wo line dhoondo)
+
+    zustand (Set + forEach):
+      github.com/pmndrs/zustand/blob/main/src/vanilla.ts
+      LINE 64  -> const listeners: Set<Listener> = new Set()
+      LINE 79  -> listeners.forEach((listener) => listener(...))
+
+    TanStack/query (some + find):
+      github.com/TanStack/query/blob/main/packages/query-core/src/query.ts
+      LINE 470, 508, 537 -> this.observers.some( ... )
+      LINE 584           -> this.observers.find( ... )
+
+    cal.com (filter + some pipeline):
+      github.com/calcom/cal.com/blob/main/packages/trpc/server/routers/viewer/slots/util.ts
+      LINE 164, 201, 1149 tak
+
+    preact (array return -> destructure):
+      github.com/preactjs/preact/blob/main/hooks/src/index.js
+      LINE 418 -> return [ errState[0], () => {...} ]
+
+    mitt (slice copy + indexOf):
+      github.com/developit/mitt/blob/main/src/index.ts
+      emit() ke andar .slice() dhoondo
+
+  ---------------------------------------------------------
+  (c) AI SE MADAD — SMART RULE (stuck ho tab) 🤖
+  ---------------------------------------------------------
+    AI dost hai, naukar nahi. Use karne ke 5 niyam:
+
+    1. PEHLE 15 MINUTE khud — paper, console.log, andha try.
+    2. Poochhna ho to HINT maango, code nahi:
+         "is error ka matlab batao, code mat do"
+    3. Jawab samjho, TAB khud LIKHO — copy hi nahi,
+       type bhi khud karo (haath seekhta hai).
+    4. Poora function mat mangwao — JO LINE samajh
+       nahi aayi, sirf WOH poochho.
+    5. TEST: jo likha, use bin dekhe samjha sakte ho
+       kisi ko? Nahi? To wo abhi TERA nahi — wapas poochho.
+
+    YE 5 NIYAM = vibe-coding ke zeher ka ilaaj. 🔒
+
+----------------------------------------------------------------
+PART 10 — AAGE KA CONNECTION 🚀 (3-TIER)
 ----------------------------------------------------------------
 
   TIER 1 (AAJ):
@@ -879,8 +965,8 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [ ] (a, b) => a - b aur b - a bina dekhe likh saka
 
   CODE:
-    [ ] Stage 1 — paper answer (bin comparator sort)
-    [ ] Stage 2 — hasSpend / anyAbove / allUnder (guards ke saath)
+    [✅] Stage 1 — paper answer (bin comparator sort)      (6 Oct, raat — order bilkul sahi ✅)
+    [✅] Stage 2 — hasSpend / anyAbove / allUnder (guards ke saath)   (6 Oct — 7/7 PASS, node-verified)
     [ ] Stage 3 — findFirstAbove + showFirstAbove (undefined guard)
     [ ] Stage 4 — topSpends (immutability proof ke saath)
     [ ] Stage 5 — uniqueShops + head/tail paper

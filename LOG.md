@@ -219,3 +219,17 @@
 - Debjeet ne kit dobara paste kiya (bina shabd) = "tu hi fix karke poora de de" (mobile pe edit mushkil).
 - 6 fixes: timestamp fresh, Phase 5 lagbhag→100% DONE (2 jagah), Step 1 note, commits 29→37, path web-dev-ult→web-dev-ultimate/project/..., size 40K→45K.
 - Workspace file banayi NAHI (STEP 6). Master copy uske paas.
+
+---
+
+## 2026-10-06 (9:14 PM IST) — Phase 5B toolkit file + Stage 1-2 PASS ✅
+- Banayi: READING/26-ARRAY-TOOLKIT-DEEP.txt — 21-REDUCE wala poora andaaz (kahani → concept → chalaya hua code → planted bugs → stages → tracker).
+- PART 9B REPO TRAIL (Debjeet ka demand: "repo mein kahan use hota hai dikhao") — LIVE fetch se verified: zustand L64/L79 (Set+forEach), TanStack/query L470/L584 (some+find), cal.com slots-util L164/L201/L1149 (filter+some), preact hooks L418 (array return → destructure).
+- PART 9C — Debjeet ka NAYA LOCKED RULE: har lesson ke saath DOC links + REPO links (khud padhega/check karega, roz) + AI-smart 5 niyam (hint maango, code nahi).
+- PROJECTS/02-DESTINY-PROJECT-MAP-2026.txt banaya — 6 research dives, ~25 sources verified. 3 FLAGSHIPS: (1) UPI-SaaS privacy-first (2) Local RAG + Eval harness (3) BYOX trilogy JS.
+- OWNER'S NOTE: ULTRON frame RETIRED — Debjeet bola "ye meri idea nahi, vibe-coded tha, maza nahi aaya". Destiny = apni cheez, khud ke haath, apna SaaS. 26-file PART 10 ka naam bhi badla.
+- Audio: Destiny ke 8 part (voice-00) ~/audio mein. Purani audio delete rule follow kiya. Audio kabhi GitHub pe nahi (rule).
+- STAGE 1 ✅ — [10,100,80,9,240].sort() ka order BILKUL SAHI bataya (dictionary rule samjha). Chhota pakda: "9" ko "90" likha — funny baat: position waise bhi same rehti!
+- STAGE 2 ✅ — 7/7 node-verified PASS (guard pehle, includes/some/every sahi). Nit di: callback ka naam "amounts" = shadowing, ab se `a =>`. BONUS sikhaya: [].every() === true (vacuous truth — "koi gaddar nahi to sab maante").
+- Bengali mode: Hinglish lesson se nahi samjha tha → poora toolkit BENGALI mein samjhaya → turant click hua. Yaad rakhna: jab atke, Bangla mein samjhao.
+- NEXT: Stage 3 KAL — findFirstAbove + showFirstAbove (undefined guard = khamosh qaatil wapas).
