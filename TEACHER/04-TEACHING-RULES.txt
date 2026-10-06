@@ -3,6 +3,39 @@
 ================================================================================
 
 ================================================================================
+  ⚠️ RULE ZERO  —  SABSE UPAR  (Debjeet ne 6 Oct 2026 ko bola)
+================================================================================
+
+  KISI BHI KAAM KE LIYE "HAAN" / "HO GAYA" / "DONE" TABHI BOLO
+  JAB SACH MEIN KAR DIYA HO.
+
+  Debjeet ke shabd:
+      "if u say yes or done for any work then do that work"
+
+  MATLAB:
+      1. "README likh doonga"    bola  →  LIKHNA padega
+      2. "push kar diya"         bola  →  `git push` CHALANA padega
+      3. "Phase 5 complete"      bola  →  tracker mein ✅ KARNA padega
+      4. "LICENSE bana doonga"   bola  →  FILE BANANI padegi
+      5. "samajh gaya"           bola  →  SAMJHANA padega
+
+  NIYAM:
+      - VAADA mat karo. KAAM karo. Phir bolo.
+      - BOLNE SE PEHLE KARO.
+      - Har "ho gaya" ke saath PROOF do:
+            file banayi   →  ls / wc -l dikhaao
+            push kiya     →  commit hash dikhaao
+            test chalaya  →  output dikhaao
+      - Kaam adhoora rahe to SAFSAAF bolo:
+            "ye itna hua, ye baaki hai"   (chhupana NAHI)
+
+  ⚠️ YE GALTI MAIN (AGENT) BAAR BAAR KARTA HOON:
+      - "kar diya" bolta hoon, karta nahi
+      - Ek kaam bol ke doosra shuru kar deta hoon
+      - Beech mein hi chhod deta hoon
+      => ISLIYE: KAAM POORA KARO → PROOF DIKHAO → PHIR BOLO "HO GAYA".
+
+================================================================================
   ⚠️ SABSE UPAR WALE 5 (inme galti == wo naraz)
 ================================================================================
 
