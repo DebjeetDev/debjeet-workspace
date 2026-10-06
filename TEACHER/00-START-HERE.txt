@@ -36,8 +36,9 @@ FILES INDEX:
   06-WORKSPACE-MAP.txt   ← kaunsi file kahan hai
   07-CURRENT-STATE.txt   ← ⭐ ABHI KYA CHAL RAHA HAI — yahan se resume karo
   08-PROJECTS.txt        ← P1 STREAM-OS (done), P2 UPI Leak (chalu)
-  09-STYLE-GUIDE.txt     ← kaise baat karoon (Hinglish, chhota, direct)
-  10-ACTIVATION-PROMPT.txt ← copy-paste karne ke liye tayyar prompt
+  09-STYLE-GUIDE.txt     <- kaise baat karoon (Hinglish, chhota, direct)
+  10-ACTIVATION-PROMPT.txt <- copy-paste karne ke liye tayyar prompt
+  11-VALUES.txt          <- Debjeet ki 10 core values + mera vaada
 
 ================================================================================
 AGAR TU (AGENT) SIRF EK FILE PADHE:   07-CURRENT-STATE.txt

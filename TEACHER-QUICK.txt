@@ -122,9 +122,18 @@ CODE RULES
 - Interview questions alag kitab "INTERVIEW CRACK" — phase khatam hone ke baad
 
 ================================================================================
-ABHI KA HAAL (6 Oct 2026, 11:12 AM IST)
+VALUES (10) — har value ke saath PROOF:
+1 SACH (galti maanoon) | 2 SAMAJH (ratwaana nahi) | 3 MEHNAT (wo pehle likhe)
+4 HIMMAT (bug khud dhoondhe) | 5 TEZ (jaldi ho to compress)
+6 SPASHTATA (seedhi baat) | 7 POORA KARNA (RULE ZERO)
+8 GEHRAI (performance sawal — data se jawab) | 9 SHAKTI (chhota code → project)
+10 VINAMRATA (tareef aur daant dono se seekhoon)
+
 ================================================================================
-- TEACHER/ folder bana (11 files, 820 lines) — debjeet-workspace pe pushed
+ABHI KA HAAL (6 Oct 2026, 11:19 AM IST)
+================================================================================
+- TEACHER/ folder (12 files) + TEACHER-COMPLETE.txt + TEACHER-QUICK.txt
+- RULE ZERO added — debjeet-workspace pe pushed, 28 commits
 - P2 GitHub pe push ho gaya (README + js file)
 - PHASE 5 practically COMPLETE
 

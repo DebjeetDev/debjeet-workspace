@@ -111,9 +111,9 @@
   ⬜ AGLA KAAM (priority order)
 ================================================================================
 
-  1. ✅ TEACHER/ folder banana  (HO RAHA HAI — abhi)
-  2. ⬜ Is folder ko commit + push karna (debjeet-workspace)
-  3. ⬜ Debjeet ko "ACTIVATE TEACHER" prompt dena
+  1. [DONE] TEACHER/ folder — 12 files + 2 portable files
+  2. [DONE] commit + push (debjeet-workspace, 28 commits)
+  3. [DONE] ACTIVATE prompt ready
   4. ⬜ PHASE 5 ko ✅ mark karna (21-REDUCE-DEEP.txt mein Tier 1)
   5. ⬜ PHASE 6 — OBJECTS DEEP shuru karna
   6. ⬜ P2 ke liye LICENSE + package.json banana (usse sikhana)
