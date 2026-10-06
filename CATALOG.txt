@@ -3,8 +3,8 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Monday, 05 October 2026
-  Samay       : 10:19 PM (Asia/Kolkata)
+  Banaya      : Tuesday, 06 October 2026
+  Samay       : 10:45 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -66,10 +66,12 @@ Poore workspace ka naksha: kahan kya hai
             -> Voice notes (Dubby Bhaiya ki audio)
             |-- ab-kya-karna-hai.mp3
             |-- ab-kya-karu.mp3
+            |-- code-perfect-github.mp3
             |-- count-wala-sawal.mp3
             |-- do-tarah-compare.mp3
             |-- hint-biggest.mp3
             |-- rough-code-rule.mp3
+            |-- sach-kya-hai.mp3
       |
       |-- [DIR] PROJECTS/
             -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
@@ -145,11 +147,14 @@ Poore workspace ka naksha: kahan kya hai
                   |
                   |-- [DIR] CODE/
                         -> Asli code — src, tests, package.json
+                        |-- README.md
+                              -> GitHub pe dikhega (badges ke saath)
                         |
                         |-- [DIR] src/
                               -> Source code (jo kaam karta hai)
                               |-- reduce-practice.js
                                     -> Debjeet ka reduce practice code (P2)
+                              |-- spend-report.js
                   |
                   |-- [DIR] PLAN/
                         -> Planning + Research docs (sirf txt, koi code nahi)
@@ -185,12 +190,12 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 57
+    Total files    : 61
     Total folders  : 18
 
     READING/       : 10 files (numbered 00 se aage)
     PROJECTS/      : 5 items
-    audio/         : 6 voice notes
+    audio/         : 8 voice notes
 
 ==============================================================================
 5. NOTE
