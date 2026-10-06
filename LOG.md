@@ -190,3 +190,10 @@
 ## 2026-10-06 (11:36 AM IST) — File hunt: 5 JS files mile
 - `find` output: Javascript-master/app.js + app2.js (2 naye candidates), stream-os-engine src+tests, UPI-Leak-Detector/upileakdetechtor.js (purani wahi).
 - Matlab "final code" Javascript-master/app.js ya app2.js mein hoga. wc+head manga hai pehchanne ke liye.
+
+---
+
+## 2026-10-06 (11:38 AM IST) — Debjeet naraz: "kuch sikhoge ya time waste"
+- Sahi bola: file-hunt mein 4-5 turns nikal gaye, padhai ruki rahi. Galti maani, file-hunt DROP kiya.
+- Phase 6 OBJECTS DEEP Step 1 chat mein shuru kiya (array vs object, 1 task: UPI row → object).
+- Seekh: uska "ab kya karu" = EK kaam, turant. Diagnose 2 command se zyada kheenche to wo ukhadta hai.
