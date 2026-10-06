@@ -151,3 +151,12 @@
   6. IMPORTANT DISCOVERY: `.git/config` is EXCLUDED from workspace snapshots (security rule). So the remote AND git identity vanish between messages. FIXED by: `/home/user/.git-remote` file + `sync.sh` auto-restores remote, identity, and SSH key permissions. Tested: deleted `origin`, script rebuilt it automatically.
   7. **TWO GitHub accounts exist**: `DebjeetDev` (new — has debjeet-workspace + stream-os-engine) and `dubessix` (old — his Linux machine is logged in as this). Recommend standardising on `DebjeetDev`.
   8. Package name: unscoped `stream-os-engine` chosen over `@debjeetdhar/...` because a scoped name requires the npm username to match exactly.
+
+---
+
+## 2026-10-06 (Tuesday, 06 October 2026 | 11:24 AM IST) — TEACHER ACTIVATED in new chat (Arena sandbox reset)
+- **ACTIVATE TEACHER**: TEACHER-COMPLETE.txt + TEACHER/ (12 files) loaded. Fresh date verified via TZ='Asia/Kolkata' date.
+- **WORKSPACE RESTORED**: cloned debjeet-workspace into /home/user (repo root). Old sandbox SSH key lost with reset.
+- **CODE VERIFIED**: spend-report.js re-ran — total 3473, count 6, biggest 2499, smallTotal 55, smallCount 2, avg 578.83 — ALL PASS.
+- **BACKUP STATUS**: local git ready (identity + SSH remote set). New deploy key generated (fingerprint SHA256:7b3jPvM91snsayy24rsJgpk8DTNwxKVNZmJqCRxFLJk). PUSH PENDING — public key must be added as deploy key (write access) on GitHub repo debjeet-workspace.
+- **NEXT**: Phase 5 ✅ mark (21-REDUCE-DEEP.txt) → Phase 6 OBJECTS DEEP → P2 LICENSE + package.json.
