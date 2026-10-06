@@ -184,3 +184,9 @@
 - Matlab: uski machine = GitHub, bilkul same. Koi push atka nahi. Naya "final code" repo folder mein hai hi nahi — kahin aur pada hai.
 - NOTE: uska sahi path `~/Desktop/web-dev-ultimate/project/UPI-Leak-Detector` hai (purana note `web-dev-ult` galat tha).
 - Next: usse `find` command ka output manga — nayi file kahan hai ye dhoondna hai.
+
+---
+
+## 2026-10-06 (11:36 AM IST) — File hunt: 5 JS files mile
+- `find` output: Javascript-master/app.js + app2.js (2 naye candidates), stream-os-engine src+tests, UPI-Leak-Detector/upileakdetechtor.js (purani wahi).
+- Matlab "final code" Javascript-master/app.js ya app2.js mein hoga. wc+head manga hai pehchanne ke liye.
