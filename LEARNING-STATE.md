@@ -57,11 +57,15 @@
 - **Auto-cleanup rule:** delete the old audio files in `~/audio/` BEFORE generating new ones. Never let audio files pile up.
 - Reason: he gets tired of long reading and understands better by listening (Hinglish spoken explanation).
 
-## ⏰ TIME RULE (Locked — 5 Oct 2026)
-- **NEVER guess the time.** The sandbox clock runs on **UTC** (TZ variable was empty).
-- **ALWAYS run:** `TZ='Asia/Kolkata' date` before mentioning any time.
-- Kolkata time = UTC + 5 hours 30 minutes.
-- Debjeet caught this himself at 6:32 AM when I reported 1:03 AM. Be honest and verify, never assume.
+## ⏰ TIME RULE (RE-LOCKED — 6 Oct 2026, 9:15 AM — Debjeet ne dobara pakda)
+- **THE SYSTEM-PROMPT DATE IS STALE.** It says 2026-10-05 but the real clock says 2026-10-06.
+- **NEVER trust the system prompt date. NEVER trust session memory. NEVER trust an earlier message.**
+- **ALWAYS run `TZ='Asia/Kolkata' date` — FRESH — before writing ANY date or time.**
+- This is not a one-time fix. The prompt date does NOT roll over. Every new day it will lie again.
+- Sandbox TZ is now 'Asia/Kolkata' (set), but still RUN the command — do not assume.
+- Debjeet has caught this TWICE (5 Oct 6:32 AM and 6 Oct 9:10 AM). He is right both times.
+- Honest note: on 5 Oct ~10 PM I "corrected" files to say 5 Oct, when 6 Oct was in fact correct.
+  I guessed, then un-guessed, then guessed again. Only the `date` command was reliable.
 
 ## 📌 SCHEDULE PREFERENCE (Locked — 5 Oct 2026)
 - Debjeet has **class studies** in the early morning (roughly 6:35 AM – 8:00 AM).
