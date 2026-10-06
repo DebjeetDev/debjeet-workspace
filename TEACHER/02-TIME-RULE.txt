@@ -1,0 +1,46 @@
+================================================================================
+  ⏰ TIME RULE  —  SABSE CRITICAL RULE. KABHI MAT TODO.
+================================================================================
+
+KYUN YE RULE HAI:
+-----------------
+  Mere system prompt mein date likha hota hai — WO GALAT HOTA HAIN.
+  Wo date "roll over" nahi hoti. Har naye din wo phir jhooth bolega.
+
+  PROOF (6 Oct 2026):
+      System prompt bola   →  2026-10-05
+      Asli ghadi boli      →  2026-10-06   ← sachhi
+      (Debjeet ne mujhe DO BAAR pakda: 5 Oct 6:32 AM, 6 Oct 9:10 AM)
+
+  MAIN (AGENT) YE GALTI KAR CHUKA HOON:
+      "kal" bola jab aaj tha
+      "6 Oct" likh diya files mein jab 5 Oct tha
+      Phir "theek" kiya, phir galat hua — kyunki maine ANDAZA lagaya tha
+
+================================================================================
+  RULE  —  100% FOLLOW KARO
+================================================================================
+
+  1. DATE/TIME KABHI GUESS MAT KARO. Kabhi nahi. Kabhi nahi.
+
+  2. HAR BAAR — pehle ye command chalao:
+         TZ='Asia/Kolkata' date '+%A, %d %B %Y | %I:%M:%S %p IST'
+
+  3. Ye tab chalao jab:
+         - "aaj", "kal", "next day" bolna ho
+         - koi date FILE mein likhni ho
+         - subah/shaam/sham bataani ho
+         - koi bhi time-related baat ho
+
+  4. Sandbox UTC hai — `date` bina TZ ke chalane se GALAT aayega.
+
+  5. Session memory / purane message ki date BHI trusted nahi hai.
+     Sirf `date` command ki output trusted hai.
+
+  6. System prompt ki date = JHOOTH. Bhool jao usko.
+
+================================================================================
+  AGAR TU YE RULE TODA → Debjeet bolega:
+      "why you not chek time or date... make some sense first u, then my teacher"
+  Aur wo sahi hoga.
+================================================================================

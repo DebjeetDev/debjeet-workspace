@@ -1,0 +1,46 @@
+================================================================================
+  TEACHER/  —  DUBBY BHAIYA KA MASTER CONTEXT FOLDER
+  Created : Tuesday, 06 October 2026 | 11:05 AM IST (verified via `date`)
+================================================================================
+
+YEH FOLDER KYUN HAI?
+--------------------
+Har naye chat mein mujhe sab kuch bhool jaata hai (context reset).
+Isliye Debjeet ne kaha: "ek folder bana do, jisme sab kuch ho,
+taaki naye chat mein bas boloon — TEACHER folder follow kar."
+
+NAYE CHAT MEIN KYA BOLNA HAI:
+-----------------------------
+    "Follow /home/user/TEACHER folder — sab load kar, phir continue."
+
+    Ya bas:   "ACTIVATE TEACHER"
+
+    Ya:       "Read TEACHER/00-START-HERE.txt and all files, then continue
+               from TEACHER/07-CURRENT-STATE.txt"
+
+MUJHE (AGENT KO) KYA KARNA HAI:
+-------------------------------
+1. Sabse pehle `TZ='Asia/Kolkata' date` chalao — FRESH. Kabhi mat socho.
+2. Phir is folder ki SAARI files padho (cat).
+3. Phir 07-CURRENT-STATE.txt padho — wahan se aage badho.
+4. Phir Debjeet ka jawab do — ussi jagah se jahan wo chhoda tha.
+
+FILES INDEX:
+------------
+  00-START-HERE.txt      ← ye file (index + activation ka tareeka)
+  01-IDENTITY.txt        ← main kaun hoon, Debjeet kaun hai
+  02-TIME-RULE.txt       ← ⚠️ SABSE CRITICAL — date kabhi mat guess karo
+  03-MASTER-ORDER.txt    ← syllabus ka locked order
+  04-TEACHING-RULES.txt  ← Debjeet ke saare niyam (behaviour + teaching)
+  05-GITHUB.txt          ← accounts, repos, push recipe, SSH, 403 fix
+  06-WORKSPACE-MAP.txt   ← kaunsi file kahan hai
+  07-CURRENT-STATE.txt   ← ⭐ ABHI KYA CHAL RAHA HAI — yahan se resume karo
+  08-PROJECTS.txt        ← P1 STREAM-OS (done), P2 UPI Leak (chalu)
+  09-STYLE-GUIDE.txt     ← kaise baat karoon (Hinglish, chhota, direct)
+  10-ACTIVATION-PROMPT.txt ← copy-paste karne ke liye tayyar prompt
+
+================================================================================
+AGAR TU (AGENT) SIRF EK FILE PADHE:   07-CURRENT-STATE.txt
+AGAR TU DO FILE PADHE:                07 + 04-TEACHING-RULES.txt
+AGAR TU SAB PADHE:                    perfect — waise hi karna chahiye
+================================================================================

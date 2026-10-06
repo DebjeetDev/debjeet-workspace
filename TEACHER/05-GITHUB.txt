@@ -1,0 +1,114 @@
+================================================================================
+  GITHUB  —  ACCOUNTS, REPOS, PUSH RECIPE, 403 FIX
+================================================================================
+
+================================================================================
+  DO ACCOUNTS HAIN  (403 error ki wajah yahi thi)
+================================================================================
+
+  ACCOUNT 1 (PURANA, personal):   dubessix
+  ACCOUNT 2 (PROFESSIONAL):       DebjeetDev      <- isi se kaam karte hain
+
+  Debjeet ka computer `dubessix` se logged in tha
+  Par repo `DebjeetDev` ke naam pe bana
+  -> GITHUB BOLA: 403 (tu is repo ka malik nahi hai)
+  -> stream-os-engine ke time ye error aaya tha
+
+================================================================================
+  PUBLIC REPOS — DebjeetDev (verified 6 Oct 2026, 11:05 AM IST)
+================================================================================
+
+  upi-leak-detector    <- P2 — push ho gaya (6 Oct 2026, 10:38 AM IST)
+                          Files: README.md (3839 B), upileakdetechtor.js (3849 B)
+                          Public: YES   Branch: main
+                          MISSING: LICENSE, package.json, .gitignore,
+                                   src/ folder, tests/ folder
+
+  stream-os-engine     <- P1 — LIVE, npm pe bhi hai (v1.0.0, 35/35 tests)
+                          Files: LICENSE, README.md, docs, package.json,
+                                 src, tests
+                          YE "PROPER PROJECT" HAI — isse seekho
+
+  Anya: Devjourney-, georgekobaidze, DebjeetDev (profile), MIT License
+
+================================================================================
+  WORKSPACE REPO (MERA — main yahan backup karta hoon)
+================================================================================
+
+  URL:  git@github.com:DebjeetDev/debjeet-workspace.git
+  File: /home/user/.git-remote   (is file mein URL hai)
+  Sync: bash /home/user/sync.sh "commit message"
+
+  NOTE: .git/config PERSIST NAHI hota (snapshot se gayab ho jaata hai)
+  -> Har naye session mein origin dobara add karo:
+
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/github_backup ~/.ssh/config
+        URL=$(tr -d ' \n\r' < /home/user/.git-remote)
+        git remote add origin "$URL" 2>/dev/null || git remote set-url origin "$URL"
+
+  SSH:  ~/.ssh/github_backup = primary key (repo-scoped deploy key)
+        ~/.ssh/config -> Host github.com, IdentitiesOnly yes
+        PRIVATE KEY KABHI PRINT MAT KARNA.
+
+================================================================================
+  403 FIX — DO TAREEKE
+================================================================================
+
+  TAREEKA 1: COLLABORATOR (1 minute, sirf usi repo ke liye)
+  ----------------------------------------------------------
+      github.com/DebjeetDev/<repo-name>
+        -> Settings -> Collaborators -> Add people
+        -> "dubessix" likho -> role: Admin -> Add
+        -> dubessix ke email se invite ACCEPT karo
+      Phir push karo — chalega.
+
+  TAREEKA 2: SSH KEY (5 minute, POORI ZINDAGI)  <-- BEST
+  ----------------------------------------------------------
+      Debjeet ke computer pe:
+          ssh-keygen -t ed25519 -C "debjeet@jeet-developer"
+          (Enter 3 baar dabao)
+          cat ~/.ssh/id_ed25519.pub
+          -> jo aaye wo copy karo
+
+      GitHub pe (DebjeetDev se login):
+          Photo -> Settings -> SSH and GPG keys -> New SSH key
+          Title: jeet-developer
+          Key: paste -> Add SSH key
+
+      Phir:
+          git remote set-url origin git@github.com:DebjeetDev/<repo>.git
+          git push -u origin main
+
+      AB KABHI 403 NAHI. KABHI PASSWORD NAHI.
+
+================================================================================
+  PUSH RECIPE (Debjeet apne computer se)
+================================================================================
+
+      cd ~/Desktop/web-dev-ult
+      git init
+      git add -A
+      git commit -m "feat: <kya banaya>"
+      git remote add origin git@github.com:DebjeetDev/<repo>.git
+      git branch -M main
+      git push -u origin main
+
+  Agar remote pehle se hai:
+      git remote set-url origin git@github.com:DebjeetDev/<repo>.git
+
+================================================================================
+  ZAROORI BATEN
+================================================================================
+  - GitHub password se push BAND hai (2021 se). PAT token chahiye:
+      GitHub -> Settings -> Developer settings -> Tokens (classic) -> scope: repo
+  - AUDIO KABHI GITHUB PE NAHI. "Halbar audio (GitHub me nahi Dena pls)"
+      .gitignore mein `audio/` aur `*.mp3` block hai.
+      Remote pe 0 mp3 hone chahiye — verify karte raho.
+  - File size: 100 MB se upar = reject. 2 GB se upar push = reject.
+  - Git history rewrite (filter-branch) se pehle BACKUP LO —
+      ek baar /home/user/audio working tree se ud gaya tha.
+  - npm Trusted Publishing: pehli publish MANUAL karni padti hai (OIDC se nahi)
+      Node >= 22.14.0, npm >= 11.5.1 chahiye, warna PUT pe 404
+      "Allow npm publish" tick karna padta hai
+================================================================================

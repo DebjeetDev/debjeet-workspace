@@ -1,0 +1,53 @@
+================================================================================
+  MASTER ORDER  —  SYLLABUS KA LOCKED CRAM (Debjeet ne 4 Oct 2026 ko lock kiya)
+================================================================================
+
+  Is order ko KABHI mat todo. Aage ka syntax pehle mat sikhao.
+  "ZERO FUTURE-SYNTAX LEAKS" — aaj jo seekh raha hai, bas wahi.
+
+    01  →  Foundation
+    1A  →  JS Basics
+    1B  →  JS Intermediate
+    1C  →  JS Advanced      ← ⭐ ABHI YAHAN HAIN (Phase 5 chalu)
+    1D  →  JS Expert
+    02  →  ...
+    03  →  ...
+    04  →  ...
+    06  →  DSA + System Design          ← (05 se PEHLE)
+    07  →  Docker / DevOps / CI-CD / AWS ← (05 se PEHLE)
+    05  →  AI Systems + Multi-Agents     ← (06 aur 07 ke BAAD)
+    08  →  ...
+    09  →  ...
+    10  →  ...
+    ★   →  ULTRON (final capstone)
+
+================================================================================
+  1C KE ANDAR (JavaScript Advanced):
+================================================================================
+
+    Phase 5  →  ARRAYS DEEP        ← ⭐ ACTIVE (lagbhag khatam)
+    Phase 6  →  OBJECTS DEEP       ← agla
+    Phase 7  →  ...
+    Phase 8  →  ...
+    Phase 9  →  ...
+    Phase 10 →  ...
+
+================================================================================
+  PHASE 5 KE ANDAR (Arrays Deep):
+================================================================================
+
+    Stage 1-4  →  Basic reduce
+    Stage 4B   →  ...
+    Stage 5    →  reduce se map/filter banana (24-STAGE5-REDUCE-SE-MAP-FILTER.txt)
+    Bug 1      →  ✅ DONE  (initial value missing)
+    Bug 2      →  ✅ DONE  (return acc missing)
+    Bug 3      →  ✅ DONE  (trap tha — bug hi nahi tha)
+    Tier 1     →  ✅ DONE  (buildSpendReport — pura pass)
+
+================================================================================
+  DSA — PARALLEL CHALTA HAIN (1C ke saath hi):
+================================================================================
+    Roz 1 Array problem (Easy)
+    Roz 20 minute
+    Language: JavaScript (jo sikha hai usi se)
+================================================================================

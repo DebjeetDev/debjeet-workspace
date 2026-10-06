@@ -1,0 +1,72 @@
+================================================================================
+  PROJECTS  —  KYA BANA HAI, KYA BAN RAHA HAI
+================================================================================
+
+================================================================================
+  ULTRON  —  FINAL CAPSTONE (sab projects iske ANG hain)
+================================================================================
+  Har chhota project ULTRON ka ek organ hai.
+  Ant mein sab judenge → ek bada AI system.
+  Ladder: PROJECTS/01-ULTRON-LADDER.txt
+
+================================================================================
+  ✅ P1 — STREAM-OS (SMART TV LIVE CHANNEL ENGINE)   [DONE]
+================================================================================
+  Repo     : DebjeetDev/stream-os-engine
+  Status   : LIVE + npm published (v1.0.0), 35/35 tests pass
+  Tech     : iptv-org/api (channels.json, streams.json) + HLS.js
+  Purpose  : Debjeet apne Smart TV pe live channels dekhega
+  Files    : LICENSE ✅ README ✅ docs ✅ package.json ✅ src ✅ tests ✅
+
+  ⭐ YE HAI "PROPER PROJECT" KA NAMUNA — isse seekho
+
+  npm wala sikhna (aage zaroori hoga):
+    - npm Trusted Publishing (OIDC) — pehli publish MANUAL karni padti hai
+    - Node >= 22.14.0, npm >= 11.5.1 chahiye
+    - warna PUT pe 404 aata hai (Node 22/npm 10 purana hai)
+    - "Allow npm publish" tick karna padta hai
+
+================================================================================
+  🔄 P2 — UPI LEAK DETECTOR   [CHALU]
+================================================================================
+  Repo     : DebjeetDev/upi-leak-detector
+  Status   : Module 01 (Spend Report) DONE + pushed
+  Location : ~/Desktop/web-dev-ult (uske computer pe)
+             /home/user/PROJECTS/P2-UPI-LEAK-DETECTOR/ (mere sandbox mein)
+  Spec     : READING/15-PROJECT-UPI-LEAK-DETECTOR.txt
+
+  MODULE 01 — SPEND REPORT ✅
+      Functions:
+        cleanArray(rows)          → data saaf karo
+        sumAll(array)             → numbers ka jod
+        getTotalSpend(rows)       → total kharcha
+        getCount(rows)            → kitne transactions
+        getBiggestSpend(rows)     → sabse bada
+        getSmallSpendTotal(rows)  → < ₹100 wale
+        getSmallSpendCount(rows)  → < ₹100 kitne
+        buildSpendReport(rows)    → sab mila kar ek report
+
+  ROADMAP (aage ke modules):
+      ⬜ Module 02 — Subscription leak (3+ baar, same price)
+      ⬜ Module 03 — Duplicate charge detect
+      ⬜ Module 04 — Overspend warning
+      ⬜ npm package banana
+
+================================================================================
+  🗺️ AAGE BANNE WALE (Phases 6-7 ke baad)
+================================================================================
+  - Mini-Express   (apna chhota Express.js)  ← Objects Deep ke baad
+  - Mini-Zod       (apna validation library) ← Objects Deep ke baad
+
+  Ye dono tabhi — jab Arrays (Phase 5) aur Objects (Phase 6) ho jayein.
+  Kyunki in dono ki neev Arrays + Objects hai.
+
+================================================================================
+  PROJECT RULES (kabhi mat bhool)
+================================================================================
+  - Spec = JIRA-style ticket, CODE-FREE
+  - 3-Tier Ladder: Sub-Projects → Mid-Level → Big Capstone
+  - ZERO generic Todo app
+  - ZERO basic Notes app
+  - Har project pure logic (zero UI) jab tak bola na jaye
+================================================================================

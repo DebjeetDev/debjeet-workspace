@@ -1,0 +1,65 @@
+================================================================================
+  WORKSPACE MAP  —  /home/user  (SANDBOX)
+================================================================================
+
+  Ye sandbox MERA hai (agent ka). Debjeet ka apna computer ALAG hai
+  (~/Desktop/web-dev-ult). Main yahan code chala ke usse result batata hoon
+  — kyunki wo file nahi kholta.
+
+================================================================================
+  TOP LEVEL
+================================================================================
+  TEACHER/            <- YE folder — master context (6 Oct 2026)
+  LEARNING-STATE.md   <- progress tracker (98 lines, TIME RULE block line 60)
+  README.md           <- workspace readme
+  LOG.md              <- daily log
+  CATALOG.txt         <- saari files ki list
+  make-catalog.py     <- CATALOG.txt banata hai
+  md2txt.py           <- markdown -> plain .txt (Debjeet ke liye)
+  sync.sh             <- git push shortcut: bash sync.sh "message"
+  .git-remote         <- workspace repo ka URL
+  .gitignore          <- audio/ aur *.mp3 block
+  audio/              <- Hinglish audio files (GITIGNORED)
+  uploads/            <- Debjeet ke bheje hue screenshots
+                         WARNING: MAIN IMAGE NAHI DEKH SAKTA
+
+================================================================================
+  READING/  (10 files — LIBRARY)
+================================================================================
+  01-COURSE-ROADMAP.txt
+  10-FULL-SYLLABUS.txt
+  12-LEETCODE-ENGLISH-DICTIONARY.txt
+  14-ULTRON-PROJECT-LADDER.txt
+  15-PROJECT-UPI-LEAK-DETECTOR.txt
+  17-STREAM-OS-API-LINKS.txt
+  19-AUTO-PUSH-SSH.txt
+  21-REDUCE-DEEP.txt          <- Phase 5 tracker
+  24-STAGE5-REDUCE-SE-MAP-FILTER.txt
+  25-TIER1-SPEND-REPORT.txt   <- buildSpendReport ka spec
+
+  RULE: NAYI READING FILE TABHI BANAO JAB BOLA JAYE.
+
+================================================================================
+  PROJECTS/  (WORK)
+================================================================================
+  00-INDEX.txt
+  01-ULTRON-LADDER.txt
+  _TEMPLATE/          <- naye project ka dhancha
+  P1-STREAM-OS/       <- LIVE + npm published (stream-os-engine v1.0.0)
+      PLAN/
+      CODE/
+  P2-UPI-LEAK-DETECTOR/   <- ABHI CHALU
+      CODE/
+        README.md
+        src/reduce-practice.js
+        src/spend-report.js     <- PURA PASSING (6 Oct 2026)
+
+================================================================================
+  PROJECT STRUCTURE RULE (har project mein)
+================================================================================
+      src/     <- code
+      tests/   <- tests
+      docs/    <- documentation
+      Naming:  P<n>-<CAPS>   (jaise P2-UPI-LEAK-DETECTOR)
+      Files:   00-README, 01-SPEC, 02-RESOURCES, 03-TESTS, 04-DEPLOY
+================================================================================
