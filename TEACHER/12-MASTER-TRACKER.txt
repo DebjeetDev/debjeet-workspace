@@ -6,6 +6,8 @@
 ================================================================================
 
   TRUTH ANCHORS: LOG.md (date-wise saboot) + TEACHER/07 (current state)
+  CHECKBOX-OF-RECORD: course.md  (points/ticks yahin official)
+  CONCEPT BIBLE:      READING/10-FULL-SYLLABUS.txt (mirror-synced — role banner uske top pe)
   Is file ke alawa KUCH MAAT MANO agar mismatch mile — poochho "date chal ke bata"
 
 ================================================================================

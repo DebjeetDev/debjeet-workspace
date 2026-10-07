@@ -404,7 +404,7 @@ TOPICS:
   [x] Destructuring: const [a, b, , d] = arr ✅ ST5 paper
   [x] Rest in destructuring: const [head, ...tail] = arr ✅ ST5 paper
   [x] Sorting gotcha: always use comparator fn ✅ ST1
-  [ ] Array.from({ length: n }, (_, i) => i) — create ranges
+  [ ] Array.from — ⏭ BONUS (abhi cover nahi — naam jaano bas)
   [x] Set for deduplication: [...new Set(arr)] ✅ ST5
 
   PHASE 6 — OBJECTS DEEP 🔥 NOW (started 7 Oct 2026 — READING/27-OBJECTS-DEEP.txt)

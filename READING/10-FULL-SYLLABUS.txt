@@ -10,6 +10,15 @@ Rule #2  : Every chapter ends with a REAL project. Not tutorial. A PRODUCT.
 Rule #3  : Company-level code from DAY ONE. Clean names. Guard clauses. Error handling.
 Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 ROLE NOTE (7 Oct 2026 — audit ke baad):
+   Ye file = CONCEPT BIBLE (kya-kya seekhna hai, poori duniya).
+   PROGRESS/points ka OFFICIAL TRUTH = course.md (checkbox-of-record)
+   + TEACHER/12-MASTER-TRACKER.txt.
+   Is file ke ticks course.md se MIRROR kiye jaate hain (niyam #17).
+   Mismatch mile to course.md + LOG.md ko maano, isko nahi. 🔒
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 MASTER DASHBOARD — THE GOD MAP
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -382,11 +391,11 @@ TOPICS:
   [DONE] Array literal, Array.isArray(), .length, .at() (ES2022+)
   [DONE] Spread operator: [...arr1, ...arr2] (Non-mutating add/merge)
   [DONE] MUTATING vs NON-MUTATING: push, pop, shift, unshift vs spread
-  [ ] NON-MUTATING CORE PIPELINE (USE THESE):
+  [x] NON-MUTATING CORE PIPELINE (USE THESE): ✅ 5B toolkit mein prove kiye (ST1-ST5)
         [DONE] map()    — transform every element → new array
         [DONE] filter() — keep matching elements → new array
-        [ ] reduce() — fold into single value
-        [ ] find()   — first match or undefined
+        [x] reduce() — fold into single value ✅ Tier-1 PASS (6 Oct)
+        [x] find()   — first match or undefined ✅ ST3 (7 Oct)
         findIndex()— index of first match or -1
         some()     — ANY match? → boolean
         every()    — ALL match? → boolean
@@ -396,13 +405,13 @@ TOPICS:
         concat()   — merge arrays (non-destructive)
         includes() — contains value? → boolean
         indexOf()  — index of value or -1
-  [ ] Chaining: arr.filter().map().reduce()
-  [ ] Spread operator: [...arr1, ...arr2]
-  [ ] Destructuring: const [a, b, , d] = arr
-  [ ] Rest in destructuring: const [head, ...tail] = arr
-  [ ] Sorting gotcha: always use comparator fn
-  [ ] Array.from({ length: n }, (_, i) => i) — create ranges
-  [ ] Set for deduplication: [...new Set(arr)]
+  [x] Chaining: filter().map()/sort().slice() ✅ ST4/ST5
+  [x] Spread operator: [...arr1, ...arr2] ✅ (Step 2 + ST4 copy)
+  [x] Destructuring: const [a, b, , d] = arr ✅ ST5 paper
+  [x] Rest in destructuring: const [head, ...tail] = arr ✅ ST5 paper
+  [x] Sorting gotcha: comparator + copy pehle ✅ ST1/ST4
+  [ ] Array.from — ⏭ BONUS (abhi cover nahi kiya — jhooth nahi bolenge; naam jaano bas)
+  [x] Set for deduplication: [...new Set(arr)] ✅ ST5
 
   PHASE 6 — OBJECTS DEEP 🔥 NOW (started 7 Oct 2026)
   [ ] Object literal, shorthand properties, computed keys

@@ -298,3 +298,20 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   - uploads/ 4 files FROZEN rahne diye (uski originals; note likha).
   NIYAM #17 ke tehat ye sync har session-end hoga. 🔒
 ================================================================
+
+================================================================
+07 Oct 2026, 05:17 AM IST — 10-FULL drift FIX (Debjeet ka point FAIR tha)
+================================================================
+  Debjeet: "10-FULL-SYLLABUS we not follow — point point unfair."
+  Sach: header ✅ karke andar ke item-ticks [ ] chhod diye the
+  (audit adhoora). Khud ki file khud se lad rahi thi. FIX:
+  - 10-FULL ke 10 item-ticks course.md se MIRROR (jo usne sach
+    mein kiya: reduce/find/chaining/Set/destructure/sort...)
+  - Array.from = ⏭ BONUS likha — cover nahi kiya, JHOOTH tick
+    nahi lagaaya (dono files mein)
+  - 10-FULL top pe ROLE BANNER: concept BIBLE = ye; progress ka
+    truth = course.md + 12-MASTER-TRACKER. Mismatch pe course.md maan.
+  - 12-TRACKER mein files ki roles lock.
+  SABAK: mirror-sync ya to poora karo ya file-role alag rakho —
+  aadha sync hi drift hota hai.
+================================================================
