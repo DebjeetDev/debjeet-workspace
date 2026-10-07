@@ -26,7 +26,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
 ┌──────┬────────────────────────────────────┬────────┬─────────────────────────────────────────────────────┬──────────────────────────────────────────┐
 │  #   │  BOOK                              │ STATUS │  FLAGSHIP PROJECT                                   │  OPEN-SOURCE TO REVIEW                   │
 ├──────┼────────────────────────────────────┼────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────┤
-│  0   │  Internet & Terminal Core          │ ⏳ 70% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
+│  0   │  Internet & Terminal Core          │ ⏳ 85% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
 │  1A  │  HTML5 + Accessibility             │ ✅ 100%│  Semantic Blog Page                                 │  whatwg/html                             │
 │  1B  │  CSS3 Full Mastery                 │ 🔥 Next│  Responsive Dev Portfolio (Pure CSS)                │  necolas/normalize.css                   │
 │  1C  │  JavaScript Core Engine            │ 🔥 Now │  7 Core Logic Projects → 17 Total                   │  developit/mitt · vercel/ms              │
@@ -40,7 +40,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
 │  8   │  Build in Public + Brand           │ ⏳     │  Lighthouse 100 Portfolio + 10 Blog Posts           │  sindresorhus/awesome                    │
 │  9   │  Remote Job Hunt Engine            │ ⏳     │  Cold Outreach System + Job Pipeline                │  RemoteOK · Wellfound APIs               │
 │  10  │  100x Introvert Dev Playbook       │ ♾️     │  Deep Work System + Async PR Culture                │  Linux Kernel CONTRIBUTING.md            │
-│  ★   │  ULTRON AI Autonomous Assistant    │ 🚀     │  Full Autonomous AI System v1.0                     │  Self-Authored End-to-End                │
+│  ★   │  ULTRON AI (FRAME RETIRED 6 Oct)   │ ❌     │  Full Autonomous AI System v1.0                     │  Self-Authored End-to-End                │
 └──────┴────────────────────────────────────┴────────┴─────────────────────────────────────────────────────┴──────────────────────────────────────────┘
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -75,7 +75,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
          ↓
    10 → 100× Introvert Dev Playbook                 [S14] ♾️ LIFELONG
          ↓
-   ★  → ULTRON AI Autonomous Assistant  🚀          [S15] FINAL DESTINATION
+   ★  → ULTRON AI (FRAME RETIRED — 6 Oct owner's note)      [S15] —
 
    ───────────────────────────────────────────────────────────────────────
    CAREER LADDER (Tu kahan se kahan jaa raha hai)
@@ -93,7 +93,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
            ↓
         AI SYSTEMS
            ↓
-        ULTRON  🚀
+        ULTRON (frame retired)
 
    ───────────────────────────────────────────────────────────────────────
    KYUN YEH ORDER BEST HAI (Dubby Bhaiya ki honest review)
@@ -597,7 +597,7 @@ THINKING STYLE — JS COMPANY RULES:
       - Phase 6 Module  : Channel + Stream .m3u8 URL Merger & Favorites Local Cache (Map + Immutable Objects)
       - Phase 7 Module  : Live fetch() Engine + AbortController (fast channel zapping) + Auto-Retry Stream Failover + HLS.js Live TV Player!
 
-  🔥 PHASE 4 (FUNCTIONS DEEP: Arrow, this, Call Stack, Closures, HOFs) — ACTIVE NOW:
+  ✅ PHASE 4 (FUNCTIONS DEEP) — TOPICS DONE ✅ (project-ladder backlog ka sach: READING/28-PLAN-VS-DONE-MATCH.txt):
   • 🟢 Sub-Project 4A : Smart UPI / Razorpay Fee & GST Formatter (Arrow functions + implicit object return)
   • 🟢 Sub-Project 4B : Context-Locked Event Logger (this binding + .bind() / lexical this fix)
   • 🟢 Sub-Project 4C : Private Bank Vault Counter & OTP Attempt Limiter (Closures + private state)
@@ -1622,7 +1622,7 @@ OPEN SOURCE REVIEWED:
   📖 Linux Kernel CONTRIBUTING.md → the extreme standard of code quality + review culture
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🌟 GRAND CAPSTONE — ULTRON AI AUTONOMOUS ASSISTANT v1.0
+🌟 GRAND CAPSTONE — ULTRON AI v1.0  (FRAME RETIRED 6 Oct 2026 — section ko historical record ki tarah rakha; retirement note: PROJECTS/02-DESTINY)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 STATUS: 🚀 FINAL DESTINATION — BUILD AFTER ALL BOOKS
 
@@ -1778,7 +1778,7 @@ FEATURES:
 
   Debjeet Dhar. Kolkata. India. World.
 
-  Paper first. Chapter 4.9. Arrow Functions. NOW. 🔥
+  Paper first. Phase 6 — OBJECTS DEEP. NOW. 🔥 (7 Oct 2026)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 END OF DEBJEET DHAR GOD MODE MASTER BIBLE v4.0

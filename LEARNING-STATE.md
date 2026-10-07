@@ -108,3 +108,8 @@
 - P1 PLAN/06-WEB-TV-RESEARCH-2026.txt (7 Oct) — FINAL NORTH STAR of his web-TV dream
   (FAST 2026 research, CORS, UI-clone rules, EK-APP-TEEN-SCREEN + RACE MODE).
 - Niyam #17 LOCKED: har session-end portability sync. Niyam #18: SSH deploy key Debjeet-ko-add pending.
+
+
+## 📌 ROUTE-FLEX OFFICIAL (record 7 Oct): 1B (CSS) se PEHLE 1C (JS) chala.
+Vajah: UI pehle se aata tha, raw-logic kamzor tha — logic muscle pehle.
+(4–5 Oct practice-approved; ab record mein. Locked order ke baaki hisse wahi.)

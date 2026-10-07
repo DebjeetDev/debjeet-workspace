@@ -1778,3 +1778,18 @@ FEATURES:
 END OF DEBJEET DHAR GOD MODE MASTER BIBLE v4.0
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 �
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📌 PROJECT-LADDER BACKLOG (7 Oct audit — SEEDHA SACH: READING/28)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  BUILD (weekend-size, high value — Debjeet approval pending):
+    B1 4M Debounce+Rate-limiter engine  ⭐⭐⭐ (Phase 7 se pehle)
+    B2 STREAM-OS Phase-5 module = CODE likhna (10k-channel pipeline)
+    B3 5B Fraud Detector (= P2 Module 02 overlap)
+    B4 P6 mini pub/sub 50-line (mitt-style)
+  SKIP-with-note (cost > value abhi):
+    S1 P7 Memoize+LRU -> Phase 8 (WeakMap ke saath)
+    S2 P8 Multi-Currency Intl -> job-time
+    S3 5B auto-cover P2 Module 02 se
+  NOTE: Topics/skills ✅≠ project-ladder ✅. Dono alag dikhaye jaayenge.

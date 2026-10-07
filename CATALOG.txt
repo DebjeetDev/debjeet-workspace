@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Wednesday, 07 October 2026
-  Samay       : 10:47 AM (Asia/Kolkata)
+  Samay       : 12:35 PM (Asia/Kolkata)
   Root        : /home/user/ws-check
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -180,6 +180,7 @@ Poore workspace ka naksha: kahan kya hai
                   -> *** KAL KA KAAM — 5 functions mila kar buildSpendReport banao (Phase 5 aakhri) ***
             |-- 26-ARRAY-TOOLKIT-DEEP.txt
             |-- 27-OBJECTS-DEEP.txt
+            |-- 28-PLAN-VS-DONE-MATCH.txt
       |
       |-- [DIR] TEACHER/
             |-- 00-START-HERE.txt
@@ -201,10 +202,10 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 64
+    Total files    : 65
     Total folders  : 17
 
-    READING/       : 12 files (numbered 00 se aage)
+    READING/       : 13 files (numbered 00 se aage)
     PROJECTS/      : 6 items
 
 ==============================================================================
