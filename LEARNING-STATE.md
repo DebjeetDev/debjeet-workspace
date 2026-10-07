@@ -33,16 +33,16 @@
 1. **✅ DONE:** **Book 1C — JS Phase 4 (Functions Deep)** — 100% COMPLETE.
    Sub-Projects 4A (UPI payment), 4B (call/apply/bind), 4C (createPiggyBank closure),
    PR #01 (createVault with MAX_ATTEMPT brute-force lock), Callback + Result Pattern (watchChannel).
-2. **🔥 ACTIVE NOW:** **Book 1C — JS Phase 5 (Arrays Deep)**.
+2. **✅ DONE:** **Book 1C — JS Phase 5 (Arrays Deep) 100% + Phase 5B TOOLKIT 🔒 LOCKED (6–7 Oct 2026)** — ST1–ST5 sab PASS (sort-trap, some/every, find+undefined, topSpends-immutable, uniqueShops map→Set). 📖 READING/26.
    Step 1 ✅ `[ ]`, zero-based index, `.length`, `.at(0)` / `.at(-1)`, `Array.isArray()`
    Step 2 ✅ Spread `[...arr, item]` — non-mutating add vs `.push()` mutation
    Step 3 ✅ `.map()` — transform every element (Company code + SonarLint type consistency)
    Step 4 ✅ `.filter()` — keep matching elements (getHdStreams)
-   Step 5 ⏳ `.reduce()` — fold into single value (Gullak + Sikka analogy)
-   Step 6 ⏳ `.find()` — first match or undefined
+   Step 5 ✅ `.reduce()` — Tier-1 buildSpendReport PASS (6 Oct: 3473|6|2499|55|2|578.83)
+   Step 6 ✅ `.find()` — ST3 findFirstAbove (7 Oct)
    CAPSTONE ✅ Project #6 `createSubscriptionEngine` (Ticket FIN-204) — 35/35 tests pass!
-3. **⏳ NEXT (Tomorrow):** **Push Project #6 to GitHub + publish on npm** (Book 0 remaining 15%).
-4. **⏳ THEN:** **Book 1C — JS Phase 6 (Objects Deep)** → unlocks Mini-Express, Mini-Zod, STREAM-OS channel+stream merger.
+3. **✅ DONE (5 Oct):** GitHub push + npm publish — `stream-os-engine@1.0.0` LIVE (neeche Milestone section dekho).
+4. **🔥 ACTIVE NOW (7 Oct 2026):** **Book 1C — JS Phase 6 (Objects Deep)** — READING/27-OBJECTS-DEEP.txt, ST1 rowToObject issued. → unlocks Mini-Express, Mini-Zod, STREAM-OS merger.
 5. **⏳ THEN:** Phases 7–10 → **Book 1B (CSS3 Full Mastery)** → Books 2–10.
 
 ## 🎯 OFFICIAL PROJECT WEEK (Locked — Starts After Phase 5 Completes)
@@ -96,3 +96,15 @@
   "INTERVIEW CRACK" book mein jama kiye jayenge.
 - Debjeet chahta hai: pehle SEEKHNA, baad mein INTERVIEW ki taiyari.
 - Abhi: Phase 5 ke 10 sawal baad mein INTERVIEW CRACK mein jayenge.
+
+
+---
+
+## 📌 UPDATE — 7 Oct 2026 (bhor, audit ke baad)
+- **FULL WORKSPACE AUDIT kiya gaya** (niyam: folder-wise padhai karke status lakhna):
+  drift pake gire — 7 files ke purane status ` ✅ ` kiye. Ab **TEACHER/12-MASTER-TRACKER.txt**
+  = single doc of "har topic done/pending" (kisi bhi provider ko dene ke liye).
+- Phase 6 START mila (Debjeet: "ok let do"); 27-OBJECTS file ready (PART 0–12 + tracker).
+- P1 PLAN/06-WEB-TV-RESEARCH-2026.txt (7 Oct) — FINAL NORTH STAR of his web-TV dream
+  (FAST 2026 research, CORS, UI-clone rules, EK-APP-TEEN-SCREEN + RACE MODE).
+- Niyam #17 LOCKED: har session-end portability sync. Niyam #18: SSH deploy key Debjeet-ko-add pending.

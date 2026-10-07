@@ -17,7 +17,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
 ┌──────┬────────────────────────────────────┬────────┬─────────────────────────────────────────────────────┬──────────────────────────────────────────┐
 │  #   │  BOOK                              │ STATUS │  FLAGSHIP PROJECT                                   │  OPEN-SOURCE TO REVIEW                   │
 ├──────┼────────────────────────────────────┼────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────┤
-│  0   │  Internet & Terminal Core          │ ⏳ 70% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
+│  0   │  Internet & Terminal Core          │ ⏳ 85% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
 │  1A  │  HTML5 + Accessibility             │ ✅ 100%│  Semantic Blog Page                                 │  whatwg/html                             │
 │  1B  │  CSS3 Full Mastery                 │ 🔥 Next│  Responsive Dev Portfolio (Pure CSS)                │  necolas/normalize.css                   │
 │  1C  │  JavaScript Core Engine            │ 🔥 Now │  7 Core Logic Projects → 17 Total                   │  developit/mitt · vercel/ms              │
@@ -381,15 +381,15 @@ TOPICS:
   [x] Callback functions — Sync callbacks & Error-First callbacks (err, data)
   [x] Higher-order functions (take/return functions) — once(), debounce(), throttle(), rateLimiter()
 
-  PHASE 5 — ARRAYS DEEP 🔥 ACTIVE
+  PHASE 5 — ARRAYS DEEP ✅ COMPLETE (5–6 Oct) + 5B TOOLKIT 🔒 5/5 LOCKED (6–7 Oct — 26-ARRAY file)
   [x] Array literal, Array.isArray(), .length, .at() (ES2022+)
   [x] Spread operator: [...arr1, ...arr2] (Non-mutating add/merge)
   [x] MUTATING vs NON-MUTATING: push, pop, shift, unshift vs spread
-  [ ] NON-MUTATING CORE PIPELINE (USE THESE):
+  [x] NON-MUTATING CORE PIPELINE (USE THESE): ✅ 5B toolkit mein prove kiye
         [x] map()    — transform every element → new array
         [x] filter() — keep matching elements → new array
-        [ ] reduce() — fold into single value
-        [ ] find()   — first match or undefined
+        [x] reduce() — fold into single value ✅ Tier-1 PASS
+        [x] find()   — first match or undefined ✅ ST3
         findIndex()— index of first match or -1
         some()     — ANY match? → boolean
         every()    — ALL match? → boolean
@@ -399,13 +399,13 @@ TOPICS:
         concat()   — merge arrays (non-destructive)
         includes() — contains value? → boolean
         indexOf()  — index of value or -1
-  [ ] Chaining: arr.filter().map().reduce()
-  [ ] Spread operator: [...arr1, ...arr2]
-  [ ] Destructuring: const [a, b, , d] = arr
-  [ ] Rest in destructuring: const [head, ...tail] = arr
-  [ ] Sorting gotcha: always use comparator fn
+  [x] Chaining: arr.filter().map().reduce() ✅ ST4/ST5
+  [x] Spread operator: [...arr1, ...arr2] ✅
+  [x] Destructuring: const [a, b, , d] = arr ✅ ST5 paper
+  [x] Rest in destructuring: const [head, ...tail] = arr ✅ ST5 paper
+  [x] Sorting gotcha: always use comparator fn ✅ ST1
   [ ] Array.from({ length: n }, (_, i) => i) — create ranges
-  [ ] Set for deduplication: [...new Set(arr)]
+  [x] Set for deduplication: [...new Set(arr)] ✅ ST5
 
   PHASE 6 — OBJECTS DEEP 🔥 NOW (started 7 Oct 2026 — READING/27-OBJECTS-DEEP.txt)
   [ ] Object literal, shorthand properties, computed keys

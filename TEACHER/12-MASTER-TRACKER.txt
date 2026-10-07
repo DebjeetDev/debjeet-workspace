@@ -1,0 +1,141 @@
+================================================================================
+  12 — MASTER TRACKER  📊
+  "Har topic: DONE ya PENDING — ek nazar mein."
+  Kaam: kisi bhi AI/provider ko DUSHAWAS pe paste karo — raasta turant lagta
+  Banaya: 7 Oct 2026 (bhor)  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
+================================================================================
+
+  TRUTH ANCHORS: LOG.md (date-wise saboot) + TEACHER/07 (current state)
+  Is file ke alawa KUCH MAAT MANO agar mismatch mile — poochho "date chal ke bata"
+
+================================================================================
+A. BOOKS (MASTER ORDER — locked 4 Oct 2026, kabhi mat todo)
+================================================================================
+  [S1 ] 01 Internet + Terminal Core ......... ⏳ 85% (git/npm hands-on seekh liye)
+  [S2 ] 1A HTML5 + Accessibility ............ ✅ 100%
+  [S3 ] 1B CSS3 Full Mastery ................ ⏳ (1C ke BAAD — order locked)
+  [S4 ] 1C JavaScript Core Engine ⭐ ........ 🔥 NOW (NEECHE section B mein detail)
+  [S5 ] 1D Tailwind + shadcn ................ ⏳
+  [S6 ] 02 Advanced Frontend + 3D ........... ⏳
+  [S7 ] 03 MERN + Next.js ................... ⏳
+  [   ] 04 Testing + Code Quality ........... ⏳
+  [S9 ] 06 DSA + System Design .............. ⏳
+  [S10] 07 Docker + DevOps + AWS ............ ⏳
+  [S11] 05 AI Systems + Multi-Agents ........ ⏳
+  [   ] 08 Build in Public .................. ⏳
+  [   ] 09 Remote Job Engine ................ ⏳
+  ULTRON frame ............... ❌ RETIRED (6 Oct — owner's note:
+                             PROJECTS/02-DESTINY-PROJECT-MAP-2026.txt)
+
+================================================================================
+B. BOOK 1C — JAVASCRIPT CORE ENGINE (andar ka poora hisaab)
+================================================================================
+  PHASE 1 Variables/Types/Memory ........... ✅ DONE
+  PHASE 2 Control Flow ..................... ✅ DONE
+  PHASE 3 Functions Foundation ............. ✅ DONE
+  PHASE 4 Functions Deep ................... ✅ DONE (100%)
+        - Sub-projects: 4A UPI, 4B call/apply/bind, 4C PiggyBank
+        - PR#01 createVault (MAX_ATTEMPT brute-force lock)
+        - Callback + Result Pattern { status, ok, data/error }
+        - CAPSTONE: createSubscriptionEngine — 35/35 tests ✅
+          LIVE: npm `stream-os-engine@1.0.0` (5 Oct, khud publish kiya)
+
+  PHASE 5 Arrays Deep ...................... ✅ DONE 100% (5-6 Oct)
+        Step1 [ ].length .at() ✅ | Step2 spread ✅ | Step3 map ✅
+        Step4 filter ✅ | Step5 reduce ✅ | Step6 find ✅
+        Bug 1/2/3 ✅ | Tier-1 buildSpendReport PASS (6 Oct,
+          3473|6|2499|55|2|578.83 — node-verified)
+        📖 READING/21-REDUCE-DEEP.txt, 24-, 25-TIER1
+
+  PHASE 5B Array Toolkit (REAL-WORLD) ...... ✅🔒 LOCKED (6-7 Oct)
+        ST1 ✅ sort-trap (dictionary) — 6 Oct
+        ST2 ✅ some/every + guards — 7/7 node, 6 Oct
+        ST3 ✅ findFirstAbove + showFirstAbove (undefined→404) — 7 Oct
+              ⭐ bonus: khud 2D rows banayi + data-clean filter
+        ST4 ✅ topSpends — [...rows] immutability proof — 7 Oct
+        ST5 ✅ uniqueShops — map→Set→spread + destructure paper — 7 Oct
+        📖 READING/26-ARRAY-TOOLKIT-DEEP.txt (PART 0-14:
+           repo-trail zustand/TanStack/cal.com/preact LIVE-verified,
+           PART 9C daily-rule: docs pado + repo kholo + AI 5-niyam)
+
+  PHASE 6 Objects Deep ..................... 🔥 CHALU (START 7 Oct bhor)
+        📖 READING/27-OBJECTS-DEEP.txt (PART 0-12 + ST1-ST5 tracker)
+        ST1 ⬜ rowToObject (ISSUED — answer aana baaki)
+        ST2 ⬜ updateSpend (spread immutability)
+        ST3 ⬜ printSpend (object destructure)
+        ST4 ⬜ listKeys + countByShop
+        ST5 ⬜ mergeChannelStream (⭐ TV-mERGER pila patra 🎬)
+        Unlocks: Mini-Express, Mini-Zod, STREAM-OS dabba#3
+
+  PHASE 7 Async JS ......................... ⏳ (fetch + AbortController
+         + HLS.js player — PLAN/06 ke dabbe 1 & 6)
+  PHASES 8-10 .............................. ⏳
+
+================================================================================
+C. PROJECTS (00-INDEX ka asli haal)
+================================================================================
+  P1 STREAM-OS ................. 🔥 FLAGSHIP chalu
+        Module 01 createSubscriptionEngine: ✅ npm LIVE 1.0.0
+          (35/35, MIT, zero-dep — DebjeetDev/stream-os-engine)
+        PLAN/: 00-05 ✅ + 06-WEB-TV-RESEARCH-2026.txt (7 Oct,
+          PART 0-14: FAST landscape, CORS, UI-clone 2 niyam,
+          Hoichoi 3-hisse sach, 10-foot UI, EK-APP-TEEN-SCREEN,
+          RACE MODE milestones M0-M4)
+  P2 UPI-LEAK-DETECTOR ......... 🔥 chalu
+        Module 01 spend-report: ✅ DONE + GitHub pushed (6 Oct)
+        ⬜ MISSING: LICENSE, package.json, .gitignore, src/tests split
+        ⬜ Module 02 subscription leak / 03 duplicate / 04 overspend
+  P3 / P4 / P5 ................. ⬜ plan-only (00-INDEX mein naam)
+  PROJECT WEEK candidates ...... ⏳ PARKED (ph6 ke baad choose)
+        leading: m3u-health-check (80-90% links marte hain —
+        PLAN/06 PART 4 HARD-2 ka seed yahi hai)
+
+================================================================================
+D. INFRA / GOVERNANCE (machine-side hisaab)
+================================================================================
+  GitHub accounts: dubessix (purana) | DebjeetDev (professional) ✅
+  Workspace repo:  git@github.com:DebjeetDev/debjeet-workspace.git
+        SSH: 5-Oct key ud gayi (env-reset) → 7 Oct NAYI key bana
+        ⏳ DEBJEET KA 1-MIN KAAM: nayi PUBLIC key repo
+           Settings→Deploy keys mein add (write ✅) — tabhi push LIVE
+        (.gitignore line 37: .ssh/ blocked ✅)
+  uploads/ 4 files (course, LOG, LEARNING-STATE, TEACHER-COMPLETE):
+        ❄ FROZEN — Debjeet ki purani daali hui copies.
+        Dusre provider ko dena ho to: TEACHER/12 (ye file) +
+        TEACHER-QUICK.txt (fresh) + TEACHER/07 do.
+
+================================================================================
+E. LOCKED NIYAM (jaldi nazar)
+================================================================================
+  #0  SACH pehle — fake "DONE" kabhi nahi (proof ke saath DONE)
+  #16 Phase sirf USKE "START" pe khulega
+  #17 PORTABILITY SYNC — har session-end: course+TEACHER+LOG+
+      tracker sync + commit (7 Oct se LOCKED)
+  #18 SSH 1-min kaam (upar section D)
+  Roz ka niyam: 📖 docs pado + 🔍 repo khojo (26-file PART 9C)
+  AI 5-niyam: 15-min self → hint not code → samajh ke type →
+      line-level → bina dekhe explain
+  ULTRON retired | Audio GitHub pe nahi | Interview kitab alag:
+      "INTERVIEW CRACK" (phase khatam hone pe bharna)
+
+================================================================================
+F. AGLA KAAM (priority — 7 Oct, verified)
+================================================================================
+  1. Debjeet: SSH deploy key GitHub mein add karke "push kar de" bolna
+  2. Ph6 ST1 rowToObject ka answer submit karna
+  3. ST2→ST5 → Phase 6 LOCK 🔒
+  4. P2: LICENSE + package.json + .gitignore daalna
+  5. Plan/06 padhna free time mein (TV ka naksha — wo hi TV hai 📺)
+
+================================================================================
+G. KHUD VERIFY KAISE KARE (proof nahi to bharosa nahi)
+================================================================================
+  wc -l READING/27-OBJECTS-DEEP.txt          (~480 lines)
+  grep "PHASE 5B LOCKED" READING/26-*.txt    (tracker seal)
+  grep "PHASE 6" course.md | head            (NOW marker)
+  tail -40 LOG.md                            (7 Oct entries)
+  npm view stream-os-engine                  (1.0.0 LIVE proof)
+
+================================================================================
+END — 12-MASTER-TRACKER.txt  (niyam #17: har session-end refresh 🔒)
+================================================================================

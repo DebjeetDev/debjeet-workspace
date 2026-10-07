@@ -63,3 +63,11 @@
       Naming:  P<n>-<CAPS>   (jaise P2-UPI-LEAK-DETECTOR)
       Files:   00-README, 01-SPEC, 02-RESOURCES, 03-TESTS, 04-DEPLOY
 ================================================================================
+
+
+----------------------------------------------------------------
+  UPDATE Wednesday, 07 October 2026 | 05:10 AM IST — naye files (audit 7 Oct):
+    READING/27-OBJECTS-DEEP.txt  (PHASE 6 lesson, PART 0-12 + tracker ST1-ST5)
+    PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt (TV research FINAL, PART 0-14)
+    TEACHER/12-MASTER-TRACKER.txt (har topic done/pending — provider ke liye)
+  uploads/ = FROZEN purani copies (unhe touch nahi kiya — sirf note).
