@@ -1,0 +1,104 @@
+================================================================
+P2-UPI-LEAK-DETECTOR — MODULE 02 SPEC
+Ticket: FIN-302     | "Subscription Leak Scanner"
+Status: 🟡 ASSIGNED → Debjeet Dhar (banayega KHUD, 7 Oct 2026)
+Type:   JIRA-STYLE, CODE-FREE (implementation names NAHI diye gaye)
+Wajah:  5B toolkit PASS → ab skill ko REAL project mein badalna
+================================================================
+
+  🎯 ONE-LINE:
+     Mahine ke bills ki list se WOH serving-charges dhoondo
+     jo 3 ya usse zyada baar aa gaye — wo subscription-leak hai.
+     User ko bata: kaunsi, kitne rupaye ki, aur count.
+
+----------------------------------------------------------------
+STORY (kyun zaroori hai)
+----------------------------------------------------------------
+  UPI mein paise SILENTLY kat-te hain. Netflix kat raha hai,
+  Gym kat raha hai — aur insan ko pata hi nahi. Agar kisi
+  amount ke saath same naam BAAR-BAAR aaya, to 99% probability
+  hai ye ek recurring subscription hai. List small hai,
+  dard bada hai. Isi liye P2 naam hai: LEAK DETECTOR.
+
+----------------------------------------------------------------
+INPUT (test data — as-is use karna)
+----------------------------------------------------------------
+  const bills = [
+    ["Sep", "Netflix", 499],
+    ["Sep", "Spotify", 119],
+    ["Sep",     "Gym", 800],
+    ["Oct", "Netflix", 499],
+    ["Oct", "Spotify", 119],
+    ["Oct",     "Gym", 800],
+    ["Oct",   "Prime", 1499],
+    ["Nov", "Netflix", 499],
+    ["Nov", "Spotify", 119],
+    ["Nov",     "Gym", 800],
+    ["Nov",  "Hotstar", 899],
+  ];
+
+----------------------------------------------------------------
+REQUIREMENTS (rules bina code-linked)
+----------------------------------------------------------------
+  R1  Function naam: findLeaks(bills)
+  R2  Input check: list hi hai kya? Nahi → ghar-wala 400 envelope.
+  R3  Andar ki kharab rows (month/naam/rate missing ya rate
+      ginti nahi): CHUP-CHAP skip, crash nahi.
+  R4  EK naam + EK amount | milaap 3 ya zyada BAAR dikhe
+      (mahine alag-alag ho sakte hain — matlab jodna mahine se NAHI)
+      = LEAK.
+  R5  Sirf 2 baar wala CHORNA hai — usko abhi shak nahi
+      (ye is module ki LINE hai: 2 < threshold <= 3).
+      ⭐ YEHI TRAP HAI — Netflix-Gym 3-3, Spotify 2-2.
+  R6  Har leak EK hi baar report hoga. Order = pehli-baari dekhne
+      ka order.
+  R7  Return envelope (ghar ka style, sab jagah same):
+      success → { status:200, ok:true, data:[...], leaksCount }
+      fail    → { status:400, ok:false, error:"..." }
+
+----------------------------------------------------------------
+ACCEPTANCE (expected — match karna)
+----------------------------------------------------------------
+  findLeaks(bills)
+    → { status:200, ok:true,
+        data: [ ["Netflix", 499], ["Gym", 800] ],
+        leaksCount: 2 }
+    (Spotify 149?? nahi — 119, bas 2 baar → CHHODO. ye line
+     tera decision-dum batayega.)
+
+  findLeaks([["Sep","X",10],["Oct","X",10]])   → 200, data: [], leaksCount: 0
+  findLeaks([])                                 → 200, data: [], leaksCount: 0
+  findLeaks("hi")                               → 400 envelope
+  findLeaks(bills) har row skip-safe            → garbage row hone se crash nahi
+
+----------------------------------------------------------------
+OUT OF SCOPE (is module ke bahar — agle ticket ka kaam)
+----------------------------------------------------------------
+  - Same mahine mein DOUBLE-KATNA (duplicate charge) — wo Module 03.
+  - Paisa total karke batana — wo Tier-1 ka kaam tha.
+  - Real CSV file se input uthana — abhi static list.
+
+----------------------------------------------------------------
+BUILD RULES (locked)
+----------------------------------------------------------------
+  1. PEHLE PAPER: logic flow likhna — fir keyboard. 📜
+  2. KHUD LIKHEGA. AI se kabhi full function nahi.
+  3. Atak to 15 min khud → sirf HINT mangega (direction, code nahi).
+  4. Envelope shape sab jagah same — Module 01 jaisi.
+  5. Chalane ke baad: expected vs actual MATCH list karke bhej.
+  6. Jo bhi approach ho — TERA choice. Koi method-suggestion
+     AI se nahi milegi (ticket code-free ka matlab yahi). 💪
+
+----------------------------------------------------------------
+DEFINITION OF DONE (tick karne ke liye)
+----------------------------------------------------------------
+  [ ] 5/5 acceptance outputs sahi (Dubby node-verify karega)
+  [ ] Bina dekhe explain kar saka: "leak kaise pakdi?"
+  [ ] Code P2/CODE/src/ mein nayi file mein save (naam ter marze)
+  [ ] Tracker update: J1 ✅ (Dubby mark karega — phir J2 khulega)
+
+  TIME-BOX: 20–30 min concept + 15 min type/test. RUSH NAHI.
+  "Project pehle, gate baad me." — NIYAM #20 ke pehle sipahi ho tum. ⚔️
+================================================================
+END — 02-SPEC-SUBSCRIPTION-LEAK.txt
+================================================================
