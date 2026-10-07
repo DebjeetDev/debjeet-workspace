@@ -47,7 +47,7 @@
         buildSpendReport(rows)    → sab mila kar ek report
 
   ROADMAP (aage ke modules):
-      🟡 Module 02 — Subscription leak: TICKET FIN-302 READY (PLAN/02-SPEC, 7 Oct) — Debjeet building (gate niyam #20)
+      🟡 Module 02 — Subscription leak: TICKET FIN-302 READY (PLAN/02-SPEC, 7 Oct; EN twin 02-SPEC-...-EN.txt uska order pe) — Debjeet building (gate niyam #20)
       ⬜ Module 03 — Duplicate charge detect
       ⬜ Module 04 — Overspend warning
       ⬜ npm package banana

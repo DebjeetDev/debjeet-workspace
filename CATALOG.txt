@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Wednesday, 07 October 2026
-  Samay       : 07:12 PM (Asia/Kolkata)
+  Samay       : 08:32 PM (Asia/Kolkata)
   Root        : /home/user/ws-check
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -157,6 +157,7 @@ Poore workspace ka naksha: kahan kya hai
                               -> Project kya hai, status, Kolkata channels
                         |-- 01-SPEC.txt
                               -> Jira ticket — kaunse functions, kya rules (CODE NAHI)
+                        |-- 02-SPEC-SUBSCRIPTION-LEAK-EN.txt
                         |-- 02-SPEC-SUBSCRIPTION-LEAK.txt
       |
       |-- [DIR] READING/
@@ -205,7 +206,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 68
+    Total files    : 69
     Total folders  : 17
 
     READING/       : 13 files (numbered 00 se aage)
