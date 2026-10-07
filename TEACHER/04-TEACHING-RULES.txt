@@ -150,3 +150,10 @@
   Sach bol. Root cause dikha. Fix lagu. Rule lock kar.
   Bahane nahi.
 ================================================================================
+
+----------------------------------------------------------------
+  ADDED 7 Oct (old-teacher vibe adopted, AGENTS.md se):
+  - Activation = SIRF 2 line report ("kahan chhoda + next") + EK task
+  - Kisi ka answer RECORDED na ho to PASS mat maano — paste karwao
+  - Nayi READING file tabhi jab wo bole ya kaam maange (no spam files)
+  - Attempt ke bina full-solution kabhi nahi (hint hierarchy wahi)

@@ -381,3 +381,15 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   J4 debounce-engine → J5 stream-os pipeline (real data) → J6 LRU.
   P8 hi parked (non-logic). Dubby mind on record: gate > pace.
 ================================================================
+
+================================================================
+07 Oct 2026, 11:41 AM IST — OLD-TEACHER VIBE CAUGHT (AGENTS.md+HANDOFF parallel session)
+================================================================
+  Debjeet ne doosri Arena-chat ka AGENTS.md + HANDOFF.txt upload kiya:
+  "purane teacher ki vibe pakdo, match karo, finish karte hain."
+  KIYA: AGENTS.md repo root mein copy. NAYA canonical HANDOFF.txt
+  likha (gate-state ke saath — taaki old-teacher bhi gate maane,
+  Ph6 regress na ho). TEACHER/04 mein 4 vibe-clauses add.
+  Old-teacher rules = Dubby rules ka twin — activation ritual 2-line
+  + EK task ab se permanent. Push blocker unchanged: write-tick.
+================================================================

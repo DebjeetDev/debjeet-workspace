@@ -1,0 +1,47 @@
+################################################################################
+HANDOFF — EXACT CHECKPOINT (CANONICAL — is duniya ka sach)
+Updated: 07 Oct 2026, 11:41 AM IST
+Canonical local: arena ws-check clone | SABSE AAGE YAHIN HAI
+################################################################################
+
+ACTIVATION RITUAL (har naye chat mein):
+  1. TZ='Asia/Kolkata' date chalao (fresh — kabhi remember mat karo)
+  2. Ye file padho + AGENTS.md + TEACHER/07 + tail LOG.md
+  3. Report SIRF 2 line: "kahan chhoda + next kya" → phir EK task do.
+     (Old-teacher vibe, adopted: HANDOFF/AGENTS parallel-session se)
+
+CHECKPOINT (truth, 7 Oct):
+  ✅ Book 1C Phase 5 Arrays Deep COMPLETE + Phase 5B TOOLKIT 🔒 LOCKED
+     (ST1–ST5 node-verified — 26-ARRAY file, tracker 5/5 ✅)
+  🧊 Phase 6 OBJECTS DEEP = PAUSED — abandoned NAHI.
+     ST1 (rowToObject: UPI row -> object) ISSUED tha, answer kabhi
+     RECORDED nahi hua. Resume-safe: gate khulte hi wahi se.
+  ⚔️  CURRENT ACTIVE LAW = NIYAM #20 PROJECT-GATE (Debjeet, 7 Oct 11 AM):
+     "planned projects pehle, strict; gate ke bina next phase nahi."
+     STRICT J-ORDER (28-file PART D):
+       J1 findLeaks (Fraud Detector = P2-M02)   ← NEXT TASK YE HAI
+       J2 flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
+       → J5 STREAM-OS real pipeline → J6 memoize+LRU (opt)
+       P8 Intl = parked (non-logic API)
+  📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
+  📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
+
+PUSH/GITHUB STATE:
+  Remote main = 8eca826 (38 commits, ancestor-expected; NEVER force-push)
+  Local is AHEAD by ~10+ commits (5B, 27/28, audits, gate, PLAN/06).
+  DEPLOY KEY (arena-sandbox): public fingerprint
+    SHA256:XhKrwV3ARo5pwBbaT9pVoQG7nZzeMdoB6Bq8Txlt1vA
+    Read auth PASS ("Hi DebjeetDev/debjeet-workspace!").
+    BLOCKER: write-tick likely missing → Debjeet: repo > Settings >
+    Deploy keys > arena-sandbox (edit) > tick "Allow write access" > Save.
+  Parallel-session note: dusri chat (4:38 PM) ka apna HANDOFF/key tha
+    (unauthenticated). Unka content yahan MERGE/ADOPT ho gaya: AGENTS.md
+    copied in repo root. Unke MASTER-PROMPT.txt/SOUL-PROMPT.txt/START-HERE.md
+    yahan available nahi — jab bhejega to fold kar denge.
+  "Pushed" tabhi bolna jab ls-remote verify kar le.
+
+NIYAM QUICK: RULE ZERO (proof-pahile) · EK task/reply · uska code pehle
+  (hint only) · no future-syntax in lessons · Jira-style specs code-free ·
+  ULTRON retired · audio local-only · docs+repo daily (26 PART 9C) ·
+  🧊 gate till J1–J6 done.
+################################################################################

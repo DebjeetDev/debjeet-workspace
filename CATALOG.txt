@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Wednesday, 07 October 2026
-  Samay       : 03:56 PM (Asia/Kolkata)
+  Samay       : 05:11 PM (Asia/Kolkata)
   Root        : /home/user/ws-check
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -45,10 +45,12 @@ Poore workspace ka naksha: kahan kya hai
 
   /home/user/
   |
+      |-- AGENTS.md
       |-- CATALOG.txt
             -> YHI FILE — poore workspace ka naksha (folder by folder)
       |-- course.md
             -> POORA SYLLABUS — 11 Books + JS ke 10 Phases (source file)
+      |-- HANDOFF.txt
       |-- LEARNING-STATE.md
             -> Tu abhi kahan khada hai + tere rules (source file)
       |-- LOG.md
@@ -202,7 +204,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 65
+    Total files    : 67
     Total folders  : 17
 
     READING/       : 13 files (numbered 00 se aage)
