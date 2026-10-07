@@ -1,0 +1,479 @@
+================================================================
+27 — OBJECTS DEEP (PHASE 6) — NAAM WALI THAALI
+"r[1] yaad rakhna band. ab cheezon ke NAAM honge."
+Banaya: 7 Oct 2026 (bhor)  |  Dubby Bhaiya  |  TEXT ONLY
+Prerequisite: PHASE 5B LOCKED ✅ (map/filter/find/sort/Set/dest)
+Locked rules: docs+repo links HAR concept pe 📖 + AI 5-niyam 🔒
+================================================================
+
+  IS FILE MEIN:
+    PART 0 : tera apna dard (r[1] wala) — shuruaat
+    PART 1 : object kya hai (3 niyam)
+    PART 2 : dot vs bracket (access ke 2 raaste)
+    PART 3 : add / update / delete
+    PART 4 : nested objects (object ke andar object)
+    PART 5 : DESTRUCTURE (ST5 ka bada bhai)
+    PART 6 : SPREAD {...} — copy bana ke badlo (immutability)
+    PART 7 : Object.keys / values / entries
+    PART 8 : JSON — duniya se baat karne ka tarika
+    PART 9 : REPO TRAIL (khud jaa ke dekh 🔍)
+    PART 10: AI 5-NIYAM (lock yaad-dilaan)
+    PART 11: STAGES 1-5 (tracker isi file mein)
+    PART 12: AAGE KA CONNECTION (Phase 7 + tera TV)
+
+----------------------------------------------------------------
+PART 0 — TERI APNI TAKLEEF SE SHURU KARTE HAIN
+----------------------------------------------------------------
+
+  Yaad hai STAGE 5 ka BLANK 1?
+
+      const names = rows.map( r => r[ ___ ] );
+
+  tujhe YAAD RAKHNA pada: "naam position 1 pe hai, paisa 2 pe."
+  Kyun? Kyunki row ek ARRAY hai:
+
+      ["06 Oct", "Chai Shop", 30]
+        ↑0        ↑1           ↑2
+       kya tha?  🤔 naam?      paisa?
+
+  POSITION yaad rakhna = dimaag ka bojh.
+  3 hafte baad code khol to samajh nahi aayega r[2] kya tha.
+  Interview mein likhoge r[1] — aur amount ki jagah NAAM aa
+  jayega. Silent bug. Paisa ud gaya, error bhi nahi aayi. 😱
+
+  AAJ SE YE DARD KHATAM:
+
+      const spend = {
+        date: "06 Oct",
+        shop: "Chai Shop",
+        amount: 30
+      };
+
+  Ab pooch: spend.amount  → 30.  NAAM se mangoge, NAAM hi milega.
+  Position bhookh khatam. ✅
+
+  ⭐ Yahi cheez tere TV project mein aayegi:
+     ["ABPAnanda", "IN", "https://...m3u8"]   ← thakela
+     { name: "ABP Ananda", country: "IN", url: "https://..." }
+                                                 ↑ TAALI waala! 🎯
+
+📖 KHUD PADHO (5 min): MDN — "Object basics"
+   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Object_basics
+   (sirf pehle 2 sections — baaki abhi mat padh, over-load hoga)
+
+----------------------------------------------------------------
+PART 1 — OBJECT KYA HAI (sirf 3 niyam, bas!)
+----------------------------------------------------------------
+
+  OBJECT = naam wali THAALI.
+  Har katori pe LABEL likha hai: key → value.
+
+    const chavi = {
+      key1: value1,      // LABEL : CHEEZ
+      key2: value2
+    };
+
+  NIYAM 1: key hamesha NAAM hota hai (string jaisa).
+           date, shop, amount — koi bhi.
+  NIYAM 2: ek thaali mein EK naam EK hi baar.
+           do baar likha to pichhla khada hua naya kha jayega.
+  NIYAM 3: THAALI ke andar KUCH BHI rakh sakta hai:
+           text, number, true/false, ARRAY, aur OBJECT bhi! 😈
+
+  TRY DRIYA (kagaz pe soch, code baad mein):
+    const fan = { brand: "Havells", speed: 350, on: false };
+    fan.on     -> ???
+    fan.speed  -> ???
+    fan.brand -> ???
+  (Answers: false / 350 / "Havells")
+
+----------------------------------------------------------------
+PART 2 — ACCESS KE 2 RAASTE: dot .  aur  bracket [ ]
+----------------------------------------------------------------
+
+  DAAST 1 — DOT (jhatt, aam taur pe yahi):
+      spend.amount   ->  30
+      spend.shop     ->  "Chai Shop"
+      spend.deta     ->  undefined  ⚠️ (typo! error nahi aaya —
+                                       khamosh galat jawab ye
+                                       object ka pehla jhooth hai)
+
+  RAAST 2 — BRACKET (jab naam VARIABLE mein ho):
+      const kya = "amount";
+      spend[kya]     ->  30         ✅ variable se kaam!
+      spend.kya      ->  undefined  ❌ (usne "kya" naam dhoonda!)
+      spend["amount"] -> 30         (seedha string bhi chalega)
+
+  ⭐ YAAD RAKHNE KA MANTRA:
+      "KEY fix ho to DOT.  KEY dabbe mein ho to BRACKET."
+
+  TV project mein BRAACKET har roz kaam aayega:
+      streamMap[channel.id]   ⬅ channel.id ek VARIABLE hai! 🎯
+
+📖 KHUD PADHO (4 min): MDN — property accessors (dot vs bracket)
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors
+
+----------------------------------------------------------------
+PART 3 — ADD / UPDATE / DELETE (3 kaam, 3 line)
+----------------------------------------------------------------
+
+    spend.note = "office wali chai";   // ➕ ADD (naya label chipka)
+    spend.amount = 35;                 // ✏️  UPDATE (label hi, rate nai)
+    delete spend.note;                 // 🗑️ DELETE (label hi ukhad)
+
+  TRY KAR (kagaz pe soch ke answer likh):
+    const book = { title: "Feluda" };
+    book.pages = 300;
+    book.title = "Badshahi Angti";
+    // ab book kya dikhega?
+  (Answer: { title: "Badshahi Angti", pages: 300 })
+
+----------------------------------------------------------------
+PART 4 — NESTED: THAALI KE ANDAR THAALI 🪆
+----------------------------------------------------------------
+
+    const channel = {
+      name: "ABP Ananda",
+      country: "IN",
+      quality: {
+        hd: "1080p",
+        sd: "480p"
+      },
+      tags: ["news", "bangla"]
+    };
+
+    channel.country        -> "IN"
+    channel.quality.hd     -> "1080p"        (thaali ke andar thaali!)
+    channel.tags[0]        -> "news"         (object KE ANDAR array —
+                                              PHASE 5B + 6 ki dosti!)
+
+  ⚠️ ANDHA ACCESS = CRASH ka raasta:
+      channel.rating.stars  →  💥 "Cannot read properties of undefined"
+      (channel.rating to HAI HI nahi — undefined par .stars manga)
+
+  GUARD (tumhare ST-wale guard ka chhota bhai):
+      if (channel.quality)  { channel.quality.hd }   ✅ safe raasta
+
+  ⭐ Yahi nested duniya: channels.json ka EK channel iske jaisa
+     dikhta hai. 31,487 objects, sab ke andar labels.
+
+📖 KHUD PADHO (5 min): javascript.info — Objects (nested wala hissa)
+   https://javascript.info/object
+   (yahi article pehla bhi hai — gold hai, save kar le)
+
+----------------------------------------------------------------
+PART 5 — OBJECT DESTRUCTURE: ST5 KA BARHA BHAI 📦
+----------------------------------------------------------------
+
+ readonly yaad hai?
+    const [head, ...tail] = list;          // ARRAY wala (ST5)
+
+ OBJECT wala iska bhai — par ye NAAM se kholta hai:
+
+    const { shop, amount } = spend;
+    shop    -> "Chai Shop"
+    amount  -> 30
+
+  POSITION ka koi matlab NAHI — sirf NAAM ka:
+
+    const { amount, shop } = spend;        // ulta likha? FARK NAHI ✅
+
+  2 AUR CHAKKU (kagaz pe):
+    const { shop: dukaan } = spend;        // naam BADAL ke nikala
+    dukaan  -> "Chai Shop"
+    const { tax = 0 } = spend;             // nahi hai to DEFAULT
+    tax     -> 0
+
+  ⭐ FUNCTION ke ANDAR seedha kholna (asli duniya mein yahi hota hai):
+    function printLine({ shop, amount }) {
+      return shop + " pe " + amount + " kharch";
+    }
+    printLine(spend)   ->  "Chai Shop pe 30 kharch"
+
+📖 KHUD PADHO (6 min): MDN — Destructuring (object wala section)
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
+
+----------------------------------------------------------------
+PART 6 — SPREAD {...} — COPY BANA KE BADLO ⭐⭐
+----------------------------------------------------------------
+
+  Pachwaa ka gyaan yaad hai? sort() ka jhaansa:
+      const copy = [...rows];   // array ki ante-grade COPY, phir sort
+
+  OBJECT ka version:
+
+      const nayaSpend = { ...spend, amount: 25 };
+
+  MATLAB: poori thaali UTAAR do NAYI thaali mein,
+          aur amount wali katori UPAR se dobara bharti do.
+
+  ASLI JAADU — original ZINDA rehta hai:
+      nayaSpend.amount  -> 25   ✅ naya badla
+      spend.amount      -> 30   ✅ purana untouched (immutability!)
+
+  ⭐ VARIABLE KEY ke saath (yehi ST2 mein kaam aayega):
+      const key = "amount";
+      const updated = { ...spend, [key]: 25 };
+      // [key] ka matlab: dabbe ke andar jo naam hai, WO label banao
+
+  KYUN YE RULE #1 HAI? Kyunki real apps (React aage chal ke)
+  PURANE data ko haath nahi lagane dete. Nayi copy banao.
+  Ye soch = immer library ka dil (PART 9 mein uska link).
+
+📖 KHUD PADHO (5 min): MDN — Spread syntax (objects wala hissa)
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+----------------------------------------------------------------
+PART 7 — Object.keys / values / entries (object pe bhi loop!)
+----------------------------------------------------------------
+
+  Array pe tu map/filter laga leta hai...
+  OBJECT pe seedha nahi chalta. To object ko PEHLE array banao:
+
+    Object.keys(spend)     -> ["date", "shop", "amount"]   (labels!)
+    Object.values(spend)   -> ["06 Oct", "Chai Shop", 30]  (cheezein)
+    Object.entries(spend)  -> [ ["date","06 Oct"],
+                                ["shop","Chai Shop"],
+                                ["amount",30] ]            (jodi-jodi!)
+
+  MANTRA: "Pehle entries nikaal, phir PHASE 5B ke saare
+           hathiyar laga de." (map/filter — sab chal jayega!)
+
+  Mini-try (kagaz pe):
+    Object.keys({name:"ABP", country:"IN", url:"x"})   -> ??? 
+    (Answer: ["name","country","url"])
+
+📖 KHUD PADHO (3 min): MDN — Object.entries()
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
+
+----------------------------------------------------------------
+PART 8 — JSON: DUNIYA SE BAAT KARNE KA TARIKA 🌍
+----------------------------------------------------------------
+
+  Sawaal: object MEMORY mein to rehta hai...
+  use FILE mein kaise rakho? INTERNET pe kaise bhejo?
+  (localStorage tera Future PIN-vault! server se aane wala data!)
+
+  JAWAB: JSON — object ko TEXT mein badal do.
+
+    const text = JSON.stringify(spend);
+    //  '{"date":"06 Oct","shop":"Chai Shop","amount":30}'   (ek string!)
+
+    const wapas = JSON.parse(text);
+    //  { date: "06 Oct", shop: "Chai Shop", amount: 30 }   (object wapas!)
+
+  ROUNDTRIP mantra:  bhejna ho  -> stringify
+                     lena  ho  -> parse
+
+  2 RULES (likh lo):
+    1. JSON mein sirf DATA — function nahi chalega, undefined
+       nahi chalega. Naam double-quote mein ("shop" — ye JSON ka
+       style hai, JS se thoda sakht).
+    2. parse GADBAD text pe CRASH karta hai — isliye Phase 7 mein
+       hum ise try/catch ki suraksha mein bharenge.
+
+  ⭐ YEHI TERA FETCH KA DIN HAI:
+     Phase 7 mein tu channels.json layega — 31,487 OBJECTS ka ek
+     array! Har channel ek object. Jo tu abhi seekh raha hai,
+     wo US DIN ka admission ticket hai. 🎫
+
+📖 KHUD PADHO (6 min): javascript.info — JSON methods
+   https://javascript.info/json
+
+----------------------------------------------------------------
+PART 9 — 🔍 REPO TRAIL: OBJECTS IN WILD (khud jaa ke dekh)
+----------------------------------------------------------------
+
+  Sacchai aankhon se — tere DAILY-RULE ke tehat:
+
+  ⭐ PROOF 1 — hls.js (jo library tera TV player banayegi!):
+      📁 https://github.com/video-dev/hls.js/blob/master/package.json
+      - line 2    :  "name": "hls.js"          (JSON object ka label)
+      - line 7-10 :  "repository": { "type":"git", "url":"..." }
+                     (OBJECT KE ANDAR OBJECT — nested, PART 4!)
+      - line 34   :  "scripts": { ... }        (POORA object — 40+
+                     labels: build, test, dev...)
+      - dekho "devDependencies": object hi hai — har package : uska
+        version. NAAM → VALUE. Yahi object hai, duniya bhar.
+      SUNO: EK ASLI COMPANY-KI LIBRARY POORI OBJECTS SE CHALTI HAI.
+      Json = zindagi ka paani hai.
+
+  ⭐ PROOF 2 — zod (tera Phase-6 LOCKED repo! 35k+ stars):
+      📁 https://github.com/colinhacks/zod
+      README khol, Ctrl+F kar:  z.object
+      Milega:
+          const User = z.object({ name: z.string() });
+      AUR SABSE ZYADA RAAZ — Ctrl+F kar: safeParse
+          const result = Player.safeParse({...});
+          if (!result.success) { result.error } else { result.data }
+
+      😱 SUN BHAI: zod RESULT OBJECT deta hai —
+                       success: true/false +  data / error
+      AUR TU DETAA HAI:  status: 200/404 +  ok:true/false + data
+      YE WAH industry ka PATTERN hai! Tere envelope = industry ka
+      ghar-Ghar ka design. TU PEHLE SE SAHI SOCH RAHA THA.
+      (zod ka poora kaam: object ka SHAPE check karna — kaunsa key
+      hai, kis type ka. ST5 mein tera filter wahi kaam chhote
+      level pe karta tha!)
+
+  ⭐ PROOF 3 — immer (immutability ke ustaad; PART 6 ka bade bhai):
+      📁 https://github.com/immerjs/immer
+      Ctrl+F: produce.  Dekhega:
+          const nextState = produce(baseState, draft => {
+            draft.amount = 25;       // jaise seedha badal rahe...
+          });
+          // ...par baseState ZINDA rehta hai — jo tu spread se
+          kar raha hai, wo immer auto-pilot pe deta hai.
+      ABHI iske andar mat ghus — sirf naam yaad rakho.
+      Tera {...spend, amount: 25} = immer ka bachpan. 🍼
+
+  ✍️  HOME-CHECK (daily rule): tino links aaj browser mein kholo.
+      Sirf DEKHNA hai — code samajhna nahi abhi. Aankh bharo.
+
+----------------------------------------------------------------
+PART 10 — AI 5-NIYAM (phir se likh rahe — LOCK hai 🔒)
+----------------------------------------------------------------
+
+  Stuck hua to: 15 min khud lad → hint maang, code mat maang →
+  samajh ke khud type kar → line-level pooch → bina dekhe
+  explain kar. Warna wo tera nahi hai, AI ka hai.
+
+----------------------------------------------------------------
+PART 11 — STAGES (yahi file ka tracker hai) 📋
+----------------------------------------------------------------
+
+  Har stage: pehle KAGAZ pe, phir code, phir expected match.
+  Guard wahi ghar ka style: fail → { status:400, ok:false }
+
+  ------------------------------------------------------------
+  STAGE 1 — ROW SE THAALI (15 min)
+  ------------------------------------------------------------
+    F. rowToObject(row)
+       -> ["06 Oct","Chai Shop",30] mila to:
+          { date:"06 Oct", shop:"Chai Shop", amount:30 }
+       -> galat input (na-array ya 3 se kam) to 400-envelope.
+
+    EXPECTED:
+      rowToObject(["06 Oct","Chai Shop",30])
+        -> { date:"06 Oct", shop:"Chai Shop", amount:30 }
+      rowToObject("hi")           -> { status:400, ok:false }
+      rowToObject(["06 Oct"])     -> { status:400, ok:false }
+
+  ------------------------------------------------------------
+  STAGE 2 — UPDATE-PRO (immutability proof!) (20 min)
+  ------------------------------------------------------------
+    G. updateSpend(spend, key, value)
+       -> NAYA object de ({...spend, [key]:value} — PART 6!)
+       -> PURANA spend BILKUL na badle.
+
+    EXPECTED:
+      const s  = rowToObject(["06 Oct","Chai Shop",30]).data;  
+      const s2 = updateSpend(s, "amount", 25);
+      s2.amount -> 25   ✅
+      s.amount  -> 30   ✅ (SABOOT: original zinda!)
+      updateSpend(s, "note", "office").note -> "office"  (nayi key ADD!)
+
+  ------------------------------------------------------------
+  STAGE 3 — DESTRUCTURE SE AWAAZ (15 min)
+  ------------------------------------------------------------
+    H. printSpend({ shop, amount })
+       -> "Chai Shop pe 30 kharch"  jo string banaye
+          (seedha destructure function ke darwaze pe!)
+
+    EXPECTED:
+      printSpend({ date:"06 Oct", shop:"Chai Shop", amount:30 })
+        -> "Chai Shop pe 30 kharch"
+
+    PAPER PE BHI (code NAHI):
+      const { shop, amount, tax = 0 } = 
+        { shop:"Zomato", amount:240 };
+      shop -> ???   amount -> ???   tax -> ???
+      (Answer PART 12 ke neeche)
+
+  ------------------------------------------------------------
+  STAGE 4 — OBJECT PE TOOLKIT (20 min) ⭐
+  ------------------------------------------------------------
+    I. listKeys(obj)   -> Object.keys(obj) ki list de
+       (guard + envelope — purana niyam!)
+
+    J. ⭐ countByShop(spendObjects)
+       input : spend objects ka ARRAY
+       output: object — dukaan : kitni baar
+       HINT: reduce (Phase 5 wala!) + bracket key [shop]
+             aur "naya count = purana ya 0 + 1" soch 
+             (acc[s.shop] hai? +1 : nahi? 1 se shuru)
+
+    EXPECTED:
+      countByShop ([{shop:"Chai",amount:30},{shop:"Zomato",amount:240},
+                    {shop:"Chai",amount:25}])
+        -> { Chai: 2, Zomato: 1 }
+
+  ------------------------------------------------------------
+  STAGE 5 — ⭐⭐⭐ THE MERGER (TV KA PILA PATRA!) (25 min)
+  ------------------------------------------------------------
+    K. mergeChannelStream(channel, streamMap)
+       input 1: channel = { id:"abp", name:"ABP Ananda", country:"IN" }
+       input 2: streamMap = { abp:"https://x.m3u8", zee:"https://y.m3u8" }
+       kaam: NAYA object banao = channel ki saari cheezein
+             + url: streamMap ka matching link
+       na mile link -> { status:404, ok:false, error:"no stream for id" }
+       guard: channel object hi hai? streamMap object hi hai?
+
+    EXPECTED:
+      mergeChannelStream(
+        { id:"abp", name:"ABP Ananda", country:"IN" },
+        { abp:"https://x.m3u8", zee:"https://y.m3u8" })
+        -> { id:"abp", name:"ABP Ananda", country:"IN",
+             url:"https://x.m3u8" }
+
+      mergeChannelStream({ id:"sony", name:"Sony" }, { abp:"..." })
+        -> { status:404, ok:false, error:"no stream for id" }
+
+    HINT: url nikalne ka raasta = streamMap[channel.id]
+          (PART 2 ka bracket — KYAA variable hai! 🎯)
+          aur spread {...channel, url: ...} (PART 6!)
+
+  📋 TRACKER (tick karte chal):
+    [ ] Stage 1 — rowToObject
+    [ ] Stage 2 — updateSpend (immutability proof)
+    [ ] Stage 3 — printSpend destructure (+ paper)
+    [ ] Stage 4 — listKeys + countByShop
+    [ ] Stage 5 — mergeChannelStream (TV merger PILA PATRA 🎬)
+
+  PHASE 6 LOCK tabhi jab 5/5 ✅ + explain-back bina dekhe.
+
+----------------------------------------------------------------
+PART 12 — AAGE KA CONNECTION 📺
+----------------------------------------------------------------
+
+  Phase 6 ke baad:
+    - 7 Oct ke PLAN/06 ka dabba #3 (MILAO) tak pahunchoge:
+      channels.json ke 31,487 objects + streams.json ke 18,139
+      objects ko id se JODNE ka engine = tera K. function ka
+      bhai-bhatija. Seedha isi stage ka bachcha hai.
+    - PHASE 7 (async): fetch → JSON.parse → merger → UI.
+      Ye sab AB KE stages par khada hai. Jaldi mat kar,
+      gehraai le — aur TV tere paas aa jayega.
+
+  STAGE 3 PAPER ANSWER:
+    shop -> "Zomato" | amount -> 240 | tax -> 0
+
+================================================================
+EK BAAT
+================================================================
+   Array ne SIKHAYA: cheezein EK LINE mein kaatna.
+   Object SIKHAYEGA: har cheez ka NAAM LENA.
+
+   Naam yaad rakhna insaan ki fitrat hai;
+   r[1] yaad rakhna machine ki.
+   Ab se tu insaan ki bhasha likhega. 💙
+
+   Par yaad — PHASE 7 ke pehle:
+     5/5 stages + har concept ka apna example bol paana.
+     "Object to seekh liya" nahi chalega —
+     "Object mein [variable] se access kyun" bolna chahiye. 🗝️
+
+   TV intezaar kar raha hai. Chalte raho. 📺🔥
+================================================================
+END — 27-OBJECTS-DEEP.txt
+================================================================

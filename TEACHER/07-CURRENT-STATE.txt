@@ -8,8 +8,9 @@
 ================================================================================
 
   Book    : 1C — JavaScript Advanced
-  Phase   : 5B — ARRAY TOOLKIT  ✅🔒 LOOOOCKED! (Stage 1→5 sab PASS, 6–7 Oct)
-  Next    : PHASE 6 — OBJECTS DEEP — Debjeet ke "START" pe (rule wahi hai)
+  🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🔥 6 CHALU — START mila 7 Oct bhor ("let do")
+  Phase   : 6 — OBJECTS DEEP (READING/27-OBJECTS-DEEP.txt, Stage 1 issued)
+  Next    : Ph6 ST1 rowToObject → ST2 updateSpend(immutable) → ... → ST5 TV-MERGER 🎬
   Bonus   : 7 Oct raat ko P1 research file ban gayi (PLAN/06, PART 0–14)
 
 ================================================================================
@@ -119,7 +120,7 @@
   5. [DONE 7 Oct 2026] PHASE 5B TOOLKIT — Stage 1→5 SAB PASS ✅🔒
      (ST3: khud 2D rows banaya + data-clean filter ⭐; ST4: immutability proof;
       ST5: map→Set pipeline + destructure; paper Q3 pe head-minus-one seekha)
-  6. ⬜ PHASE 6 — OBJECTS DEEP shuru karna (Debjeet ke "START" pe)
+  6. 🔥 PHASE 6 CHALU (7 Oct) — 27-OBJECTS-DEEP.txt; ST1→ST5 tracker file mein
   7. ✅ ULTRON frame RETIRED — Owner's Note likha (02-DESTINY file mein)
   8. ✅ NAYA LOCKED RULE: har lesson mein doc link + repo link + AI-smart niyam
      (26-file ka PART 9C — roz ka kaam)
@@ -136,3 +137,16 @@
   - Wo file nahi kholta — sab chat mein
   - Uska code ROUGH hai jab tak "final hai" na bole
 ================================================================================
+
+
+----------------------------------------------------------------
+  📌 UPDATE 7 Oct (bhor) — 2 NAYE STANDING NIYAM
+----------------------------------------------------------------
+  #17 PORTABILITY SYNC (LOCKED by Debjeet): har session ke END mein
+      saari state files (course.md + TEACHER/* + LOG + tracker)
+      sync + commit — taaki AI-limit/context khatam ho to bhi har
+      naya AI yahan se raasta utha sake. HAMESHA, har baar. 🔒
+  #18 SSH DEPLOY KEY STATUS: 5-Oct wali key environment-reset mein
+      udi. NAYI key 7 Oct banti — PUBLIC key Debjeet ko GitHub
+      repo > Settings > Deploy keys mein ADD karni hai (write ✅).
+      Tab tak commit local, push pending (uska 1-min kaam).

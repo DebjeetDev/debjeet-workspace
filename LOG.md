@@ -262,3 +262,21 @@
 
   AGLA: STILL Phase 6 — OBJECTS DEEP (USKE "START" pe — rule #16 zone)
 ================================================================
+
+================================================================
+07 Oct 2026, 04:57 AM IST — PHASE 6 START (START mila!) + 27-OBJECTS-DEEP + PORTABILITY LOCK
+================================================================
+  Debjeet: "ok let do" => PHASE 6 OBJECTS DEEP khul gaya.
+  NAYI FILE: READING/27-OBJECTS-DEEP.txt — poori deep lesson:
+    PART 0-12 (r[1]-dard hook, dot/bracket, nested, destructure,
+    spread-immutability, Object.keys/entries, JSON, repo-trail
+    (hls.js package.json live-verified, zod safeParse = tera
+    envelope pattern industry-proof!, immer seed), ST1-ST5 tracker)
+  SYLLABUS SYNC: course.md Phase6 NOW markers. TEACHER/07: niyam
+    #17 (session-end sync LOCKED) #18 (SSH key pending). course,
+    19-AUTO-PUSH, 05-GITHUB — sab synced. NIYAM 17 ke tehat ye
+    sync HAR SESSION-END mein hoga (portability guarantee).
+  SSH: nayi ed25519 key banayi; public key Debjeet ko GitHub mein
+    add karni hai (Deploy key, write). Phir push LIVE.
+  AGLA: Ph6 ST1 rowToObject (['06 Oct','Chai Shop',30] -> object)
+================================================================

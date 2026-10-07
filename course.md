@@ -44,7 +44,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
          ↓
    1B → CSS3 Full Mastery                           [S3]  ⏳
          ↓
-   1C → JavaScript Core Engine  ⭐                  [S4]  🔥 NOW (Phase 5)
+   1C → JavaScript Core Engine  ⭐                  [S4]  🔥 NOW (Phase 6)
          ↓
    1D → Tailwind CSS v4 + shadcn/ui                 [S5]  ⏳
          ↓
@@ -310,7 +310,7 @@ CSS PROJECTS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔥 BOOK 1C — JAVASCRIPT CORE ENGINE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STATUS: 🔥 ACTIVE — Phase 4 (Functions Deep) 100% DONE · Phase 5 (Arrays Deep) IN PROGRESS
+STATUS: 🔥 ACTIVE — Phase 5 (Arrays Deep + 5B Toolkit) 100% DONE ✅ · Phase 6 (Objects Deep) STARTED 7 Oct 2026
 
 TOPICS:
   PHASE 1 — VARIABLES, TYPES, MEMORY ✅ DONE
@@ -407,7 +407,7 @@ TOPICS:
   [ ] Array.from({ length: n }, (_, i) => i) — create ranges
   [ ] Set for deduplication: [...new Set(arr)]
 
-  PHASE 6 — OBJECTS DEEP ⏳
+  PHASE 6 — OBJECTS DEEP 🔥 NOW (started 7 Oct 2026 — READING/27-OBJECTS-DEEP.txt)
   [ ] Object literal, shorthand properties, computed keys
   [ ] Destructuring: const { name, age = 18 } = user
   [ ] Rename: const { name: firstName } = user

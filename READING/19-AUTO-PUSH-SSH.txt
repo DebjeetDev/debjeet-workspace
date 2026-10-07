@@ -286,3 +286,17 @@ PART 9 — TECHNICAL CONFIG (mere reference ke liye)
 ================================================================
 END — 19-AUTO-PUSH-SSH.txt
 ================================================================
+
+
+================================================================
+UPDATE: 7 Oct 2026 (bhor)
+================================================================
+  STATUS: ⏳ KEY-RoPEN PENDING
+  - 5-Oct wali private key: environment-reset mein UD GAYI (no .ssh)
+  - 7 Oct: NAYI ed25519 keypair bana di (~/.ssh/id_ed25519)
+  - origin remote restore ho gaya: git@github.com:DebjeetDev/debjeet-workspace.git ✓
+  - github.com SSH tak CONNECT hota hai ✓ (host key mila)
+  - ABHI: Permission denied (publickey) — kyunki NAYI public key
+    GitHub mein ADD karna baaki hai = DEBJEET KA 1-MIN KAAM
+  - Jaise hi key add hogi: "push kar de" bolna — system phir LIVE.
+================================================================

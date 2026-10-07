@@ -112,3 +112,12 @@
       Node >= 22.14.0, npm >= 11.5.1 chahiye, warna PUT pe 404
       "Allow npm publish" tick karna padta hai
 ================================================================================
+
+
+----------------------------------------------------------------
+  UPDATE 07 Oct 2026, 04:57 AM IST
+----------------------------------------------------------------
+  Deploy key REGENERATED (7 Oct). Purani udi thi. Nayi PUBLIC key
+  chat mein Debjeet ko de di — use repo > Settings > Deploy keys >
+  Add (write access) karna hai. Uske baad sandbox se push LIVE.
+  Private key ~/.ssh mein, .gitignore blocked (line 37) — SAFETY ✅
