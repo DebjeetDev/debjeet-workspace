@@ -233,3 +233,32 @@
 - STAGE 2 ✅ — 7/7 node-verified PASS (guard pehle, includes/some/every sahi). Nit di: callback ka naam "amounts" = shadowing, ab se `a =>`. BONUS sikhaya: [].every() === true (vacuous truth — "koi gaddar nahi to sab maante").
 - Bengali mode: Hinglish lesson se nahi samjha tha → poora toolkit BENGALI mein samjhaya → turant click hua. Yaad rakhna: jab atke, Bangla mein samjhao.
 - NEXT: Stage 3 KAL — findFirstAbove + showFirstAbove (undefined guard = khamosh qaatil wapas).
+
+
+================================================================
+07 Oct 2026 | 04:43 AM IST — 🔒 PHASE 5B LOCKED!! (Stage 1→5 sab PASS) + P1 TV RESEARCH FILE
+================================================================
+  SUBAH 2:53 AM tak phase race mode chala, subah hi LOCK:
+    ST1 ✅ sort-trap (dictionary rule)
+    ST2 ✅ some/every guards 7/7
+    ST3 ✅ findFirstAbove + showFirstAbove (undefined→404)
+        ⭐ bonus: khud SE 2D rows banayi + data-clean filter
+    ST4 ✅ topSpends — [...rows] copy se IMMUTABILITY PROOF
+    ST5 ✅ uniqueShops — map(r=>r[1])→Set→spread; envelope shape
+        (paper Q3: head nikalne pe tail.length = 4 seekha)
+
+  + RAAT KO 3 BIG DROPS:
+    1) P1 PLAN/06-WEB-TV-RESEARCH-2026.txt (299→449 lines)
+       PART 0-14: FAST landscape 2026, CORS raaz, Wisp namuna,
+       UI-clone 2 niyam, Hoichoi 3-hisse sach, 10-foot UI,
+       OTT UI ke 5 dabbe, EK-APP-TEEN-SCREEN + RACE MODE map
+    2) AI 5-niyam + docs/repo daily rule -> PART 9C (locked rule)
+    3) Stage-review ritual evolve: verify-when-shared + trusted-
+       refactor; Debjeet self-respect point accepted ✅
+
+  SKILLS OWNED NOW (Phase 5B): map filter some every find
+    sort(comparator+copy) Set destructure API-envelope vacuous-
+    truth shadowing  => SAME tools zustand/TanStack/cal.com use!
+
+  AGLA: STILL Phase 6 — OBJECTS DEEP (USKE "START" pe — rule #16 zone)
+================================================================
