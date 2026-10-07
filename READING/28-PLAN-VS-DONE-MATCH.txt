@@ -151,6 +151,64 @@ PART E — RECORD UPDATES JO AB ISKART KIYE JAANE HAIN (files)
   HONEST CHEHRA: Phases 1–5 "topic-complete + skill-proven" hain;
   "project-ladder-complete" NAHI. Aaj se tracker dono alag alag
   dikhayega. Ab koi bhi AI yeh file pade to jaanta hai sahi story.
+----------------------------------------------------------------
+PART F — SECOND PASS (LINE 1 → 1787, script-X-ray ke saath)
+         "pichhli baar bhi jo chhoota — ab sach, aur poore soch ke"
+----------------------------------------------------------------
+
+  EXTRACTION (har section machine-se gin ke pakda — aankh nahi):
+  TOTAL lines 1787 | sections 30+ | [ ] boxes ~680 (future books)
+  BOOK 0: 8 [DONE]+1 [ ] | 1A: 33 [ ] vs ✅COMPLETE | 1C: 69 [ ]+
+  61 [DONE] | ULTRON-capstone: 9 [ ] | timeline: table-stale.
+
+  NAAYE PAKDE GAYE (jo 28 ke pehle version mein NAHI the):
+
+  F1. BOOK 0 leftovers (2 line-stale): STATUS mein "Push Pending
+      Tomorrow" likha tha — HALKI push 5 Oct ko ho chuka! FIX kiya:
+      hands-on ✅ mark + Git-architecture box tick (sach mein seekha).
+  F2. BOOK 1A contradiction: STATUS ✅ COMPLETE par 33 boxes [ ]!
+      Reason: wo prior-knowledge se complete hai; checklist use hi
+      nahi hui. FIX thing likhi file mein (truth-line), boxes ko
+      jhooth-tick NAHI kiya. 🔒
+  F3. ULTRON retirement ke 3 SHEESH-STAIN baaki they: order-review
+      mein "FINAL DESTINATION ✅ PERFECT", capstone STATUS 🚀,
+      dashboard 1B "🔥 Next" (route-flex ke baad stale).  TEENO fix.
+  F4. ⭐ MASTER TIMELINE table = PURANI KALPANA. Aaj (7 Oct 2026)
+      uski nazar mein hum "Book 7" hone chahiye; real = 1C Phase 6.
+      Dekha: pace-plan se alag. FIX: table ke upar NOTE chipka diya —
+      "vision-historical, na deadline; current = RACE MODE M0-M4 +
+      12-TRACKER; re-baseline ka faisla Debjeet ka."
+  F5. Protocol-repos ka HONEST ledger (poora naam-wise):
+      mitt ✅ 5Oct | zustand ✅ | TanStack ✅ | cal.com ✅ |
+      preact ✅ | zod ✅ 7Oct | hls.js pkg ✅ | Wisp (adhoc) ✅
+      is-number ❓ skip (log nahi)  |  vercel/ms ❓ (dashboard ka
+      claim, session-log mein nahi)  |  p-retry ❌ (jaanbujh ke
+      skip — ?./object-spread = future-syntax-leak)  |  medusa 🟠
+      dead-end (path nahi mila)  |  immer ⏳ (Phase 6 plan hai)
+  F6. Dashboard "1C: 7 projects → 17 total" = TARGET-text hai,
+      built-count nahi (built ~ 5 foundation + 4A/4B/4C + vault +
+      npm-engine + P2-M01 + 5B stages ≈ 11-12 countable wins).
+      Numbers ko ab yahi matlab samajhna.
+  F7. Daily-system/Book-10/God-Loop habits = PARKED-partial
+      (paper-first ✅ karte hain; OSS-review ✅; daily-push abhi
+      setup phase). Jab 1C khatam hoga, tab strict shuru karna —
+      nahi to aaj ka focus bharta-hua ho jayega.
+
+  PART G — PER-BOOK ONE-LINE ACCOUNT (kuch bhi chhute na):
+    B0 Terminal/Internet ⏳85% (F1 fix ke baad; remaining 15% = GitHub
+       deep/OIDC — Book-0 optional blockers, non-blocking)
+    B1A HTML+A11y ✅ (prior-knowledge; F2 note sealed)
+    B1B CSS3 ⏳ (route-flex — 1C ke baad)
+    B1C JS ⭐ ACTIVE (P1-5 ✅ topics+skills, P6 🔥, P7-10 ⏳; ladder
+       backlog PART-D)
+    B1D Tailwind ⏳ | B2 3D ⏳ | B3 MERN ⏳ | B4 Testing ⏳
+    B5 AI-systems ⏳ | B6 DSA ⏳ (LeetCode-parallel Book-3 se pehle
+       mat shuru) | B7 DevOps ⏳ | B8 Brand ⏳ | B9 Job-hunt ⏳
+    B10 Introvert-playbook ♾️ parked-partial (F7)
+    ULTRON ❌ RETIRED (capstone text = record-only)
+    OSS-table: padhai chal rahi (F5 ledger) | Daily-loop 🟡 partial
+    Timeline: stale-noted (F4) | God-loop: 🟡 partial
+
 ================================================================
-END — 28-PLAN-VS-DONE-MATCH.txt
+END — 28-PLAN-VS-DONE-MATCH.txt (v2 — second pass duaara poora)
 ================================================================

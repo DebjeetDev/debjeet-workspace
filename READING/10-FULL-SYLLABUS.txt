@@ -28,7 +28,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
 ├──────┼────────────────────────────────────┼────────┼─────────────────────────────────────────────────────┼──────────────────────────────────────────┤
 │  0   │  Internet & Terminal Core          │ ⏳ 85% │  Git + GitHub Mastery (Learning Now)                │  curl/curl                               │
 │  1A  │  HTML5 + Accessibility             │ ✅ 100%│  Semantic Blog Page                                 │  whatwg/html                             │
-│  1B  │  CSS3 Full Mastery                 │ 🔥 Next│  Responsive Dev Portfolio (Pure CSS)                │  necolas/normalize.css                   │
+│  1B  │  CSS3 Full Mastery                 │ ⏳flex │ (route-flex: 1C pehle chala — LEARNING-STATE approved)  Responsive Dev Portfolio (Pure CSS)                │  necolas/normalize.css                   │
 │  1C  │  JavaScript Core Engine            │ 🔥 Now │  7 Core Logic Projects → 17 Total                   │  developit/mitt · vercel/ms              │
 │  1D  │  Tailwind CSS v4 + shadcn/ui       │ ⏳     │  20-Component Library + SaaS Landing Page           │  tailwindlabs/tailwindcss · shadcn-ui/ui │
 │  2   │  Advanced Frontend + 3D            │ ⏳     │  3D Cyberpunk Landing Page                          │  mrdoob/three.js · framer/motion         │
@@ -108,7 +108,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
       mushkil hai. Docker + CI/CD + AWS pehle = AI ship karne ki taiyaari.
       (Zyada tar log AI pehle seekhte hain aur phir deploy nahi kar paate.)
 
-  3. ULTRON FINAL DESTINATION  ✅ PERFECT
+  3. ULTRON FINAL DESTINATION — (frame RETIRED 6 Oct; ye section order-ka-rationale ab historical record hai)
       ULTRON sab kuch ka milaap hai: frontend + backend + infra + AI.
       Ye tera MAGNUM OPUS hoga.
 
@@ -122,7 +122,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ⏳ BOOK 0 — INTERNET & TERMINAL CORE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STATUS: ⏳ 85% (Git & GitHub Hands-on IN PROGRESS — Repo Ready, Push Pending Tomorrow)
+STATUS: ⏳ 85% (Git HANDS-ON seekh liya 4–5 Oct: init/commit/push/npm chal chuka ✅ — ye line purani thi)
 
 TOPICS MASTERED:
   [DONE] How Internet Works
@@ -133,7 +133,7 @@ TOPICS MASTERED:
   [DONE] MITM Attacks + SSL/TLS
   [DONE] VS Code Setup + SonarLint
   [DONE] Terminal Commands (bash)
-  [ ] Git Init + GitHub Architecture (Working Tree → Staging → Commit → Remote Push)
+  [x] Git Init + GitHub Architecture (Working Tree → Staging → Commit → Remote Push) ✅ hands-on mein prove ho gaya
 
 ACTION DONE:
   ✅ Terminal commands understood
@@ -143,7 +143,7 @@ ACTION DONE:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ BOOK 1A — HTML5 + ACCESSIBILITY
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STATUS: ✅ COMPLETE
+STATUS: ✅ COMPLETE (pehle se aata tha — Debjeet ka prior knowledge; neeche ke 33 boxes is liye tick nahi hain: wo checklist use hi nahi hui, course.md jaisi tracking yahan peeche chali gayi. Truth = COMPLETE ✅.)
 
 TOPICS:
   HTML STRUCTURE
@@ -1624,7 +1624,7 @@ OPEN SOURCE REVIEWED:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🌟 GRAND CAPSTONE — ULTRON AI v1.0  (FRAME RETIRED 6 Oct 2026 — section ko historical record ki tarah rakha; retirement note: PROJECTS/02-DESTINY)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STATUS: 🚀 FINAL DESTINATION — BUILD AFTER ALL BOOKS
+STATUS: ❌ FRAME RETIRED (6 Oct 2026 — plan text record ke liye shaant rakha hai)
 
 WHAT IT IS:
   Full-scale autonomous AI assistant that understands natural language tasks,
@@ -1743,6 +1743,11 @@ FEATURES:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📅 MASTER TIMELINE — LOCKED IN
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  📌 NOTE (7 Oct 2026): ye timeline ASPIRATIONAL thi (aur purani). Aaj real mein hum
+     Book 1C Phase 6 pe hain — table ke hisaab se 'Book 7' likha. YAANI pace plan
+     se alag hai. CURRENT schedule ka truth = PLAN/06 RACE MODE (M0–M4) +
+     TEACHER/12-MASTER-TRACKER. Re-baseline karne ka faisla = Debjeet ka, baad mein.
+     Is table ko historical-vision ki tarah padho, deadline ki tarah nahi. 🔒
 
   ┌─────────────────────┬───────────────────────┬────────────────────────────────────────┐
   │  PERIOD             │  BOOKS                │  MILESTONE                             │
