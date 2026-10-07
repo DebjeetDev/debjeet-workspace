@@ -10,8 +10,10 @@
   Book    : 1C — JavaScript Advanced
   🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🔥 6 CHALU — START mila 7 Oct bhor ("let do")
   Phase   : 6 — OBJECTS DEEP (READING/27-OBJECTS-DEEP.txt, Stage 1 issued)
-  Next    : SIRF EK KAAM — Ph6 ST1 rowToObject (baaki sab pending nahi,
-              parked/decided 7 Oct — 28-file PART D). Overload = dushman.
+  Next    : SIRF EK KAAM — Ph6 ST1 rowToObject.
+  Backlog : FOLD-FORWARD plan lock (28-file PART D): B4→Ph6 capstone,
+            B2→ST5 ke baad, B3=P2-M02, B1→Ph7-week1, S1-S3 skip.
+            Niyam #19: hurry allowed, skip NEVER (skills→project→next).
   Bonus   : 7 Oct raat ko P1 research file ban gayi (PLAN/06, PART 0–14)
 
 ================================================================================

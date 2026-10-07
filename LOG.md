@@ -358,3 +358,14 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Lesson: mentor ka kaam = student ka cognitive-load ghatana,
   badhana nahi. Niyam #1 (EK KAAM) dobara yaad aaya. 🔒
 ================================================================
+
+================================================================
+07 Oct 2026, 10:45 AM IST — FOLD-FORWARD PLAN (backlog ka permanent ilaaj, niyam #19)
+================================================================
+  Debjeet ka darr: "hurry hui to logic/understanding wale projects
+  skip ho gaye kya?" ANSWER: skills pehle prove hue (gehrai thi,
+  hurry nahi), ab projects unke NATURAL GHAR mein aayenge:
+  B4→Ph6 capstone, B2→ST5 ke baad, B3=P2-M02, B1→Ph7 week-1.
+  Niyam #19 LOCKED: "hurry allowed, skip NEVER — har skill ka
+  project uski season mein." Pace ab normal: skill→project→next.
+================================================================

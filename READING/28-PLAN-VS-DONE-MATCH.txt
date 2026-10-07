@@ -133,10 +133,27 @@ PART D — MISSING ka FAISLA (Dubby recommendation; Debjeet approve kare)
     S3. 5B-vs-P2 overlap note: agar P2 Module 02 ho gaya to 5B
         automatic cover ho jayegi — decide kar lena tab.
 
-  🔒 FAISLA HO GAYA (7 Oct, 10:30 AM) — Debjeet ne bola "u do and
-     told me" (full delegation) → Dubby RECOMMENDATION lock:
-     B1-B4 BUILD (1C/Ph6 ke baad, aaram se) · S1-S3 SKIP-approved.
-     AB KOI AUR FAISLA PENDING NAHI. Dimag khali karo. ✅
+  🔒 FAISLA HO GAYA (7 Oct) — Debjeet: "kya karu backlog? hum hurry
+     to nahi kar rahe jo logic-skip ho jaye?" → Dubby FINAL ANSWER:
+
+     KUCH SKIP NAHI HUA. Sirf ORDER badla tha humne:
+     pehle SKILLS prove kiye (hurry nahi — GEHRAI), ab projects
+     UNKE NATURAL GHAR mein banenge. Ye "FOLD-FORWARD" plan hai —
+     backlog koi alag homework nahi; ye aage ke RASTE mein hi banega:
+
+       B4 mini pub/sub  → PHASE 6 END CAPSTONE ke roop mein
+                          (objects + closures = uske liye perfect!)
+       B2 STREAM-OS Ph5 module (channel filter pipeline CODE)
+                        → ST5 (merger) ke BAAD turant — merger ke baad
+                          filter-pipeline likhna natural step hai
+       B3 Fraud detector → wahi P2 Module 02 banayega (ek hi cheez,
+                          do naam — overlap resolve ho gaya)
+       B1 Debounce+RateLimiter engine → PHASE 7 ke PEHLE week mein
+                          (uske baad hi fetch/search ka sense banta)
+       S1-S3 → SKIP locked (P7->Ph8, P8->job-time, 5B≡P2M02 ✓ B3 mein)
+
+     PACE RULE ab se: skills → unka project → phir agla skill.
+     "hurry but never skip" = locked niyam #19. ✅
 
 ================================================================
 PART E — RECORD UPDATES JO AB ISKART KIYE JAANE HAIN (files)
