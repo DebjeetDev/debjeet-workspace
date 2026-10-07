@@ -369,3 +369,15 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Niyam #19 LOCKED: "hurry allowed, skip NEVER — har skill ka
   project uski season mein." Pace ab normal: skill→project→next.
 ================================================================
+
+================================================================
+07 Oct 2026, 10:51 AM IST — NIYAM #20 PROJECT-GATE (Debjeet ne fold-forward REVERSE kiya)
+================================================================
+  Debjeet: "project as-plan strict, no skip; project bina next
+  phase nahi. pro banna hai — false/lazy stuff mat do. 😡"
+  DECISION: uska rule jeeta — strictness = pro-discipline.
+  PHASE 6 PAUSED 🧊 (abandoned nahi). STRICT J-ORDER lock:
+  J1 fraud-detector → J2 flipkart-filter → J3 mini-pub/sub →
+  J4 debounce-engine → J5 stream-os pipeline (real data) → J6 LRU.
+  P8 hi parked (non-logic). Dubby mind on record: gate > pace.
+================================================================

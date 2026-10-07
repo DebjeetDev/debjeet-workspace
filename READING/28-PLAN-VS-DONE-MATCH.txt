@@ -155,6 +155,31 @@ PART D — MISSING ka FAISLA (Dubby recommendation; Debjeet approve kare)
      PACE RULE ab se: skills → unka project → phir agla skill.
      "hurry but never skip" = locked niyam #19. ✅
 
+  🔒🔒 NIYAM #20 — PROJECT-GATE (Debjeet ka reversal, 7 Oct 11 AM):
+     "Next phase tabhi jab planned projects BANE. Strict. No skip.
+      Mujhe pro banna hai — lazy shortcut mat do."
+     → FOLD-FORWARD CANCEL. STRICT ORDER ab ye (J-series):
+
+       J1 = 5B Fraud Detector      (Set+some — pichhle skill ka
+                                    muscle; P2 Module 02 bhi yahi
+                                    — dual credit, cheating NAHI,
+                                    overlap ka smart use ✅)
+       J2 = 5A Flipkart multi-filter pipeline (filter/map/sort)
+       J3 = P6 mini pub/sub (mitt-style, 50 line, closures)
+       J4 = 4M Debounce + Rate-limiter engine (HOF+timers — hard)
+       J5 = STREAM-OS Ph5 module: ASLI channels.json pipeline
+            (fetch helper baad mein — abhi static sample data par)
+       J6 = P7 Memoize+LRU (recommended, closure+Map; small)
+       PARKED (only non-logic): P8 Intl multi-currency (sirf API,
+            logic nahi banata — 30-min wrapper jab chahoo)
+       PHASE 6 = PAUSED 🧊 (abandoned NAHI — ST1 same jagah se
+            resume hoga. Gate-rule: ladder clear → Ph6 unlock.)
+
+     MERA MIND (Dubby, on record): teri strictness hug kr layega nuksaan
+     nahi — yahi cheez hai jo "tutorial-student" aur "pro" mein fark
+     karti hai. Fold-forward pace-manage tha; GATE ab dignity-manage.
+     Jeet teri hai, order tera. ✅
+
 ================================================================
 PART E — RECORD UPDATES JO AB ISKART KIYE JAANE HAIN (files)
 ================================================================
