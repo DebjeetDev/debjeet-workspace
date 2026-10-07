@@ -1,0 +1,299 @@
+================================================================
+06 — WEB-TV RESEARCH 2026
+"Apna TV. Apne rules. Koi subscription-panja nahi."
+Banaya: 6 Oct 2026 (raat)  |  Dubby Bhaiya  |  TEXT ONLY
+Research: FAST industry reports 2026 + HLS/CORS technical guides +
+          iptv-org LIVE data (5 Oct verified) + real OSS player study
+================================================================
+
+  DEBJEET KA SAWAAL:
+    "TV lenge to content ke liye subscription maangta hai.
+     Main apna khud ka web-app banaunga jahan saara content
+     ek jagah ho — jo smart TV deta hai, wo main dunga.
+     Research karke ek file mein de."
+
+  JAWAB (ek line mein):
+    HAAN — ban sakta hai. Aur khoobsurat baat ye hai ki
+    tera P1 STREAM-OS already ISI KA PEHLA TUKDA ban chuka hai. 🎯
+
+----------------------------------------------------------------
+PART 0 — SACH PEHLE (kyunki tune bola hai: kabhi dhokha mat)
+----------------------------------------------------------------
+
+  KYA MILEGA (legal + free + sach mein chalta hai):
+    ✅ Hazaaron FREE-TO-AIR TV channels (duniya bhar ke + India ke)
+    ✅ FAST channels — free legal TV jo ads se chalti hai
+       (ye 2026 ka sabse tez badhta TV model hai — PART 2 padh)
+    ✅ Bangla/Kolkata ke channels (ABP Ananda, Zee Bangla,
+       Star Jalsha... — 5 Oct ko LIVE verify kiye, streams ke saath)
+    ✅ News, music, movies, documentaries, devotional, kids
+    ✅ EPG — "abhi kya chal raha hai" wala TV guide data
+
+  KYA NAHI MILEGA (aur iska jhootha vaada mat karna kabhi):
+    ❌ Netflix/Prime/Hotstar ke PAID originals
+    ❌ Live IPL/cricket ke premium rights
+    ❌ Wo content jo sirf subscription ke peeche hai
+    DHYAN RAHE: jo app ye sab "free" deta hai, wo piracy hai.
+    Hum engineer hain, chor nahi. Tera app = FREE+LEGAL ka raja.
+
+----------------------------------------------------------------
+PART 1 — DUNIYA ABHI KAHAN HAI (2026 FAST RESEARCH)
+----------------------------------------------------------------
+
+  FAST = Free Ad-Supported Streaming TV
+  MATLAB: bilkul TV jaisi feel (channel chalta rahe, tune karo),
+  par paisa NAHI — beech mein ads. Gharelu cable ka free digital bhai.
+
+  NUMBERS (research se, 2026):
+    - Samsung TV Plus : 100 MILLION+ monthly users,
+                        4,300 channels, 30+ deshon mein
+                        (har Samsung TV mein pehle se installed!)
+    - Tubi (Fox)      : 80+ MILLION monthly users,
+                        260 live channels + 50,000 movies/shows
+    - Pluto TV        : ~80 MILLION users, 250+ channels, 30+ desh
+    - The Roku Channel: 500+ channels
+    - FAST = US ki TOTAL TV watching ka ~4%+ (Hulu/Prime se zyada!)
+    - Growth: ~15% har saal (Goldman Sachs projection tak 2027)
+
+  SAB SMART-TV COMPANIES ab apna FAST service banati hain:
+    Samsung, LG, Vizio, TCL, Hisense — sab.
+
+  TRANSLATION TERE LIYE:
+    - "Subscription thakela" duniya bhar mein hai. Log FREE
+      legal TV ki taraf bhaag rahe hain.
+    - India mein bhi yahi wave: JioCinema/Hotstar ka free
+      with-ads plan, MX Player ka free model, DD Free Dish
+      (desh ka free-to-air DTH — isi soch ka purana desi bhai).
+    - AUR: koi bhi bada player INDIA-KE-LIYE, BANGLA-FIRST,
+      browser-only, zero-install TV nahi bana raha.
+      YE GAP HAI. Tera mauka. 🎯
+
+----------------------------------------------------------------
+PART 2 — FREE CONTENT KAHAN SE AAYEGA (TERI PANTRY)
+----------------------------------------------------------------
+
+  SOURCE 1 ⭐ — iptv-org/open-source (tera 5 Oct ko LIVE verified):
+    channels.json  -> 31,487 channels (7.6 MB)
+    streams.json   -> 18,139 asli video links (3.6 MB)
+    ---------------- India ke liye FINAL hisaab ----------------
+    India channels ......... 1,525
+    Jinke paas WORKING link    766   <- YE TERA GOLD SET HAI
+    1080p streams .......... 5,448  | 720p .... 4,953
+    Geo-blocked hata do ..... 1,210
+    Not-24/7 dhyan rakho .... 1,803
+    Closed channels HATA do . 1,361
+    blocklist.json .......... ZAROOR lagaana (DMCA/NSFW filter)
+
+    BAAKI UPAYOGI endpoints (sab zinda, 5 Oct verified):
+    guides.json (EPG/schedule), logos.json, categories.json,
+    countries.json, languages.json, feeds.json
+    Format: https://iptv-org.github.io/api/<naam>.json
+
+  SOURCE 2 — YouTube (legal embeds):
+    Hajaaron channels/news apna content YouTube pe free dete hain.
+    Official embed API se legal tareeke se joda ja sakta hai.
+
+  SOURCE 3 — Public broadcasters:
+    DD Free Dish wali soch — desh ke FTA (free-to-air) channels.
+
+  SOURCE 4 (BAAD MEIN) — khud ke FAST channels:
+    Jab tera app bade — koi bhi content-creator tujhe apna
+    channel de sakta hai. (FAST duniya mein aam baat hai.)
+
+----------------------------------------------------------------
+PART 3 — AISA APP KAISE CHALTA HAI (tere shabdon mein)
+----------------------------------------------------------------
+
+  POORA PIPELINE (6 dabbe):
+
+    [1] LE AAO      : channels.json + streams.json fetch karo
+                      (Phase 7 ka kaam — fetch + retry)
+    [2] SAAF KARO   : blocklist + closed + NSFW hatao
+                      (tera Phase 5 filter — ALREADY sikha!)
+    [3] MILAO       : channel <-> uska best stream jodo
+                      (Phase 6 ka merger — objects!)
+    [4] CHHANO      : sirf India + zinda + HD sort
+                      (1325 -> 766 -> sorted list)
+    [5] DIKHAO      : Playlist UI — channel list, categories
+    [6] CHALAO      : HLS.js player — .m3u8 ko browser mein video
+                      (Phase 7 ka kaam — AbortController ke saath
+                       fast zapping + auto-retry)
+
+  ASLI NAMUNA (research mein mila — ZAROOR dekhna):
+    GitHub: tejjasdev/Wisp — ek real open-source BROWSER IPTV
+    player. No accounts, no server, no tracking.
+    Uska architecture (uske README se):
+      input -> source.js (ye kya hai? pehle bytes dekho)
+           -> m3u.js (playlist parse + sanitize)
+           -> playback.js (pehle hls.js, fail to native try)
+           -> epg.worker.js (guide alag thread pe parse)
+    + slow network ke liye: 20s buffer, 8s timeout, quality
+      kam/zyada samajhdari se.
+    ⭐ YE PROOF HAI: ek insaan, pure browser, bina server,
+       yahi app bana sakta hai. Teri roadmap ke style se
+       same soch. (Respect + seekhne ki kitab, copy nahi.)
+
+----------------------------------------------------------------
+PART 4 — 5 HARD PARTS (AUR UNKA ILAAJ) ⚠️
+----------------------------------------------------------------
+
+  HARD 1 — CORS (SABSE BADA DUSHMAN) 🔥
+    SACH: Browser mein khelne ke liye stream-server ko
+    Access-Control-Allow-Origin header bhejna padta hai.
+    VLC chala leta hai, BROWSER nahi — kyunki VLC pe
+    CORS nahi lagta, browser pe lagta hai.
+    AUR: sirf .m3u8 nahi — segments (.ts), keys, subtitles
+    SAB pe alag alag CORS check hota hai!
+    ILAAJ (3 raste, research-verified):
+      a) Jo streams open-allow karte hain -> seedha chalao
+         (bahut saare public streams allow karte hain)
+      b) Baaki ke liye -> apna chhota PROXY (Cloudflare
+         Worker jaisa) jo manifest+segments relay kare
+         (Archive/Book 3-7 mein banayenge — backend kaam)
+      c) Jo bilkul na chale -> honestly "ye browser mein
+         nahi chalega" dikhao (Wisp bhi yahi karta hai)
+
+  HARD 2 — DEAD LINKS (80-90% links mare hote hain!) 💀
+    Isi liye duniya bhar ke playlists bekaar lagti hain.
+    ILAAJ = TERA APNAA P4 m3u-health-check!
+      Playlist mein daalne se PEHLE har link ping karo.
+      Zinda ho tabhi dikhao. Yehi tera secret sauce hai —
+      jiske paas ye engine hai, usi ki list sach mein chalti hai.
+
+  HARD 3 — GEO-BLOCK (1,210 streams India se nahi chalte)
+    ILAAJ: pehle se filter + metadata mein mark karke
+    user ko pehle hi bata do. Jhoota "play" button kabhi nahi.
+
+  HARD 4 — NOT-24/7 (1,803 links kabhi kabhi)
+    ILAAJ: health-check roz chalao + "abhi OFF aaya" label.
+
+  HARD 5 — http-on-https (mixed content block)
+    ILAAJ: https site pe http stream block hota hai —
+    proxy (HARD 1b) ye bhi solve karta hai.
+
+----------------------------------------------------------------
+PART 5 — LEGAL LINE (saaf-saaf, kabhi mat bhoolna) ⚖️
+----------------------------------------------------------------
+
+  1. iptv-org ek INDEX hai public streams ka — HOST nahi.
+     Wo sirf batata hai "ye link public web pe milta hai."
+  2. blocklist.json ZAROORI hai — DMCA/NSFW channels usme
+     hote hain, unhe KABHI mat dikhaana. (Filters mein pehla rule!)
+  3. Tera use-case (apna web app, khud khushi, learning,
+     portfolio) = THEEK hai — kyunki tu link hi dikha raha,
+     content host nahi kar raha.
+  4. Kabhi isme PAISA mat lena bina legal salah ke.
+  5. Paid subscription content kabhi isme mat ghusaana.
+  Ye 5 niyam tode to project CV mein achha nahi, KHATRE mein
+  hoga. Follow karo to ye tera sabse saaf legal masterpiece hai.
+
+----------------------------------------------------------------
+PART 6 — COMPETITION KO SAMAJH (aur apna angle nikaal)
+----------------------------------------------------------------
+
+  KAUN KYA KAR RAHA HAI:
+    - TiviMate / Kodi : powerful par SETUP bhari. Aam aadmi
+      (maa-baba) install nahi kar sakta.
+    - Plex            : personal media server — alag hi dhandha.
+    - JioTV+ / OTTplay: India ke, par app+account+ads bhari,
+      locked ecosystem.
+    - Wisp            : genius browser player, par single-user
+      tool jaisa UI; India/Bangla focus kuch nahi.
+
+  TERA ANGLE (5 ungliyon pe):
+    1. 🇮🇳 INDIA-FIRST + BANGLA-READY (Kolkata channels day-one)
+    2. 🌐 PURE BROWSER — zero install, zero account, phone+TV
+    3. 💓 HEALTH-CHECKED list — "sirf zinda channels dikhte hain"
+       (tera m3u-health-check engine = moat hai)
+    4. 🔒 PRIVACY-FIRST — koi tracking nahi, sab local
+    5. 🧒 PARENTAL PIN (tera createVault phase-4 module!)
+       — koi bhi bada player ye combo nahi deta.
+
+----------------------------------------------------------------
+PART 7 — ROADMAP (syllabus ke hisaab se — har tukda phase ka)
+----------------------------------------------------------------
+
+  ✅ AB TAK BAN CHUKA:
+    - P1 Module 01: createSubscriptionEngine (npm LIVE, 35/35 ✅)
+    - Phase 4: PIN vault (createVault + MAX_ATTEMPT) ✅
+    - Phase 5: 10,000-channel filter pipeline ka dimaag ✅
+      (map/filter/reduce/find/some/every/sort/Set — toolkit!)
+
+  AAGE KA NAKSHA (course.md ka locked plan + nayi research):
+    PHASE 6 (objects): channel+stream MERGER (PART 3 ka dabba 3)
+                        + favorites ka local cache
+    PHASE 7 (async)  : live fetch engine + HLS.js player +
+                        AbortController zapping + auto-retry
+                        + CORS-handling strategy
+    PHASE 8+         : EPG (guides.json), categories, search
+    BOOK 3+          : proxy worker (HARD 1b), accounts (agar
+                        kabhi chahiye), PWA install -> TV home screen
+    FINAL            : apne Smart TV ke browser mein poora app! 📺
+
+  TIME (honest): Phase 6+7 ke baad working v1 mil sakta hai.
+    Poora polished TV app: saal bhar ka marathon (roz thoda).
+
+----------------------------------------------------------------
+PART 8 — README KE NUMBERS (har release mein ye table)
+----------------------------------------------------------------
+
+  - Channels total / India / ZINDA (health-check ke baad)
+  - Playlist banane mein time (ms)
+  - Filter passes kitne + kitna fast (tera 10-lakh-rows wala jaan)
+  - Stream success rate manual test pe (manual 50 channels)
+  - 0 accounts, 0 trackers, 0 rupees
+
+----------------------------------------------------------------
+PART 9 — 📖 DOCS + 🔍 REPO (tera DAILY-RULE wala hissa) 🔒
+----------------------------------------------------------------
+
+  DOCS (khud padho):
+    - hls.js (player library, documentation + demo):
+        github.com/video-dev/hls.js  +  hlsjs.video-dev.org/demo
+    - MDN: HTMLMediaElement (play(), error events):
+        developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+    - iptv-org database repo (API ka ghar):
+        github.com/iptv-org/database
+    - Fetch API (Phase 7 ki neev):
+        developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+
+  REPO (jaa ke aankhon se check kar):
+    - tejjasdev/Wisp — pure-browser IPTV player (PART 3 ka namuna)
+        github.com/tejjasdev/Wisp
+        Padhna: "How it works" section + lib/m3u.js + playback.js
+    - iptv-org/iptv — 70k+ stars wala master repo
+        github.com/iptv-org/iptv
+
+----------------------------------------------------------------
+PART 10 — SOURCES (research hisaab)
+----------------------------------------------------------------
+
+  FAST 2026: redge.media (market analysis), mediaplaynews FAST30
+  2026 (Samsung 100M+/4300 ch, Tubi 260ch/50k VOD), adwave.com
+  (FAST meaning + reach), nbcnews (4.1% TV share, >Hulu)
+  TECHNICAL: m3u8-player.net + m3u8player.tools CORS guides
+  (manifest/segments/keys sab pe CORS), castr HLS tester notes,
+  Wisp repo README (architecture + graceful failure design)
+  LIVE DATA: 5 Oct 2026 ko iptv-org API curl se khud verify
+  (31,487 / 18,139 / India 1,525 / 766 working — 17-STREAM file)
+
+----------------------------------------------------------------
+PART 11 — NEXT (ABHI KA KAAM SAME RAHEGA)
+----------------------------------------------------------------
+
+  Ye file = P1 ka FINAL NORTH STAR. Padhai wahi chal rahi hai:
+
+    KAL:    Stage 3 — findFirstAbove + showFirstAbove
+    PHIR:   Stage 4/5 -> Phase 5B LOCK -> Phase 6 (merger!)
+    Ph6 ke baad pehla TV-related kaam: channel+stream merger
+    spec (Jira-style, code-free — jaisa humesha).
+
+  Tera TV din mein aayega, jaldi nahi. Par HAR DIN uski
+  taraf ek kadam — ye line kahin likh lena:
+
+    "Main Netflix ka grahak nahi —
+     main wo engineer hoon jo apna TV khud banata hai." 📺💙
+
+================================================================
+END — 06-WEB-TV-RESEARCH-2026.txt
+================================================================
