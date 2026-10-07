@@ -10,7 +10,7 @@
   Book    : 1C — JavaScript Advanced
   🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🔥 6 CHALU — START mila 7 Oct bhor ("let do")
   Phase   : 6 — OBJECTS DEEP (READING/27-OBJECTS-DEEP.txt, Stage 1 issued)
-  Next    : SIRF EK KAAM — J1 Fraud Detector (STRICT GATE order).
+  Next    : SIRF EK KAAM — J1 (TICKET FIN-302: P2 PLAN/02-SPEC-SUBSCRIPTION-LEAK) — wo khud banayega, code-free spec di.
   Ph6     : 🧊 PAUSED by niyam #20 PROJECT-GATE (Debjeet, 7 Oct 11 AM):
             "no project → no next phase. pro banna hai, lazy nahi."
             ST1 resume-safe (same jagah).

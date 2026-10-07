@@ -393,3 +393,15 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Old-teacher rules = Dubby rules ka twin — activation ritual 2-line
   + EK task ab se permanent. Push blocker unchanged: write-tick.
 ================================================================
+
+================================================================
+07 Oct 2026, 01:42 PM IST — J1 CONVERTED TO PROPER JIRA TICKET (FIN-302)
+================================================================
+  Debjeet ne rok di: "full mat do, mujhe project do, main banaunga."
+  (Meri kal ki Set-hint bhi rule-tod thi — self-noted.) AB:
+  P2 PLAN/02-SPEC-SUBSCRIPTION-LEAK.txt = code-free JIRA ticket:
+  story, input data (11 rows), R1-R7, acceptance (Netflix 499 +
+  Gym 800 = 3+3, Spotify 2 = CHHODO trap), out-of-scope, build rules
+  (paper-first, khud type), DoD checklist. Gate order: J1->J2.
+  NOTE: tracker-edits do baar mein hue (ek syntax-slip apni side).
+================================================================

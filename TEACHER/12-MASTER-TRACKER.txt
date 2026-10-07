@@ -90,8 +90,9 @@ C. PROJECTS (00-INDEX ka asli haal)
   P3 / P4 / P5 ................. ⬜ plan-only (00-INDEX mein naam)
 
   ⚠️ PROJECT-LADDER BACKLOG (7 Oct audit, READING/28 = poori match):
-    B1 4M Debounce/Rate-limiter ⭐⭐⭐ | B2 Ph5 STREAM-OS module CODE
-    B3 5B Fraud Detector | B4 P6 mini pub/sub
+    STRICT J-GATE (niyam #20, 7 Oct 11AM): J1 fraud (FIN-302 🟡 chalu) ->
+    J2 flipkart-filter -> J3 pub/sub -> J4 debounce (=B1) -> J5 stream-os
+    module (=B2) -> J6 LRU opt. Ph6 PAUSED till ladder. (B-x = purane labels)
     SKIP-noted: S1 P7(->Ph8) S2 P8(Intl) S3 (5B≡P2M02)
     Phases 1-3 ka code workspace mein nahi (machine-side raha).
     FAIR RULE: topics ✅ aur ladder ✅ ab alag-alag maane jaayenge.
