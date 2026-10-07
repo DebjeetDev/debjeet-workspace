@@ -383,6 +383,67 @@ PART 13 — OTT UI KE 5 DABBE (ANATOMY LESSON) 🧩
   UI ka hissa BOOK 1 mein block-by-block banayenge —
   aur har dabba tere aaj ke array-skills pe tika hoga.
 
-================================================================
-END — 06-WEB-TV-RESEARCH-2026.txt (PART 0-13)
+----------------------------------------------------------------
+PART 14 — EK APP, TEEN SCREEN (Phone + Tab + TV ka raaz) 📱💻📺
+          + RACE MODE: speed ka sach (Debjeet ka sawaal, 7 Oct)
+----------------------------------------------------------------
+
+  SAWAAL: "Phone, tab, TV — sab pe? Kaise? Jaldi?"
+  JAWAB-1 (GOOD NEWS): 3 alag app NAHI banane padte! ⭐
+    TERA PLAN = EK hi web app, 3 roop:
+      - PHONE/TAB : same app, responsive design (screen ke
+                    hisaab se columns badalte hain — CSS media
+                    queries, BOOK 1 ka skill hai)
+      - DESKTOP   : same app, bada layout
+      - TV        : SAME app + "10-FOOT MODE" (PART 12) +
+                    PWA install hone pe TV ke home screen pe icon
+    Web app hi yehi to kamaal hai: EK codebase -> SAB jagah.
+    Netflix/Hotstar bhi isi tareeke chalte hain (web pe).
+    ⭐ Isliye time bachega: 3x kaam nahi, 1.2x kaam.
+
+  JAWAB-2 (SPEED KA KADWA SACH): 🧪
+    Jaldi ka asli formula "kuch skip karo" NAHI hai —
+    formula hai "ROZ, no gap". Ye project TERA skill pe
+    chalti hai, AI ke haath pe nahi (PART 9C rule locked).
+    Jo speed AI ki tapasis dikhaye — wo interview ke din
+    katauti kar degi. ISLIYE: hum SPEED bada rahe hain,
+    par SMART tarike se:
+
+  SPEED KE 4 ASLI LEVERS:
+    1. ROZ 90 MIN, ZERO GAP — (daily chhota break bada
+       weekend-warrior se 10x tez hai)
+    2. DEMO-DRIVEN milestones — har kuch hafte KUCH DIKHTA
+       hai jo dost ke phone pe khul sake (motivation fuel)
+    3. DETOURS BAND — humne syllabus pehle hi trim kar
+       diya hai (21 reading files = sirf zaroori)
+    4. EK FILE, EK PROJECT — har phase ka output isi
+       STREAM-OS mein jaana (particles jama hote rahenge)
+
+  FALSE LEVER (kabhi mat chhuna): ❌
+    "AI se poora likhwa dete hain" — wo project tera hoga hi
+    nahi, CV pe bomb banega. Tera rule #0 dhokha nahi.
+
+  MILESTONE MAP (roz 90-min mode pe — andaaza, commit nahi):
+    M0  ~3-5 DIN   : Phase 5B LOCK (Stage 3,4,5 — tu yahan hai)
+    M1  ~4-6 HAFTA : Phase 6 (objects: merger) + Phase 7
+                     (fetch + HLS player) => "pehli screen pe
+                     khud ka fetch karke live channel chale"
+    M2  ~8-10 HAFTA: v0.1 PEHLA DEMO — dost apne phone pe
+                     khole: ~100 zinda Bangla/Hindi channels,
+                     logos, tap-to-play, PIN lock. (ye DIN
+                     tu yaad rakhega 📸)
+    M3  ~3-5 MAHINA: BOOK 1 UI => responsive + 10-foot + PWA
+                     => TV pe install, apne ghar mein chalta
+    M4  6-12 MAHINA: polish, EPG, proxy (HARD 1b), v1.0
+
+  "JAISE KOI AUR NAHI" ka MATLAB (imaandari se): 🏆
+    Koi TUMHARE hisaab se perfect TV duniya mein nahi bana
+    sakta — lekin TU apne liye bana sakta hai. Tera combo
+    (PART 6: India/Bangla-first + zinda-only channels +
+    privacy + zero-account + PIN + teen-screen ek app)
+    aaj market mein kisi ke paas nahi hai. Slow-and-organized
+    hi is race ka asli dhaago hai.
+
+----------------------------------------------------------------
+END — 06-WEB-TV-RESEARCH-2026.txt (PART 0-14)
 ================================================================
