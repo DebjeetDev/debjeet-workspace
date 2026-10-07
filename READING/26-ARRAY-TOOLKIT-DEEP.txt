@@ -991,7 +991,7 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
   CODE:
     [✅] Stage 1 — paper answer (bin comparator sort)      (6 Oct, raat — order bilkul sahi ✅)
     [✅] Stage 2 — hasSpend / anyAbove / allUnder (guards ke saath)   (6 Oct — 7/7 PASS, node-verified)
-    [ ] Stage 3 — findFirstAbove + showFirstAbove (undefined guard)
+    [✅] Stage 3 — findFirstAbove + showFirstAbove (undefined guard)   (7 Oct — 3A logic node-verified 4/4 ✅, 3B split trusted ✅; bonus: khud 2D rows banaya + data-clean filter 5/r⭐)
     [ ] Stage 4 — topSpends (immutability proof ke saath)
     [ ] Stage 5 — uniqueShops + head/tail paper
 
