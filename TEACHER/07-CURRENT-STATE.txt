@@ -10,7 +10,8 @@
   Book    : 1C — JavaScript Advanced
   🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🔥 6 CHALU — START mila 7 Oct bhor ("let do")
   Phase   : 6 — OBJECTS DEEP (READING/27-OBJECTS-DEEP.txt, Stage 1 issued)
-  Next    : Ph6 ST1 rowToObject → ST2 updateSpend(immutable) → ... → ST5 TV-MERGER 🎬
+  Next    : SIRF EK KAAM — Ph6 ST1 rowToObject (baaki sab pending nahi,
+              parked/decided 7 Oct — 28-file PART D). Overload = dushman.
   Bonus   : 7 Oct raat ko P1 research file ban gayi (PLAN/06, PART 0–14)
 
 ================================================================================

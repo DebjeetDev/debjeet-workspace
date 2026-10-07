@@ -346,3 +346,15 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
  PART G per-book account added. Lesson: pehli baar skim nahi —
  '1st line to N' maang to machine-extraction se poora karo.
 ================================================================
+
+================================================================
+07 Oct 2026, 10:43 AM IST — OVERLOAD MANAGE (Debjeet: 'all goes out of mind, u do')
+================================================================
+  Haal: bahut threads (SSH tick, backlog faisla, ST1, timeline...)
+  ek saath => brain full. Dubby response: SAB DECIDE kar diya +
+  EK HI KAAM diya. Backlog lock (B1-B4 build later, S1-S3 skip).
+  SSH write-tick = LOW priority (kabhi bhi ho jaye, abhi mat soch).
+  SOLE PENDING ACTION ON HIM: Ph6 ST1 rowToObject. Bas.
+  Lesson: mentor ka kaam = student ka cognitive-load ghatana,
+  badhana nahi. Niyam #1 (EK KAAM) dobara yaad aaya. 🔒
+================================================================
