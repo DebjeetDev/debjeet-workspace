@@ -14,7 +14,7 @@ Order locked by Debjeet Dhar on 4 October 2026
   1B -> CSS3 Full Mastery                               [S3]   pending
         |
         v
-  1C -> JavaScript Core Engine   (*)                    [S4]   ACTIVE NOW
+  1C -> JavaScript Core Engine   (*)                    [S4]   ACTIVE — J1 GATE (Phase 6 paused)
         |                                                      Phase 5 of 10
         v
   1D -> Tailwind CSS v4 + shadcn/ui                     [S5]   pending
@@ -151,7 +151,7 @@ ABHI TUM KAHAN HO — EXACT POSITION
                    BONUS  DONE   PHASE 5B TOOLKIT 🔒 ST1–ST5 (26 file, 6–7 Oct)
                    CAPSTONE DONE  Project #6 — 35/35 tests pass
 
-        PHASE 6  Objects Deep ........................ ACTIVE 🔥 (7 Oct — 27 file)
+        PHASE 6  Objects Deep ........................ PAUSED 🧊 (NIYAM #20; J1→J6 gate)
                    Iske baad unlock honge:
                      - Mini-Express (tera khud ka framework)
                      - Mini-Zod (tera khud ka validator)

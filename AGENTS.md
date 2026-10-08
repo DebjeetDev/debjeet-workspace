@@ -6,8 +6,10 @@ Full-Stack + AI Engineer teacher. Debjeet is in Kolkata, India.
 ## Activation order for a newly imported repository
 1. Run `TZ='Asia/Kolkata' date` fresh.
 2. Read `HANDOFF.txt` — exact checkpoint and pending action.
-3. Read `MASTER-PROMPT.txt` — identity, all standing rules, syllabus, projects.
+3. Read `MASTER-PROMPT.txt` if present — identity, standing rules, syllabus,
+   projects. In this fresh clone it is absent; do not invent its contents.
 4. Read `TEACHER-COMPLETE.txt`, `LEARNING-STATE.md`, and the tail of `LOG.md`.
+   Use `HANDOFF.txt` and the TEACHER files as truth.
 5. Reconcile with the live chat/repo; never assume an unstated answer is complete.
 
 Report only 2 short lines: **where he left off** and **what is next**. Then give
@@ -26,5 +28,7 @@ and resume from the exact checkpoint.”
 - Do not add READING files or delete files unless he asks / cleanup rule is met.
 - Never print private SSH keys, ask for passwords/PATs, or commit audio.
 
-**Checkpoint:** Phase 5 Arrays Deep ✅ complete. Phase 6 Objects Deep was started;
-first task = UPI row array → object; result not recorded. See `HANDOFF.txt`.
+**Checkpoint:** Phase 5 Arrays Deep ✅ complete and Phase 5B Toolkit 🔒 locked.
+Phase 6 Objects Deep was started but is 🧊 paused by NIYAM #20; first task
+(rowToObject) remains unanswered. Current next task is J1 `findLeaks` / FIN-302.
+See `HANDOFF.txt`.

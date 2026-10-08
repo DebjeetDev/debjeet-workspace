@@ -3,7 +3,7 @@ PROJECTS  —  SYSTEMATIC FOLDER
 "READING = padhne ki library  |  PROJECTS = asli kaam"
 ==============================================================================
 
-    Last updated: Monday, 5 October 2026 (subah)
+    Last updated: Thursday, 8 October 2026 (verified via date)
 
 
 ==============================================================================
@@ -15,6 +15,19 @@ DO ALAG CHEEZEIN (Confuse mat hona)
 
     PROJECTS/    ->  Asli code, specs, tests, resources
                      (BANANE ke liye. Ye NAYA systematic folder hai.)
+
+
+==============================================================================
+CURRENT GATE — NIYAM #20 (8 October 2026)
+==============================================================================
+
+    Phase 5 Arrays + Phase 5B Toolkit  : DONE / LOCKED
+    Phase 6 Objects                    : PAUSED (started, not abandoned)
+    Active strict order                 : J1 FIN-302 findLeaks -> J2 -> J3
+                                          -> J4 -> J5 -> J6
+    P2 findLeaks implementation        : ABSENT; the code-free ticket is
+                                          PLAN/02-SPEC-SUBSCRIPTION-LEAK.txt
+    Debjeet writes first; no J1 completion is marked without proof.
 
 
 ==============================================================================
@@ -72,7 +85,7 @@ P1 — STREAM-OS  (FLAGSHIP)
 
     STATUS:   Billing engine DONE (35/35 tests) + npm LIVE v1.0.0 (5 Oct)
               PLAN/06-WEB-TV-RESEARCH-2026.txt added (7 Oct — FINAL NORTH STAR)
-              TV app PENDING (Phase 5 se shuru)
+              TV app PENDING (project ladder gate ke baad)
 
     KYA HAI:  Smart TV ke liye free live TV
 
@@ -104,8 +117,8 @@ P2 — UPI LEAK DETECTOR
 
     SKILLS:   Sirf Phase 1-5 (arrays, map, filter, reduce)
 
-    PEHLA KAAM:  src/leak.js mein 2 functions
-                 getAmounts() + getTotalSpend()
+    NEXT TICKET:  PLAN/02-SPEC-SUBSCRIPTION-LEAK.txt (FIN-302)
+                  `findLeaks` — code abhi absent; Debjeet pehle likhega.
 
 
 ==============================================================================

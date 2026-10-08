@@ -432,3 +432,33 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   ticket + EN twin — TOTAL ~15+ commits ek sathe.
   HANDOFF/07 status update kore final commit-push korbo.
 ================================================================
+================================================================
+08 Oct 2026, 10:39 AM IST — STATE RECONCILIATION + SSH SETUP (PROOF)
+================================================================
+  Fresh canonical clone remains /home/user, main at 46c6e83 before this
+  state-sync edit. The complete tracked-file read audit had already proved
+  74 tracked files, 73 UTF-8 text + 1 binary, 1,209,612 bytes, 19,070 lines,
+  zero read errors. Frozen uploads were not edited.
+
+  STATE SYNC:
+  README, HANDOFF, AGENTS, course.md, LEARNING-STATE, PROJECTS/00-INDEX,
+  TEACHER/05, TEACHER/07, TEACHER/12, TEACHER-QUICK, TEACHER-COMPLETE,
+  CATALOG, READING/01, READING/10, READING/19, and READING/28 now state
+  the verified truth: Phase 5 + 5B
+  locked; Phase 6 started but paused by NIYAM #20; J1 FIN-302 findLeaks is
+  next; no J1 implementation or completion was invented.
+
+  SSH:
+  Old environment key was absent. Generated a fresh ED25519 key at
+  ~/.ssh/github_backup; fingerprint SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo.
+  Configured ~/.ssh/config, known_hosts, and origin as
+  git@github.com:DebjeetDev/debjeet-workspace.git. Private key was not
+  printed, tracked, or committed. Public key still needs GitHub Deploy keys
+  registration with write access.
+
+  PROOF / LIMIT:
+  GitHub host verification succeeded. `ssh -T git@github.com` returned
+  `Permission denied (publickey)` because the public key is not registered.
+  Therefore no successful ls-remote or push is claimed. After registration,
+  verify ssh -T, git ls-remote origin, then push only if needed.
+================================================================

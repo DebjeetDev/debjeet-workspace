@@ -1,6 +1,6 @@
 # 🧠 DEBJEET DHAR — LEARNING STATE
 
-**Last Updated:** 4 October 2026 (Night Session)  
+**Last Updated:** 8 October 2026 (verified via fresh Asia/Kolkata date)
 **Mentor Stance:** Dubby Bhaiya 💙 — Truthful, Patient, Zero Skipping, Zero Fake Flattery  
 **Student:** Debjeet Dhar (Kolkata, India)  
 **True Background (Crucial Context):**
@@ -9,6 +9,16 @@
 - **Breakthrough Achieved:** By rebuilding from 0, he is NOW writing logic with his own hands (`findMax`, `formatUpiPayment`, `createPiggyBank`, `createVault`) AND spotting security/backend edge cases (`cinemawatch === 0`, `deposit` PIN check, `MAX_ATTEMPT = 3` server flood protection) independently!
 - **How to Teach Him Now:** Respect his existing awareness of Backend/React/Next.js! Focus 100% on **Self-Written Pure Logic Mastery + Security/Edge-Cases + Company-Level Code Optimization + Real OSS Repo Reviews** (Zero UI fluff — Debjeet gets real satisfaction and confidence from writing bulletproof, secure pure logic!).
 **Primary Rule:** বাংলায় বোঝা / Hinglish + Clear English · প্রতিটা স্টেপ নিজে বুঝে সামনে এগোনো
+
+
+## CURRENT OVERRIDE — 8 October 2026
+- Canonical workspace: `/home/user`, fresh clone at `main` / `46c6e83` before this state sync.
+- Phase 5 Arrays + Phase 5B Toolkit: ✅ complete and 🔒 locked.
+- Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
+- Active order: J1 `findLeaks` / FIN-302 → J2 → J3 → J4 → J5 → J6.
+- No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
+- SSH key was regenerated locally; GitHub registration and `ls-remote`/push proof are still pending.
+Older dashboard text below is historical context; this override is current truth.
 
 
 ---
@@ -42,7 +52,7 @@
    Step 6 ✅ `.find()` — ST3 findFirstAbove (7 Oct)
    CAPSTONE ✅ Project #6 `createSubscriptionEngine` (Ticket FIN-204) — 35/35 tests pass!
 3. **✅ DONE (5 Oct):** GitHub push + npm publish — `stream-os-engine@1.0.0` LIVE (neeche Milestone section dekho).
-4. **🔥 ACTIVE NOW (7 Oct 2026):** **Book 1C — JS Phase 6 (Objects Deep)** — READING/27-OBJECTS-DEEP.txt, ST1 rowToObject issued. → unlocks Mini-Express, Mini-Zod, STREAM-OS merger.
+4. **🧊 PAUSED (8 Oct 2026):** Book 1C Phase 6 Objects was started, but NIYAM #20 gates it behind J1→J6. Current next: J1 FIN-302 `findLeaks`.
 5. **⏳ THEN:** Phases 7–10 → **Book 1B (CSS3 Full Mastery)** → Books 2–10.
 
 ## 🎯 OFFICIAL PROJECT WEEK (Locked — Starts After Phase 5 Completes)
@@ -107,7 +117,7 @@
 - Phase 6 START mila (Debjeet: "ok let do"); 27-OBJECTS file ready (PART 0–12 + tracker).
 - P1 PLAN/06-WEB-TV-RESEARCH-2026.txt (7 Oct) — FINAL NORTH STAR of his web-TV dream
   (FAST 2026 research, CORS, UI-clone rules, EK-APP-TEEN-SCREEN + RACE MODE).
-- Niyam #17 LOCKED: har session-end portability sync. Niyam #18: SSH deploy key Debjeet-ko-add pending.
+- Niyam #17 LOCKED: har session-end portability sync. Niyam #18: fresh SSH key exists locally; public half still must be added to GitHub with write access.
 
 
 ## 📌 ROUTE-FLEX OFFICIAL (record 7 Oct): 1B (CSS) se PEHLE 1C (JS) chala.

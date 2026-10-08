@@ -9,16 +9,26 @@ This is not a code dump. It is a **complete, organised learning system**:
 every reading file, every project plan, every line of real code —
 backed up daily so nothing is ever lost.
 
+## Current checkpoint — 8 October 2026
+
+- Phase 5 Arrays + Phase 5B Toolkit: **complete and locked**.
+- Phase 6 Objects: **paused by NIYAM #20**, not abandoned.
+- Active strict order: **J1 FIN-302 `findLeaks` → J2 → J3 → J4 → J5 → J6**.
+- `findLeaks` is not implemented yet; the code-free ticket is in
+  `PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/`.
+- SSH is configured locally, but the public key still needs GitHub Deploy keys
+  registration with write access; no push success is claimed until `ls-remote`
+  is verified.
+
 ## Structure
 
 | Folder | What lives inside |
 |---|---|
-| `READING/` | The library — 20 plain-text study files, read in order (`00` → `19`) |
+| `READING/` | The library — the current plain-text syllabus, research, and project guides |
 | `PROJECTS/` | The workshop — every project split into `PLAN/` (research) and `CODE/` (real code) |
 | `CATALOG.txt` | **Start here.** The full map of the whole workspace, folder by folder |
-| `audio/` | Voice notes from my mentor |
-| `_SOURCE/` | Older files, parked safely |
-| `uploads/` | Original uploaded documents |
+| `TEACHER/` | Activation rules, current state, and master tracker |
+| `uploads/` | Original uploaded documents; frozen and not edited |
 
 ## How projects are organised
 
@@ -69,7 +79,9 @@ Both are organs of **ULTRON** — the final capstone system.
 
 ## Backup
 
-Pushed via SSH deploy key, scoped to this repository only.
+Remote is configured as `git@github.com:DebjeetDev/debjeet-workspace.git`.
+A local SSH deploy key is ready, but GitHub registration and `git ls-remote`
+verification are still pending; do not claim a push until both authenticate.
 
 ---
 

@@ -300,3 +300,15 @@ UPDATE: 7 Oct 2026 (bhor)
     GitHub mein ADD karna baaki hai = DEBJEET KA 1-MIN KAAM
   - Jaise hi key add hogi: "push kar de" bolna — system phir LIVE.
 ================================================================
+
+
+================================================================
+UPDATE: 8 Oct 2026 — CURRENT PROOF
+================================================================
+  Fresh local key: ~/.ssh/github_backup
+  Fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
+  Remote is configured as git@github.com:DebjeetDev/debjeet-workspace.git.
+  Host verification passed; `ssh -T git@github.com` currently returns
+  `Permission denied (publickey)` until the public half is added to GitHub
+  Deploy keys with write access. No ls-remote/push success is claimed.
+================================================================

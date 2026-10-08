@@ -10,7 +10,7 @@ from datetime import datetime, timezone, timedelta
 ROOT = "/home/user"
 IST = timezone(timedelta(hours=5, minutes=30))
 
-SKIP_DIRS = {".git", "node_modules", "uploads", "__pycache__", ".npm"}
+SKIP_DIRS = {".git", "node_modules", "uploads", "__pycache__", ".npm", ".ssh"}
 SKIP_FILES = {".DS_Store"}
 
 # Folder ke baare mein ek line
@@ -164,16 +164,16 @@ def main():
     A("1. SABSE PEHLE — KAHAN KYA HAI (Quick Answer)")
     A("=" * 78)
     A("")
-    A("    Padhna hai?                 ->  READING/00-START-HERE.txt")
-    A("    Aaj ka plan?                ->  READING/16-TODAY-05-OCT-2026.txt")
-    A("    Poora syllabus?             ->  READING/01-COURSE-ROADMAP.txt")
+    A("    Padhna hai?                 ->  course.md + HANDOFF.txt")
+    A("    Aaj ka checkpoint?          ->  HANDOFF.txt + TEACHER/07-CURRENT-STATE.txt")
+    A("    Poora syllabus?             ->  course.md + READING/01-COURSE-ROADMAP.txt")
     A("    Code likhna hai?            ->  PROJECTS/P1-STREAM-OS/CODE/")
     A("                                    PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/")
     A("    Project ka plan?            ->  PROJECTS/P1-STREAM-OS/PLAN/")
     A("                                    PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/")
     A("    ULTRON ka raasta?           ->  PROJECTS/01-ULTRON-LADDER.txt")
     A("    TV ke API links?            ->  PROJECTS/P1-STREAM-OS/PLAN/02-API-RESOURCES.txt")
-    A("    Voice note sunna hai?       ->  audio/")
+    A("    Voice note?                 ->  only when explicitly requested; none stored")
     A("    Course ki asli file?        ->  course.md")
     A("")
 

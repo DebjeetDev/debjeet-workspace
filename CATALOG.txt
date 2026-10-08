@@ -3,9 +3,9 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Wednesday, 07 October 2026
-  Samay       : 08:32 PM (Asia/Kolkata)
-  Root        : /home/user/ws-check
+  Banaya      : Thursday, 08 October 2026
+  Samay       : 10:41 AM (Asia/Kolkata)
+  Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
       python3 make-catalog.py
@@ -14,16 +14,16 @@ Poore workspace ka naksha: kahan kya hai
 1. SABSE PEHLE — KAHAN KYA HAI (Quick Answer)
 ==============================================================================
 
-    Padhna hai?                 ->  READING/00-START-HERE.txt
-    Aaj ka plan?                ->  READING/16-TODAY-05-OCT-2026.txt
-    Poora syllabus?             ->  READING/01-COURSE-ROADMAP.txt
+    Padhna hai?                 ->  course.md + HANDOFF.txt
+    Aaj ka checkpoint?          ->  HANDOFF.txt + TEACHER/07-CURRENT-STATE.txt
+    Poora syllabus?             ->  course.md + READING/01-COURSE-ROADMAP.txt
     Code likhna hai?            ->  PROJECTS/P1-STREAM-OS/CODE/
                                     PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/
     Project ka plan?            ->  PROJECTS/P1-STREAM-OS/PLAN/
                                     PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/
     ULTRON ka raasta?           ->  PROJECTS/01-ULTRON-LADDER.txt
     TV ke API links?            ->  PROJECTS/P1-STREAM-OS/PLAN/02-API-RESOURCES.txt
-    Voice note sunna hai?       ->  audio/
+    Voice note?                 ->  only when explicitly requested; none stored
     Course ki asli file?        ->  course.md
 
 ==============================================================================

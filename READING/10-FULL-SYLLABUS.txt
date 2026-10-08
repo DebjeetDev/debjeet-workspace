@@ -17,6 +17,8 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
    + TEACHER/12-MASTER-TRACKER.txt.
    Is file ke ticks course.md se MIRROR kiye jaate hain (niyam #17).
    Mismatch mile to course.md + LOG.md ko maano, isko nahi. 🔒
+   CURRENT OVERRIDE (8 Oct): Phase 6 Objects is PAUSED by NIYAM #20;
+   active work is the strict J1→J6 project gate, next J1 FIN-302 findLeaks.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -316,7 +318,7 @@ CSS PROJECTS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🔥 BOOK 1C — JAVASCRIPT CORE ENGINE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STATUS: 🔥 ACTIVE — Phase 5 (Arrays+5B) 100% DONE ✅ · Phase 6 (Objects Deep) STARTED 7 Oct 2026
+STATUS: 🔥 ACTIVE — Phase 5 (Arrays+5B) 100% DONE ✅ · Phase 6 Objects started 7 Oct, now 🧊 PAUSED by NIYAM #20 while J1→J6 projects run
 
 TOPICS:
   PHASE 1 — VARIABLES, TYPES, MEMORY ✅ DONE
@@ -413,7 +415,7 @@ TOPICS:
   [ ] Array.from — ⏭ BONUS (abhi cover nahi kiya — jhooth nahi bolenge; naam jaano bas)
   [x] Set for deduplication: [...new Set(arr)] ✅ ST5
 
-  PHASE 6 — OBJECTS DEEP 🔥 NOW (started 7 Oct 2026)
+  PHASE 6 — OBJECTS DEEP 🧊 PAUSED by NIYAM #20 (started 7 Oct)
   [ ] Object literal, shorthand properties, computed keys
   [ ] Destructuring: const { name, age = 18 } = user
   [ ] Rename: const { name: firstName } = user
@@ -1783,7 +1785,8 @@ FEATURES:
 
   Debjeet Dhar. Kolkata. India. World.
 
-  Paper first. Phase 6 — OBJECTS DEEP. NOW. 🔥 (7 Oct 2026)
+  Paper first. Phase 6 — OBJECTS DEEP. PAUSED by NIYAM #20.
+  Current project gate: J1 FIN-302 findLeaks → J2 → J3 → J4 → J5 → J6.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 END OF DEBJEET DHAR GOD MODE MASTER BIBLE v4.0

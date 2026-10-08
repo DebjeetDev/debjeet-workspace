@@ -93,9 +93,9 @@ PART B — PHASE 5 (TERA ASLI POINT): SKILLS vs PLANNED PROJECTS
 PART C — PHASE 6/7 + REST OF BIBLE
 ================================================================
 
-    Phase 6 .................. 🔥 CHALU (topics: object road clear —
-                               27-file PART 0–12). Projects 6A/6M/P9
-                               ⏳ (phase ke andar aayenge)
+    Phase 6 .................. 🧊 PAUSED by NIYAM #20 (started, but the
+                               J1→J6 project gate comes first). Objects
+                               projects remain ⏳ until the gate completes.
     Phase 7 .................. ⏳ proper plan hai (fetch/HLS player)
     1B CSS / 1D Tailwind ..... 🟠 ROUTE-FLEXÉD — LOCKED order (1B→1C)
                                ke uLAt yeh hua: 1C PEHLE. Vajah (record
@@ -243,7 +243,7 @@ PART F — SECOND PASS (LINE 1 → 1787, script-X-ray ke saath)
        deep/OIDC — Book-0 optional blockers, non-blocking)
     B1A HTML+A11y ✅ (prior-knowledge; F2 note sealed)
     B1B CSS3 ⏳ (route-flex — 1C ke baad)
-    B1C JS ⭐ ACTIVE (P1-5 ✅ topics+skills, P6 🔥, P7-10 ⏳; ladder
+    B1C JS ⭐ ACTIVE (P1-5 ✅ topics+skills, P6 🧊 paused, P7-10 ⏳; ladder
        backlog PART-D)
     B1D Tailwind ⏳ | B2 3D ⏳ | B3 MERN ⏳ | B4 Testing ⏳
     B5 AI-systems ⏳ | B6 DSA ⏳ (LeetCode-parallel Book-3 se pehle

@@ -2,7 +2,7 @@
   12 — MASTER TRACKER  📊
   "Har topic: DONE ya PENDING — ek nazar mein."
   Kaam: kisi bhi AI/provider ko DUSHAWAS pe paste karo — raasta turant lagta
-  Banaya: 7 Oct 2026 (bhor)  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
+  Updated: 8 Oct 2026, 10:37 AM IST  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
 ================================================================================
 
   TRUTH ANCHORS: LOG.md (date-wise saboot) + TEACHER/07 (current state)
@@ -16,7 +16,7 @@ A. BOOKS (MASTER ORDER — locked 4 Oct 2026, kabhi mat todo)
   [S1 ] 01 Internet + Terminal Core ......... ⏳ 85% (git/npm hands-on seekh liye)
   [S2 ] 1A HTML5 + Accessibility ............ ✅ 100%
   [S3 ] 1B CSS3 Full Mastery ................ ⏳ (1C ke BAAD — order locked)
-  [S4 ] 1C JavaScript Core Engine ⭐ ........ 🔥 NOW (NEECHE section B mein detail)
+  [S4 ] 1C JavaScript Core Engine ⭐ ........ 🔥 ACTIVE J-GATE (Phase 6 paused)
   [S5 ] 1D Tailwind + shadcn ................ ⏳
   [S6 ] 02 Advanced Frontend + 3D ........... ⏳
   [S7 ] 03 MERN + Next.js ................... ⏳
@@ -60,7 +60,8 @@ B. BOOK 1C — JAVASCRIPT CORE ENGINE (andar ka poora hisaab)
            repo-trail zustand/TanStack/cal.com/preact LIVE-verified,
            PART 9C daily-rule: docs pado + repo kholo + AI 5-niyam)
 
-  PHASE 6 Objects Deep ..................... 🔥 CHALU (START 7 Oct bhor)
+  PHASE 6 Objects Deep ..................... 🧊 PAUSED by NIYAM #20
+        (started 7 Oct; resume-safe, but project gate has priority)
         📖 READING/27-OBJECTS-DEEP.txt (PART 0-12 + ST1-ST5 tracker)
         ST1 ⬜ rowToObject (ISSUED — answer aana baaki)
         ST2 ⬜ updateSpend (spread immutability)
@@ -105,10 +106,12 @@ D. INFRA / GOVERNANCE (machine-side hisaab)
 ================================================================================
   GitHub accounts: dubessix (purana) | DebjeetDev (professional) ✅
   Workspace repo:  git@github.com:DebjeetDev/debjeet-workspace.git
-        SSH: 5-Oct key ud gayi (env-reset) → 7 Oct NAYI key bana
-        ⏳ DEBJEET KA 1-MIN KAAM: nayi PUBLIC key repo
-           Settings→Deploy keys mein add (write ✅) — tabhi push LIVE
-        (.gitignore line 37: .ssh/ blocked ✅)
+        SSH: old key unavailable; fresh ED25519 key at
+           ~/.ssh/github_backup
+        fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
+        ⏳ USER ACTION: add the public half in repo Settings→Deploy keys
+           with write access. Current `ssh -T` = Permission denied (publickey).
+        (.gitignore line 37: .ssh/ blocked ✅; private key never committed)
   uploads/ 4 files (course, LOG, LEARNING-STATE, TEACHER-COMPLETE):
         ❄ FROZEN — Debjeet ki purani daali hui copies.
         Dusre provider ko dena ho to: TEACHER/12 (ye file) +
@@ -129,20 +132,22 @@ E. LOCKED NIYAM (jaldi nazar)
       "INTERVIEW CRACK" (phase khatam hone pe bharna)
 
 ================================================================================
-F. AGLA KAAM (priority — 7 Oct, verified)
+F. AGLA KAAM (priority — 8 Oct, verified)
 ================================================================================
-  1. Debjeet: SSH deploy key GitHub mein add karke "push kar de" bolna
-  2. Ph6 ST1 rowToObject ka answer submit karna
-  3. ST2→ST5 → Phase 6 LOCK 🔒
-  4. P2: LICENSE + package.json + .gitignore daalna
-  5. Plan/06 padhna free time mein (TV ka naksha — wo hi TV hai 📺)
+  1. USER ACTION: GitHub Deploy keys mein ~/.ssh/github_backup.pub ka
+     public half add karo; "Allow write access" ON karo. Then say push.
+  2. J1 FIN-302: `findLeaks` — code tum pehle likhoge; hint-only support.
+  3. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
+     → J5 real STREAM-OS pipeline → J6 memoize/LRU.
+  4. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
+  5. P2 packaging cleanup and PLAN/06 remain lower-priority work.
 
 ================================================================================
 G. KHUD VERIFY KAISE KARE (proof nahi to bharosa nahi)
 ================================================================================
   wc -l READING/27-OBJECTS-DEEP.txt          (~480 lines)
   grep "PHASE 5B LOCKED" READING/26-*.txt    (tracker seal)
-  grep "PHASE 6" course.md | head            (NOW marker)
+  grep "PROJECT-GATE\|PHASE 6" HANDOFF.txt course.md | head  (current gate marker)
   tail -40 LOG.md                            (7 Oct entries)
   npm view stream-os-engine                  (1.0.0 LIVE proof)
 
