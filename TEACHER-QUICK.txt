@@ -140,7 +140,7 @@ ABHI KA HAAL (Thursday, 08 October 2026 | 10:48 AM IST)
 AGLA KAAM (priority — one task at a time):
   1. J1 FIN-302 `findLeaks`: you write first; I give hints only.
   2. Continue J2→J6 in order; Ph6 ST1 resumes only after the gate.
-  3. SSH + push are already verified; local/remote = 0efc93a.
+  3. SSH + push are already verified; local/remote match after the latest sync.
 
 ################################################################################
 #  NAYE CHAT MEIN BOL:  "Read TEACHER-COMPLETE.txt / TEACHER-QUICK.txt,
