@@ -109,7 +109,8 @@ D. INFRA / GOVERNANCE (machine-side hisaab)
         SSH: old key unavailable; fresh ED25519 key registered at
            ~/.ssh/github_backup
         fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
-        ✅ `ssh -T`, `git ls-remote`, and push verified; local/remote = 0efc93a
+        ✅ `ssh -T`, `git ls-remote`, and push verified; local/remote match
+           after the latest state/spec sync
         (.gitignore line 37: .ssh/ blocked ✅; private key never committed)
   uploads/ 4 files (course, LOG, LEARNING-STATE, TEACHER-COMPLETE):
         ❄ FROZEN — Debjeet ki purani daali hui copies.

@@ -309,5 +309,5 @@ UPDATE: 8 Oct 2026 — CURRENT PROOF
   Fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
   Remote is configured as git@github.com:DebjeetDev/debjeet-workspace.git.
   `ssh -T git@github.com` authenticated; `git ls-remote` and push are
-  verified. Local and GitHub origin now match 0efc93a.
+  verified. Local and GitHub origin match after the latest state/spec sync.
 ================================================================

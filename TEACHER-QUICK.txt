@@ -150,4 +150,4 @@ AGLA KAAM (priority — one task at a time):
 
 # SSH NOTE (8 Oct): old key unavailable. Fresh key: ~/.ssh/github_backup
 # fingerprint SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
-# GitHub registration, ssh -T, ls-remote, and push verified; local/remote 0efc93a.
+# GitHub registration, ssh -T, ls-remote, and push verified; local/remote match.

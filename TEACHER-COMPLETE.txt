@@ -9,8 +9,8 @@
 # Phase 5 + 5B: complete/locked. Phase 6 Objects: PAUSED by NIYAM #20.
 # Next strict project order: J1 FIN-302 findLeaks -> J2 -> J3 -> J4 -> J5 -> J6.
 # SSH: fresh ~/.ssh/github_backup is registered. ssh -T, ls-remote, and push
-# are verified; local/remote state-sync commit is 0efc93a. Private key is
-# never printed/committed.
+# are verified; local/remote match after the latest state/spec sync. Private
+# key is never printed/committed.
 # The older embedded snapshots below are historical; this override is current.
 ################################################################################
 

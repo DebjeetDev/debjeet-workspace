@@ -157,4 +157,4 @@
       ED25519 key is registered at ~/.ssh/github_backup (fingerprint
       SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo).
       `ssh -T`, `git ls-remote`, and push are verified; local/remote
-      state-sync commit is 0efc93a. Private key stays local-only.
+      match after the latest state/spec sync. Private key stays local-only.

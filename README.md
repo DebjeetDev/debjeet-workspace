@@ -16,8 +16,8 @@ backed up daily so nothing is ever lost.
 - Active strict order: **J1 FIN-302 `findLeaks` → J2 → J3 → J4 → J5 → J6**.
 - `findLeaks` is not implemented yet; the code-free ticket is in
   `PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/`.
-- SSH authentication and `git ls-remote` are verified; state-sync commit
-  `0efc93a` is pushed and local/remote match.
+- SSH authentication, `git ls-remote`, and push are verified; local and
+  GitHub remote match after the latest state/spec sync.
 
 ## Structure
 
