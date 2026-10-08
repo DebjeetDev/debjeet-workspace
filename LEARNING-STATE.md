@@ -15,7 +15,7 @@
 - Canonical workspace: `/home/user`, fresh clone at `main` / `46c6e83` before this state sync.
 - Phase 5 Arrays + Phase 5B Toolkit: ✅ complete and 🔒 locked.
 - Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
-- Current teaching step: Array Reset Card first; then active order J1 `findLeaks` / FIN-302 → J2 → J3 → J4 → J5 → J6.
+- Current teaching step: two-day Array Reset Card refresh; then active order J1 `findLeaks` / FIN-302 → J2 → J3 → J4 → J5 → J6. Project ideas are research-only meanwhile.
 - No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
 - SSH authentication, `ls-remote`, and push are verified; local/remote match after the latest state/spec sync.
 Older dashboard text below is historical context; this override is current truth.
