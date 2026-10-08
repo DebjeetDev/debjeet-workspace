@@ -26,7 +26,7 @@ CHECKPOINT (truth, 7 Oct):
   📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
   📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
 
-PUSH/GITHUB STATE:
+PUSH/GITHUB STATE: ✅ UP-TO-DATE (8 Oct — a1f986a pushed, write-access kaj korche) | (porer env-e: chmod 600 ~/.ssh/id_ed25519 + remote re-add + push) | purono note:
   Remote main = 8eca826 (38 commits, ancestor-expected; NEVER force-push)
   Local is AHEAD by ~10+ commits (5B, 27/28, audits, gate, PLAN/06).
   DEPLOY KEY (arena-sandbox): public fingerprint
