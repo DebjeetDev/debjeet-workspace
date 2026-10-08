@@ -13,7 +13,8 @@ backed up daily so nothing is ever lost.
 
 - Phase 5 Arrays + Phase 5B Toolkit: **complete and locked**.
 - Phase 6 Objects: **paused by NIYAM #20**, not abandoned.
-- Active strict order: **J1 FIN-302 `findLeaks` → J2 → J3 → J4 → J5 → J6**.
+- Current teaching step: **Array Reset Card**; then strict order is
+  **J1 FIN-302 `findLeaks` → J2 → J3 → J4 → J5 → J6**.
 - `findLeaks` is not implemented yet; the code-free ticket is in
   `PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/`.
 - SSH authentication, `git ls-remote`, and push are verified; local and

@@ -1,13 +1,14 @@
 ################################################################################
 #  DUBBY BHAIYA — MASTER CONTEXT (PORTABLE)
 #  Naye chat mein ye file ATTACH karo, phir bolo: 'ACTIVATE TEACHER'
-#  Generated: Thursday, 08 October 2026 | 10:48 AM IST
+#  Generated: Thursday, 08 October 2026 | 11:41 AM IST
 ################################################################################
 
 # CURRENT OVERRIDE (08 October 2026 — verified)
 # Canonical root: /home/user, fresh clone main at 46c6e83 before state sync.
 # Phase 5 + 5B: complete/locked. Phase 6 Objects: PAUSED by NIYAM #20.
-# Next strict project order: J1 FIN-302 findLeaks -> J2 -> J3 -> J4 -> J5 -> J6.
+# Current teaching step: read the ARRAY RESET CARD at the top of READING/26.
+# Then strict project order: J1 FIN-302 findLeaks -> J2 -> J3 -> J4 -> J5 -> J6.
 # SSH: fresh ~/.ssh/github_backup is registered. ssh -T, ls-remote, and push
 # are verified; local/remote match after the latest state/spec sync. Private
 # key is never printed/committed.

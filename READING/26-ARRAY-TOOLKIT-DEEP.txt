@@ -5,6 +5,55 @@ Banaya: 6 Oct 2026  |  Dubby Bhaiya  |  TEXT ONLY
 ================================================================
 
 ----------------------------------------------------------------
+CURRENT RESET CARD — PEHLE YE PADHO (8 Oct 2026)
+----------------------------------------------------------------
+
+  Agar dimaag blank ho gaya hai, koi failure nahi hua.
+  Pura 1,000-line lesson abhi mat padho. Pehle ye one-page map padho.
+  Ye REVISION hai — Phase 5 + Phase 5B ka verified status DONE/LOCKED hai.
+
+  ARRAY KYA HAI?
+    Array = ordered list.
+    Har item ki position hoti hai: pehla item position 0 se shuru hota hai.
+    List ko todna nahi; pehle samjho ki tum kya pooch rahe ho.
+
+  ARRAY KE 4 BASIC KAAM:
+    1. DEKHNA   — ek item chahiye? position/length ke baare mein socho.
+    2. BADALNA  — har item ko badal kar nayi list chahiye? map.
+    3. CHHAANTNA — sirf matching items chahiye? filter.
+    4. MILANA   — bahut items se ek answer chahiye? reduce.
+
+  TOOLBOX KO SAWAL SE YAAD KARO:
+    "Kya ye item list mein hai?"       → includes → haan/na
+    "Kya koi ek condition pass karta?"  → some → haan/na
+    "Kya sab condition pass karte?"     → every → haan/na
+    "Pehla kaunsa pass karta?"          → find → item ya nahi mila
+    "List ka chhota hissa chahiye?"     → slice → safe copy
+    "Line lagani hai?"                  → sort → comparator + copy pehle
+    "Duplicate hataane hain?"           → Set → unique list
+    "List ko variables mein kholna?"    → destructuring
+
+  SAFETY MANTRA:
+    Kuch tools original list ko badal sakte hain.
+    Isliye order badalne se pehle copy, aur number sort mein rule/comparator.
+    find ka result na mile to use karne se pehle check.
+    reduce mein empty list ke liye starting value.
+
+  FIN-302 SE CONNECTION (R4):
+    Bill ki identity = exact name + exact amount.
+    Month sirf information hai; grouping month se nahi hogi.
+    Netflix + 499 teen baar = leak.
+    Netflix + 499 do baar aur Netflix + 799 ek baar = leak nahi.
+    Same amount par alag name = same pair nahi.
+    Count 3 par leak mark; count 4 par wahi leak dobara nahi.
+
+  ABHI KA RULE:
+    Ek baar mein sirf ek sawal. Is card ko padh kar apne words mein
+    array, map, filter, reduce, aur FIN-302 pair ka meaning bolo.
+    Phir full lesson ka sirf ek PART padhenge — poora mountain ek saath nahi.
+    Current project order nahi badla: reset ke baad J1 FIN-302 next hai.
+
+----------------------------------------------------------------
 PART 0 — RECAP (AB TAK KYA KIYA) + EK SACHCHAI
 ----------------------------------------------------------------
 
@@ -992,15 +1041,15 @@ PART 12 — TRACKER (HAR STAGE PE TICK KAR)
     [✅] Stage 1 — paper answer (bin comparator sort)      (6 Oct, raat — order bilkul sahi ✅)
     [✅] Stage 2 — hasSpend / anyAbove / allUnder (guards ke saath)   (6 Oct — 7/7 PASS, node-verified)
     [✅] Stage 3 — findFirstAbove + showFirstAbove (undefined guard)   (7 Oct — 3A logic node-verified 4/4 ✅, 3B split trusted ✅; bonus: khud 2D rows banaya + data-clean filter 5/r⭐)
-    [ ] Stage 4 — topSpends (immutability proof ke saath)
+    [✅] Stage 4 — topSpends (immutability proof ke saath)   (7 Oct — node-verified)
     [✅] Stage 5 — uniqueShops + head/tail paper   (7 Oct — 4/4 node-verified ✅; map→Set samajh ke kiya, envelope shape consistent)
 
   🔒🎉 PHASE 5B LOCKED — ALL 5 STAGES PASS (6-7 Oct 2026)
 
   BUG FIX:
-    [ ] Bug 1 — NaN khamosh qaatil pakda
-    [ ] Bug 2 — double dhoka (string + mutation) pakda
-    [ ] Bug 3 — includes("240") string trap pakda
+    [✅] Bug 1 — NaN khamosh qaatil pakda
+    [✅] Bug 2 — double dhoka (string + mutation) pakda
+    [✅] Bug 3 — includes("240") string trap pakda
 
   SENIOR BANNA:
     [ ] Junior vs Senior fark (copy + comparator + guard)

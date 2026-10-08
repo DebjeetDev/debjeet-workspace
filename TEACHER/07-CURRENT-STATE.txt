@@ -1,6 +1,6 @@
 ================================================================================
   ⭐ CURRENT STATE  —  YAHAN SE RESUME KARO
-  Last updated: Thursday, 08 October 2026 | 10:48 AM IST (verified via `date`)
+  Last updated: Thursday, 08 October 2026 | 11:41 AM IST (verified via `date`)
 ================================================================================
 
 ================================================================================
@@ -10,7 +10,7 @@
   Book    : 1C — JavaScript Advanced
   🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🧊 Phase 6 PAUSED by NIYAM #20
   Phase   : J1 PROJECT-GATE (Phase 6 Objects started; rowToObject answer not recorded)
-  Next    : SIRF EK KAAM — J1 (TICKET FIN-302: P2 PLAN/02-SPEC-SUBSCRIPTION-LEAK) — wo khud banayega, code-free spec di.
+  Next    : SIRF EK KAAM — ARRAY RESET CARD (READING/26 top) first; then J1 FIN-302. J1 remains the next project; no status regression.
   Ph6     : 🧊 PAUSED by niyam #20 PROJECT-GATE (Debjeet, 7 Oct 11 AM):
             "no project → no next phase. pro banna hai, lazy nahi."
             ST1 resume-safe (same jagah).

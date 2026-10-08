@@ -481,3 +481,19 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Frozen uploads were not edited. J1 remains assigned; no implementation was
   generated. The student will write it after the paper-first explanation.
 ================================================================
+
+
+================================================================
+08 Oct 2026, 11:41 AM IST — ARRAY RESET REQUEST (NO REGRESSION)
+================================================================
+  Debjeet reported a complete array-concept blackout and asked for a clean,
+  readable reset instead of more requirements. Re-read the array material:
+  READING/21 reduce, 24 reduce→map/filter, 25 spend-report, 26 toolkit,
+  and the official course Phase 5 section. The new CURRENT RESET CARD is at
+  the top of READING/26-ARRAY-TOOLKIT-DEEP.txt.
+
+  Truth preserved: Phase 5 + 5B remain DONE/LOCKED; this is revision only.
+  Course checkboxes were reconciled for the verified 5B work. HANDOFF,
+  TEACHER/07, TEACHER/12, LEARNING-STATE, README, QUICK, and COMPLETE now
+  say: read the reset card first, then J1 FIN-302. No J1 code was generated.
+================================================================

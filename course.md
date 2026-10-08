@@ -391,13 +391,13 @@ TOPICS:
         [x] reduce() — fold into single value ✅ Tier-1 PASS
         [x] find()   — first match or undefined ✅ ST3
         findIndex()— index of first match or -1
-        some()     — ANY match? → boolean
-        every()    — ALL match? → boolean
-        flat()     — flatten nested arrays
-        flatMap()  — map then flat
-        slice()    — copy portion (non-destructive)
-        concat()   — merge arrays (non-destructive)
-        includes() — contains value? → boolean
+        [x] some()  — ANY match? → boolean ✅ ST2
+        [x] every() — ALL match? → boolean ✅ ST2
+        flat()      — flatten nested arrays (bonus, not locked)
+        flatMap()   — map then flat (bonus, not locked)
+        [x] slice() — copy portion (non-destructive) ✅ ST4
+        concat()    — merge arrays (non-destructive; not locked)
+        [x] includes() — contains value? → boolean ✅ ST2
         indexOf()  — index of value or -1
   [x] Chaining: arr.filter().map().reduce() ✅ ST4/ST5
   [x] Spread operator: [...arr1, ...arr2] ✅

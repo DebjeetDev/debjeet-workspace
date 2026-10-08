@@ -2,7 +2,7 @@
   12 — MASTER TRACKER  📊
   "Har topic: DONE ya PENDING — ek nazar mein."
   Kaam: kisi bhi AI/provider ko DUSHAWAS pe paste karo — raasta turant lagta
-  Updated: 8 Oct 2026, 10:48 AM IST  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
+  Updated: 8 Oct 2026, 11:41 AM IST  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
 ================================================================================
 
   TRUTH ANCHORS: LOG.md (date-wise saboot) + TEACHER/07 (current state)
@@ -134,11 +134,14 @@ E. LOCKED NIYAM (jaldi nazar)
 ================================================================================
 F. AGLA KAAM (priority — 8 Oct, verified)
 ================================================================================
-  1. J1 FIN-302: `findLeaks` — code tum pehle likhoge; hint-only support.
-  2. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
+  1. ARRAY RESET CARD: READING/26-ARRAY-TOOLKIT-DEEP.txt ke top se
+     calm revision; Phase 5/5B DONE/LOCKED hi rahega.
+  2. J1 FIN-302: `findLeaks` — reset ke baad code tum pehle likhoge;
+     hint-only support.
+  3. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
      → J5 real STREAM-OS pipeline → J6 memoize/LRU.
-  3. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
-  4. P2 packaging cleanup and PLAN/06 remain lower-priority work.
+  4. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
+  5. P2 packaging cleanup and PLAN/06 remain lower-priority work.
 
 ================================================================================
 G. KHUD VERIFY KAISE KARE (proof nahi to bharosa nahi)

@@ -1,6 +1,6 @@
 ################################################################################
 HANDOFF — EXACT CHECKPOINT (CANONICAL — is duniya ka sach)
-Updated: Thursday, 08 October 2026, 10:48 AM IST
+Updated: Thursday, 08 October 2026, 11:41 AM IST
 Canonical local: /home/user fresh clone | SABSE AAGE YAHIN HAI
 ################################################################################
 
@@ -25,6 +25,11 @@ CHECKPOINT (truth, 8 Oct):
        P8 Intl = parked (non-logic API)
   📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
   📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
+  🧠 REVISION REQUEST (8 Oct): Debjeet reports an array-concept blackout.
+     Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
+     regression. Read the CURRENT RESET CARD at the top of
+     READING/26-ARRAY-TOOLKIT-DEEP.txt before J1 coding. J1 remains the
+     next project after the reset; do not reopen Phase 6.
 
 PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
   Canonical local: /home/user, branch main. Base clone was 46c6e83;
