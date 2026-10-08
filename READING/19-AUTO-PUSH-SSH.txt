@@ -289,7 +289,7 @@ END — 19-AUTO-PUSH-SSH.txt
 
 
 ================================================================
-UPDATE: 7 Oct 2026 (bhor)
+UPDATE: 7 Oct 2026 (bhor — HISTORICAL, before current key registration)
 ================================================================
   STATUS: ⏳ KEY-RoPEN PENDING
   - 5-Oct wali private key: environment-reset mein UD GAYI (no .ssh)
@@ -308,7 +308,6 @@ UPDATE: 8 Oct 2026 — CURRENT PROOF
   Fresh local key: ~/.ssh/github_backup
   Fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
   Remote is configured as git@github.com:DebjeetDev/debjeet-workspace.git.
-  Host verification passed; `ssh -T git@github.com` currently returns
-  `Permission denied (publickey)` until the public half is added to GitHub
-  Deploy keys with write access. No ls-remote/push success is claimed.
+  `ssh -T git@github.com` authenticated; `git ls-remote` and push are
+  verified. Local and GitHub origin now match 0efc93a.
 ================================================================

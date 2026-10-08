@@ -462,3 +462,22 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Therefore no successful ls-remote or push is claimed. After registration,
   verify ssh -T, git ls-remote origin, then push only if needed.
 ================================================================
+
+
+================================================================
+08 Oct 2026, 10:47 AM IST — SSH VERIFIED + FIN-302 SPEC RECONCILED
+================================================================
+  Debjeet confirmed the replacement public key was added. Current local
+  key fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo.
+  `ssh -T git@github.com` authenticated as DebjeetDev/debjeet-workspace.
+  `git ls-remote origin refs/heads/main` returned 0efc93a5963c39496b638f465a42ecbd254309de.
+  Pushed local state-sync commit 0efc93a; post-push local and remote match
+  exactly. No private key was printed or committed.
+
+  FIN-302 audit found one ticket contradiction: the fixture listed Spotify
+  three times, while R5/acceptance required Spotify twice and excluded it.
+  Acceptance and the standing checkpoint are authoritative, so the erroneous
+  Nov Spotify fixture row was removed from both current code-free ticket twins.
+  Frozen uploads were not edited. J1 remains assigned; no implementation was
+  generated. The student will write it after the paper-first explanation.
+================================================================

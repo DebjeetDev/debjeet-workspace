@@ -17,7 +17,7 @@
 - Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
 - Active order: J1 `findLeaks` / FIN-302 → J2 → J3 → J4 → J5 → J6.
 - No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
-- SSH key was regenerated locally; GitHub registration and `ls-remote`/push proof are still pending.
+- SSH authentication, `ls-remote`, and push are verified; local/remote are both `0efc93a`.
 Older dashboard text below is historical context; this override is current truth.
 
 
@@ -117,7 +117,7 @@ Older dashboard text below is historical context; this override is current truth
 - Phase 6 START mila (Debjeet: "ok let do"); 27-OBJECTS file ready (PART 0–12 + tracker).
 - P1 PLAN/06-WEB-TV-RESEARCH-2026.txt (7 Oct) — FINAL NORTH STAR of his web-TV dream
   (FAST 2026 research, CORS, UI-clone rules, EK-APP-TEEN-SCREEN + RACE MODE).
-- Niyam #17 LOCKED: har session-end portability sync. Niyam #18: fresh SSH key exists locally; public half still must be added to GitHub with write access.
+- Niyam #17 LOCKED: har session-end portability sync. Niyam #18: fresh SSH key registered; `ssh -T`, `ls-remote`, and push are proven.
 
 
 ## 📌 ROUTE-FLEX OFFICIAL (record 7 Oct): 1B (CSS) se PEHLE 1C (JS) chala.

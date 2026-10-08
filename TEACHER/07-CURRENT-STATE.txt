@@ -1,6 +1,6 @@
 ================================================================================
   ⭐ CURRENT STATE  —  YAHAN SE RESUME KARO
-  Last updated: Thursday, 08 October 2026 | 10:37 AM IST (verified via `date`)
+  Last updated: Thursday, 08 October 2026 | 10:48 AM IST (verified via `date`)
 ================================================================================
 
 ================================================================================
@@ -153,9 +153,8 @@
       saari state files (course.md + TEACHER/* + LOG + tracker)
       sync + commit — taaki AI-limit/context khatam ho to bhi har
       naya AI yahan se raasta utha sake. HAMESHA, har baar. 🔒
-  #18 SSH DEPLOY KEY STATUS (08 Oct): old key is unavailable. A fresh
-      ED25519 key now exists at ~/.ssh/github_backup (fingerprint
+  #18 SSH DEPLOY KEY STATUS (08 Oct): old key was unavailable. A fresh
+      ED25519 key is registered at ~/.ssh/github_backup (fingerprint
       SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo).
-      Public half still must be added at GitHub repo > Settings >
-      Deploy keys with write access. `ssh -T` currently proves
-      Permission denied (publickey); no push is claimed.
+      `ssh -T`, `git ls-remote`, and push are verified; local/remote
+      state-sync commit is 0efc93a. Private key stays local-only.

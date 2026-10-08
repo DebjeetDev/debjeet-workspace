@@ -24,6 +24,11 @@ STORY (why this matters)
 ----------------------------------------------------------------
 INPUT (test data — use as-is)
 ----------------------------------------------------------------
+  Fixture correction — 8 Oct 2026: acceptance is authoritative.
+  The earlier draft accidentally listed Spotify three times; one
+  erroneous Nov Spotify row was removed. Spotify now appears twice,
+  so it remains the intentional non-leak trap.
+
   const bills = [
     ["Sep", "Netflix", 499],
     ["Sep", "Spotify", 119],
@@ -33,7 +38,6 @@ INPUT (test data — use as-is)
     ["Oct",     "Gym", 800],
     ["Oct",   "Prime", 1499],
     ["Nov", "Netflix", 499],
-    ["Nov", "Spotify", 119],
     ["Nov",     "Gym", 800],
     ["Nov",  "Hotstar", 899],
   ];

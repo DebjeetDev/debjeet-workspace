@@ -126,11 +126,10 @@
 ----------------------------------------------------------------
   CURRENT ENVIRONMENT UPDATE — 08 October 2026, 10:37 AM IST
 ----------------------------------------------------------------
-  Fresh clone root: /home/user | branch: main | HEAD before state sync: 46c6e83
-  Local SSH key generated: ~/.ssh/github_backup
+  Fresh clone root: /home/user | branch: main | base: 46c6e83
+  Local SSH key: ~/.ssh/github_backup
   Fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
   Remote configured: git@github.com:DebjeetDev/debjeet-workspace.git
-  Host verification succeeded; auth proof currently returns
-  "Permission denied (publickey)" because the public key is not registered yet.
-  Add the public half to Deploy keys with write access, then verify ssh -T,
-  git ls-remote, and only then push. Private key is never printed or committed.
+  `ssh -T` authenticated, `git ls-remote` matched, and push completed.
+  Local and GitHub origin now equal 0efc93a. Private key is never printed
+  or committed.

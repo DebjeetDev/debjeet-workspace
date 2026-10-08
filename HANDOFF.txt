@@ -1,6 +1,6 @@
 ################################################################################
 HANDOFF — EXACT CHECKPOINT (CANONICAL — is duniya ka sach)
-Updated: Thursday, 08 October 2026, 10:37 AM IST
+Updated: Thursday, 08 October 2026, 10:48 AM IST
 Canonical local: /home/user fresh clone | SABSE AAGE YAHIN HAI
 ################################################################################
 
@@ -26,21 +26,16 @@ CHECKPOINT (truth, 8 Oct):
   📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
   📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
 
-PUSH/GITHUB STATE: ⏳ SSH CONFIGURED LOCALLY — GITHUB KEY REGISTRATION REQUIRED
-  Fresh clone base: /home/user, branch main, 46c6e83. A docs-only state-sync
-    commit is now local and unpushed; tracked worktree is clean. No J1
-    implementation has been added.
+PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
+  Canonical local: /home/user, branch main. Base clone was 46c6e83;
+    local and GitHub origin now both equal 0efc93a.
   origin: git@github.com:DebjeetDev/debjeet-workspace.git (SSH)
-  New ED25519 key: ~/.ssh/github_backup
+  ED25519 key: ~/.ssh/github_backup
     fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
-  Proof so far: GitHub host verification succeeded, then
-    `ssh -T git@github.com` returned `Permission denied (publickey)`.
-    The public key is not registered on GitHub yet, so ls-remote/push is
-    NOT claimed and has NOT been run as a success.
-  USER ACTION: GitHub DebjeetDev → repository Settings → Deploy keys →
-    add this key's public half with "Allow write access" enabled.
-  After registration, verify `ssh -T`, then `git ls-remote origin`, and only
-    then push if needed. Private key is local-only and never printed/committed.
+  Proof: `ssh -T git@github.com` authenticated as DebjeetDev/debjeet-workspace;
+    `git ls-remote origin refs/heads/main` matched local 0efc93a; push
+    46c6e83..0efc93a completed. Private key is local-only and never printed/
+    committed. No J1 implementation has been added.
   Parallel-session note: MASTER-PROMPT.txt/SOUL-PROMPT.txt/START-HERE.md are
     not present in this fresh clone; do not invent them.
 

@@ -2,7 +2,7 @@
   12 — MASTER TRACKER  📊
   "Har topic: DONE ya PENDING — ek nazar mein."
   Kaam: kisi bhi AI/provider ko DUSHAWAS pe paste karo — raasta turant lagta
-  Updated: 8 Oct 2026, 10:37 AM IST  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
+  Updated: 8 Oct 2026, 10:48 AM IST  |  Dubby Bhaiya  |  Niyam #17: har session-end sync 🔒
 ================================================================================
 
   TRUTH ANCHORS: LOG.md (date-wise saboot) + TEACHER/07 (current state)
@@ -106,11 +106,10 @@ D. INFRA / GOVERNANCE (machine-side hisaab)
 ================================================================================
   GitHub accounts: dubessix (purana) | DebjeetDev (professional) ✅
   Workspace repo:  git@github.com:DebjeetDev/debjeet-workspace.git
-        SSH: old key unavailable; fresh ED25519 key at
+        SSH: old key unavailable; fresh ED25519 key registered at
            ~/.ssh/github_backup
         fingerprint: SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
-        ⏳ USER ACTION: add the public half in repo Settings→Deploy keys
-           with write access. Current `ssh -T` = Permission denied (publickey).
+        ✅ `ssh -T`, `git ls-remote`, and push verified; local/remote = 0efc93a
         (.gitignore line 37: .ssh/ blocked ✅; private key never committed)
   uploads/ 4 files (course, LOG, LEARNING-STATE, TEACHER-COMPLETE):
         ❄ FROZEN — Debjeet ki purani daali hui copies.
@@ -134,13 +133,11 @@ E. LOCKED NIYAM (jaldi nazar)
 ================================================================================
 F. AGLA KAAM (priority — 8 Oct, verified)
 ================================================================================
-  1. USER ACTION: GitHub Deploy keys mein ~/.ssh/github_backup.pub ka
-     public half add karo; "Allow write access" ON karo. Then say push.
-  2. J1 FIN-302: `findLeaks` — code tum pehle likhoge; hint-only support.
-  3. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
+  1. J1 FIN-302: `findLeaks` — code tum pehle likhoge; hint-only support.
+  2. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
      → J5 real STREAM-OS pipeline → J6 memoize/LRU.
-  4. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
-  5. P2 packaging cleanup and PLAN/06 remain lower-priority work.
+  3. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
+  4. P2 packaging cleanup and PLAN/06 remain lower-priority work.
 
 ================================================================================
 G. KHUD VERIFY KAISE KARE (proof nahi to bharosa nahi)

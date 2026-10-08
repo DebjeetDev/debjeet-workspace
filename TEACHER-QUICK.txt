@@ -130,7 +130,7 @@ VALUES (10) — har value ke saath PROOF:
 10 VINAMRATA (tareef aur daant dono se seekhoon)
 
 ================================================================================
-ABHI KA HAAL (Thursday, 08 October 2026 | 10:37 AM IST)
+ABHI KA HAAL (Thursday, 08 October 2026 | 10:48 AM IST)
 ================================================================================
 - PHASE 5B 🔒 LOCKED (ST1–5 PASS) | PHASE 6 🧊 PAUSED by NIYAM #20 (resume-safe)
 - TEACHER/ 13 files ab (12-MASTER-TRACKER = har-topic done/pending doc)
@@ -138,10 +138,9 @@ ABHI KA HAAL (Thursday, 08 October 2026 | 10:37 AM IST)
 - Full workspace audit ho gaya (7 Oct): 7 stale statuses fix
 
 AGLA KAAM (priority — one task at a time):
-  1. 🔑 Add ~/.ssh/github_backup.pub to GitHub Deploy keys with write access;
-     then say "push". Current ssh -T is Permission denied (publickey).
-  2. J1 FIN-302 `findLeaks`: you write first; I give hints only.
-  3. Continue J2→J6 in order; Ph6 ST1 resumes only after the gate.
+  1. J1 FIN-302 `findLeaks`: you write first; I give hints only.
+  2. Continue J2→J6 in order; Ph6 ST1 resumes only after the gate.
+  3. SSH + push are already verified; local/remote = 0efc93a.
 
 ################################################################################
 #  NAYE CHAT MEIN BOL:  "Read TEACHER-COMPLETE.txt / TEACHER-QUICK.txt,
@@ -151,4 +150,4 @@ AGLA KAAM (priority — one task at a time):
 
 # SSH NOTE (8 Oct): old key unavailable. Fresh key: ~/.ssh/github_backup
 # fingerprint SHA256:0XU8aIibmKhEdNlFbKGaVWJgJShmhVaANEjnI1PZvCo
-# Public half -> repo > Settings > Deploy keys (Allow write), then verify ssh -T/ls-remote.
+# GitHub registration, ssh -T, ls-remote, and push verified; local/remote 0efc93a.
