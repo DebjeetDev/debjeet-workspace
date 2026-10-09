@@ -10,7 +10,7 @@ ACTIVATION RITUAL (har naye chat mein):
   3. Report SIRF 2 line: "kahan chhoda + next kya" → phir EK task do.
      (Old-teacher vibe, adopted: HANDOFF/AGENTS parallel-session se)
 
-CHECKPOINT (truth, 8 Oct):
+CHECKPOINT (truth, 9 Oct):
   ✅ Book 1C Phase 5 Arrays Deep COMPLETE + Phase 5B TOOLKIT 🔒 LOCKED
      (ST1–ST5 node-verified — 26-ARRAY file, tracker 5/5 ✅)
   🧊 Phase 6 OBJECTS DEEP = PAUSED — abandoned NAHI.
@@ -29,11 +29,11 @@ CHECKPOINT (truth, 8 Oct):
      Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
      regression. Read the CURRENT RESET CARD at the top of
      READING/26-ARRAY-TOOLKIT-DEEP.txt before J1 coding.
-  ⏸️ ARRAY REFRESH (user update): Day 1 is complete; ONE DAY remains to
-     rebuild the array mental model. J1 is intentionally waiting, not dropped.
-     Project ideation is research-only during this remaining day; no new
-     project code or Phase 6 work starts. After the refresh, J1 remains next.
-     Browser ideas are recorded in PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
+  ✅ ARRAY REFRESH COMPLETE (user update): the recap is done. J1 FIN-302 is
+     now the active coding project. Debjeet writes first; hints come before
+     full solutions. No Phase 6 Objects work starts before the J-order.
+     Browser ideas remain research-only and are recorded in
+     PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
 
 PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
   Canonical local: /home/user, branch main. Base clone was 46c6e83;

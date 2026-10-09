@@ -9,9 +9,8 @@ Owner: Debjeet Dhar
 
 CURRENT LEARNING LAW
 ----------------------------------------------------------------
-  1. One remaining day of the JavaScript Arrays refresh comes first.
-     Day 1 is already complete.
-  2. FIN-302 J1 remains the next coding project after that refresh.
+  1. The JavaScript Arrays refresh is complete.
+  2. FIN-302 J1 is now the active coding project.
   3. J2 -> J3 -> J4 -> J5 -> J6 remains locked after J1.
   4. This file is research only. It does not open a new coding phase.
   5. No Todo app. No basic Notes app. No random tutorial clone.

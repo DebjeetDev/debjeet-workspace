@@ -538,3 +538,13 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   FIN-302 `findLeaks`. Browser-project research remains parked; no new code
   or Phase 6 work starts before the refresh and J-order.
 ================================================================
+
+================================================================
+09 Oct 2026 — ARRAY RECAP COMPLETE; J1 NOW ACTIVE
+================================================================
+  Debjeet confirmed that the Arrays recap is complete. The one-day refresh
+  pause is closed. FIN-302 J1 `findLeaks` is now the active coding project;
+  Debjeet writes first and receives hints before any full solution. Strict
+  order remains J1 -> J2 -> J3 -> J4 -> J5 -> J6. No Phase 6 or browser
+  project implementation has started.
+================================================================
