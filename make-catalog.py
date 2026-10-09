@@ -74,6 +74,7 @@ FILE_INFO = {
     # PROJECTS root
     "00-INDEX.txt": "PROJECTS folder ka index",
     "01-ULTRON-LADDER.txt": "17 projects ki ladder (ULTRON tak)",
+    "03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt": "Code-free 2026 browser project ladder — real user problems + JS mapping",
 
     # P1 PLAN
     "00-README.txt": "Project kya hai, status, Kolkata channels",

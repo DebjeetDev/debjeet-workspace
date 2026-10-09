@@ -1,0 +1,367 @@
+================================================================
+2026 BROWSER-LOGIC PROJECT LADDER
+CODE-FREE RESEARCH NOTE — REAL USER PROBLEMS, JAVASCRIPT DEPTH
+================================================================
+
+Research date: 9 October 2026
+Status: IDEA BANK + SYSTEM DESIGN ONLY — NO IMPLEMENTATION YET
+Owner: Debjeet Dhar
+
+CURRENT LEARNING LAW
+----------------------------------------------------------------
+  1. Two-day JavaScript Arrays refresh comes first.
+  2. FIN-302 J1 remains the next coding project after that refresh.
+  3. J2 -> J3 -> J4 -> J5 -> J6 remains locked after J1.
+  4. This file is research only. It does not open a new coding phase.
+  5. No Todo app. No basic Notes app. No random tutorial clone.
+  6. Every chosen project must solve one visible user problem, have one
+     narrow purpose, use pure JavaScript logic, and finish with tests.
+
+WHY THIS DIRECTION
+----------------------------------------------------------------
+  The user's real problem is not "make another app". It is context loss:
+
+    - A PDF is open and the user needs a reference without losing the page.
+    - A reading session grows into too many tabs.
+    - A useful tab gets closed and cannot be found again.
+    - A user wants a small tool beside the current page, not a new dashboard.
+    - A developer wants to know whether an extension is safe before installing.
+    - A long page has accessibility or performance problems, but no clear report.
+
+  The browser is the product surface. JavaScript is the logic engine.
+
+PLATFORM RESEARCH — 2026 FACTS TO DESIGN AROUND
+----------------------------------------------------------------
+  1. Chrome's Side Panel API provides extension UI beside the current webpage.
+     It can be global or tab-specific and can stay open while the user changes
+     tabs. Official reference:
+     https://developer.chrome.com/docs/extensions/reference/api/sidePanel
+
+  2. Chrome's Tabs API can query, create, move, group, and communicate with
+     tabs. Current API documentation also lists Split View support on modern
+     Chrome. Official reference:
+     https://developer.chrome.com/docs/extensions/reference/api/tabs
+
+  3. The Sessions API can inspect recently closed tabs/windows and restore them.
+     Official reference:
+     https://developer.chrome.com/docs/extensions/reference/api/sessions
+
+  4. Context menus and keyboard commands let a user deliberately send a page,
+     link, or selection to a tool instead of granting silent background access.
+     Official references:
+     https://developer.chrome.com/docs/extensions/reference/api/contextMenus
+     https://developer.chrome.com/docs/extensions/reference/api/commands
+
+  5. Extensions should use Manifest V3, service workers, minimal permissions,
+     and packaged logic. Remote code execution is not an acceptable design.
+     Official reference:
+     https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3
+
+  6. Chrome Web Store policy requires a narrow single purpose. Local-only data
+     still needs an accurate privacy disclosure. Browsing activity must only be
+     used when necessary for a clearly disclosed user-facing feature.
+     Official references:
+     https://developer.chrome.com/docs/webstore/program-policies/quality-guidelines
+     https://developer.chrome.com/docs/webstore/program-policies/user-data-faq
+     https://developer.chrome.com/docs/webstore/program-policies/limited-use
+
+  7. Content-script messages must be treated as untrusted input. Validate the
+     sender and sanitize payloads before a privileged action is performed.
+     Official references:
+     https://developer.chrome.com/docs/extensions/develop/concepts/messaging
+     https://developer.chrome.com/docs/extensions/mv3/security
+
+  8. The Side Panel API solves the "same browser surface, fewer new tabs"
+     problem, but it does not mean that arbitrary websites should be embedded
+     inside the panel. The first version should show structured context,
+     references, and actions. PDF DOM extraction is a separate feasibility
+     spike because Chrome's built-in PDF viewer is a special boundary.
+
+  MARKET SIGNAL (inspiration, not a technical authority)
+  Research-workflow products repeatedly describe the same pain: PDF reading,
+  tab overload, lost citation chains, and switching between tools. This makes
+  a context-preserving browser tool a real problem, not a toy idea:
+  https://supasidebar.com/blog/browser-setup-for-researchers-mac-2026
+  https://supasidebar.com/blog/best-browser-for-researchers-and-academics-2026
+
+NORTH-STAR PROJECT — B1: CONTEXTDOCK
+"Keep the reading context beside the page. Do not make the user lose the tab."
+----------------------------------------------------------------
+
+  SINGLE PURPOSE
+    A browser side panel that keeps the user's current reading context,
+    selected references, and recoverable tab state beside the active page.
+
+  REAL USER STORY
+    "I am reading a PDF. I need to check a reference, remember which source
+     led me here, and return to the original page without opening ten random
+     tabs or losing my place."
+
+  MVP — FIRST SMALL VERSION
+    A. User deliberately opens the side panel.
+    B. Panel shows the current tab's title, URL, domain, and session label.
+    C. User can send a selected link or selected text to the current session.
+    D. User can pin a reference record to the session.
+    E. User can switch between current source and saved reference actions.
+    F. User can close the session and restore its source list later.
+    G. All records stay local in the first version.
+    H. A session can be exported as a plain structured file.
+
+  NOT IN MVP
+    - No AI answer engine.
+    - No scraping every page in the background.
+    - No login, bank data, or remote user profile.
+    - No arbitrary remote webpage embedded inside the side panel.
+    - No generic diary or free-form Notes clone.
+    - No claim that every PDF viewer exposes its DOM.
+
+  JAVASCRIPT LOGIC IT TRAINS
+    Phase 4 Functions:
+      pure record builders, guard clauses, command handlers, rule functions,
+      closures for session state, and predictable result envelopes.
+
+    Phase 5 Arrays:
+      normalize records, remove duplicates, preserve first-seen order,
+      filter by session, sort by source type, aggregate counts, and create
+      safe non-mutating views.
+
+    Phase 6 Objects:
+      source records, session state, action objects, immutable configuration,
+      nested data, updates without accidental mutation, and safe merging.
+
+    Phase 7 Async JavaScript:
+      tab queries, side-panel messages, storage reads/writes, restore flows,
+      loading/error states, cancellation, and retry boundaries.
+
+    Phase 8+:
+      modules, validation, DOM integration, testing, performance, and release.
+
+  CHROME SURFACES
+    sidePanel, tabs, sessions, contextMenus, commands, storage, runtime
+    messaging, and only the smallest possible scripting/activeTab permission.
+
+  CORE ACCEPTANCE IDEA
+    A user can open one reading session, add three references, close the
+    browser, reopen the extension, and recover the session without losing the
+    source order or creating duplicate records.
+
+B2: TABRESCUE — CLOSED-TAB CONTEXT RECOVERY
+----------------------------------------------------------------
+  Problem:
+    A user closes a useful tab and later remembers only a vague topic.
+
+  Product:
+    Searchable recent-tab recovery with session labels, source domains,
+    last-seen time, and a deliberate restore action.
+
+  Logic:
+    normalize tab records, deduplicate URLs, compare sessions, rank matches,
+    restore one tab or a whole safe group, and handle stale URLs.
+
+  APIs:
+    sessions, tabs, tabGroups, storage, commands, sidePanel.
+
+  Boundary:
+    Do not silently collect all browsing history. Only store data after a
+    visible user action and explain the retention policy.
+
+B3: SPLITREAD — PDF + REFERENCE WITHOUT TAB CHAOS
+----------------------------------------------------------------
+  Problem:
+    The user wants the PDF visible while checking a reference.
+
+  Product:
+    User selects a PDF tab and one reference tab. The extension offers a
+    deliberate split-view workflow where supported, or keeps a recoverable
+    two-source session when split view is unavailable.
+
+  Logic:
+    tab-pair validation, window/group state, restore order, conflict handling,
+    unavailable-tab recovery, and source-session history.
+
+  APIs:
+    tabs, tabGroups, sessions, sidePanel, commands.
+
+  Boundary:
+    Never promise universal split-screen behavior. First make the normal-tab
+    workflow correct; then add a browser-version capability check.
+
+B4: A11Y-SENTINEL — PAGE ACCESSIBILITY INSPECTOR
+----------------------------------------------------------------
+  Problem:
+    A page can look normal while its images, headings, labels, focus order,
+    and buttons are difficult or impossible to use.
+
+  Product:
+    User clicks Scan Current Page. The extension returns a local, explainable
+    report with rule, location, severity, and suggested next check.
+
+  Logic:
+    DOM traversal, rule registry, finding normalization, duplicate removal,
+    severity sorting, summary counts, and safe report export.
+
+  APIs:
+    activeTab or deliberately scoped scripting, content scripts, sidePanel,
+    runtime messaging, storage for user rule preferences.
+
+  Boundary:
+    This is an inspector, not an automatic website repair tool in version one.
+
+B5: MV3-MANIFEST-DOCTOR — EXTENSION SAFETY CHECKER
+----------------------------------------------------------------
+  Problem:
+    Developers add permissions they do not understand or accidentally design
+    an extension that violates MV3 or Web Store expectations.
+
+  Product:
+    User pastes or imports a manifest. The extension explains risky permissions,
+    missing fields, remote-code patterns, broad host access, and unclear purpose.
+
+  Logic:
+    nested object validation, rule priorities, error aggregation, human-readable
+    diagnostics, severity ranking, and fixture-based tests.
+
+  APIs:
+    sidePanel, commands, storage. The checker itself should need minimal access.
+
+  Boundary:
+    It is an analyzer, not a security certification. Every finding must explain
+    what was checked and what remains unknown.
+
+B6: RESOURCEPULSE — PAGE PERFORMANCE BUDGET INSPECTOR
+----------------------------------------------------------------
+  Problem:
+    A page feels slow, but the user cannot see which resources or tasks caused
+    the delay.
+
+  Product:
+    User starts a scan and receives a local report of large resources, slow
+    requests, third-party domains, long tasks, and budget violations.
+
+  Logic:
+    collect, normalize, group, sort, threshold rules, summary aggregation,
+    comparison between two scans, and clear unknown/error states.
+
+  APIs:
+    user-invoked activeTab/content script, sidePanel, runtime messaging.
+
+  Boundary:
+    No background browsing surveillance. Scan only after explicit user action.
+
+B7: PAYLEAK-LENS — P2 BROWSER CONTINUATION
+----------------------------------------------------------------
+  Problem:
+    A user sees a billing table but cannot tell which charge repeats silently.
+
+  Product:
+    User supplies a selected table or pasted statement rows. The tool reports
+    recurring name+amount pairs and skips malformed rows.
+
+  Logic:
+    FIN-302 exact-pair grouping, threshold detection, first-seen order,
+    validation, result envelopes, and privacy-safe local processing.
+
+  Boundary:
+    No bank login, password, OTP, automatic account scraping, or financial
+    data upload. This project needs a careful privacy policy before release.
+
+B8: STREAM-HEALTH-LAB — P1 BROWSER CONTINUATION
+----------------------------------------------------------------
+  Problem:
+    A playlist contains many dead, slow, duplicated, or invalid streams.
+
+  Product:
+    User supplies a playlist or selected URLs. The tool classifies reachable,
+    slow, invalid, duplicate, and unknown results, then creates a health report.
+
+  Logic:
+    normalization, deduplication, timeout state, cancellation, retry policy,
+    result ordering, aggregation, and partial-failure handling.
+
+  APIs:
+    sidePanel, storage, alarms for deliberate rechecks, service worker network
+    boundaries, and only explicit host access where required.
+
+  Boundary:
+    CORS, host permissions, rate limits, and provider terms must be checked.
+    No aggressive probing of third-party services.
+
+B9: EXTENSION-TEST-LAB — LOGIC AND CONTRACT HARNESS
+----------------------------------------------------------------
+  Problem:
+    Extensions often work on one page and fail silently on another.
+
+  Product:
+    A local test harness for rule fixtures, message contracts, permission
+    assumptions, tab-state transitions, and restore scenarios.
+
+  Logic:
+    pure-function tests first, input/output contracts, fake browser adapters,
+    state-transition tests, failure injection, and regression reports.
+
+  Why it matters:
+    This turns every later extension into a professional project, not a demo.
+
+FULL SYSTEM DESIGN — COMMON FOUNDATION
+----------------------------------------------------------------
+  LAYER 1 — USER SURFACE
+    toolbar action, keyboard command, context menu, side panel.
+
+  LAYER 2 — BROWSER ADAPTERS
+    tabs, sessions, tab groups, storage, messaging, and capability checks.
+    Browser APIs stay at the edge; business rules do not depend on them.
+
+  LAYER 3 — PURE JAVASCRIPT DOMAIN ENGINE
+    input validation, normalization, rules, grouping, ranking, state changes,
+    result envelopes, and error decisions.
+
+  LAYER 4 — STATE
+    session-only state for temporary work; local state for deliberate saved
+    sessions; clear delete/export behavior; no secret data in ordinary storage.
+
+  LAYER 5 — TESTS
+    pure logic fixtures, malformed inputs, duplicate inputs, empty inputs,
+    permission/API failure simulations, and manual browser acceptance checks.
+
+  LAYER 6 — RELEASE
+    one narrow purpose, minimal permissions, privacy policy, README, test
+    evidence, screenshots, semantic commits, and no remote executable code.
+
+PROJECT BUILD ORDER AFTER THE CURRENT GATE
+----------------------------------------------------------------
+  0. Two-day Arrays reset.
+  1. FIN-302 J1 findLeaks.
+  2. J2 -> J3 -> J4 -> J5 -> J6.
+  3. Choose one browser project only: B1 ContextDock is recommended.
+  4. Paper-first Jira ticket.
+  5. Pure JavaScript engine without Chrome APIs.
+  6. Unit tests for the engine.
+  7. Thin Chrome adapter: side panel, message, storage, tabs.
+  8. Manual browser acceptance.
+  9. Privacy and permission review.
+  10. Push only with proof.
+
+DECISION RULE
+----------------------------------------------------------------
+  Do not choose a project because it sounds cool.
+  Choose it only if:
+    - one user problem is clear;
+    - one sentence explains the purpose;
+    - the pure JS engine can be tested without Chrome;
+    - browser APIs are a thin adapter, not the whole project;
+    - permissions are minimal and explainable;
+    - the result can become a real portfolio artifact.
+
+RECOMMENDATION
+----------------------------------------------------------------
+  Best new browser project: B1 CONTEXTDOCK.
+  Best direct continuation of current work: B7 PAYLEAK-LENS.
+  Best P1 flagship extension: B8 STREAM-HEALTH-LAB.
+  Best low-permission developer tool: B5 MV3-MANIFEST-DOCTOR.
+
+  No build starts from this note during the two-day Array refresh.
+  After the refresh, J1 comes first. This ladder is the future direction,
+  not a shortcut around the locked learning order.
+================================================================
+END — 2026 BROWSER-LOGIC PROJECT LADDER
+================================================================

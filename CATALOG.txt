@@ -3,8 +3,8 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Thursday, 08 October 2026
-  Samay       : 10:41 AM (Asia/Kolkata)
+  Banaya      : Friday, 09 October 2026
+  Samay       : 08:01 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -73,6 +73,8 @@ Poore workspace ka naksha: kahan kya hai
             |-- 01-ULTRON-LADDER.txt
                   -> 17 projects ki ladder (ULTRON tak)
             |-- 02-DESTINY-PROJECT-MAP-2026.txt
+            |-- 03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt
+                  -> Code-free 2026 browser project ladder — real user problems + JS mapping
             |
             |-- [DIR] _TEMPLATE/
                   -> Namuna — naya project shuru karne ka format
@@ -206,11 +208,11 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 69
+    Total files    : 70
     Total folders  : 17
 
     READING/       : 13 files (numbered 00 se aage)
-    PROJECTS/      : 6 items
+    PROJECTS/      : 7 items
 
 ==============================================================================
 5. NOTE

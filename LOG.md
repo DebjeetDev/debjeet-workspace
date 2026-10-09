@@ -508,3 +508,24 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Read the full READING/10-FULL-SYLLABUS.txt and current Chrome extension
   platform research before proposing 2026 project ideas.
 ================================================================
+
+================================================================
+09 Oct 2026 — BROWSER PROJECT SYSTEM RESEARCH NOTE ADDED
+================================================================
+  Debjeet clarified that future work should include cool browser-first
+  products, not only UPI. He specifically described the PDF-reading problem:
+  keep the reading context and references beside the current tab without
+  opening a pile of new tabs.
+
+  Read the full syllabus and researched current Chrome extension capabilities:
+  Side Panel, tabs, tab groups, sessions, context menus, commands, storage,
+  MV3 boundaries, message validation, and Web Store single-purpose/privacy
+  rules. Added the code-free ladder:
+  PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt
+
+  Recommended future direction: B1 ContextDock (no-new-tab reading context),
+  with B2 TabRescue, B3 SplitRead, B4 A11y Sentinel, B5 Manifest Doctor,
+  B6 ResourcePulse, B7 PayLeak Lens, B8 Stream Health Lab, and B9 Extension
+  Test Lab. Research only during the two-day Arrays refresh and J-gate;
+  no new implementation started.
+================================================================

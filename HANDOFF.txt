@@ -1,6 +1,6 @@
 ################################################################################
 HANDOFF — EXACT CHECKPOINT (CANONICAL — is duniya ka sach)
-Updated: Thursday, 08 October 2026, 05:20 PM IST
+Updated: Friday, 09 October 2026 (current-day sync)
 Canonical local: /home/user fresh clone | SABSE AAGE YAHIN HAI
 ################################################################################
 
@@ -32,7 +32,8 @@ CHECKPOINT (truth, 8 Oct):
   ⏸️ TWO-DAY ARRAY REFRESH (user-approved): spend two days rebuilding the
      array mental model. J1 is intentionally waiting, not dropped. Project
      ideation is research-only during this refresh; no new project code or
-     Phase 6 work starts. After the refresh, J1 remains next.
+     Phase 6 work starts. After the refresh, J1 remains next. Browser ideas
+     are recorded in PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
 
 PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
   Canonical local: /home/user, branch main. Base clone was 46c6e83;
