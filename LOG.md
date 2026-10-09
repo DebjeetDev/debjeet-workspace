@@ -529,3 +529,12 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Test Lab. Research only during the two-day Arrays refresh and J-gate;
   no new implementation started.
 ================================================================
+
+================================================================
+09 Oct 2026 — ARRAY REFRESH PLAN CORRECTED
+================================================================
+  Debjeet clarified: Day 1 of the Arrays recap is already complete; only
+  one day remains. State files now say one remaining refresh day, then J1
+  FIN-302 `findLeaks`. Browser-project research remains parked; no new code
+  or Phase 6 work starts before the refresh and J-order.
+================================================================

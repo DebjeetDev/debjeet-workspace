@@ -10,7 +10,7 @@
   Book    : 1C — JavaScript Advanced
   🔒 5B LOCKED (Stage 1→5 PASS, 6–7 Oct)  →  🧊 Phase 6 PAUSED by NIYAM #20
   Phase   : J1 PROJECT-GATE (Phase 6 Objects started; rowToObject answer not recorded)
-  Next    : TWO-DAY ARRAY REFRESH (READING/26 RESET CARD); then J1 FIN-302. J1 remains next; no status regression.
+  Next    : ONE DAY ARRAY REFRESH remains (READING/26 RESET CARD); then J1 FIN-302. J1 remains next; no status regression.
   Ph6     : 🧊 PAUSED by niyam #20 PROJECT-GATE (Debjeet, 7 Oct 11 AM):
             "no project → no next phase. pro banna hai, lazy nahi."
             ST1 resume-safe (same jagah).

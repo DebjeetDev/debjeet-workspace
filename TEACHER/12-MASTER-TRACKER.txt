@@ -134,8 +134,8 @@ E. LOCKED NIYAM (jaldi nazar)
 ================================================================================
 F. AGLA KAAM (priority — 8 Oct, verified)
 ================================================================================
-  1. TWO-DAY ARRAY REFRESH: READING/26 RESET CARD; no status regression.
-     Project ideation only; no new project code during the refresh.
+  1. ONE DAY ARRAY REFRESH REMAINS: READING/26 RESET CARD; Day 1 passed.
+     No status regression. Project ideation only; no new project code today.
   2. J1 FIN-302: `findLeaks` — refresh ke baad code tum pehle likhoge;
      hint-only support.
   3. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine

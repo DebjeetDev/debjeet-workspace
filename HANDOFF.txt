@@ -29,11 +29,11 @@ CHECKPOINT (truth, 8 Oct):
      Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
      regression. Read the CURRENT RESET CARD at the top of
      READING/26-ARRAY-TOOLKIT-DEEP.txt before J1 coding.
-  ⏸️ TWO-DAY ARRAY REFRESH (user-approved): spend two days rebuilding the
-     array mental model. J1 is intentionally waiting, not dropped. Project
-     ideation is research-only during this refresh; no new project code or
-     Phase 6 work starts. After the refresh, J1 remains next. Browser ideas
-     are recorded in PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
+  ⏸️ ARRAY REFRESH (user update): Day 1 is complete; ONE DAY remains to
+     rebuild the array mental model. J1 is intentionally waiting, not dropped.
+     Project ideation is research-only during this remaining day; no new
+     project code or Phase 6 work starts. After the refresh, J1 remains next.
+     Browser ideas are recorded in PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
 
 PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
   Canonical local: /home/user, branch main. Base clone was 46c6e83;

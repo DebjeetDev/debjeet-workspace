@@ -7,9 +7,9 @@
 # CURRENT OVERRIDE (08 October 2026 — verified)
 # Canonical root: /home/user, fresh clone main at 46c6e83 before state sync.
 # Phase 5 + 5B: complete/locked. Phase 6 Objects: PAUSED by NIYAM #20.
-# Current teaching step: two-day Array Reset Card refresh at the top of READING/26.
+# Current teaching step: one day of Array Reset Card remains at the top of READING/26.
 # Then strict project order: J1 FIN-302 findLeaks -> J2 -> J3 -> J4 -> J5 -> J6.
-# Project ideas are research-only during the refresh; no new code starts.
+# Project ideas are research-only during the remaining refresh; no new code starts.
 # SSH: fresh ~/.ssh/github_backup is registered. ssh -T, ls-remote, and push
 # are verified; local/remote match after the latest state/spec sync. Private
 # key is never printed/committed.
