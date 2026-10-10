@@ -151,10 +151,10 @@ CURRENT DECISION FOR DEBJEEt
 ==============================================================================
 
   NOW:
-    FIN-302 J1 findLeaks. One project slice at a time. Debjeet writes first.
+    J3 mini pub/sub. One project slice at a time. Debjeet writes first.
 
-  AFTER J1:
-    J2 -> J3 -> J4 -> J5 -> J6, strict order.
+  AFTER J3:
+    J4 -> J5 -> J6, strict order.
 
   AFTER THE PROJECT GATE:
     Resume Phase 6 Objects, then Async and later modern/browser topics in

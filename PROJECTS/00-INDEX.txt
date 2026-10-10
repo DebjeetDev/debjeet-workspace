@@ -3,7 +3,7 @@ PROJECTS  —  SYSTEMATIC FOLDER
 "READING = padhne ki library  |  PROJECTS = asli kaam"
 ==============================================================================
 
-    Last updated: Thursday, 8 October 2026 (verified via date)
+    Last updated: Saturday, 10 October 2026 (verified via date)
 
 
 ==============================================================================
@@ -18,16 +18,16 @@ DO ALAG CHEEZEIN (Confuse mat hona)
 
 
 ==============================================================================
-CURRENT GATE — NIYAM #20 (8 October 2026)
+CURRENT GATE — NIYAM #20 (10 October 2026)
 ==============================================================================
 
     Phase 5 Arrays + Phase 5B Toolkit  : DONE / LOCKED
     Phase 6 Objects                    : PAUSED (started, not abandoned)
-    Active strict order                 : J2 Flipkart multi-filter -> J3 -> J4
-                                          -> J5 -> J6
+    Active strict order                 : J3 mini pub/sub -> J4 -> J5 -> J6
     P2 J1 findLeaks                    : acceptance proof 8/8 passed in user editor;
                                           source not copied to CODE/ or pushed.
     J2 standalone project              : J2-FLIPKART-MULTI-FILTER/
+                                          source/tests organized; 8/8 proof passed;
                                           PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
                                           (English twin has -EN suffix).
     Debjeet writes first; each project needs proof before the next gate.
@@ -62,7 +62,7 @@ FOLDER STRUCTURE
     |     |-- tests/test-suite.js
     |     +-- docs/
     |
-    +-- P2-UPI-LEAK-DETECTOR/     <- AGLA PROJECT (abhi shuru hoga)
+    +-- P2-UPI-LEAK-DETECTOR/     <- J1 proof passed; remaining P2 modules parked
           |-- 00-README.txt
           |-- 01-SPEC.txt              8 functions + 4 leak types
           |-- src/

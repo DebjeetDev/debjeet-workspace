@@ -2,7 +2,7 @@
 J2 — FLIPKART MULTI-FILTER PIPELINE
 ==============================================================================
 
-STATUS: ACTIVE — code-free ticket ready; Debjeet writes first.
+STATUS: ✅ PROOF PASSED — source and tests organized; 8/8 checks passed.
 TYPE:   Small standalone JavaScript learning project / J-series gate.
 WHY:    J1 was the P2 subscription-leak module. J2 is a different product
         problem, so it has its own folder. It is not UPI code.
@@ -12,8 +12,8 @@ PLAN:
   PLAN/03-SPEC-FLIPKART-MULTI-FILTER-EN.txt    English twin
 
 CODE:
-  CODE/src/        Debjeet's implementation goes here.
-  CODE/tests/      Proof/tests go here when the code is ready.
+  CODE/src/        Production implementation.
+  CODE/tests/      Separate fixtures, expected results, and proof runner.
 
 RULE:
   This folder is inside the learning workspace and backup repository.
@@ -24,7 +24,10 @@ PIPELINE:
   valid rows -> eligible products -> display rows -> price order
   filter -> map -> sort
 
+PROOF:
+  Run from CODE/ with: node tests/flipkart-filter.test.js
+  The source and tests are separate; the suite passed 8/8.
+
 NEXT:
-  Read the PLAN ticket, write the function yourself, run the acceptance
-  cases, then send the code and output for review.
+  J3 mini pub/sub is the next project-gate task.
 ==============================================================================

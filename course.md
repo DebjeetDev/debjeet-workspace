@@ -44,7 +44,7 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
          ↓
    1B → CSS3 Full Mastery                           [S3]  ⏳
          ↓
-   1C → JavaScript Core Engine  ⭐                  [S4]  🔥 NOW (J2 gate; J1 proof passed; Phase 6 paused)
+   1C → JavaScript Core Engine  ⭐                  [S4]  🔥 NOW (J3 gate; J1/J2 proof passed; Phase 6 paused)
          ↓
    1D → Tailwind CSS v4 + shadcn/ui                 [S5]  ⏳
          ↓
@@ -428,9 +428,8 @@ TOPICS:
     Phase 6 lesson work is paused, not abandoned. Complete projects in this
     exact order before resuming Objects: J1 findLeaks/FIN-302 → J2 Flipkart
     multi-filter → J3 mini pub/sub → J4 debounce engine → J5 real STREAM-OS
-    pipeline → J6 memoize/LRU (optional). J1 acceptance output is proved (8/8)
-    in the user's editor; J2 is now the next task. No project is marked complete
-    without acceptance proof.
+    pipeline → J6 memoize/LRU (optional). J1/J2 acceptance outputs are proved;
+    J3 is now the next task. No project is marked complete without acceptance proof.
 
   PHASE 7 — ASYNC JAVASCRIPT ⏳
   [ ] Synchronous vs Asynchronous

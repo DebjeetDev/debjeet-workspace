@@ -1,9 +1,9 @@
 ================================================================
-P2-UPI-LEAK-DETECTOR — J2 / 5A SPEC
+J2-FLIPKART-MULTI-FILTER — J2 / 5A SPEC
 Ticket: J2       | "Flipkart Multi-Filter Product Pipeline"
-Status: 🟡 ACTIVE → Debjeet Dhar (J1 proof passed, 10 Oct 2026)
+Status: ✅ PROOF PASSED → 8/8 checks (10 Oct 2026)
 Type:   JIRA-STYLE, CODE-FREE
-Folder: PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/
+Folder: PROJECTS/J2-FLIPKART-MULTI-FILTER/PLAN/
 ================================================================
 
   🎯 ONE-LINE:
@@ -140,7 +140,7 @@ DEFINITION OF DONE
   [ ] Bina dekhe explain: filter, map, sort ka role
   [ ] Boundary rules explain: price 50,000 and rating 4 accepted
   [ ] Original input unchanged prove kiya
-  [ ] Code P2/CODE/src/ mein Debjeet ke chosen filename mein save
+  [ ] Code J2/CODE/src/ mein Debjeet ke chosen filename mein save
   [ ] Expected vs actual output bheja
   [ ] Tracker update: J2 ✅; phir J3 unlock
 

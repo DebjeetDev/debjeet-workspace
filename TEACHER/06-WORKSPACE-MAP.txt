@@ -48,11 +48,13 @@
   P1-STREAM-OS/       <- LIVE + npm published (stream-os-engine v1.0.0)
       PLAN/
       CODE/
-  P2-UPI-LEAK-DETECTOR/   <- ABHI CHALU
+  P2-UPI-LEAK-DETECTOR/   <- J1 proof passed; remaining P2 modules parked
       CODE/
         README.md
         src/reduce-practice.js
         src/spend-report.js     <- PURA PASSING (6 Oct 2026)
+  J2-FLIPKART-MULTI-FILTER/  <- standalone J2; 8/8 proof passed
+      PLAN/ + CODE/src/ + CODE/tests/
 
 ================================================================================
   PROJECT STRUCTURE RULE (har project mein)

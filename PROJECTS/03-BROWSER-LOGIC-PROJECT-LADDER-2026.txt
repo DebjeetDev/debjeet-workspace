@@ -11,7 +11,7 @@ CURRENT LEARNING LAW
 ----------------------------------------------------------------
   1. The JavaScript Arrays refresh is complete.
   2. FIN-302 J1 acceptance proof passed 8/8 in the user's editor.
-  3. J2 Flipkart multi-filter is now the active coding project; J3 -> J4 -> J5 -> J6 remains locked after J2.
+  3. J2 Flipkart source/tests passed 8/8; J3 mini pub/sub is now the active coding project. J4 -> J5 -> J6 remains locked.
   4. This file is research only. It does not open a new coding phase.
   5. No Todo app. No basic Notes app. No random tutorial clone.
   6. Every chosen project must solve one visible user problem, have one

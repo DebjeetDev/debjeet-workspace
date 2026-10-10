@@ -35,7 +35,7 @@ FILES INDEX:
   05-GITHUB.txt          ← accounts, repos, push recipe, SSH, 403 fix
   06-WORKSPACE-MAP.txt   ← kaunsi file kahan hai
   07-CURRENT-STATE.txt   ← ⭐ ABHI KYA CHAL RAHA HAI — yahan se resume karo
-  08-PROJECTS.txt        ← P1 STREAM-OS (done), P2 UPI Leak (chalu)
+  08-PROJECTS.txt        ← P1 done, P2 J1 proof passed, J2 standalone, J3 next
   09-STYLE-GUIDE.txt     <- kaise baat karoon (Hinglish, chhota, direct)
   10-ACTIVATION-PROMPT.txt <- copy-paste karne ke liye tayyar prompt
   11-VALUES.txt          <- Debjeet ki 10 core values + mera vaada

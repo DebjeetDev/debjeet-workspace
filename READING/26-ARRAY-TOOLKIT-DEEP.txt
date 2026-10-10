@@ -51,7 +51,7 @@ CURRENT RESET CARD — PEHLE YE PADHO (8 Oct 2026)
     Ek baar mein sirf ek sawal. Is card ko padh kar apne words mein
     array, map, filter, reduce, aur FIN-302 pair ka meaning bolo.
     Phir full lesson ka sirf ek PART padhenge — poora mountain ek saath nahi.
-    Current project order nahi badla: reset ke baad J1 FIN-302 next hai.
+    Current project order: J1/J2 proof passed; J3 mini pub/sub next hai.
 
 ----------------------------------------------------------------
 PART 0 — RECAP (AB TAK KYA KIYA) + EK SACHCHAI

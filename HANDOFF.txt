@@ -1,6 +1,6 @@
 ################################################################################
 HANDOFF — EXACT CHECKPOINT (CANONICAL — is duniya ka sach)
-Updated: Friday, 09 October 2026 (current-day sync)
+Updated: Saturday, 10 October 2026 (current-day sync)
 Canonical local: /home/user fresh clone | SABSE AAGE YAHIN HAI
 ################################################################################
 
@@ -10,7 +10,7 @@ ACTIVATION RITUAL (har naye chat mein):
   3. Report SIRF 2 line: "kahan chhoda + next kya" → phir EK task do.
      (Old-teacher vibe, adopted: HANDOFF/AGENTS parallel-session se)
 
-CHECKPOINT (truth, 9 Oct):
+CHECKPOINT (truth, 10 Oct):
   ✅ Book 1C Phase 5 Arrays Deep COMPLETE + Phase 5B TOOLKIT 🔒 LOCKED
      (ST1–ST5 node-verified — 26-ARRAY file, tracker 5/5 ✅)
   🧊 Phase 6 OBJECTS DEEP = PAUSED — abandoned NAHI.
@@ -20,9 +20,10 @@ CHECKPOINT (truth, 9 Oct):
      "planned projects pehle, strict; gate ke bina next phase nahi."
      STRICT J-ORDER (28-file PART D):
        J1 findLeaks (Fraud Detector = P2-M02)   ✅ PROOF PASSED
-       J2 Flipkart multi-filter                         ← NEXT TASK YE HAI
-       J2 flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
-       → J5 STREAM-OS real pipeline → J6 memoize+LRU (opt)
+       J2 Flipkart multi-filter                 ✅ PROOF PASSED
+       J3 mini pub/sub                          ← NEXT TASK YE HAI
+       J4 debounce engine → J5 STREAM-OS real pipeline
+       → J6 memoize+LRU (opt)
        P8 Intl = parked (non-logic API)
   📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
   📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
@@ -30,11 +31,11 @@ CHECKPOINT (truth, 9 Oct):
      Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
      regression. Read the CURRENT RESET CARD at the top of
      READING/26-ARRAY-TOOLKIT-DEEP.txt before J1 coding.
-  ✅ ARRAY REFRESH COMPLETE (user update): the recap is done. J1 FIN-302 is
-     now the active coding project. Debjeet writes first; hints come before
-     full solutions. No Phase 6 Objects work starts before the J-order.
-     Browser ideas remain research-only and are recorded in
-     PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
+  ✅ PROJECT PROOF GATE UPDATE: J1 FIN-302 and J2 Flipkart both passed their
+     8/8 acceptance checks. J3 mini pub/sub is now the active coding project;
+     Debjeet writes first and hints come before full solutions. No Phase 6
+     Objects work starts before the full J-order. Browser ideas remain
+     research-only and are recorded in PROJECTS/03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt.
 
 PUSH/GITHUB STATE: ✅ SSH AUTH + PUSH VERIFIED (8 Oct 2026)
   Canonical local: /home/user, branch main. Base clone was 46c6e83;

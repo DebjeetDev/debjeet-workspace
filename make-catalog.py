@@ -18,7 +18,7 @@ FOLDER_INFO = {
     "READING": "PADHNE ki library — course, roadmap, log, guides (sab plain .txt)",
     "PROJECTS": "BANANE ka kaam — har project ke PLAN/ aur CODE/ alag",
     "P1-STREAM-OS": "FLAGSHIP — Smart TV ke liye free live TV",
-    "P2-UPI-LEAK-DETECTOR": "AGLA PROJECT — 'Tera paisa kahan beh raha hai?'",
+    "P2-UPI-LEAK-DETECTOR": "J1 proof passed — remaining UPI modules parked",
     "J2-FLIPKART-MULTI-FILTER": "STANDALONE J2 — filter/map/sort product pipeline",
     "PLAN": "Planning + Research docs (sirf txt, koi code nahi)",
     "CODE": "Asli code — src, tests, package.json",
@@ -172,8 +172,10 @@ def main():
     A("    Poora syllabus?             ->  course.md + READING/01-COURSE-ROADMAP.txt")
     A("    Code likhna hai?            ->  PROJECTS/P1-STREAM-OS/CODE/")
     A("                                    PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/")
+    A("                                    PROJECTS/J2-FLIPKART-MULTI-FILTER/CODE/")
     A("    Project ka plan?            ->  PROJECTS/P1-STREAM-OS/PLAN/")
     A("                                    PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/")
+    A("                                    PROJECTS/J2-FLIPKART-MULTI-FILTER/PLAN/")
     A("    ULTRON ka raasta?           ->  PROJECTS/01-ULTRON-LADDER.txt")
     A("    TV ke API links?            ->  PROJECTS/P1-STREAM-OS/PLAN/02-API-RESOURCES.txt")
     A("    Voice note?                 ->  only when explicitly requested; none stored")

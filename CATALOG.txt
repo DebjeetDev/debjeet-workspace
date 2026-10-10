@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Saturday, 10 October 2026
-  Samay       : 09:56 AM (Asia/Kolkata)
+  Samay       : 11:38 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -19,8 +19,10 @@ Poore workspace ka naksha: kahan kya hai
     Poora syllabus?             ->  course.md + READING/01-COURSE-ROADMAP.txt
     Code likhna hai?            ->  PROJECTS/P1-STREAM-OS/CODE/
                                     PROJECTS/P2-UPI-LEAK-DETECTOR/CODE/
+                                    PROJECTS/J2-FLIPKART-MULTI-FILTER/CODE/
     Project ka plan?            ->  PROJECTS/P1-STREAM-OS/PLAN/
                                     PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/
+                                    PROJECTS/J2-FLIPKART-MULTI-FILTER/PLAN/
     ULTRON ka raasta?           ->  PROJECTS/01-ULTRON-LADDER.txt
     TV ke API links?            ->  PROJECTS/P1-STREAM-OS/PLAN/02-API-RESOURCES.txt
     Voice note?                 ->  only when explicitly requested; none stored
@@ -99,14 +101,15 @@ Poore workspace ka naksha: kahan kya hai
                   |
                   |-- [DIR] CODE/
                         -> Asli code — src, tests, package.json
+                        |-- README.txt
                         |
                         |-- [DIR] src/
                               -> Source code (jo kaam karta hai)
-                              (khali)
+                              |-- flipkart-filter.js
                         |
                         |-- [DIR] tests/
                               -> Test files (jo check karta hai)
-                              (khali)
+                              |-- flipkart-filter.test.js
                   |
                   |-- [DIR] PLAN/
                         -> Planning + Research docs (sirf txt, koi code nahi)
@@ -169,7 +172,7 @@ Poore workspace ka naksha: kahan kya hai
                         |-- 06-WEB-TV-RESEARCH-2026.txt
             |
             |-- [DIR] P2-UPI-LEAK-DETECTOR/
-                  -> AGLA PROJECT — 'Tera paisa kahan beh raha hai?'
+                  -> J1 proof passed — remaining UPI modules parked
                   |
                   |-- [DIR] CODE/
                         -> Asli code — src, tests, package.json
@@ -239,7 +242,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 79
+    Total files    : 82
     Total folders  : 23
 
     READING/       : 14 files (numbered 00 se aage)
