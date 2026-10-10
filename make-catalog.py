@@ -63,6 +63,7 @@ FILE_INFO = {
     "08-REPO-README.txt": "Tere package ki public profile (GitHub pe dikhega)",
     "09-EXPECTED-OUTPUT.txt": "Test chalane ke baad screen par kya aana chahiye",
     "10-FULL-SYLLABUS.txt": "Poora course.md — plain text (1,700+ lines)",
+    "30-MUST-KNOW-MASTER-SCOPE-2026.txt": "Must-know scope: deep vs working vs awareness vs on-demand",
     "11-DAILY-PLAN.txt": "Roz ka routine — subah JS, shaam 1 LeetCode",
     "12-LEETCODE-ENGLISH-DICTIONARY.txt": "Har problem ke English shabdon ka matlab",
     "13-PROBLEM-26-WALKTHROUGH.txt": "LeetCode #26 — super simple Hinglish walkthrough",

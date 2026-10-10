@@ -3,8 +3,8 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Friday, 09 October 2026
-  Samay       : 08:01 AM (Asia/Kolkata)
+  Banaya      : Saturday, 10 October 2026
+  Samay       : 07:40 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -65,6 +65,13 @@ Poore workspace ka naksha: kahan kya hai
             -> EK COMMAND — poora workspace GitHub par backup (./sync.sh)
       |-- TEACHER-COMPLETE.txt
       |-- TEACHER-QUICK.txt
+      |
+      |-- [DIR] audio/
+            -> Voice notes (Dubby Bhaiya ki audio)
+            |-- company-flow-01-mindset.mp3
+            |-- company-flow-02-process.mp3
+            |-- company-flow-03-fin302.mp3
+            |-- company-flow-04-next-project.mp3
       |
       |-- [DIR] PROJECTS/
             -> BANANE ka kaam — har project ke PLAN/ aur CODE/ alag
@@ -187,6 +194,8 @@ Poore workspace ka naksha: kahan kya hai
             |-- 26-ARRAY-TOOLKIT-DEEP.txt
             |-- 27-OBJECTS-DEEP.txt
             |-- 28-PLAN-VS-DONE-MATCH.txt
+            |-- 30-MUST-KNOW-MASTER-SCOPE-2026.txt
+                  -> Must-know scope: deep vs working vs awareness vs on-demand
       |
       |-- [DIR] TEACHER/
             |-- 00-START-HERE.txt
@@ -208,11 +217,12 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 70
-    Total folders  : 17
+    Total files    : 75
+    Total folders  : 18
 
-    READING/       : 13 files (numbered 00 se aage)
+    READING/       : 14 files (numbered 00 se aage)
     PROJECTS/      : 7 items
+    audio/         : 4 voice notes
 
 ==============================================================================
 5. NOTE

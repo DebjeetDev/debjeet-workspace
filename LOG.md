@@ -548,3 +548,21 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   order remains J1 -> J2 -> J3 -> J4 -> J5 -> J6. No Phase 6 or browser
   project implementation has started.
 ================================================================
+
+================================================================
+10 Oct 2026 — MUST-KNOW SCOPE AUDIT ADDED
+================================================================
+  Re-read the complete course.md, the complete FULL-SYLLABUS, the roadmap,
+  current state, learning state, and master tracker. No large core-learning
+  pillar is missing. The important gaps are a dedicated Map lesson, a
+  browser/DOM platform block, and a Chrome MV3 extension track; RegExp,
+  URL/URLSearchParams, Date/time zones, Intl, IndexedDB/Cache API, and later
+  production security/testing mini-topics should be added at the right time.
+
+  Added the scope decision card:
+  READING/30-MUST-KNOW-MASTER-SCOPE-2026.txt
+  It separates L1 awareness, L2 working use, L3 independent building, and
+  L4 production judgement. Current rule: deep foundation, working breadth,
+  on-demand specialisation. It does not reopen the completed Arrays phase or
+  change the J1 -> J6 order.
+================================================================

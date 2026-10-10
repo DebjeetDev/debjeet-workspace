@@ -1,0 +1,170 @@
+==============================================================================
+DEBJEET DHAR — MUST-KNOW MASTER SCOPE 2026
+WHAT TO LEARN DEEPLY, WHAT TO USE, WHAT TO LOOK UP
+==============================================================================
+
+PURPOSE
+-------
+This is the scope decision card. It prevents the false goal of knowing every
+JavaScript, frontend, backend, cloud, AI, and browser topic deeply at the same
+time.
+
+CORE TRUTH
+----------
+No engineer remembers every API all the time. A strong engineer knows the
+mental model, the common patterns, the risks, and how to find the exact API
+when needed.
+
+বাংলায়: সবকিছু মুখস্থ করতে হবে না। ভিত্তি গভীরভাবে শিখতে হবে; বাকিটা
+প্রয়োজন হলে documentation দেখে ব্যবহার করতে হবে।
+
+==============================================================================
+FOUR KNOWLEDGE LEVELS
+==============================================================================
+
+L1 — AWARENESS
+  Can explain what the tool is and when it may be useful.
+  Example: knows that Web Workers move work away from the main thread.
+
+L2 — WORKING USE
+  Can use the tool with official documentation and a small example.
+  Example: can call an API, handle loading/error, and read its reference.
+
+L3 — INDEPENDENT BUILDING
+  Can design the data flow, write the core logic from a blank file, test
+  edge cases, and debug without copying a tutorial.
+
+L4 — PRODUCTION JUDGEMENT
+  Can choose between alternatives, explain trade-offs, defend security and
+  performance, review another person's code, and maintain the feature.
+
+RULE: Current project topic = L3. Core foundation = L4 over time. Nearby
+skills = L2. Distant or specialised topics = L1 until a real project needs
+ them.
+
+==============================================================================
+DEBJEEt's PERSONAL LEARNING TIERS
+==============================================================================
+
+TIER A — DEEP FOUNDATION, L3 NOW AND L4 OVER TIME
+-------------------------------------------------
+These are the skills that make every later stack easier:
+
+  JavaScript:
+    variables/types, guards, control flow, functions, callbacks,
+    closures, arrays, objects, immutability, error results, async,
+    modules, basic DOM/events, URL/JSON, and debugging.
+
+  Engineering habits:
+    paper design, input/output contract, edge cases, clean names,
+    small functions, tests, Git basics, meaningful commits, and review.
+
+  Current proof path:
+    J1 findLeaks -> J2 multi-filter -> J3 pub/sub -> J4 debounce
+    -> J5 STREAM-OS pipeline -> J6 memoize/LRU.
+
+TIER B — WORKING LEVEL, L2 THEN L3 WHEN PROJECT REQUIRES
+---------------------------------------------------------
+  Browser and frontend:
+    DOM, event bubbling/capture/delegation, accessibility, storage,
+    fetch, AbortController, TypeScript basics, React, Next.js, CSS,
+    performance, and browser security.
+
+  Backend:
+    HTTP, REST, Node, Express, validation, authentication, PostgreSQL,
+    Redis basics, file handling, logging, and safe error handling.
+
+  Quality:
+    unit tests, integration tests, E2E tests, mocking, coverage,
+    linting, formatting, CI basics, and dependency/security checks.
+
+TIER C — SPECIALISATION FOR THE CHOSEN PRODUCT
+----------------------------------------------
+  Browser product track:
+    Manifest V3, extension service-worker lifecycle, Side Panel,
+    tabs, sessions, storage, context menus, commands, content scripts,
+    message validation, minimal permissions, privacy disclosure,
+    Chrome Web Store rules, and extension testing.
+
+  This is the track for ContextDock and future browser products. It is not
+  required before J1. It becomes L2 first, then L3 feature by feature.
+
+TIER D — AWARENESS FIRST, DEEP ONLY WHEN NEEDED
+-----------------------------------------------
+  Advanced JS:
+    Map/WeakMap, generators, iterators, Proxy, Reflect, symbols,
+    advanced OOP, functional composition, and custom Promise internals.
+
+  Larger engineering:
+    DSA, system design, Docker, CI/CD, AWS, observability, AI systems,
+    RAG, agents, WebRTC, Three.js, and advanced animation.
+
+  These are important career areas, but they do not all belong in today's
+  working memory. Learn them at the syllabus stage or project stage that
+  needs them.
+
+==============================================================================
+SMALL GAPS TO ADD AT THE RIGHT TIME
+==============================================================================
+
+  1. Map needs a short standalone lesson before pub/sub or LRU.
+  2. Browser fundamentals need a compact DOM and event-model block.
+  3. Chrome MV3 needs its own project appendix before ContextDock.
+  4. RegExp, URL/URLSearchParams, Date/time zones, Intl, JSON, FormData,
+     Blob/File, IndexedDB, Cache API, and observers should be mini-topics.
+  5. Production security should later include threat modelling, dependency
+     audit, secret scanning, CSP, and permission review.
+
+These are additions to the map, not reasons to reopen completed Array work.
+
+==============================================================================
+THE BEST WAY TO LEARN EACH TOPIC
+==============================================================================
+
+  1. WHY — What real problem does this solve?
+  2. TRIGGER — What sentence tells me to use it?
+     "Keep matching items" means filter.
+     "Transform every item" means map.
+     "Many values into one result" means reduce.
+     "Wait for remote data" means async/fetch.
+  3. MODEL — Explain the data flow in simple English and Bengali.
+  4. PAPER — Write input, output, rules, and edge cases.
+  5. SMALL BUILD — Write one narrow function or feature.
+  6. PROOF — Run normal, empty, invalid, duplicate, and boundary cases.
+  7. REVIEW — Check readability, mutation, security, and performance.
+  8. RECALL — Explain where this pattern would appear in a real product.
+
+==============================================================================
+WHAT NOT TO DO
+==============================================================================
+
+  - Do not learn every library at once.
+  - Do not memorise every API signature.
+  - Do not open React, AWS, AI, and Chrome APIs during a pure JS task.
+  - Do not add a topic only because it looks impressive on a checklist.
+  - Do not reopen a completed phase because one bonus method is unfamiliar.
+  - Do not measure progress by how many topics were read; measure by what can
+    be built, tested, explained, and maintained.
+
+==============================================================================
+CURRENT DECISION FOR DEBJEEt
+==============================================================================
+
+  NOW:
+    FIN-302 J1 findLeaks. One project slice at a time. Debjeet writes first.
+
+  AFTER J1:
+    J2 -> J3 -> J4 -> J5 -> J6, strict order.
+
+  AFTER THE PROJECT GATE:
+    Resume Phase 6 Objects, then Async and later modern/browser topics in
+    the locked syllabus order. Browser research may continue, but building
+    ContextDock waits for its correct foundation.
+
+  FINAL RULE:
+    Deep foundation, working breadth, on-demand specialisation.
+    Not everything, not all at once, and not all at the same depth.
+
+==============================================================================
+END — SCOPE CARD
+==============================================================================
