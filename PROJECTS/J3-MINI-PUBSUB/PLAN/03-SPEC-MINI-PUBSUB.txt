@@ -1,22 +1,37 @@
 ================================================================
 J3-MINI-PUBSUB — J3 / PROJECT GATE
 Ticket: J3       | "Mini Pub/Sub Event Bus"
-Status: 🟡 READY — code-free ticket; Debjeet writes first
+Status: 🟡 READY — pre-Objects, code-free ticket; Debjeet writes first
 Type:   JIRA-STYLE, CODE-FREE
 Folder: PROJECTS/J3-MINI-PUBSUB/PLAN/
 ================================================================
 
   🎯 ONE-LINE:
-     Alag-alag parts ko directly call karne ke bajay ek chhota event bus
-     banao jahan listener subscribe kare, publisher event bheje, aur
-     listener baad mein unsubscribe kar sake.
+     Alag-alag parts ko directly call karne ke bajay ek chhota closure-based
+     event bus banao jahan listener subscribe kare, publisher event bheje,
+     aur listener baad mein unsubscribe kar sake.
+
+----------------------------------------------------------------
+LEARNING SAFETY DECISION
+----------------------------------------------------------------
+  Phase 6 Objects abhi PAUSED hai. Isliye J3 ke first version mein returned
+  object, object method syntax, Map, Set, class, ya object payload use nahi
+  karna. Sirf already-learned functions, callbacks, closures, arrays, and
+  simple conditions use karo.
+
+  Is project ka public-looking API ek function hoga:
+
+      const bus = createPubSub();
+      const unsubscribe = bus("subscribe", "saved", listener);
+      bus("publish", "saved", "file-1");
+      unsubscribe();
 
 ----------------------------------------------------------------
 STORY (real problem)
 ----------------------------------------------------------------
   Real applications mein ek action ke baad multiple parts ko pata chalna
-  padta hai: save complete hua, payment successful hua, ya channel change
-  hua. Har part ko doosre part ko directly call karne se coupling badhti hai.
+  padta hai: save complete hua, ya koi channel change hua. Har part ko
+  doosre part ko directly call karne se coupling badhti hai.
 
   J3 ka bus ek simple boundary dega:
       subscribe → publish → listeners receive → unsubscribe
@@ -27,20 +42,23 @@ FUNCTION CONTRACT
   Factory:
       createPubSub()
 
-  Subscribe:
-      bus.subscribe(eventName, listener)
+      Ek dispatcher function return karo. Us dispatcher ko teen arguments
+      mil sakte hain: action, eventName, value.
+
+  Subscribe action:
+      bus("subscribe", eventName, listener)
 
       Valid call par ek unsubscribe function return karo. Us function ko
       call karne ke baad wahi listener us event ke liye dobara nahi chalega.
 
-  Publish:
-      bus.publish(eventName, payload)
+  Publish action:
+      bus("publish", eventName, payload)
 
       Event ke current listeners ko registration order mein payload do.
       Return value = kitne listeners ko notify kiya gaya.
 
   Safe invalid behaviour:
-      Invalid event name ya invalid listener par crash nahi hona.
+      Invalid action, event name, ya listener par crash nahi hona.
       Invalid subscribe ek safe no-op unsubscribe de sakta hai.
       Invalid/no-subscriber publish ka result 0 ho sakta hai.
 
@@ -66,25 +84,25 @@ RULES (code-free)
   R8  Kisi event ka listener na ho to publish crash nahi karega aur `0`
       return karega.
 
-  R9  Payload ko bus change nahi karega; listener ko wahi payload milega.
+  R9  Payload ko bus change nahi karega; listener ko wahi primitive payload
+      milega.
 
-  R10 Do alag `createPubSub()` calls ke buses isolated honge. Ek bus par
-      subscribe karne se doosre bus ko kuch nahi milega.
+  R10 Do alag `createPubSub()` calls ke buses isolated honge.
 
-  R11 No global listener list, no UI, no network, no async, no class.
-      Closure ke andar state private rakho.
+  R11 Internal state closure ke andar private rahega. No global list, no
+      object syntax, no Map, no Set, no class, no UI, no network, no async.
 
 ----------------------------------------------------------------
 ACCEPTANCE PROOF — 8 CHECKS
 ----------------------------------------------------------------
-  1. One listener receives one published payload.
+  1. One listener receives one published primitive payload.
   2. Multiple listeners receive the same event in registration order.
   3. Different event names remain isolated.
   4. The returned unsubscribe function removes only its listener.
   5. Repeated unsubscribe and publishing with no listeners do not crash.
   6. Duplicate subscription does not deliver the same listener twice.
-  7. `publish()` returns the number of notified listeners.
-  8. Two bus instances remain independent and payload passes unchanged.
+  7. `publish` returns the number of notified listeners.
+  8. Two bus instances remain independent and the payload passes unchanged.
 
 ----------------------------------------------------------------
 SMALL FIXTURE IDEA (no solution)
@@ -93,7 +111,7 @@ SMALL FIXTURE IDEA (no solution)
       "saved"
       "failed"
 
-  Payloads:
+  Primitive payloads:
       "file-1"
       "network-error"
 
@@ -111,6 +129,7 @@ OUT OF SCOPE
   - Async queues and promises
   - Wildcard event names
   - Event replay/history
+  - Object payloads and Phase 6 object syntax
   - UI, database, package publishing
 
 ----------------------------------------------------------------

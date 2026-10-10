@@ -25,7 +25,7 @@ CURRENT GATE — NIYAM #20 (10 October 2026)
     Phase 6 Objects                    : PAUSED (started, not abandoned)
     Active strict order                 : J3 mini pub/sub -> J4 -> J5 -> J6
     J3 ready ticket                    : J3-MINI-PUBSUB/PLAN/03-SPEC-MINI-PUBSUB.txt
-                                          code-free; Debjeet writes first.
+                                          pre-Objects, code-free; Debjeet writes first.
     P2 J1 findLeaks                    : acceptance proof 8/8 passed in user editor;
                                           source not copied to CODE/ or pushed.
     J2 standalone project              : J2-FLIPKART-MULTI-FILTER/

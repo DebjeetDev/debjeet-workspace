@@ -692,3 +692,23 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   Phase 6 Objects remains paused. The strict route is still J3 → J4 → J5 → J6,
   then Objects resumes. Do not skip to Objects because the schedule feels fast.
 ================================================================
+
+
+================================================================
+10 Oct 2026 — J3 CORRECTED TO PRE-OBJECTS SYNTAX
+================================================================
+  Debjeet correctly flagged that `bus.subscribe()` / `bus.publish()` would
+  imply returned-object method syntax before Phase 6 Objects. The J3 ticket
+  was corrected before any implementation was written.
+
+  New learning-safe contract:
+      const bus = createPubSub();
+      const unsubscribe = bus("subscribe", "saved", listener);
+      bus("publish", "saved", "file-1");
+      unsubscribe();
+
+  The first version now uses only functions, callbacks, closures, arrays,
+  and simple conditions. Object literals, object methods, Map, Set, class,
+  and object payloads are explicitly out of scope. This correction is part of
+  the proof record; never give J3 code that silently skips the Objects gate.
+================================================================
