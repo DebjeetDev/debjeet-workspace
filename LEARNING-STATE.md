@@ -15,7 +15,7 @@
 - Canonical workspace: `/home/user`, fresh clone at `main` / `46c6e83` before this state sync.
 - Phase 5 Arrays + Phase 5B Toolkit: ✅ complete and 🔒 locked.
 - Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
-- Current teaching step: Array recap is complete; J1 proof passed 8/8 and J2 Flipkart source/tests passed 8/8 in its standalone folder. J3 mini pub/sub is next, followed by J4 → J5 → J6. Project ideas remain research-only meanwhile.
+- Current teaching step: Array recap is complete; J1 proof passed 8/8 and J2 Flipkart source/tests passed 8/8 in its standalone folder. J3 mini pub/sub is next and its code-free ticket is ready; Debjeet writes first, followed by J4 → J5 → J6. Project ideas remain research-only meanwhile.
 - No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
 - SSH authentication, `ls-remote`, and push are verified; local/remote match after the latest state/spec sync.
 - Public portfolio repo: https://github.com/DebjeetDev/flipkart-multi-filter (J2, root `src/`, `tests/`, and `docs/plan/`).

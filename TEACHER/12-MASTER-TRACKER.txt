@@ -141,7 +141,8 @@ F. AGLA KAAM (priority — 10 Oct, verified)
   1. ARRAY RECAP COMPLETE. J1 FIN-302 acceptance proof passed 8/8.
   2. J2 Flipkart multi-filter: source and separate tests organized; 8/8
      checks passed on 10 Oct. J3 mini pub/sub is now the next active task.
-  3. J3 mini pub/sub → J4 debounce engine → J5 real STREAM-OS pipeline
+  3. J3 mini pub/sub: code-free ticket ready at PROJECTS/J3-MINI-PUBSUB/;
+     Debjeet writes first. Then J4 debounce → J5 real STREAM-OS pipeline
      → J6 memoize/LRU.
   4. Gate ke baad hi Ph6 ST1 rowToObject resume; Ph6 ST2→ST5 uske baad.
   5. P2 packaging cleanup and PLAN/06 remain lower-priority work.

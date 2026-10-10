@@ -675,3 +675,20 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   https://github.com/DebjeetDev/flipkart-multi-filter if satisfied. Do not
   push automatically before his review.
 ================================================================
+
+
+================================================================
+10 Oct 2026 — J3 MINI PUB/SUB TICKET READY; CODE NOT PREWRITTEN
+================================================================
+  J2 is complete, so the next strict gate is J3 Mini Pub/Sub. Prepared the
+  standalone project at PROJECTS/J3-MINI-PUBSUB/ with separate PLAN/ and
+  CODE/src/ + CODE/tests/ folders.
+
+  The code-free ticket defines createPubSub(), subscribe/unsubscribe,
+  publish, listener order, event isolation, duplicate subscription handling,
+  isolated bus instances, safe no-subscriber publish, and eight acceptance
+  checks. No implementation was generated because Debjeet writes first.
+
+  Phase 6 Objects remains paused. The strict route is still J3 → J4 → J5 → J6,
+  then Objects resumes. Do not skip to Objects because the schedule feels fast.
+================================================================

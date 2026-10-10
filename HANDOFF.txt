@@ -22,6 +22,7 @@ CHECKPOINT (truth, 10 Oct):
        J1 findLeaks (Fraud Detector = P2-M02)   ✅ PROOF PASSED
        J2 Flipkart multi-filter                 ✅ PROOF PASSED
        J3 mini pub/sub                          ← NEXT TASK YE HAI
+           code-free ticket ready; Debjeet writes first
        J4 debounce engine → J5 STREAM-OS real pipeline
        → J6 memoize+LRU (opt)
        P8 Intl = parked (non-logic API)

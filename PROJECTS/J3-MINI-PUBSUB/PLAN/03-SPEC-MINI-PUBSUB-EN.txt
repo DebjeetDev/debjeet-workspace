@@ -1,0 +1,129 @@
+================================================================
+J3-MINI-PUBSUB — J3 / PROJECT GATE
+Ticket: J3       | "Mini Pub/Sub Event Bus"
+Status: 🟡 READY — code-free ticket; Debjeet writes first
+Type:   JIRA-STYLE, CODE-FREE
+Folder: PROJECTS/J3-MINI-PUBSUB/PLAN/
+================================================================
+
+  🎯 ONE-LINE:
+     Build a small event bus so separate parts can subscribe to an event,
+     receive published payloads, and unsubscribe without direct coupling.
+
+----------------------------------------------------------------
+STORY (real problem)
+----------------------------------------------------------------
+  In real applications, several parts may need to know that one action
+  happened: a save completed, a payment succeeded, or a channel changed.
+  Directly calling every part increases coupling.
+
+  J3 creates a small boundary:
+      subscribe → publish → listeners receive → unsubscribe
+
+----------------------------------------------------------------
+FUNCTION CONTRACT
+----------------------------------------------------------------
+  Factory:
+      createPubSub()
+
+  Subscribe:
+      bus.subscribe(eventName, listener)
+
+      A valid call returns an unsubscribe function. After that function is
+      called, the listener no longer runs for that event.
+
+  Publish:
+      bus.publish(eventName, payload)
+
+      Send the payload to the event's current listeners in registration order.
+      Return value = the number of listeners notified.
+
+  Safe invalid behaviour:
+      Invalid event names or listeners must not crash the program.
+      Invalid subscribe may return a safe no-op unsubscribe function.
+      Invalid or unsubscribed publish may return `0`.
+
+----------------------------------------------------------------
+RULES (code-free)
+----------------------------------------------------------------
+  R1  An event name must be a non-empty string.
+
+  R2  A listener must be a function.
+
+  R3  One event may have multiple listeners.
+
+  R4  Listeners run in registration order.
+
+  R5  Different event names never trigger one another's listeners.
+
+  R6  Unsubscribe removes only its own listener. Calling the same unsubscribe
+      function again is safe.
+
+  R7  Subscribing the same listener twice to the same event must not create
+      duplicate notifications.
+
+  R8  Publishing an event with no listeners must not crash and returns `0`.
+
+  R9  The bus does not change the payload; listeners receive the same payload.
+
+  R10 Two separate `createPubSub()` calls create isolated buses.
+
+  R11 No global listener list, UI, network, async code, or class. Keep the
+      state private inside the closure.
+
+----------------------------------------------------------------
+ACCEPTANCE PROOF — 8 CHECKS
+----------------------------------------------------------------
+  1. One listener receives one published payload.
+  2. Multiple listeners receive the same event in registration order.
+  3. Different event names remain isolated.
+  4. The returned unsubscribe function removes only its listener.
+  5. Repeated unsubscribe and publishing with no listeners do not crash.
+  6. Duplicate subscription does not deliver the same listener twice.
+  7. `publish()` returns the number of notified listeners.
+  8. Two bus instances remain independent and the payload passes unchanged.
+
+----------------------------------------------------------------
+SMALL FIXTURE IDEA (no solution)
+----------------------------------------------------------------
+  Events:
+      "saved"
+      "failed"
+
+  Payloads:
+      "file-1"
+      "network-error"
+
+  Expected learning:
+      subscribe = register interest
+      publish   = announce an event
+      unsubscribe = clean up interest
+
+----------------------------------------------------------------
+OUT OF SCOPE
+----------------------------------------------------------------
+  - Browser EventTarget
+  - React or any framework
+  - WebSockets or network events
+  - Async queues and promises
+  - Wildcard event names
+  - Event replay/history
+  - UI, database, package publishing
+
+----------------------------------------------------------------
+DEFINITION OF DONE
+----------------------------------------------------------------
+  [ ] `createPubSub()` implemented under CODE/src/.
+  [ ] Separate proof runner under CODE/tests/.
+  [ ] Eight acceptance checks pass.
+  [ ] Listener order, event isolation, unsubscribe, and duplicate handling
+      explained in Debjeet's own words.
+  [ ] No global state and no accidental mutation.
+  [ ] Expected versus actual output recorded.
+  [ ] J3 tracker updated; then J4 unlocks.
+
+  TIME-BOX: 20 minutes paper + 30 minutes typing/testing. No rush, no skip.
+  "One event bus, one proof, then the next project."
+================================================================
+END — 03-SPEC-MINI-PUBSUB-EN.txt
+================================================================
