@@ -32,7 +32,10 @@ CHECKPOINT (truth, 10 Oct):
      flipkart-multi-filter = public J2 portfolio repo (root src/, tests/, docs/plan/)
      upi-leak-detector  = public P2 repo; stream-os-engine = public P1 repo
      Public J2 link: https://github.com/DebjeetDev/flipkart-multi-filter
-     Do not lose this role map when a chat starts fresh.
+  ⏸️ PUBLIC REPO CLEANUP DEFERRED BY USER: fix it someday, not now. Do not
+     push changes to the public Flipkart repo unless Debjeet explicitly asks.
+     Known issue to preserve: its README uses CODE/ paths, but its actual
+     public tree has root src/ and tests/; docs/plan/ also has an older status.
   🧠 REVISION REQUEST (8 Oct): Debjeet reports an array-concept blackout.
      Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
      regression. Read the CURRENT RESET CARD at the top of

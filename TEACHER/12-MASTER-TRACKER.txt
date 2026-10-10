@@ -91,6 +91,7 @@ C. PROJECTS (00-INDEX ka asli haal)
   J2 FLIPKART-MULTI-FILTER ..... ✅ source/tests organized; 8/8 proof passed
         Public portfolio: github.com/DebjeetDev/flipkart-multi-filter
         Backup copy: PROJECTS/J2-FLIPKART-MULTI-FILTER/ (may be private online)
+        Public README/path cleanup: deferred until Debjeet explicitly asks.
   P3 / P4 / P5 ................. ⬜ plan-only (00-INDEX mein naam)
 
   ⚠️ PROJECT-LADDER BACKLOG (10 Oct audit, READING/28 = poori match):

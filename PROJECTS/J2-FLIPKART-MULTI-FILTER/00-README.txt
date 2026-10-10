@@ -23,6 +23,7 @@ BACKUP:
 PUBLIC PORTFOLIO REPOSITORY:
   https://github.com/DebjeetDev/flipkart-multi-filter
   Public copy layout: root src/, tests/, and docs/plan/.
+  Cleanup of the public README/path mismatch is deferred until Debjeet asks.
 
 PIPELINE:
   valid rows -> eligible products -> display rows -> price order

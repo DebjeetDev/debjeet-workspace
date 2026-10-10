@@ -20,6 +20,7 @@
 - SSH authentication, `ls-remote`, and push are verified; local/remote match after the latest state/spec sync.
 - Public portfolio repo: https://github.com/DebjeetDev/flipkart-multi-filter (J2, root `src/`, `tests/`, and `docs/plan/`).
 - `debjeet-workspace` is the continuity backup; Debjeet may make that backup repository private without changing the public portfolio repo.
+- Public Flipkart repo cleanup is intentionally deferred by Debjeet. Do not modify or push there unless he explicitly asks; preserve the known CODE/ versus root `src/`/`tests/` mismatch for later.
 Older dashboard text below is historical context; this override is current truth.
 
 

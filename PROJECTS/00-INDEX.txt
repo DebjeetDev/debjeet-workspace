@@ -31,7 +31,8 @@ CURRENT GATE — NIYAM #20 (10 October 2026)
                                           PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
                                           (English twin has -EN suffix).
     J2 public portfolio repo           : github.com/DebjeetDev/flipkart-multi-filter
-                                          (root src/, tests/, docs/plan/).
+                                          (root src/, tests/, docs/plan/);
+                                          cleanup deferred until user asks.
     Debjeet writes first; each project needs proof before the next gate.
 
     BROWSER PROJECT RESEARCH NOTE       : 03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt

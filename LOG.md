@@ -651,8 +651,9 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   future chat handoffs and may be made private; the public Flipkart repository
   is the portfolio copy and must remain linked in the handoff/status files.
 
-  Review note for the next public-repo pass: the uploaded README currently
-  uses backup-style CODE/ paths in Quick Start and badge links, while the
-  public repo has root src/ and tests/ directories. Do not silently lose this
-  mismatch; fix it before calling the public README final.
+  Review note: the uploaded README currently uses backup-style CODE/ paths
+  in Quick Start and badge links, while the public repo has root src/ and
+  tests/ directories. Debjeet said this cleanup may happen someday; it is
+  intentionally deferred now. Do not modify or push the public repo unless he
+  explicitly asks.
 ================================================================
