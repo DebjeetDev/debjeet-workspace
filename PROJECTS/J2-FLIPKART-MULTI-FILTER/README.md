@@ -2,6 +2,9 @@
 
 > A defensive, in-memory product filtering pipeline for a Flipkart-style shopping list.
 > Built with **100% pure vanilla JavaScript** — zero runtime dependencies, zero frameworks, zero UI.
+>
+> **Public portfolio repository:** [DebjeetDev/flipkart-multi-filter](https://github.com/DebjeetDev/flipkart-multi-filter)
+> This workspace folder is the continuity backup copy.
 
 [![Tests](https://img.shields.io/badge/tests-8%2F8%20passing-brightgreen)](./CODE/tests/flipkart-filter.test.js)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)](#-quick-start)

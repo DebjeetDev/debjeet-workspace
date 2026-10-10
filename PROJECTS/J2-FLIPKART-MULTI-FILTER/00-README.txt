@@ -15,10 +15,14 @@ CODE:
   CODE/src/        Production implementation.
   CODE/tests/      Separate fixtures, expected results, and proof runner.
 
-RULE:
-  This folder is inside the learning workspace and backup repository.
-  It does not need a separate GitHub repository yet. A separate public repo
-  can be created later if this becomes a polished portfolio project.
+BACKUP:
+  This folder is the canonical copy inside the learning workspace backup.
+  The backup repository may be made private; it is for continuity, not the
+  public portfolio presentation.
+
+PUBLIC PORTFOLIO REPOSITORY:
+  https://github.com/DebjeetDev/flipkart-multi-filter
+  Public copy layout: root src/, tests/, and docs/plan/.
 
 PIPELINE:
   valid rows -> eligible products -> display rows -> price order

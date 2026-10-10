@@ -89,6 +89,8 @@ C. PROJECTS (00-INDEX ka asli haal)
         ⬜ MISSING: LICENSE, package.json, .gitignore, src/tests split
         ⬜ Module 02 subscription leak / 03 duplicate / 04 overspend
   J2 FLIPKART-MULTI-FILTER ..... ✅ source/tests organized; 8/8 proof passed
+        Public portfolio: github.com/DebjeetDev/flipkart-multi-filter
+        Backup copy: PROJECTS/J2-FLIPKART-MULTI-FILTER/ (may be private online)
   P3 / P4 / P5 ................. ⬜ plan-only (00-INDEX mein naam)
 
   ⚠️ PROJECT-LADDER BACKLOG (10 Oct audit, READING/28 = poori match):

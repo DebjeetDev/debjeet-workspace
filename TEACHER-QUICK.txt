@@ -52,6 +52,7 @@ SYLLABUS ORDER (locked 4 Oct 2026 — kabhi mat todo)
 
 ABHI: 1C ✅ P4+P5+5B-LOCKED | J1 8/8 | J2 8/8 | 🧊 Phase 6 PAUSED by NIYAM #20
 NEXT: J3 mini pub/sub ACTIVE → J4 → J5 → J6; J1/J2 proofs complete; ideas research-only
+PUBLIC J2: github.com/DebjeetDev/flipkart-multi-filter | BACKUP: debjeet-workspace (may be private)
 
 ================================================================================
 PHASE 5 — KYA HO GAYA

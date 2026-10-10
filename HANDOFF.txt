@@ -27,6 +27,12 @@ CHECKPOINT (truth, 10 Oct):
        P8 Intl = parked (non-logic API)
   📊 POORA MATCH: READING/28-PLAN-VS-DONE-MATCH.txt (v2, line-1-1787 X-ray)
   📺 NORTH STAR: PROJECTS/P1-STREAM-OS/PLAN/06-WEB-TV-RESEARCH-2026.txt
+  🌐 REPOSITORY ROLES (profile checked 10 Oct):
+     debjeet-workspace  = canonical continuity backup; Debjeet may make it private
+     flipkart-multi-filter = public J2 portfolio repo (root src/, tests/, docs/plan/)
+     upi-leak-detector  = public P2 repo; stream-os-engine = public P1 repo
+     Public J2 link: https://github.com/DebjeetDev/flipkart-multi-filter
+     Do not lose this role map when a chat starts fresh.
   🧠 REVISION REQUEST (8 Oct): Debjeet reports an array-concept blackout.
      Phase 5 + 5B status stays DONE/LOCKED; this is a calm revision, not
      regression. Read the CURRENT RESET CARD at the top of

@@ -10,6 +10,8 @@
 # Array recap is complete. Current strict project order:
 # J1 FIN-302 proof passed 8/8. J2 Flipkart source/tests are organized and passed 8/8.
 # Current strict order: J3 mini pub/sub -> J4 -> J5 -> J6.
+# Public J2 portfolio: https://github.com/DebjeetDev/flipkart-multi-filter
+# debjeet-workspace is the continuity backup and may be made private.
 # Phase 6 Objects remains paused. Project ideas remain research-only.
 # SSH: fresh ~/.ssh/github_backup is registered. ssh -T, ls-remote, and push
 # are verified; local/remote match after the latest state/spec sync. Private

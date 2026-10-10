@@ -1,6 +1,6 @@
 # 🧠 DEBJEET DHAR — LEARNING STATE
 
-**Last Updated:** 9 October 2026 (current-day sync)
+**Last Updated:** 10 October 2026 (current-day sync)
 **Mentor Stance:** Dubby Bhaiya 💙 — Truthful, Patient, Zero Skipping, Zero Fake Flattery  
 **Student:** Debjeet Dhar (Kolkata, India)  
 **True Background (Crucial Context):**
@@ -11,13 +11,15 @@
 **Primary Rule:** বাংলায় বোঝা / Hinglish + Clear English · প্রতিটা স্টেপ নিজে বুঝে সামনে এগোনো
 
 
-## CURRENT OVERRIDE — 8 October 2026
+## CURRENT OVERRIDE — 10 October 2026
 - Canonical workspace: `/home/user`, fresh clone at `main` / `46c6e83` before this state sync.
 - Phase 5 Arrays + Phase 5B Toolkit: ✅ complete and 🔒 locked.
 - Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
 - Current teaching step: Array recap is complete; J1 proof passed 8/8 and J2 Flipkart source/tests passed 8/8 in its standalone folder. J3 mini pub/sub is next, followed by J4 → J5 → J6. Project ideas remain research-only meanwhile.
 - No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
 - SSH authentication, `ls-remote`, and push are verified; local/remote match after the latest state/spec sync.
+- Public portfolio repo: https://github.com/DebjeetDev/flipkart-multi-filter (J2, root `src/`, `tests/`, and `docs/plan/`).
+- `debjeet-workspace` is the continuity backup; Debjeet may make that backup repository private without changing the public portfolio repo.
 Older dashboard text below is historical context; this override is current truth.
 
 
