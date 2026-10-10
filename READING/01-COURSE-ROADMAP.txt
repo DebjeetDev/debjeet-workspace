@@ -151,7 +151,7 @@ ABHI TUM KAHAN HO — EXACT POSITION
                    BONUS  DONE   PHASE 5B TOOLKIT 🔒 ST1–ST5 (26 file, 6–7 Oct)
                    CAPSTONE DONE  Project #6 — 35/35 tests pass
 
-        PHASE 6  Objects Deep ........................ PAUSED 🧊 (NIYAM #20; J1→J6 gate)
+        PHASE 6  Objects Deep ........................ PAUSED 🧊 (NIYAM #20; J2→J6 gate after J1 proof)
                    Iske baad unlock honge:
                      - Mini-Express (tera khud ka framework)
                      - Mini-Zod (tera khud ka validator)

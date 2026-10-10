@@ -9,7 +9,7 @@ This is not a code dump. It is a **complete, organised learning system**:
 every reading file, every project plan, every line of real code —
 backed up daily so nothing is ever lost.
 
-## Current checkpoint — 8 October 2026
+## Current checkpoint — 10 October 2026
 
 - Phase 5 Arrays + Phase 5B Toolkit: **complete and locked**.
 - Phase 6 Objects: **paused by NIYAM #20**, not abandoned.

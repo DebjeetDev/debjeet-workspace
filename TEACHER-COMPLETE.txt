@@ -8,8 +8,10 @@
 # Canonical root: /home/user, fresh clone main at 46c6e83 before state sync.
 # Phase 5 + 5B: complete/locked. Phase 6 Objects: PAUSED by NIYAM #20.
 # Array recap is complete. Current strict project order:
-# J1 FIN-302 findLeaks -> J2 -> J3 -> J4 -> J5 -> J6.
-# Project ideas are research-only until the J-order is complete.
+# J1 FIN-302 acceptance proof passed 8/8 in the user's editor.
+# Current strict order: J2 Flipkart multi-filter -> J3 -> J4 -> J5 -> J6.
+# J2 is the only active task in this session.
+# J1 source is not copied to P2/CODE. Project ideas remain research-only.
 # SSH: fresh ~/.ssh/github_backup is registered. ssh -T, ls-remote, and push
 # are verified; local/remote match after the latest state/spec sync. Private
 # key is never printed/committed.

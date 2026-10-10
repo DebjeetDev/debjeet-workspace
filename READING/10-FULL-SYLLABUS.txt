@@ -17,8 +17,9 @@ Goal     : YOUR name on YOUR code. People know YOU. $45k–$85k / ₹12–20 LPA
    + TEACHER/12-MASTER-TRACKER.txt.
    Is file ke ticks course.md se MIRROR kiye jaate hain (niyam #17).
    Mismatch mile to course.md + LOG.md ko maano, isko nahi. 🔒
-   CURRENT OVERRIDE (8 Oct): Phase 6 Objects is PAUSED by NIYAM #20;
-   active work is the strict J1→J6 project gate, next J1 FIN-302 findLeaks.
+   CURRENT OVERRIDE (10 Oct): Phase 6 Objects is PAUSED by NIYAM #20;
+   J1 proof passed 8/8 in the user's editor; active work is J2→J6,
+   next J2 Flipkart multi-filter.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1786,9 +1787,11 @@ FEATURES:
   Debjeet Dhar. Kolkata. India. World.
 
   Paper first. Phase 6 — OBJECTS DEEP. PAUSED by NIYAM #20.
-  Current project gate: J1 FIN-302 findLeaks → J2 → J3 → J4 → J5 → J6.
+  Current project gate: J1 proof passed → J2 Flipkart multi-filter → J3 → J4 → J5 → J6.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 END OF DEBJEET DHAR GOD MODE MASTER BIBLE v4.0
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+�
+��━━━━━━━━━━━━━━━
 �

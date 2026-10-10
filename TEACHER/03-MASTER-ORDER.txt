@@ -25,7 +25,7 @@
   1C KE ANDAR (JavaScript Advanced):
 ================================================================================
 
-    Phase 5  →  ARRAYS DEEP        ← ⭐ ACTIVE (lagbhag khatam)
+    Phase 5  →  ARRAYS DEEP        ← ✅ DONE + 5B LOCKED
     Phase 6  →  OBJECTS DEEP       ← agla
     Phase 7  →  ...
     Phase 8  →  ...

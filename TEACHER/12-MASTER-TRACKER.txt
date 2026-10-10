@@ -134,9 +134,9 @@ E. LOCKED NIYAM (jaldi nazar)
 ================================================================================
 F. AGLA KAAM (priority — 8 Oct, verified)
 ================================================================================
-  1. ARRAY RECAP COMPLETE (9 Oct). J1 FIN-302 `findLeaks` is now active.
-     Debjeet writes first; project ideas remain parked until the J-order.
-  2. J1 FIN-302: `findLeaks` — refresh ke baad code tum pehle likhoge;
+  1. ARRAY RECAP COMPLETE. J1 FIN-302 `findLeaks` acceptance proof passed
+     (8/8 checks) in the user's editor on 10 Oct. Source is not copied to P2/CODE.
+  2. J2 Flipkart multi-filter is now active; Debjeet writes first and gets
      hint-only support.
   3. J2 Flipkart multi-filter → J3 mini pub/sub → J4 debounce engine
      → J5 real STREAM-OS pipeline → J6 memoize/LRU.
