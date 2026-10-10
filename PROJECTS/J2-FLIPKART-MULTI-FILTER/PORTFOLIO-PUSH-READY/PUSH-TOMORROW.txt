@@ -1,0 +1,47 @@
+==============================================================================
+J2 PUBLIC REPOSITORY — PUSH TOMORROW
+==============================================================================
+
+TARGET:
+  https://github.com/DebjeetDev/flipkart-multi-filter
+
+This folder is a clean, push-ready public-repository copy. It is separate
+from the canonical backup CODE/ layout so that the public repo can keep its
+root-level src/, tests/, and docs/plan/ structure.
+
+MISTAKES FIXED IN THIS STAGING COPY:
+  1. README badge link points to ./tests/flipkart-filter.test.js.
+  2. README Quick Start uses the real public-repo paths.
+  3. README usage imports ./src/flipkart-filter.
+  4. README review notes use src/ and tests/, not CODE/.
+  5. Production source is the organized backup version with clear names.
+  6. Both specs are updated as standalone J2 proof-passed tickets.
+  7. Spec folder reference is docs/plan/ for the public repository.
+  8. .gitignore protects node_modules, coverage, and .DS_Store.
+
+PUBLIC TREE:
+  README.md
+  src/flipkart-filter.js
+  tests/flipkart-filter.test.js
+  docs/plan/03-SPEC-FLIPKART-MULTI-FILTER.txt
+  docs/plan/03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
+  .gitignore
+
+PROOF BEFORE PUSH:
+  From this folder run:
+    node tests/flipkart-filter.test.js
+  Expected result: 8 PASS lines and "J2 test suite passed."
+
+PUSH TOMORROW:
+  1. Open the public-repo working copy or copy these staged files into it.
+  2. Run the proof command above.
+  3. Inspect git diff and git status.
+  4. Commit with a clear message, for example:
+       fix(j2): align public repo paths and documentation
+  5. Push to main only after reviewing the diff.
+
+IMPORTANT:
+  This staging copy has NOT been pushed to the public repository yet.
+  The public-repo cleanup was deferred until Debjeet's requested push.
+  The debjeet-workspace backup remains the continuity source of truth.
+==============================================================================
