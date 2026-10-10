@@ -23,7 +23,7 @@ CURRENT GATE — NIYAM #20 (8 October 2026)
 
     Phase 5 Arrays + Phase 5B Toolkit  : DONE / LOCKED
     Phase 6 Objects                    : PAUSED (started, not abandoned)
-    Active strict order                 : J1 FIN-302 findLeaks -> J2 -> J3
+    Active strict order                 : J2 Flipkart multi-filter -> J3 -> J4
                                           -> J4 -> J5 -> J6
     P2 findLeaks implementation        : ABSENT; the code-free ticket is
                                           PLAN/02-SPEC-SUBSCRIPTION-LEAK.txt
