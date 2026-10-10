@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Saturday, 10 October 2026
-  Samay       : 09:51 AM (Asia/Kolkata)
+  Samay       : 09:56 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -92,6 +92,27 @@ Poore workspace ka naksha: kahan kya hai
                         |-- 00-HOW-TO-START.txt
                               -> Naya project shuru karne ka poora format
             |
+            |-- [DIR] J2-FLIPKART-MULTI-FILTER/
+                  -> STANDALONE J2 — filter/map/sort product pipeline
+                  |-- 00-README.txt
+                        -> Project kya hai, status, Kolkata channels
+                  |
+                  |-- [DIR] CODE/
+                        -> Asli code — src, tests, package.json
+                        |
+                        |-- [DIR] src/
+                              -> Source code (jo kaam karta hai)
+                              (khali)
+                        |
+                        |-- [DIR] tests/
+                              -> Test files (jo check karta hai)
+                              (khali)
+                  |
+                  |-- [DIR] PLAN/
+                        -> Planning + Research docs (sirf txt, koi code nahi)
+                        |-- 03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
+                        |-- 03-SPEC-FLIPKART-MULTI-FILTER.txt
+            |
             |-- [DIR] P1-STREAM-OS/
                   -> FLAGSHIP — Smart TV ke liye free live TV
                   |
@@ -169,8 +190,6 @@ Poore workspace ka naksha: kahan kya hai
                               -> Jira ticket — kaunse functions, kya rules (CODE NAHI)
                         |-- 02-SPEC-SUBSCRIPTION-LEAK-EN.txt
                         |-- 02-SPEC-SUBSCRIPTION-LEAK.txt
-                        |-- 03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
-                        |-- 03-SPEC-FLIPKART-MULTI-FILTER.txt
       |
       |-- [DIR] READING/
             -> PADHNE ki library — course, roadmap, log, guides (sab plain .txt)
@@ -220,11 +239,11 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 78
-    Total folders  : 18
+    Total files    : 79
+    Total folders  : 23
 
     READING/       : 14 files (numbered 00 se aage)
-    PROJECTS/      : 7 items
+    PROJECTS/      : 8 items
     audio/         : 4 voice notes
 
 ==============================================================================

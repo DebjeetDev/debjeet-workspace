@@ -596,3 +596,23 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   malformed rows, no-match input, and original-array immutability. No J2
   implementation was generated; Debjeet writes it first.
 ================================================================
+
+================================================================
+10 Oct 2026 — J2 MOVED TO ITS OWN PROJECT FOLDER
+================================================================
+  Debjeet correctly questioned why a Flipkart product pipeline should live
+  inside the UPI leak detector. Decision: each distinct project gets its own
+  folder; J1 belongs to P2 UPI, while J2 is a separate standalone learning
+  project inside the same workspace backup repository.
+
+  New folder:
+    PROJECTS/J2-FLIPKART-MULTI-FILTER/
+      00-README.txt
+      PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
+      PLAN/03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
+      CODE/src/       (Debjeet writes here)
+      CODE/tests/     (proof later)
+
+  No J2 implementation was generated. A separate GitHub repository is not
+  needed yet; the current workspace repository backs up all project folders.
+================================================================

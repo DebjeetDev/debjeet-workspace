@@ -19,6 +19,7 @@ FOLDER_INFO = {
     "PROJECTS": "BANANE ka kaam — har project ke PLAN/ aur CODE/ alag",
     "P1-STREAM-OS": "FLAGSHIP — Smart TV ke liye free live TV",
     "P2-UPI-LEAK-DETECTOR": "AGLA PROJECT — 'Tera paisa kahan beh raha hai?'",
+    "J2-FLIPKART-MULTI-FILTER": "STANDALONE J2 — filter/map/sort product pipeline",
     "PLAN": "Planning + Research docs (sirf txt, koi code nahi)",
     "CODE": "Asli code — src, tests, package.json",
     "docs": "Extra documents",

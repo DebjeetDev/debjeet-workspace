@@ -27,7 +27,8 @@ CURRENT GATE — NIYAM #20 (8 October 2026)
                                           -> J5 -> J6
     P2 J1 findLeaks                    : acceptance proof 8/8 passed in user editor;
                                           source not copied to CODE/ or pushed.
-    P2 J2 active spec                  : PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
+    J2 standalone project              : J2-FLIPKART-MULTI-FILTER/
+                                          PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
                                           (English twin has -EN suffix).
     Debjeet writes first; each project needs proof before the next gate.
 
