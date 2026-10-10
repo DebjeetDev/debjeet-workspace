@@ -1,78 +1,70 @@
-<div align="center">
+# 🛒 FLIPKART — Module 01: Multi-Filter Product Pipeline
 
-# Flipkart Multi-Filter
+> A defensive, in-memory product filtering pipeline for a Flipkart-style shopping list.
+> Built with **100% pure vanilla JavaScript** — zero runtime dependencies, zero frameworks, zero UI.
 
-### A defensive, dependency-free product filtering pipeline in JavaScript
-
-[![Tests](https://img.shields.io/badge/tests-8%2F8%20passing-16a34a?style=for-the-badge)](#test-coverage)
-[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)](#run-the-project)
-[![Dependencies](https://img.shields.io/badge/runtime%20dependencies-0-2563eb?style=for-the-badge)](#design-decisions)
-
-**Validate → filter → shape → sort** a Flipkart-style product list without mutating the input.
-
-</div>
+[![Tests](https://img.shields.io/badge/tests-8%2F8%20passing-brightgreen)](./CODE/tests/flipkart-filter.test.js)
+[![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?logo=node.js&logoColor=white)](#-quick-start)
+[![Dependencies](https://img.shields.io/badge/dependencies-0-blue)](#-javascript-concepts-used)
+[![Status](https://img.shields.io/badge/status-J2%20complete-success)](#-roadmap)
 
 ---
 
-## Overview
+## 🎯 The Problem (Project Ticket `J2`)
 
-Shopping data is rarely perfect. A product list can contain malformed rows, products from the wrong category, items above the budget, low ratings, and out-of-stock products.
+A shopping app receives a large product list where:
 
-This project turns that raw list into a safe, display-ready result by applying all business rules in one predictable pipeline.
+- Some rows are malformed or have invalid values.
+- The user wants only **Mobile** products.
+- The budget is limited to **₹50,000**.
+- The minimum acceptable rating is **4**.
+- Out-of-stock products must not be shown.
+- The original product list must remain unchanged.
 
-> This is a pure JavaScript logic project. It does not call the real Flipkart API and does not include a UI, database, login, cart, or payment flow.
+The pipeline validates the input, applies every rule, creates a small display shape, and returns products in ascending price order.
 
-## What it does
+---
 
-| Capability | Behaviour |
-| --- | --- |
-| **Input validation** | Rejects invalid outer input and skips malformed rows safely |
-| **Category filter** | Keeps only the exact category `"Mobile"` |
-| **Budget filter** | Keeps prices less than or equal to `50000` |
-| **Rating filter** | Keeps ratings greater than or equal to `4` |
-| **Availability filter** | Keeps only `inStock === true` |
-| **Display projection** | Converts rows to `[name, price, rating]` |
-| **Price ordering** | Sorts from the lowest price to the highest price |
-| **Immutability** | Leaves the original product list unchanged |
+## 🔎 What This Pipeline Does
 
-## Pipeline
+| Stage | What it does | Result |
+|-------|--------------|--------|
+| `getFlipkartDeals(products)` | Validates the outer input | `400` failure or `200` success |
+| Row validation | Skips malformed rows safely | Only valid rows continue |
+| Eligibility filter | Applies category, price, rating, and stock rules | Matching products only |
+| Display mapping | Converts `[name, category, price, rating, inStock]` | `[name, price, rating]` |
+| Price ordering | Sorts from low price to high price | New, sorted result array |
 
-```text
-Raw product rows
-      │
-      ▼
-Validate row shape and value ranges
-      │
-      ▼
-Filter: Mobile + price ≤ 50000 + rating ≥ 4 + inStock
-      │
-      ▼
-Map to [name, price, rating]
-      │
-      ▼
-Sort by price with toSorted()
-      │
-      ▼
-Predictable response envelope
+---
+
+## 🛡️ Engineering Rules Built In
+
+1. **Exact Category Match** — Only `category === "Mobile"` is accepted.
+2. **Inclusive Budget Boundary** — `price <= 50000`; exactly `50000` is valid.
+3. **Inclusive Rating Boundary** — `rating >= 4`; exactly `4` is valid.
+4. **Stock Check** — Only `inStock === true` is accepted.
+5. **Safe Row Validation** — Price must be a finite number `>= 0`; rating must be a finite number from `0` to `5`.
+6. **Immutability** — `toSorted()` returns a new sorted array; the original products list is not mutated.
+7. **Consistent Return Type** — Every result uses a predictable response envelope:
+   ```js
+   { status: 200, ok: true, data: [...], productsCount: 3 }
+   { status: 400, ok: false, error: "..." }
+   ```
+8. **Guard Clauses First** — Invalid input is handled before the pipeline does any work.
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Enter the project
+cd PROJECTS/J2-FLIPKART-MULTI-FILTER
+
+# 2. Run the proof suite (no install needed — zero dependencies!)
+node CODE/tests/flipkart-filter.test.js
 ```
 
-## Input contract
-
-Each product row must follow this shape:
-
-```js
-[name, category, price, rating, inStock]
-```
-
-| Position | Field | Expected value |
-| ---: | --- | --- |
-| `0` | `name` | Non-empty string |
-| `1` | `category` | Non-empty string |
-| `2` | `price` | Finite number, `>= 0` |
-| `3` | `rating` | Finite number from `0` to `5` |
-| `4` | `inStock` | Boolean |
-
-## Usage
+### Minimal usage
 
 ```js
 const { getFlipkartDeals } = require("./CODE/src/flipkart-filter");
@@ -81,65 +73,43 @@ const products = [
   ["Pixel 8", "Mobile", 44999, 4.4, true],
   ["Moto G", "Mobile", 14999, 4.1, true],
   ["Nokia G", "Mobile", 8999, 3.8, true],
+  ["iPhone 15", "Mobile", 69999, 4.7, true],
   ["Realme C", "Mobile", 50000, 4.0, true],
 ];
 
-const result = getFlipkartDeals(products);
-
-console.log(result);
+getFlipkartDeals(products);
+// {
+//   status: 200,
+//   ok: true,
+//   data: [
+//     ["Moto G", 14999, 4.1],
+//     ["Pixel 8", 44999, 4.4],
+//     ["Realme C", 50000, 4.0]
+//   ],
+//   productsCount: 3
+// }
 ```
 
-### Result
+---
 
-```js
-{
-  status: 200,
-  ok: true,
-  data: [
-    ["Moto G", 14999, 4.1],
-    ["Pixel 8", 44999, 4.4],
-    ["Realme C", 50000, 4.0]
-  ],
-  productsCount: 3
-}
-```
+## 🧪 Test Coverage — 8 Acceptance Checks
 
-The boundary values are intentional: a price of exactly `50000` and a rating of exactly `4` both pass.
+| Check | Covers |
+|-------|--------|
+| 1 | Normal product fixture and expected sorted output |
+| 2 | Invalid outer input returns the `400` failure envelope |
+| 3 | Empty input returns a successful empty result |
+| 4 | Malformed rows are skipped without a crash |
+| 5 | No product matching all rules returns empty data |
+| 6 | Inclusive boundary values: `50000` price and `4` rating |
+| 7 | Negative price and out-of-range rating are rejected |
+| 8 | Original products array remains unchanged |
 
-## Error and edge-case behaviour
-
-| Input | Result |
-| --- | --- |
-| Non-array outer input | `status: 400`, `ok: false`, error message |
-| Empty array | Successful response with empty `data` |
-| Malformed inner rows | Skipped without crashing |
-| No matching products | Successful response with empty `data` |
-| Negative price | Row skipped |
-| Rating below `0` or above `5` | Row skipped |
-| Original input array | Remains unchanged |
-
-## Run the project
-
-From this project folder:
+Run the suite directly:
 
 ```bash
 node CODE/tests/flipkart-filter.test.js
 ```
-
-No package installation is required. The project uses Node's built-in assertion library.
-
-## Test coverage
-
-The proof runner covers all eight acceptance checks:
-
-1. Normal product fixture
-2. Invalid outer input
-3. Empty products
-4. Malformed rows
-5. No product matching every rule
-6. Inclusive boundary values
-7. Invalid price and rating ranges
-8. Original-array immutability
 
 Expected final line:
 
@@ -147,53 +117,48 @@ Expected final line:
 J2 test suite passed.
 ```
 
-## Design decisions
+---
 
-### Why `toSorted()`?
+## 🧠 JavaScript Concepts Used (No Shortcuts)
 
-`toSorted()` returns a new sorted array, so the implementation does not mutate the source list. It makes the immutability intention explicit.
+- **Guard clauses** — reject invalid outer input immediately
+- **`Array.isArray()`** — validate rows and the outer collection
+- **`Number.isFinite()`** — validate price and rating safely
+- **`.reduce()`** — clean and preserve only valid rows
+- **`.filter()`** — apply the product eligibility rules
+- **`.map()`** — create the final display shape
+- **`.toSorted()`** — order results without mutating the source
+- **Result objects** — HTTP-style `{ status, ok, data, error }` responses
+- **Node's built-in `assert/strict`** — dependency-free acceptance testing
 
-For an older Node.js runtime, the compatible alternative is:
+---
 
-```js
-[...rows].sort((first, second) => first[1] - second[1]);
-```
+## 📈 Code Review Notes
 
-### Why array rows?
+The important review decisions for this module are:
 
-The ticket intentionally uses array rows to practise indexed access and the core pipeline methods:
+1. `sort()` mutates an array. The implementation uses `toSorted()` so the source list remains unchanged.
+2. Price and rating ranges are validated before eligibility filtering, so invalid numeric data cannot silently pass.
+3. The rules use inclusive comparisons: `price <= 50000` and `rating >= 4`.
+4. Production source and acceptance tests are separated:
+   - `CODE/src/flipkart-filter.js`
+   - `CODE/tests/flipkart-filter.test.js`
+5. The ticket remains code-free in `PLAN/`; implementation belongs only in `CODE/src/`.
 
-```text
-filter → map → sort
-```
+---
 
-Objects, async code, APIs, and UI behaviour are intentionally outside this project's scope.
+## 🗺️ Roadmap
 
-## Project structure
+- [x] Module 01 — Flipkart Multi-Filter Product Pipeline
+- [ ] Module 02 — J3 Mini Pub/Sub
+- [ ] Module 03 — J4 Debounce Engine
+- [ ] Module 04 — J5 STREAM-OS Real Pipeline
+- [ ] Module 05 — J6 Memoize/LRU (optional)
 
-```text
-J2-FLIPKART-MULTI-FILTER/
-├── README.md                         # GitHub project overview
-├── 00-README.txt                     # Workspace status note
-├── PLAN/
-│   ├── 03-SPEC-FLIPKART-MULTI-FILTER.txt
-│   └── 03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
-└── CODE/
-    ├── README.txt                    # Local run instructions
-    ├── src/
-    │   └── flipkart-filter.js        # Production function
-    └── tests/
-        └── flipkart-filter.test.js   # Fixtures and acceptance proof
-```
+---
 
-## Status
+## 👤 Author
 
-**J2 complete — 8/8 acceptance checks passed.**
+**Debjeet Dhar** — Kolkata, India 🇮🇳
 
-J3 mini pub/sub is the next project in the learning sequence.
-
-## Author
-
-**Debjeet Dhar** · Kolkata, India
-
-Built as a focused JavaScript logic project with defensive validation, predictable outputs, and proof-driven testing.
+Learning in public. Building reliable JavaScript logic modules, one proof-driven project at a time.
