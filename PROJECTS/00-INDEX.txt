@@ -24,10 +24,12 @@ CURRENT GATE — NIYAM #20 (8 October 2026)
     Phase 5 Arrays + Phase 5B Toolkit  : DONE / LOCKED
     Phase 6 Objects                    : PAUSED (started, not abandoned)
     Active strict order                 : J2 Flipkart multi-filter -> J3 -> J4
-                                          -> J4 -> J5 -> J6
-    P2 findLeaks implementation        : ABSENT; the code-free ticket is
-                                          PLAN/02-SPEC-SUBSCRIPTION-LEAK.txt
-    Debjeet writes first; no J1 completion is marked without proof.
+                                          -> J5 -> J6
+    P2 J1 findLeaks                    : acceptance proof 8/8 passed in user editor;
+                                          source not copied to CODE/ or pushed.
+    P2 J2 active spec                  : PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
+                                          (English twin has -EN suffix).
+    Debjeet writes first; each project needs proof before the next gate.
 
     BROWSER PROJECT RESEARCH NOTE       : 03-BROWSER-LOGIC-PROJECT-LADDER-2026.txt
                                           code-free 2026 ladder; research only

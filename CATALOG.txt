@@ -4,7 +4,7 @@ Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
   Banaya      : Saturday, 10 October 2026
-  Samay       : 07:40 AM (Asia/Kolkata)
+  Samay       : 09:51 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -50,6 +50,7 @@ Poore workspace ka naksha: kahan kya hai
             -> YHI FILE — poore workspace ka naksha (folder by folder)
       |-- course.md
             -> POORA SYLLABUS — 11 Books + JS ke 10 Phases (source file)
+      |-- findLeaks-xray.svg
       |-- HANDOFF.txt
       |-- LEARNING-STATE.md
             -> Tu abhi kahan khada hai + tere rules (source file)
@@ -168,6 +169,8 @@ Poore workspace ka naksha: kahan kya hai
                               -> Jira ticket — kaunse functions, kya rules (CODE NAHI)
                         |-- 02-SPEC-SUBSCRIPTION-LEAK-EN.txt
                         |-- 02-SPEC-SUBSCRIPTION-LEAK.txt
+                        |-- 03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
+                        |-- 03-SPEC-FLIPKART-MULTI-FILTER.txt
       |
       |-- [DIR] READING/
             -> PADHNE ki library — course, roadmap, log, guides (sab plain .txt)
@@ -217,7 +220,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 75
+    Total files    : 78
     Total folders  : 18
 
     READING/       : 14 files (numbered 00 se aage)

@@ -581,3 +581,18 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   not copied into P2/CODE, committed, or pushed. J2 Flipkart multi-filter is
   now the only active task. Phase 6 Objects remains paused until J2 -> J6.
 ================================================================
+
+================================================================
+10 Oct 2026 — J2 FLIPKART SPEC CREATED
+================================================================
+  After J1 FIN-302 acceptance proof passed 8/8, J2 was opened. Added the
+  code-free bilingual ticket pair:
+    PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/03-SPEC-FLIPKART-MULTI-FILTER.txt
+    PROJECTS/P2-UPI-LEAK-DETECTOR/PLAN/03-SPEC-FLIPKART-MULTI-FILTER-EN.txt
+
+  J2 uses array rows and the real pipeline trigger:
+  filter eligible products -> map the display shape -> sort by price.
+  The fixture includes boundary checks for price 50,000 and rating 4,
+  malformed rows, no-match input, and original-array immutability. No J2
+  implementation was generated; Debjeet writes it first.
+================================================================
