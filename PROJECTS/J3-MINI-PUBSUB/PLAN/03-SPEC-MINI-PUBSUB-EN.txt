@@ -1,7 +1,7 @@
 ================================================================
 J3-MINI-PUBSUB — J3 / PROJECT GATE
 Ticket: J3       | "Mini Pub/Sub Event Bus"
-Status: 🟡 READY — pre-Objects, code-free ticket; Debjeet writes first
+Status: ✅ PROOF PASSED — 8/8 checks (10 Oct 2026)
 Type:   JIRA-STYLE, CODE-FREE
 Folder: PROJECTS/J3-MINI-PUBSUB/PLAN/
 ================================================================
@@ -134,14 +134,14 @@ OUT OF SCOPE
 ----------------------------------------------------------------
 DEFINITION OF DONE
 ----------------------------------------------------------------
-  [ ] `createPubSub()` implemented under CODE/src/.
-  [ ] Separate proof runner under CODE/tests/.
-  [ ] Eight acceptance checks pass.
+  [x] `createPubSub()` implemented under CODE/src/.
+  [x] Separate proof runner under CODE/tests/.
+  [x] Eight acceptance checks pass.
   [ ] Listener order, event isolation, unsubscribe, and duplicate handling
       explained in Debjeet's own words.
-  [ ] No global state and no accidental mutation.
-  [ ] Expected versus actual output recorded.
-  [ ] J3 tracker updated; then J4 unlocks.
+  [x] No global state and no accidental mutation.
+  [x] Expected versus actual output recorded.
+  [x] J3 tracker updated; then J4 unlocks.
 
   TIME-BOX: 20 minutes paper + 30 minutes typing/testing. No rush, no skip.
   "One event bus, one proof, then the next project."

@@ -1,26 +1,21 @@
 ==============================================================================
-J3 CODE — MINI PUB/SUB EVENT BUS
+J3 CODE — SAVE-SIGNAL ENGINE / MINI PUB-SUB
 ==============================================================================
 
 STATUS:
-  Implementation not started. Debjeet writes the first version from the
-  pre-Objects code-free PLAN ticket.
-
-LEARNING LIMIT:
-  First version uses functions, callbacks, closures, arrays, and simple
-  conditions only. No object literals, object methods, Map, Set, class, or
-  object payloads yet.
+  ✅ PROOF PASSED — 8 acceptance checks.
 
 SOURCE:
-  src/mini-pubsub.js          (to be written)
+  src/mini-pubsub.js
 
 TESTS:
-  tests/mini-pubsub.test.js   (to be written after the first attempt)
+  tests/mini-pubsub.test.js
 
-RUN AFTER IMPLEMENTATION:
+RUN FROM THIS CODE FOLDER:
   node tests/mini-pubsub.test.js
 
-RULE:
-  Keep production source and proof tests separate. Do not put implementation
-  in PLAN/. No finished solution is pre-written here.
+LEARNING:
+  The source keeps subscriptions private inside a closure. The first version
+  uses functions, callbacks, arrays, and simple conditions only. It does not
+  use object methods, Map, Set, class, async code, or a UI.
 ==============================================================================

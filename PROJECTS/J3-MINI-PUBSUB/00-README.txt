@@ -2,7 +2,7 @@
 J3 — MINI PUB/SUB EVENT BUS
 ==============================================================================
 
-STATUS: 🟡 READY — pre-Objects closure ticket; Debjeet writes first.
+STATUS: ✅ PROOF PASSED — 8/8 checks; Save-Signal Engine implemented.
 TYPE:   Small standalone JavaScript learning project / J-series gate.
 WHY:    J2 proved filter/map/sort. J3 now proves closures, callbacks,
         subscriptions, event delivery, and cleanup before the next gate.
@@ -20,8 +20,8 @@ PLAN:
                                       12 company/product thinking examples
 
 CODE:
-  CODE/src/        Debjeet's implementation goes here after the first attempt.
-  CODE/tests/      Separate acceptance fixtures and expected results.
+  CODE/src/        Production implementation: mini-pubsub.js
+  CODE/tests/      Separate acceptance fixtures and 8-check proof runner.
 
 PRE-OBJECTS TARGET API:
   const bus = createPubSub();
@@ -34,7 +34,10 @@ RULE:
   package, or async code in this first version. One small closure-based event
   bus, one proof, then J4. Phase 6 Objects remains paused until J1→J6.
 
+PROOF:
+  Run from CODE/ with: node tests/mini-pubsub.test.js
+  Result: 8/8 acceptance checks passed.
+
 NEXT ACTION:
-  Read the corrected code-free ticket. Debjeet writes createPubSub first.
-  Do not copy a finished solution before his attempt.
+  J4 debounce engine is the next project-gate task.
 ==============================================================================

@@ -51,7 +51,7 @@ SYLLABUS ORDER (locked 4 Oct 2026 — kabhi mat todo)
 (ULTRON line: RETIRED frame — 6 Oct owner's note)
 
 ABHI: 1C ✅ P4+P5+5B-LOCKED | J1 8/8 | J2 8/8 | 🧊 Phase 6 PAUSED by NIYAM #20
-NEXT: J3 mini pub/sub ACTIVE → J4 → J5 → J6; J1/J2 proofs complete; ideas research-only
+NEXT: J4 debounce ACTIVE → J5 → J6; J1/J2/J3 proofs complete; ideas research-only
 PUBLIC J2: github.com/DebjeetDev/flipkart-multi-filter | BACKUP: debjeet-workspace (may be private) | public cleanup deferred
 
 ================================================================================
@@ -141,7 +141,7 @@ ABHI KA HAAL (Saturday, 10 October 2026 | current-day sync)
 AGLA KAAM (priority — one task at a time):
   1. J1 FIN-302: 8/8 acceptance checks passed in user editor; source not copied to P2/CODE.
   2. J2 Flipkart multi-filter: source/tests organized in its standalone folder; 8/8 checks passed.
-  3. J3 mini pub/sub is next; continue J3→J6. Ph6 ST1 resumes only after the gate.
+  3. J3 Save-Signal passed 8/8; J4 debounce is next. Continue J4→J6. Ph6 ST1 resumes only after the gate.
   4. SSH + push are already verified; local/remote match after the latest sync.
 
 ################################################################################

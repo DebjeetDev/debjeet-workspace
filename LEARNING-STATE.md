@@ -15,7 +15,7 @@
 - Canonical workspace: `/home/user`, fresh clone at `main` / `46c6e83` before this state sync.
 - Phase 5 Arrays + Phase 5B Toolkit: ✅ complete and 🔒 locked.
 - Phase 6 Objects: 🧊 paused by NIYAM #20; `rowToObject` answer is still not recorded.
-- Current teaching step: Array recap is complete; J1 proof passed 8/8 and J2 Flipkart source/tests passed 8/8 in its standalone folder. J3 mini pub/sub is next and its corrected pre-Objects code-free ticket plus 12 real-world examples are ready; Debjeet writes first, followed by J4 → J5 → J6. Project ideas remain research-only meanwhile.
+- Current teaching step: Array recap is complete; J1 proof passed 8/8, J2 Flipkart passed 8/8, and J3 pre-Objects Save-Signal Engine passed 8/8 in its standalone folder. J4 debounce is next, followed by J5 → J6. Project ideas remain research-only meanwhile.
 - No audio unless explicitly requested; one task per reply; code is written by Debjeet first.
 - SSH authentication, `ls-remote`, and push are verified; local/remote match after the latest state/spec sync.
 - Public portfolio repo: https://github.com/DebjeetDev/flipkart-multi-filter (J2, root `src/`, `tests/`, and `docs/plan/`).
@@ -55,7 +55,7 @@ Older dashboard text below is historical context; this override is current truth
    Step 6 ✅ `.find()` — ST3 findFirstAbove (7 Oct)
    CAPSTONE ✅ Project #6 `createSubscriptionEngine` (Ticket FIN-204) — 35/35 tests pass!
 3. **✅ DONE (5 Oct):** GitHub push + npm publish — `stream-os-engine@1.0.0` LIVE (neeche Milestone section dekho).
-4. **🧊 PAUSED (10 Oct 2026):** Book 1C Phase 6 Objects remains gated behind J1→J6. J1 and J2 proofs passed; current next: J3 mini pub/sub.
+4. **🧊 PAUSED (10 Oct 2026):** Book 1C Phase 6 Objects remains gated behind J1→J6. J1, J2, and J3 proofs passed; current next: J4 debounce.
 5. **⏳ THEN:** Phases 7–10 → **Book 1B (CSS3 Full Mastery)** → Books 2–10.
 
 ## 🎯 OFFICIAL PROJECT WEEK (Locked — Starts After Phase 5 Completes)

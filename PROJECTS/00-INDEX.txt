@@ -23,9 +23,9 @@ CURRENT GATE — NIYAM #20 (10 October 2026)
 
     Phase 5 Arrays + Phase 5B Toolkit  : DONE / LOCKED
     Phase 6 Objects                    : PAUSED (started, not abandoned)
-    Active strict order                 : J3 mini pub/sub -> J4 -> J5 -> J6
-    J3 ready ticket                    : J3-MINI-PUBSUB/PLAN/03-SPEC-MINI-PUBSUB.txt
-                                          pre-Objects, code-free; Debjeet writes first.
+    Active strict order                 : J4 debounce engine -> J5 -> J6
+    J3 completed project               : J3-MINI-PUBSUB/; pre-Objects Save-Signal Engine
+                                          source/tests proof passed 8/8.
     P2 J1 findLeaks                    : acceptance proof 8/8 passed in user editor;
                                           source not copied to CODE/ or pushed.
     J2 standalone project              : J2-FLIPKART-MULTI-FILTER/

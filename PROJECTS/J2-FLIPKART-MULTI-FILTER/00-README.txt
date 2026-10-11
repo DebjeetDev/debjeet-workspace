@@ -35,5 +35,5 @@ PROOF:
   The source and tests are separate; the suite passed 8/8.
 
 NEXT:
-  J3 mini pub/sub is the next project-gate task.
+  J3 Save-Signal Engine passed 8/8; J4 debounce engine is the next task.
 ==============================================================================

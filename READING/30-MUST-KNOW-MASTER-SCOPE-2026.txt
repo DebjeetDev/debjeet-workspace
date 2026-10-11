@@ -151,10 +151,10 @@ CURRENT DECISION FOR DEBJEEt
 ==============================================================================
 
   NOW:
-    J3 mini pub/sub. One project slice at a time. Debjeet writes first.
+    J4 debounce engine. One project slice at a time. Debjeet writes first.
 
-  AFTER J3:
-    J4 -> J5 -> J6, strict order.
+  AFTER J4:
+    J5 -> J6, strict order.
 
   AFTER THE PROJECT GATE:
     Resume Phase 6 Objects, then Async and later modern/browser topics in
