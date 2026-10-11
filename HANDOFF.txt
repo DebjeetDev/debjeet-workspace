@@ -23,6 +23,7 @@ CHECKPOINT (truth, 10 Oct):
        J2 Flipkart multi-filter                 ✅ PROOF PASSED
        J3 mini pub/sub                          ← NEXT TASK YE HAI
            corrected pre-Objects ticket ready; Debjeet writes first
+           12 real-world/company thinking examples: J3-MINI-PUBSUB/PLAN/04-REAL-WORLD-PUBSUB-EXAMPLES.txt
        J4 debounce engine → J5 STREAM-OS real pipeline
        → J6 memoize+LRU (opt)
        P8 Intl = parked (non-logic API)

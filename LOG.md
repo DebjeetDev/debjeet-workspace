@@ -712,3 +712,18 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   and object payloads are explicitly out of scope. This correction is part of
   the proof record; never give J3 code that silently skips the Objects gate.
 ================================================================
+
+
+================================================================
+10 Oct 2026 — J3 REAL-WORLD THINKING SHEET ADDED
+================================================================
+  Added PLAN/04-REAL-WORLD-PUBSUB-EXAMPLES.txt with the concrete Save-Signal
+  Engine framing and 12 examples: browser events, Node streams, mitt,
+  Zustand, Redux, Express middleware, auth guards, rate limiting, memoization,
+  and feature/telemetry switches.
+
+  The sheet separates real company/OSS behaviour from the small pre-Objects
+  implementation we will write. Its purpose is transfer: first identify the
+  real event, interested listeners, private state, and cleanup; then choose
+  the closure. J3 code still waits for Debjeet's first attempt.
+================================================================

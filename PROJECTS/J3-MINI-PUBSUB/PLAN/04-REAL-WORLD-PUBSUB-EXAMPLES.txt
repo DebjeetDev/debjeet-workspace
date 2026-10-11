@@ -1,0 +1,150 @@
+================================================================
+J3 — REAL-WORLD PUB/SUB + CLOSURE THINKING SHEET
+================================================================
+
+PURPOSE:
+  Generic "pub/sub" confusing lagta hai, isliye pehle company-style real
+  examples dekho. J3 ka first project in examples ko copy nahi karega; hum
+  inka simple idea samjhenge aur pre-Objects closure version banayenge.
+
+================================================================
+CORE PROJECT — SAVE-SIGNAL ENGINE
+================================================================
+
+  Real product:
+      A file editor saves a file.
+
+  One save ke baad multiple kaam ho sakte hain:
+      - user ko "Saved" notification dikhana
+      - audit log mein entry likhna
+      - analytics count badhana
+      - backup request schedule karna
+
+  Bad design:
+      saveFile() directly in sab four parts ko jaanta hai.
+
+  Better design:
+      saveFile() sirf "saved" signal bhejta hai.
+      Jo part interested hai, woh pehle listener register karta hai.
+
+  Mental flow:
+      listener register → save happens → signal publish → listeners run
+      listener cleanup → future signal par woh listener nahi chalega
+
+  Closure ka role:
+      listener list ko private memory mein rakhna.
+      Bahar ka code list ko direct change nahi kar sakta.
+
+  First version limit:
+      functions + callbacks + closures + arrays + simple conditions only.
+      No object method syntax, Map, Set, class, async, or UI.
+
+================================================================
+12 THINKING EXAMPLES
+================================================================
+
+  1. BROWSER BUTTON
+     Event: button click
+     Listeners: show menu, track click, close tooltip
+     Cleanup: removeEventListener
+     Thinking: ek action, multiple reactions.
+
+  2. CUSTOM DOM EVENT
+     Event: "file-saved"
+     Listeners: toast, audit log, analytics
+     Cleanup: old handler remove
+     Thinking: producer ko consumers ki details nahi pata.
+
+  3. NODE SERVER
+     Event: request, connection, close, error
+     Listeners: logger, metrics, cleanup
+     Thinking: server lifecycle ko separate handlers observe karte hain.
+
+  4. NODE STREAM
+     Events: data, end, error
+     Listeners: parser, progress reporter, error handler
+     Thinking: data ek flow mein aata hai; alag code reactions handle karta hai.
+
+  5. TINY OSS EVENT EMITTER — developit/mitt
+     API idea: on = listen, emit = announce, off = cleanup
+     Thinking: 40-line style ka small reusable event boundary.
+
+  6. ZUSTAND STORE
+     Event: state changed
+     Listeners: UI components or other store consumers
+     Cleanup: subscribe se returned unsubscribe function
+     Thinking: state owner ko har consumer ka direct knowledge nahi chahiye.
+
+  7. REDUX STORE
+     Event: dispatch ke baad state may change
+     Listener: store subscriber
+     Cleanup: subscribe() ka returned function call karo
+     Thinking: register → react → unsubscribe.
+
+  8. EXPRESS CONFIGURABLE MIDDLEWARE
+     Outer function: configuration leti hai
+     Inner function: request/response/next handle karti hai
+     Thinking: closure outer configuration ko remember karta hai.
+
+  9. LOGIN GUARD (OUR PRODUCT EXAMPLE)
+     Event: login attempt
+     Private state: wrong attempt count + locked state
+     Thinking: closure private security state ko protect karta hai.
+
+ 10. RATE LIMITER (OUR PRODUCT EXAMPLE)
+     Event: request arrives
+     Private state: recent request count/window
+     Thinking: har call ke beech state yaad rakhna; later J4 project se link.
+
+ 11. MEMOIZATION CACHE (OUR PRODUCT EXAMPLE)
+     Event: same expensive function input again
+     Private state: previous results
+     Thinking: closure cache ko private rakhta hai; later J6 se link.
+
+ 12. FEATURE FLAG / TELEMETRY SWITCH (OUR PRODUCT EXAMPLE)
+     Event: feature used
+     Private state: enabled flag or event counter
+     Thinking: configuration ko har function call mein baar-baar pass nahi karna.
+
+================================================================
+WHAT TO ASK BEFORE WRITING CODE
+================================================================
+
+  Q1  Real event kya hai?      (save, click, request, state change)
+  Q2  Kaun interested hai?     (toast, log, metrics, backup)
+  Q3  Kya state yaad rahegi?   (listeners, attempts, count, cache)
+  Q4  Kis ko cleanup chahiye?  (unsubscribe, remove handler, reset)
+
+  Agar answer mein "calls ke beech private state yaad rakhni hai" aaye,
+  tab closure useful ho sakta hai.
+
+================================================================
+COMPANY/OSS SOURCE TRAIL
+================================================================
+
+  MDN Closures:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures
+
+  MDN EventTarget / event handlers:
+    https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers
+    https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener
+
+  Node.js Streams:
+    https://nodejs.org/api/stream.html
+
+  developit/mitt:
+    https://github.com/developit/mitt
+
+  pmndrs/zustand vanilla store:
+    https://github.com/pmndrs/zustand/blob/main/src/vanilla.ts
+
+  Redux store subscribe:
+    https://redux.js.org/api/store
+
+  Express configurable middleware:
+    https://expressjs.com/en/guide/writing-middleware/
+
+RULE:
+  Source trail samajhne ke liye hai, syntax copy karne ke liye nahi. J3 ka
+  first implementation current syllabus ke pre-Objects tools se hoga.
+================================================================

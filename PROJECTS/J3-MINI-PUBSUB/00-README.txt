@@ -16,6 +16,8 @@ IMPORTANT LEARNING DECISION:
 PLAN:
   PLAN/03-SPEC-MINI-PUBSUB.txt       Hinglish ticket
   PLAN/03-SPEC-MINI-PUBSUB-EN.txt    English twin
+  PLAN/04-REAL-WORLD-PUBSUB-EXAMPLES.txt
+                                      12 company/product thinking examples
 
 CODE:
   CODE/src/        Debjeet's implementation goes here after the first attempt.

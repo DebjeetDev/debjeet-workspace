@@ -3,8 +3,8 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Saturday, 10 October 2026
-  Samay       : 03:34 PM (Asia/Kolkata)
+  Banaya      : Sunday, 11 October 2026
+  Samay       : 11:23 AM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -158,6 +158,7 @@ Poore workspace ka naksha: kahan kya hai
                         -> Planning + Research docs (sirf txt, koi code nahi)
                         |-- 03-SPEC-MINI-PUBSUB-EN.txt
                         |-- 03-SPEC-MINI-PUBSUB.txt
+                        |-- 04-REAL-WORLD-PUBSUB-EXAMPLES.txt
             |
             |-- [DIR] P1-STREAM-OS/
                   -> FLAGSHIP — Smart TV ke liye free live TV
@@ -285,7 +286,7 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 96
+    Total files    : 97
     Total folders  : 33
 
     READING/       : 14 files (numbered 00 se aage)
