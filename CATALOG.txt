@@ -3,8 +3,8 @@ WORKSPACE CATALOG — DEBJEET DHAR
 Poore workspace ka naksha: kahan kya hai
 ==============================================================================
 
-  Banaya      : Sunday, 11 October 2026
-  Samay       : 11:32 AM (Asia/Kolkata)
+  Banaya      : Monday, 12 October 2026
+  Samay       : 06:23 PM (Asia/Kolkata)
   Root        : /home/user
 
   Ye file khud ban-ti hai. Naya kuch add karo, phir chalao:
@@ -62,6 +62,7 @@ Poore workspace ka naksha: kahan kya hai
             -> Ye CATALOG.txt banata hai. Kabhi bhi chalao: python3 make-catalog.py
       |-- md2txt.py
             -> Markdown ko saaf plain text mein badalta hai
+      |-- NEXT-AI-START-HERE.md
       |-- README.md
             -> GitHub pe dikhega (badges ke saath)
       |-- sync.sh
@@ -263,6 +264,18 @@ Poore workspace ka naksha: kahan kya hai
             |-- 30-MUST-KNOW-MASTER-SCOPE-2026.txt
                   -> Must-know scope: deep vs working vs awareness vs on-demand
       |
+      |-- [DIR] REAL-PATH-OPERATING-SYSTEM/
+            |-- 00-START-HERE.md
+            |-- 01-FINAL-REAL-PATH-SYLLABUS.md
+            |-- 02-PROJECT-CATALOG.md
+            |-- 03-QUALITY-AND-TESTING-GATES.md
+            |-- 04-WORKSPACE-MAP.md
+            |-- 05-HISTORY-AND-DECISIONS.md
+            |-- 06-NEXT-AI-ACTION.md
+            |-- 07-READING-RECONCILIATION.md
+            |-- README.md
+                  -> GitHub pe dikhega (badges ke saath)
+      |
       |-- [DIR] TEACHER/
             |-- 00-START-HERE.txt
                   -> Sabse pehle ye padho — reading order + aaj tak ka summary
@@ -283,8 +296,8 @@ Poore workspace ka naksha: kahan kya hai
 4. HISAB
 ==============================================================================
 
-    Total files    : 96
-    Total folders  : 33
+    Total files    : 106
+    Total folders  : 34
 
     READING/       : 14 files (numbered 00 se aage)
     PROJECTS/      : 9 items
