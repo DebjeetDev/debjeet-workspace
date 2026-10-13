@@ -17,7 +17,9 @@ Before marking any project complete:
 - Failure path tested.
 - Mutation and cleanup reviewed.
 - README written.
+- Provenance recorded: student-written, tutor-guided, or explicit full-code override.
 - Student explains the design in their own words.
+- AI-generated reference code is not counted as independent authorship.
 - Git diff reviewed.
 - `git diff --check` passes.
 
@@ -29,7 +31,8 @@ Before marking any project complete:
 - Promise failures are tested.
 - Timers are cleaned up.
 - No accidental global state.
-- No copied implementation presented as student work.
+- No copied or AI-generated implementation presented as student work.
+- If a full-code override happened, a fresh rebuild or substantial independent change is required before the project counts as a personal coding proof.
 
 ## TypeScript gate
 

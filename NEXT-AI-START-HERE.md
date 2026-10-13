@@ -16,9 +16,11 @@ This is the root pointer for the next AI agent working in this workspace.
 
 ## Current immediate work
 
-J1 findLeaks, J2 Flipkart, and J3 Save-Signal Engine have passed their 8/8 proof gates. The next project gate is J4 Debounce + Throttle Engine.
+J1 findLeaks and J2 Flipkart have independent proof records. J3 Save-Signal's functional tests pass 8/8, but its source was generated after Debjeet explicitly requested code. Therefore J3 independent authorship is still pending.
 
-Teach J4 in Hinglish. Preserve the student's write-first preference. Do not generate the complete solution unless Debjeet explicitly asks for code.
+Next action: J3-A fresh independent rebuild and explain-back. Only after that, teach J4 Debounce + Throttle Engine.
+
+Teach in Hinglish. Preserve the student's write-first preference. Do not generate the complete solution unless Debjeet explicitly asks for code. Even after an explicit override, mark the result as functional proof—not independent authorship—until he rebuilds it.
 
 ## Important rule
 

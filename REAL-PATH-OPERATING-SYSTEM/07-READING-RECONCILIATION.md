@@ -49,8 +49,8 @@ These are not rejected forever. They are sequenced after the core job-ready proo
 
 ## Conflicts resolved by the final path
 
-1. J3 is already complete; Pub/Sub is not repeated as a later J5.
-2. J4 remains the immediate next project.
+1. J3 functional acceptance is complete, but independent student authorship is pending; Pub/Sub is not repeated as a later J5.
+2. J3-A independent rebuild is the immediate authorship gate; J4 follows it.
 3. Async retry/timeout/concurrency is promoted because it directly supports backend reliability.
 4. Stream-OS research is retained as background and can feed the later StreamAPI product.
 5. Memoize/LRU is useful but not allowed to block the main backend route.

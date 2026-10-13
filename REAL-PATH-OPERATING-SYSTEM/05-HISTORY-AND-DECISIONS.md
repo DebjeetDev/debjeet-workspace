@@ -60,4 +60,4 @@ The old Reading library is valuable but too broad to function as a single linear
 
 ## Current next action
 
-J4 Debounce + Throttle Engine. The next AI should teach and guide this project rather than jump to React, backend, or an unrelated future topic.
+J3-A independent rebuild and explain-back. Debjeet must write a fresh Save-Signal implementation from the contract without copying the generated reference. After that authorship gate passes, J4 Debounce + Throttle Engine begins. The next AI must not jump to React, backend, or an unrelated future topic.

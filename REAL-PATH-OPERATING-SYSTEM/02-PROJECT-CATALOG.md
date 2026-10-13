@@ -15,17 +15,23 @@
 **Evidence:** Standalone source/tests and public portfolio copy exist.
 
 ### J3 — Save-Signal Engine / Mini Pub/Sub
-**Status:** Acceptance proof passed 8/8.
+**Status:** Functional acceptance proof passed 8/8; independent student-authorship gate pending.
 **Location:** `PROJECTS/J3-MINI-PUBSUB/CODE/`
 **Source:** `src/mini-pubsub.js`
 **Tests:** `tests/mini-pubsub.test.js`
 **Role:** closures, private state, callbacks, listener order, event isolation, unsubscribe, duplicate prevention, independent instances.
+**Provenance:** The current source was generated after Debjeet explicitly requested code. It is a valid reference and functional proof, but it must not be claimed as Debjeet's independent source.
 **Constraint:** First version is deliberately pre-Objects: no object literals, object methods, Map, Set, class, async code, UI, or object payloads.
+
+### J3-A — Independent Rebuild and Explain-Back
+**Status:** Immediate next authorship gate; not a new product.
+**Rule:** Debjeet writes a fresh implementation from the contract without copying the generated source. The old implementation may be inspected only after the attempt and review.
+**Proof:** The eight acceptance checks pass, Debjeet explains closure state, duplicate prevention, unsubscribe safety, and event isolation, and he can make a change without assistance.
 
 ## B. Next JavaScript projects
 
 ### J4 — Debounce + Throttle + Rate Limit Engine
-**Status:** Next active project.
+**Status:** Next project after the J3-A authorship gate.
 **Skills:** higher-order functions, closures, timers, cancellation, timing, cleanup, rate limiting.
 **Proof:** normal calls, bursts, cancellation, leading/trailing behaviour, repeated cleanup, timer edge cases.
 

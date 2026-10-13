@@ -24,20 +24,26 @@ Optimization means that we do not spend months building duplicate toy apps or le
 
 “Perfect” is not a final checklist. It means independent design, implementation, testing, debugging, security review, deployment, explanation, and maintenance. Expert-level depth continues after the first job.
 
+AI can explain, challenge, review, and test. AI-generated code cannot be presented as Debjeet's independent coding proof. If a full-code override happens, the project receives a functional-proof status only until Debjeet rebuilds it from the contract and explains every decision.
+
 ## 2. Current position
 
 Completed:
 
 - Phase 5 Arrays + Phase 5B Toolkit
-- J1 findLeaks — 8/8 proof
-- J2 Flipkart multi-filter — 8/8 proof
-- J3 Save-Signal Engine / mini pub-sub — 8/8 proof
+- J1 findLeaks — 8/8 functional proof
+- J2 Flipkart multi-filter — 8/8 functional proof
+- J3 Save-Signal Engine / mini pub/sub — 8/8 functional acceptance proof
 
-Next:
+Pending authorship gate:
+
+- J3-A independent rebuild and explain-back, written by Debjeet without copying the generated reference
+
+Next project after that gate:
 
 - J4 Debounce + Throttle Engine
 
-The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path.
+The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path; the independent rebuild is an authorship gate for the same J3 concept, not a duplicate product.
 
 ## 3. Phase 1 — JavaScript Deep Mastery
 ### Target duration: 10–12 focused weeks
@@ -439,4 +445,4 @@ At 20–25 focused hours per week, hiring-grade readiness in roughly 12–18 mon
 - Six system-design explanations
 - Resume, GitHub, portfolio, and mock interviews
 
-Every phase must produce proof. No checkbox-only completion.
+Every phase must produce proof. No checkbox-only completion. A project built by the assistant can prove that the design and tests work, but it cannot prove Debjeet's coding ability until he independently rebuilds it or makes a substantial change and explains it.

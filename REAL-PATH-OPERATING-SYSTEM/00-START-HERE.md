@@ -24,10 +24,11 @@ This folder is intentionally at the workspace root and **outside `TEACHER/`**. I
 - Phase 5 Arrays + Phase 5B Toolkit: complete and locked.
 - J1 findLeaks: acceptance proof passed 8/8 in the student's editor.
 - J2 Flipkart multi-filter: standalone source/tests pass 8/8.
-- J3 Save-Signal Engine / mini pub/sub: standalone source/tests pass 8/8.
+- J3 Save-Signal Engine / mini pub/sub: functional acceptance proof passed 8/8.
 - J3 source: `PROJECTS/J3-MINI-PUBSUB/CODE/src/mini-pubsub.js`
 - J3 proof: `PROJECTS/J3-MINI-PUBSUB/CODE/tests/mini-pubsub.test.js`
-- Next project gate: J4 Debounce + Throttle Engine.
+- Important: the J3 source was generated after Debjeet explicitly requested code. Its functional proof is valid, but independent student authorship is **not yet proven**.
+- Immediate next gate: J3 independent rebuild and explain-back; J4 Debounce + Throttle follows that gate.
 - Phase 6 Objects is not abandoned; it is sequenced after the project gate according to the active syllabus.
 - The fresh J3 narration is local at `audio/j3-save-signal-engine-explainer.mp3`.
 - The old four audio clips were deleted as requested.
@@ -39,6 +40,7 @@ This folder is intentionally at the workspace root and **outside `TEACHER/`**. I
 - Paper → pseudocode → code → tests → review → commit.
 - The student writes first for new projects. Give explanation, contract, examples, and hints before a complete solution.
 - The J3 full-code gate was a one-time explicit override. Do not treat it as a permanent change to the write-first rule.
+- AI-generated code is never counted as independent authorship. It may be a reference, but Debjeet must rebuild or substantially implement the project himself before it counts as a personal coding proof.
 - No future syntax leakage when a lesson has an explicit phase boundary.
 - Use real engineering reasons: input/output contracts, edge cases, failure handling, security, performance, testing, and deployment.
 - Do not claim “done” without a command, output, file path, or other evidence.
