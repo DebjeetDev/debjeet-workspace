@@ -35,15 +35,15 @@ Completed:
 - J2 Flipkart multi-filter — 8/8 functional proof
 - J3 Save-Signal Engine / mini pub/sub — 8/8 functional acceptance proof
 
-Pending authorship gate:
+Pending authorship proof, currently non-blocking for schedule:
 
 - J3-A independent rebuild and explain-back, written by Debjeet without copying the generated reference
 
-Next project after that gate:
+Active next project:
 
 - J4 Debounce + Throttle Engine
 
-The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path; the independent rebuild is an authorship gate for the same J3 concept, not a duplicate product.
+The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path. J3-A must be completed before J3 is used as a personal portfolio proof or before the final JavaScript mastery gate, but it will not halt forward teaching momentum.
 
 ## 3. Phase 1 — JavaScript Deep Mastery
 ### Target duration: 10–12 focused weeks

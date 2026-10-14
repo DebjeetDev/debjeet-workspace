@@ -60,4 +60,4 @@ The old Reading library is valuable but too broad to function as a single linear
 
 ## Current next action
 
-J3-A independent rebuild and explain-back. Debjeet must write a fresh Save-Signal implementation from the contract without copying the generated reference. After that authorship gate passes, J4 Debounce + Throttle Engine begins. The next AI must not jump to React, backend, or an unrelated future topic.
+J4 Debounce + Throttle Engine. Debjeet asked not to repeat the J3 recall round. The J3-A independent rebuild remains pending and non-blocking; J3 must not be called personal authorship proof until that rebuild happens. The next AI should maintain momentum without falsely claiming J3 authorship.

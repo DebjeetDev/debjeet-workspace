@@ -779,3 +779,18 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   This correction is not a judgement that Debjeet cannot become a developer;
   it is the exact proof needed to make sure the path builds that ability.
 ================================================================
+
+
+================================================================
+14 Oct 2026 — FORWARD MOMENTUM AFTER EXAMS
+================================================================
+  Debjeet asked not to repeat the J3 recall round and pointed out that the
+  current J3 source was not written by him. The honest status remains:
+    J3 functional proof       ✅ 8/8
+    J3 independent authorship ⏳ pending
+
+  To avoid stalling the complete JavaScript route, J3-A independent rebuild is
+  now a deferred, non-blocking authorship proof. J4 Debounce + Throttle is the
+  active next project. J3 must not be presented as Debjeet's personal source
+  until the fresh rebuild and explain-back are completed.
+================================================================

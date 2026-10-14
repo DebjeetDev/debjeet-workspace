@@ -28,7 +28,8 @@ This folder is intentionally at the workspace root and **outside `TEACHER/`**. I
 - J3 source: `PROJECTS/J3-MINI-PUBSUB/CODE/src/mini-pubsub.js`
 - J3 proof: `PROJECTS/J3-MINI-PUBSUB/CODE/tests/mini-pubsub.test.js`
 - Important: the J3 source was generated after Debjeet explicitly requested code. Its functional proof is valid, but independent student authorship is **not yet proven**.
-- Immediate next gate: J3 independent rebuild and explain-back; J4 Debounce + Throttle follows that gate.
+- J3 independent authorship rebuild is pending and non-blocking for now; do not call J3 personal proof until it is completed.
+- Immediate active project: J4 Debounce + Throttle Engine.
 - Phase 6 Objects is not abandoned; it is sequenced after the project gate according to the active syllabus.
 - The fresh J3 narration is local at `audio/j3-save-signal-engine-explainer.mp3`.
 - The old four audio clips were deleted as requested.

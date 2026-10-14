@@ -1,27 +1,30 @@
 # NEXT AI ACTION
 ## One immediate task only
 
-**Current task:** J3-A Independent Rebuild and Explain-Back
+**Current task:** J4 Debounce + Throttle Engine
 **Current phase:** JavaScript Deep Mastery
-**Current project order:** J1 ✅ → J2 ✅ → J3 functional proof ✅ → J3-A authorship gate NEXT → J4
+**Current project order:** J1 ✅ → J2 ✅ → J3 functional proof ✅ → J4 NEXT
+**Deferred proof:** J3-A independent rebuild remains pending but is not blocking J4.
 
 ## What the next AI should do
 
-1. Read `00-START-HERE.md`, `01-FINAL-REAL-PATH-SYLLABUS.md`, and the J3 source only as context—not as a solution to copy.
-2. State honestly that J3's current 8/8 result proves functional behaviour, not Debjeet's independent authorship.
-3. Give the J3 contract, pseudocode prompts, and edge-case checklist without giving a replacement implementation.
-4. Ask Debjeet to write a fresh J3 implementation from memory/contract in a separate student attempt.
-5. Review the attempt with hints first. Do not paste the generated reference into the attempt.
-6. Run the eight acceptance checks against the student attempt.
-7. Ask Debjeet to explain closure state, duplicate prevention, targeted unsubscribe, repeated cleanup, and independent buses.
-8. Ask him to make one small change without assistance and rerun the proof.
-9. Only after that gate passes, update the project catalog and move to J4.
+1. Read `00-START-HERE.md` and `01-FINAL-REAL-PATH-SYLLABUS.md`.
+2. Do not force another J3 recall round now. Keep the J3-A authorship rebuild recorded as pending.
+3. Teach the difference between debounce, throttle, and rate limiting.
+4. Use a real browser/backend connection: search input, autosave, API protection, or notification bursts.
+5. Write the J4 input/output contract and edge-case table.
+6. Ask Debjeet to write the first version.
+7. Give hints only after he shares his attempt, unless he explicitly requests full code.
+8. Run the standalone proof after implementation.
+9. Update the project catalog and this action file only after J4 proof passes.
+10. Schedule J3-A later as a short independent rebuild before J3 is used as personal portfolio/authorship proof.
 
 ## Do not do now
 
-- Do not start J4, React, or backend before the J3-A authorship gate is complete.
 - Do not call the generated J3 source Debjeet's own code.
-- Do not let the student copy the reference implementation into the fresh attempt.
+- Do not force repeated J3 recall when the student has asked to move forward.
+- Do not mark J3 independent authorship as complete until the fresh rebuild happens.
+- Do not start Objects until J4 proof is complete.
 - Do not reopen Arrays because of optional methods.
 - Do not jump into Objects syntax inside a pre-Objects J4 exercise unless the active J4 contract allows it.
 - Do not create a second roadmap.
@@ -44,9 +47,9 @@ Use this sequence:
 9. Explain the implementation back.
 10. Commit and record proof.
 
-## After the J3-A gate and J4
+## After J4
 
-After J3-A passes, teach J4. Then follow the final syllabus in order:
+After J4 passes, follow the final syllabus in order. J3-A remains a short pending authorship proof to schedule before the final JavaScript gate or portfolio claim:
 
 - Objects and data modelling
 - Async retry/timeout/concurrency

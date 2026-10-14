@@ -24,14 +24,14 @@
 **Constraint:** First version is deliberately pre-Objects: no object literals, object methods, Map, Set, class, async code, UI, or object payloads.
 
 ### J3-A — Independent Rebuild and Explain-Back
-**Status:** Immediate next authorship gate; not a new product.
+**Status:** Deferred authorship gate; not a new product and not blocking J4.
 **Rule:** Debjeet writes a fresh implementation from the contract without copying the generated source. The old implementation may be inspected only after the attempt and review.
 **Proof:** The eight acceptance checks pass, Debjeet explains closure state, duplicate prevention, unsubscribe safety, and event isolation, and he can make a change without assistance.
 
 ## B. Next JavaScript projects
 
 ### J4 — Debounce + Throttle + Rate Limit Engine
-**Status:** Next project after the J3-A authorship gate.
+**Status:** Next active project. J3-A remains pending and must be completed before J3 is claimed as personal portfolio/authorship proof.
 **Skills:** higher-order functions, closures, timers, cancellation, timing, cleanup, rate limiting.
 **Proof:** normal calls, bursts, cancellation, leading/trailing behaviour, repeated cleanup, timer edge cases.
 
