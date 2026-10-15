@@ -31,8 +31,9 @@
 ## B. Next JavaScript projects
 
 ### J4 — Debounce + Throttle + Rate Limit Engine
-**Status:** Next active project. J3-A remains pending and must be completed before J3 is claimed as personal portfolio/authorship proof.
+**Status:** Manual functional checks passed for debounce, leading throttle, and fixed-window rate limiting. Source packaging and an independent rate-limiter rewrite remain pending.
 **Skills:** higher-order functions, closures, timers, cancellation, timing, cleanup, rate limiting.
+**Provenance:** Debounce and throttle were written by Debjeet; the rate-limiter implementation was tutor-provided after an explicit request and is not yet independent authorship proof.
 **Proof:** normal calls, bursts, cancellation, leading/trailing behaviour, repeated cleanup, timer edge cases.
 
 ### J5 — Async Retry + Timeout + Concurrency Engine

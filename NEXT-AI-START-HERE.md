@@ -18,7 +18,7 @@ This is the root pointer for the next AI agent working in this workspace.
 
 J1 findLeaks and J2 Flipkart have independent proof records. J3 Save-Signal's functional tests pass 8/8, but its source was generated after Debjeet explicitly requested code. Therefore J3 independent authorship is still pending.
 
-Next action: J4 Debounce + Throttle Engine. The J3-A fresh rebuild and explain-back remains pending but will not block forward learning. It must be completed before J3 is claimed as personal portfolio/authorship proof.
+Next action: Objects Deep — first lesson. J4 debounce, leading throttle, and fixed-window rate-limiter manual checks passed. J3-A and the rate-limiter independent rewrite remain pending but will not block forward learning; neither may be claimed as personal portfolio/authorship proof until rebuilt.
 
 Teach in Hinglish. Preserve the student's write-first preference. Do not generate the complete solution unless Debjeet explicitly asks for code. Even after an explicit override, mark the result as functional proof—not independent authorship—until he rebuilds it.
 

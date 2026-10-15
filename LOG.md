@@ -794,3 +794,25 @@ Wednesday, 07 October 2026 | 05:10 AM IST — FULL WORKSPACE AUDIT + MASTER TRAC
   active next project. J3 must not be presented as Debjeet's personal source
   until the fresh rebuild and explain-back are completed.
 ================================================================
+
+
+================================================================
+15 Oct 2026 — J4 MANUAL FUNCTIONAL CHECKS PASSED; OBJECTS NEXT
+================================================================
+  Debjeet ran the fixed-window rate-limiter test and received:
+    allowed: A
+    allowed: B
+    allowed: D
+    final: [ 'A', 'B', 'D' ]
+
+  J4 manual learning/proof status:
+    debounce       ✅
+    leading throttle ✅
+    rate limiter   ✅ functional test
+
+  The rate-limiter implementation was supplied after an explicit request, so
+  its independent authorship rewrite remains pending. J3-A also remains a
+  pending, non-blocking authorship proof. Forward teaching now moves to the
+  first Objects Deep lesson; neither generated implementation may be claimed
+  as Debjeet's personal portfolio source until rebuilt independently.
+================================================================

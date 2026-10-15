@@ -1,10 +1,10 @@
 # NEXT AI ACTION
 ## One immediate task only
 
-**Current task:** J4 Debounce + Throttle Engine
+**Current task:** Objects Deep — first lesson
 **Current phase:** JavaScript Deep Mastery
-**Current project order:** J1 ✅ → J2 ✅ → J3 functional proof ✅ → J4 NEXT
-**Deferred proof:** J3-A independent rebuild remains pending but is not blocking J4.
+**Current project order:** J1 ✅ → J2 ✅ → J3 functional proof ✅ → J4 manual functional checks ✅ → Objects NEXT
+**Deferred proofs:** J3-A independent rebuild and J4 rate-limiter rewrite remain pending but are not blocking forward teaching.
 
 ## What the next AI should do
 

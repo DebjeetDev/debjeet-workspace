@@ -60,4 +60,4 @@ The old Reading library is valuable but too broad to function as a single linear
 
 ## Current next action
 
-J4 Debounce + Throttle Engine. Debjeet asked not to repeat the J3 recall round. The J3-A independent rebuild remains pending and non-blocking; J3 must not be called personal authorship proof until that rebuild happens. The next AI should maintain momentum without falsely claiming J3 authorship.
+Objects Deep. J4 debounce, leading throttle, and fixed-window rate-limiter manual functional checks passed. J3-A and the rate-limiter independent rewrite remain pending and non-blocking; neither may be claimed as personal authorship proof until rebuilt. The next AI should maintain momentum without falsely claiming AI-generated code as Debjeet's.

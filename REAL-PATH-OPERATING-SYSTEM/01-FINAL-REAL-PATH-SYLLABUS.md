@@ -39,11 +39,18 @@ Pending authorship proof, currently non-blocking for schedule:
 
 - J3-A independent rebuild and explain-back, written by Debjeet without copying the generated reference
 
-Active next project:
+J4 functional learning/proof:
 
-- J4 Debounce + Throttle Engine
+- Debounce manual proof passed.
+- Leading throttle manual proof passed.
+- Fixed-window rate-limiter test passed.
+- Rate-limiter code was tutor-provided after an explicit request, so an independent rewrite remains required for personal authorship proof.
 
-The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path. J3-A must be completed before J3 is used as a personal portfolio proof or before the final JavaScript mastery gate, but it will not halt forward teaching momentum.
+Active next topic:
+
+- Objects Deep.
+
+The old J3 pub/sub project is not repeated under a new number. One project gets one place in the path. J3-A and the rate-limiter rewrite must be completed before those pieces are used as personal portfolio/authorship proof, but they will not halt forward teaching momentum.
 
 ## 3. Phase 1 — JavaScript Deep Mastery
 ### Target duration: 10–12 focused weeks
