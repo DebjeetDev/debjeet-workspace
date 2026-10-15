@@ -4,67 +4,73 @@
 **Current task:** Objects Deep — first lesson
 **Current phase:** JavaScript Deep Mastery
 **Current project order:** J1 ✅ → J2 ✅ → J3 functional proof ✅ → J4 manual functional checks ✅ → Objects NEXT
-**Deferred proofs:** J3-A independent rebuild and J4 rate-limiter rewrite remain pending but are not blocking forward teaching.
+**Deferred proofs:** J3-A independent rebuild and the J4 rate-limiter rewrite remain pending, but they are not blocking forward teaching.
+**Current micro-status:** Object literal creation and dot-property reading were practised in chat. The full Objects stage is not complete.
 
-## What the next AI should do
+## What the next AI should do now
 
-1. Read `00-START-HERE.md` and `01-FINAL-REAL-PATH-SYLLABUS.md`.
-2. Do not force another J3 recall round now. Keep the J3-A authorship rebuild recorded as pending.
-3. Teach the difference between debounce, throttle, and rate limiting.
-4. Use a real browser/backend connection: search input, autosave, API protection, or notification bursts.
-5. Write the J4 input/output contract and edge-case table.
-6. Ask Debjeet to write the first version.
-7. Give hints only after he shares his attempt, unless he explicitly requests full code.
-8. Run the standalone proof after implementation.
-9. Update the project catalog and this action file only after J4 proof passes.
-10. Schedule J3-A later as a short independent rebuild before J3 is used as personal portfolio/authorship proof.
+1. Read `00-START-HERE.md`, `01-FINAL-REAL-PATH-SYLLABUS.md`, and the relevant part of `READING/27-OBJECTS-DEEP.txt`.
+2. Start with a short recap of completed Arrays/J4 and explain why Objects are needed for named data in backend/API work.
+3. Teach only one Objects subtopic at a time: object literal → read properties → add/update/delete → nested data → destructuring → spread/immutability → object utilities → JSON.
+4. Use the full Dubby Bhaiya teaching flow: recap, why, real analogy, simple concept, one small example, student writes, hints, test, explain-back, tracker, next step.
+5. Give a contract and a small exercise; do not paste the complete solution unless Debjeet explicitly asks for it.
+6. Review the student's code for correctness, future-syntax leakage, mutation, naming, and edge cases.
+7. Do not call a whole Objects stage complete from one tiny exercise. Require the stage tracker and proof.
+8. Keep J3-A and the rate-limiter rewrite recorded as pending authorship proofs; never claim tutor-generated code as Debjeet's source.
+
+## The next single lesson
+
+The next micro-lesson is **Object add/update/delete** using the `student` object already created:
+
+- update one existing property,
+- add one new property,
+- delete one property,
+- print the final result,
+- explain what changed and why.
+
+Do not jump to nested objects or destructuring until this micro-lesson is understood.
 
 ## Do not do now
 
-- Do not call the generated J3 source Debjeet's own code.
-- Do not force repeated J3 recall when the student has asked to move forward.
-- Do not mark J3 independent authorship as complete until the fresh rebuild happens.
-- Do not start Objects until J4 proof is complete.
-- Do not reopen Arrays because of optional methods.
-- Do not jump into Objects syntax inside a pre-Objects J4 exercise unless the active J4 contract allows it.
-- Do not create a second roadmap.
+- Do not force another J3 recall round when the student has asked to move forward.
+- Do not restart completed Array work unless a targeted recall test shows a real gap.
+- Do not jump to Async, React, Backend, or AI during the first Objects micro-lesson.
+- Do not use video links as a replacement for writing.
 - Do not edit `TEACHER/` automatically.
-- Do not call a project complete without tests and output.
+- Do not call a project or phase complete without tests and output.
 - Do not generate audio unless Debjeet explicitly requests it.
 
 ## External teacher protocol
 
-Use outside videos as a controlled supplement, not as a second syllabus:
+Use outside teachers as controlled supplements, not as a second syllabus:
 
-- Likely requested creator: Harsh Vandana Sharma, with the official Sheryians Coding School channel.
-- Hitesh Choudhary's official Chai aur Code channel is the Hindi foundation/backend reference.
-- Pick one relevant video segment for the current concept; do not playlist-hop.
-- Watch a short segment, pause, predict the output, write notes, then close the video.
-- Debjeet writes the implementation from the contract.
-- The AI compares the video explanation with the active syllabus, fills missing concepts, reviews code, and runs proof.
-- A video is not a completion proof. Only independent implementation, explanation, tests, and project evidence count.
-- The AI cannot watch videos continuously in the background. If exact video analysis is needed, Debjeet should provide the URL; accessible page metadata/transcript can then be checked.
+- Likely requested creator: Harsh Vandana Sharma with the official Sheryians Coding School channel.
+- Hitesh Choudhary / Chai aur Code is a Hindi foundation and backend reference.
+- Do not send videos by default. Teach the concept directly in the style Debjeet requested.
+- If Debjeet supplies a video URL, inspect accessible metadata/transcript and use only the useful explanation.
+- One topic, one explanation, one student-written attempt, one proof.
 
 ## Teaching format
 
-Use this sequence:
+Use this sequence, scaled to one small lesson:
 
-1. Why the problem exists.
-2. Real production example.
-3. Precise contract.
-4. Paper examples and timing table.
-5. Debjeet writes pseudocode.
-6. Debjeet writes code.
-7. Review edge cases.
-8. Run tests.
-9. Explain the implementation back.
-10. Commit and record proof.
+1. Recap the exact previous proof.
+2. Explain why the next concept matters.
+3. Give a real backend/API analogy.
+4. Explain the mental model simply.
+5. Show only a tiny illustrative example when necessary.
+6. Give Debjeet a clear writing task.
+7. Let him write first.
+8. Identify bugs with hints before giving code.
+9. Run normal, invalid, boundary, and mutation checks.
+10. Ask for explain-back.
+11. Update the tracker only with evidence.
+12. Give exactly one next task.
 
-## After J4
+## After the Objects block
 
-After J4 passes, follow the final syllabus in order. J3-A remains a short pending authorship proof to schedule before the final JavaScript gate or portfolio claim:
+Follow the final syllabus in order:
 
-- Objects and data modelling
 - Async retry/timeout/concurrency
 - Modules and Node runtime
 - OOP/errors/architecture
@@ -74,4 +80,4 @@ After J4 passes, follow the final syllabus in order. J3-A remains a short pendin
 - Backend core
 - AI backend integration
 
-Do not advance because the schedule feels fast. Advance when the gate has evidence.
+Do not advance because the schedule feels fast. Advance when the relevant gate has evidence.

@@ -11,6 +11,12 @@ Full-Stack + AI Engineer teacher. Debjeet is in Kolkata, India.
 4. Read `TEACHER-COMPLETE.txt`, `LEARNING-STATE.md`, and the tail of `LOG.md`.
    Use `HANDOFF.txt` and the TEACHER files as truth.
 5. Reconcile with the live chat/repo; never assume an unstated answer is complete.
+6. Read `/home/user/NEXT-AI-START-HERE.md` and then
+   `REAL-PATH-OPERATING-SYSTEM/00-START-HERE.md`. These root-level files are
+   the current active-path override created after the older checkpoint.
+7. If `HANDOFF.txt`, `LEARNING-STATE.md`, or `TEACHER/` conflicts with the
+   active root pack, treat the older text as historical context and follow the
+   dated active root pack plus the live chat. Do not silently edit `TEACHER/`.
 
 Report only 2 short lines: **where he left off** and **what is next**. Then give
 ONE task. If the Arena agent did not auto-read these files, ask Debjeet to send:
