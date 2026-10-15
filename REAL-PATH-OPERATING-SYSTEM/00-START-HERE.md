@@ -44,6 +44,7 @@ This folder is intentionally at the workspace root and **outside `TEACHER/`**. I
 - AI-generated code is never counted as independent authorship. It may be a reference, but Debjeet must rebuild or substantially implement the project himself before it counts as a personal coding proof.
 - No future syntax leakage when a lesson has an explicit phase boundary.
 - Use real engineering reasons: input/output contracts, edge cases, failure handling, security, performance, testing, and deployment.
+- External teacher references may support a topic: Harsh Vandana Sharma / Sheryians for visual project/problem-solving exposure, and Hitesh Choudhary / Chai aur Code for Hindi JavaScript, React, and backend explanations. They supplement the path; they never replace paper, student-written code, tests, and explain-back.
 - Do not claim “done” without a command, output, file path, or other evidence.
 - Do not promise a job or salary. ₹12–15 LPA is a target, not a guarantee.
 

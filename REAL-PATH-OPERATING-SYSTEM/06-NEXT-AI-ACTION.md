@@ -32,6 +32,19 @@
 - Do not call a project complete without tests and output.
 - Do not generate audio unless Debjeet explicitly requests it.
 
+## External teacher protocol
+
+Use outside videos as a controlled supplement, not as a second syllabus:
+
+- Likely requested creator: Harsh Vandana Sharma, with the official Sheryians Coding School channel.
+- Hitesh Choudhary's official Chai aur Code channel is the Hindi foundation/backend reference.
+- Pick one relevant video segment for the current concept; do not playlist-hop.
+- Watch a short segment, pause, predict the output, write notes, then close the video.
+- Debjeet writes the implementation from the contract.
+- The AI compares the video explanation with the active syllabus, fills missing concepts, reviews code, and runs proof.
+- A video is not a completion proof. Only independent implementation, explanation, tests, and project evidence count.
+- The AI cannot watch videos continuously in the background. If exact video analysis is needed, Debjeet should provide the URL; accessible page metadata/transcript can then be checked.
+
 ## Teaching format
 
 Use this sequence:

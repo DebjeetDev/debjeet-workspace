@@ -24,6 +24,14 @@ Root pointer:
 
 `NEXT-AI-START-HERE.md`
 
+## External learning references
+
+- Harsh Vandana Sharma official channel: `https://www.youtube.com/@harshvandanasharma`
+- Sheryians Coding School playlists: `https://www.youtube.com/@sheryians/playlists`
+- Hitesh Choudhary / Chai aur Code: `https://www.youtube.com/@chaiaurcode`
+
+These are reference teachers only. The active syllabus and project gates remain in `REAL-PATH-OPERATING-SYSTEM/`; watching a video never replaces student-written proof.
+
 ## Existing evidence and status
 
 - `HANDOFF.txt` — previous canonical checkpoint and strict project order.
